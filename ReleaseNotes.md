@@ -108,17 +108,40 @@ Release date: 2016/04/27
 - Some manipulations with a multi-selection of entities are now faster.
 - Improve prefab thumbnails
 
+### Android
+
+- Allow dynamic device orientation switching (desired orientations must be selected from Visual Studio)
+
+### iOS
+
+- Allow dynamic device orientation switching (desired orientations must be selected from Visual Studio)
+- Bumped minimum iOS version requirement from 6.0 to 7.0
+- Made some internal classes public to allow fine control of Game start-up by overriding them (experimental)
+
 ## Issues fixed
 
 ### Game Studio
 
 - Fix an issue in the sprite editor preventing to properly edit newly added frames
 - Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
+- Fix a crash when loading projects with Audio related compoments/assets
 
 ### Particles
 
 - Fix an issue with particles ignoring camera groups when rendering.
 - Fix a crash when Spawner's duration and delay were both 0.
+
+### Android
+
+- The Activity is not destroyed anymore when changing device orientation
+
+### iOS
+
+- Fixed a native library dependency issue that prevented Xamarin Incremental build to work properly (There is still a possibly Xamarin side bug preventing this feature to work properly)
+
+### Built-in Scripts
+
+- Fixed PlayerController script to reflect physics component changes
 
 # Version 1.6.2-beta
 
