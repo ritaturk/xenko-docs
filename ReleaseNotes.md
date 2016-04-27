@@ -97,6 +97,24 @@ The Game Settings asset has been improved: You can now have different settings d
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
 
+# Version 1.6.3-beta
+
+Release date: 2016/04/27
+
+## Enhancements
+
+### Game Studio
+
+- Some manipulations with a multi-selection of entities are now faster.
+- Improve prefab thumbnails
+
+## Issues fixed
+
+### Game Studio
+
+- Fix an issue in the sprite editor preventing to properly edit newly added frames
+- Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
+
 # Version 1.6.2-beta
 
 Release date: 2016/04/04
