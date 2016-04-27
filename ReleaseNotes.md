@@ -107,6 +107,7 @@ Release date: 2016/04/27
 
 - Some manipulations with a multi-selection of entities are now faster.
 - Improve prefab thumbnails
+- Display an helper message in the curve editor on how to add a keyframe when the curve is empty
 
 ### Android
 
@@ -123,8 +124,10 @@ Release date: 2016/04/27
 ### Game Studio
 
 - Fix an issue in the sprite editor preventing to properly edit newly added frames
+- Fix a cache issue in the sprite editor preventing to the magic wand to work properly after modifying a source image externally
 - Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
 - Fix a crash when loading projects with Audio related compoments/assets
+- Fix a crash that might occur when closing an editor
 
 ### Particles
 
