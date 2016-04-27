@@ -7,7 +7,7 @@ Prefabs allow you to assemble entities into building blocks and easily reuse the
 We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won’t break your prefab synchronization!
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/prefabs.gif" align="center" />
-
+E
 ## Archetypes
 
 You can now use any asset as an archetype for another asset. When you change a property of the archetype, the new value will be automatically propagated to all the derived assets, unless you specifically override them. Archetypes can be used with most asset types.
@@ -124,7 +124,7 @@ Release date: 2016/04/27
 ### Game Studio
 
 - Fix an issue in the sprite editor preventing to properly edit newly added frames
-- Fix a cache issue in the sprite editor preventing to the magic wand to work properly after modifying a source image externally
+- Fix a cache issue in the sprite editor preventing to the magic wand to work properly after modifying a source image externally ([#389](https://github.com/SiliconStudio/xenko/issues/389))
 - Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
 - Fix a crash when loading projects with Audio related compoments/assets
 - Fix a crash that might occur when closing an editor
