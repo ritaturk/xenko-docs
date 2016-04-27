@@ -115,6 +115,11 @@ Release date: 2016/04/27
 - Fix an issue in the sprite editor preventing to properly edit newly added frames
 - Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
 
+### Particles
+
+- Fix an issue with particles ignoring camera groups when rendering.
+- Fix a crash when Spawner's duration and delay were both 0.
+
 # Version 1.6.2-beta
 
 Release date: 2016/04/04
