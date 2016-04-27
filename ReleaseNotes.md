@@ -128,6 +128,16 @@ Release date: 2016/04/27
 - Fix a crash that could occur when manipulating the Materials of a model component in the scene editor
 - Fix a crash when loading projects with Audio related compoments/assets
 - Fix a crash that might occur when closing an editor
+- Fix an issue when asset compiler was failing but not properly returning error. As a result, it was easy to run into issue like running the game once and keep it in background (lock files), editing, and when running it again it would still use the older compiled assets.
+- Lights and camera gizmo were improperly scaled
+
+### Rendering
+
+- Camera now ignore scaling when computing view matrix
+- Made various types public instead of internal, so that user can easily extend the rendering pipeline by themselves
+- EffectValidator was failing on effects without any permutation values ([#378](https://github.com/SiliconStudio/xenko/issues/378))
+- Added a debuger proxy for the new ParameterCollection
+- MSAA parameters are now properly forwarded to the main swap chain. Note that it still can't be used in RenderFrame until MSAA targets are properly resolved.
 
 ### Particles
 
@@ -141,6 +151,7 @@ Release date: 2016/04/27
 ### iOS
 
 - Fixed a native library dependency issue that prevented Xamarin Incremental build to work properly (There is still a possibly Xamarin side bug preventing this feature to work properly)
+- Animation engine custom IL code was not working with latest Xamarin AOT, this is now fixed
 
 ### Built-in Scripts
 
