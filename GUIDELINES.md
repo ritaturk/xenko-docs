@@ -305,7 +305,19 @@ TODO Pierre Explanations
 
 TODO Pierre Explanations
 
-TODO Virgile styling
+You can add note, tip and warnings using the following syntax:
+
+```
+> [!NOTE]
+> Some useful note
+```
+
+Available types:
+* NOTE
+* TIP
+* WARNING
+
+Note that current styling will be improved.
 
 ## <a name="Notices"> Notices
 
