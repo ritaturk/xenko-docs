@@ -31,6 +31,7 @@ we ask you to follow to the below Guidelines when writing.
   * [API References](#APIReferences)
   * [Code References](#CodeReference)
   * [Placeholders](#Placeholders)
+  * [Labels](#Labels)
   * [Remarks](#Remarks)
   * [Notices](#Notices)
   * [Platform Notices](#PlatformNotices)
@@ -251,6 +252,61 @@ TODO Pierre Explanations
 
 TODO Virgile styling
 
+##  <a name="References"> Page References
+
+TODO Pierre Explanations
+
+## <a name="RelatedTopics"> Related Topics
+
+To encourage readers to learn more about a topic and also to ease their navigation,
+we recommand you as much as possible to add links to related topics at the bottom of your articles.
+
+For this use the AAA(TODO Virgile) style, as follow: 
+> TODO Virgile  
+> TODO Virgile  
+> TODO Virgile  
+
+## <a name="APIReferences"> API References
+
+A link to the API reference should be added for EACH mention of an API class, interface, function, etc.
+To avoid to add too many times the same links, you can replace the function name by an action verb.
+
+Adding a link to a reference API can be done the following way:
+> @'MyNamespace.MyClass.MyFunction'
+
+Example:
+```
+Use the @'SiliconStudio.Xenko.Audio.SoundEffectInstance.Play' function start playing a sound.
+Playing an ongoing sound has no effect. Playing a stop sound restart the sound from beginning.
+```
+
+## <a name="CodeReference"> Code References
+
+Code samples should be as small as possible, well commented and be properly formatted when included. 
+There are two different ways to insert some code in your article. First add the code content directly in your 
+article with the proper formatting or add a reference to an existing code file. 
+We recommend you to add the code sample directly in your article except when the code sample is used
+in several different places. In that case we recommend you to use a reference to a code file.
+It can be much more efficient in term of maintenance.
+
+Example:
+> **Code directly included in the article**
+> 
+> \`\`\`cs  
+> Asset.Unload(asset);  
+> \`\`\`
+>
+> **Reference to an external code file**  
+> \[\!code-csharp\[Main\]\(index.cs?start=5&end=9\)\]  // add line 5 to 9 of file index.cs
+
+
+## <a name="Placeholders"> Placeholders
+
+For ease of understanding make all placeholders start by 'My'.
+
+Example:
+> Content.Load("MyFolder/MyAsset");
+
 ## <a name="Labels"> Labels
 
 Labels are optional info displayed at the top of the page so that readers can quickly understand intended target audience.
@@ -275,41 +331,19 @@ Example:
 Lorem ipsum...
 ```
 
-##  <a name="References"> Page References
-
-TODO Pierre Explanations
-
-## <a name="RelatedTopics"> Related Topics
-
-To encourage readers to learn more about a topic and also to ease their navigation,
-we recommand you as much as possible to add links to related topics at the bottom of your articles.
-
-For this use the AAA(TODO Virgile) style, as follow: 
-> TODO Virgile  
-> TODO Virgile  
-> TODO Virgile  
-
-## <a name="APIReferences"> API References
-
-TODO Pierre Explanations
-
-## <a name="CodeReference"> Code References
-
-TODO Pierre Explanations
-
-## <a name="Placeholders"> Placeholders
-
-TODO Pierre Explanations
 
 ## <a name="Remarks"> Remarks
 
-TODO Pierre Explanations
+Whenever you have explanations that is not necessary for the understanding of a concept but that
+can be very useful in application, add them as remarks so that the reader knows that it is extra information
+that can be skipped depending on its objective. We provide several types of remarks such as notes, warnings and
+tips to give an addition clue to the reader on what kind of extra information he is going to find.  
 
 You can add note, tip and warnings using the following syntax:
 
 ```
 > [!NOTE]
-> Some useful note
+> Some useful notes
 ```
 
 Available types:
@@ -327,14 +361,17 @@ TODO Virgile styling
 
 ## <a name="PlatformNotices"> Platform Notices
 
-TODO Pierre Explanations
+When there are explanations, notices or remarks that are specific to a given platform, you should
+use the following formatting style to show the reader that the section can be skipped depending on 
+the targeted platform.
 
-TODO Virgile styling
+TODO Virgile styling Android/iOS + example
 
 ## <a name="Media"> Media
 
 You can add media content to your articles using the following syntax:
 > \!\[Graphics Compositor Diagram\]\(media/graphics-compositor.png\)  
+
 'Graphic Compositor Diagram' is the message displayed as fall-back if the image file can't be find.
 'media/graphics-compositor.png' is the relative path to the file.
 
