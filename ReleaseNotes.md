@@ -97,6 +97,14 @@ The Game Settings asset has been improved: You can now have different settings d
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
 
+# Version 1.6.4-beta
+
+Release date: 2016/04/28
+
+## Issues fixed
+
+- Fix an issue in the rotation editor when decomposing the rotation matrix into Euler angles.
+
 # Version 1.6.3-beta
 
 Release date: 2016/04/27
