@@ -68,13 +68,13 @@ Stay tuned for technical details and performance evaluation in the near future!
 
 Direct3D 12 has been added as a new build target. While still experimental, it already supports all parts of our rendering pipeline.
 
-You can try it by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
+You can try it by changing the ‘Preferred Graphics Platform�in the ‘Rendering Settings�of your ‘Game Settings�asset.
 
 ## Better OpenGL support
 
 Our OpenGL renderer has been improved and should behave much better (shadows, PBR, etc.). Also, we now deliver OpenGL and OpenGL ES on Windows as build targets.
 
-You can also try them by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
+You can also try them by changing the ‘Preferred Graphics Platform�in the ‘Rendering Settings�of your ‘Game Settings�asset.
 
 ## Scripts are now components
 
@@ -104,6 +104,7 @@ Release date: 2016/04/28
 ## Issues fixed
 
 - Fix an issue in the rotation editor when decomposing the rotation matrix into Euler angles.
+- Some information were missing in the new GPU crash report
 
 # Version 1.6.3-beta
 
@@ -116,6 +117,7 @@ Release date: 2016/04/27
 - Some manipulations with a multi-selection of entities are now faster.
 - Improve prefab thumbnails
 - Display an helper message in the curve editor on how to add a keyframe when the curve is empty
+- Improved crash report so that we have more information about previous exceptions when GPU fails
 
 ### Android
 
