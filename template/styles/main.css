@@ -129,3 +129,15 @@ h1:before, h2:before, h3:before, h4:before {
 footer {
   text-align: center;
 }
+
+.label-doc-level {
+  background-color: #337ab7;
+}
+
+.label-doc-audience {
+  background-color: #d9534f;
+}
+
+.label-doc-platform {
+  background-color: #f0ad4e;
+}

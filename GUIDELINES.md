@@ -251,6 +251,30 @@ TODO Pierre Explanations
 
 TODO Virgile styling
 
+## <a name="Labels"> Labels
+
+Labels are optional info displayed at the top of the page so that readers can quickly understand intended target audience.
+
+Please place them right after the top-level title.
+
+There are several kinds of labels:
+
+* Level (Beginner, Intermediate, Advanced) with `label-doc-level`
+* Audience (Artist, Programmer, Designer) with `label-doc-audience`
+* Platform (iOS, Android, etc...) with `label-doc-platform`
+
+Example:
+```
+# Title
+
+<span class="label label-doc-level">Beginner</span>
+<span class="label label-doc-audience">Artist</span>
+
+## Overview
+
+Lorem ipsum...
+```
+
 ##  <a name="References"> Page References
 
 TODO Pierre Explanations
