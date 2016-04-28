@@ -151,8 +151,8 @@ Release date: 2016/04/27
 
 ### Particles
 
-- Fix an issue with particles ignoring camera groups when rendering.
-- Fix a crash when Spawner's duration and delay were both 0.
+- Fix an issue with particles ignoring camera groups when rendering ([#380](https://github.com/SiliconStudio/xenko/issues/380)).
+- Fix a crash when Spawner's duration and delay were both 0 ([#384](https://github.com/SiliconStudio/xenko/issues/384)).
 
 ### Android
 
