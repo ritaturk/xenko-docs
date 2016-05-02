@@ -12,12 +12,14 @@ we ask you to follow to the below Guidelines when writing.
   * [Simple Vocabulary](#SimpleVocabulary)
 * [Pages Content](#PagesContent)
   * [Getting Started Pages](#GettingStarted)
-  * [Samples & Tutorials Pages](#SamplesTutorials)
+  * [Tutorials Pages](#Tutorials)
+  * [Samples Pages](#Samples)
   * [HOWTO Pages](#Howtos)
   * [Section Header Pages](#SectionHeader)
   * [Overview Pages](#Overview)
   * [Reference Pages](#Reference)
   * [Avoid Long Explanations](#LongExplanations)
+  * [Avoid Long Articles](#LongArticles)
   * [Use Images & Videos](#UseImagesVideos)
 * [Pages & Files Structure](#FilesStructure)
   * [Pages Hierarchy](#PagesHierarchy) 
@@ -33,8 +35,8 @@ we ask you to follow to the below Guidelines when writing.
   * [Placeholders](#Placeholders)
   * [Labels](#Labels)
   * [Remarks](#Remarks)
+  * [Platform Specific Remarks](#PlatformRemarks)
   * [Notices](#Notices)
-  * [Platform Notices](#PlatformNotices)
   * [Media](#Media)
     * [Videos](#Videos)
     * [Images](#Images)
@@ -124,11 +126,282 @@ In addition to content and layout guidelines based on the type of page, we finis
 with a few generic recommendations for the content.
 
 ##  <a name="GettingStarted"> Getting Started Pages
-##  <a name="SamplesTutorials"> Samples & Tutorials Pages
-##  <a name="Howtos"> HOWTO Pages
+
+Getting Started articles aim at guiding new Xenko user in its first steps. Pages should cover only basic 
+and essential topics and don't need to explain concepts in depth. Only one subject should be covered per page.
+
+Pages targeting any kind of audience should be inserted directly under the Getting Started root page.
+Pages targeting a specific audience should be inserted under a page specifying the audience. Getting
+Started pages order should follow the progress of a Xenko new user.
+
+A Getting Started page consists of the following content:
+
+1. The page title (the subject dealt in the page).
+2. A paragraph explaining what the reader will learn in the page.
+3. The knowledge needed to be able to follow the instructions (if any).
+4. An image or a video illustrating what the user will learn (if possible).
+5. A table of content summarizing the main steps of the page (if applicable).
+6. The sub-titles and the content of the page.
+
+Example:
+```
+# Design Scenes with Xenko.
+
+In this article you will learn how to create scenes from the editor in Xenko.
+This page assume that you are already able to import assets in Xenko.
+
+[Scene Image](media/scene.png)
+
+* [Drag and drop elements in your scene](#Drag and drop elements in your scene)
+* [Navigate in the scene editor](#Navigate in the scene editor)
+* [Adjust the position of your elements](#Adjust the position of your elements)
+
+## Drag and drop elements in your scene
+
+...
+```
+
+##  <a name="Tutorials"> Tutorials Pages
+
+The purpose of tutorials is to accompany users through the creation of a game component. Each tutorial 
+starts from a initial state (most of the time an empty game) and ends to a final state (mini game or 
+game component completed). A page should be create for each main step of the final realization.
+Pages should be ordered chronologically and next pages should start exactly were previous pages stop.
+A folder should be created for each tutorial. 
+
+A tutorial header page consists of the following content:
+
+1. The page title (name of the tutorial).
+2. A description of what will be realized and what can be learned from the tutorial. 
+3. The knowledge needed to be able to complete the tutorial (if any). 
+4. One or several images of the final realization (if possible). 
+5. A table of content with the links to the tutorial sub-pages (ordered list).
+
+Example
+```
+# My 2D game tutorial
+
+In this tutorial you will create a simple 2D game from scratch. You will learn how to create a scene,
+perform collisions between elements and add a UI to your game.
+This tutorial assumes that you know how to create a new project and import assets in Xenko.
+
+[My 2D Game Image](media/my2dGame.png)
+
+1. [Import assets](ImportAsset.md)
+2. [Create your level](CreateLevel.md)
+3. [Add Collisions](AddCollisions.md)
+4. [Add a UI](AddUI.md)
+```
+
+A tutorial page consists of the following content:
+
+1. The page title (realization of the page) 
+2. A description what will be realized in the current page and what will be learned. 
+3. One or several pictures illustrating the realization of the page should (if possible).
+4. A table of content summarizing the main steps of the page. 
+5. The sub-titles and the content of the page.
+6. A link to the previous and to the next page of the tutorial.
+
+Example
+```
+# Add UI to the game
+
+In this page you will add a simple UI to your game. You will learn how to create a UI using Xenko default 
+design and make it interact with the gameplay.
+
+[My Game UI Image](media/MyGameUI.png)
+
+1. [Add a UI component](# Add a UI component)
+2. [Set the UI](# Set the UI)
+3. [Make UI interact with your game](# Make UI interact with your game)
+
+## Add a UI component 
+
+...
+
+Previous [Use Physics Collisions](UsePhysicsCollision.md) | Next [Deploy your game](DeployYourGame.md)
+```
+
+##  <a name="Samples"> Samples Pages
+
+For each Xenko sample, a documentation sample page should be created. The purpose of this page is to explain
+what is shown in the sample, what is the difficulty and what can be learned.
+
+A sample page consists of the following content:
+
+1. The page title (name of the sample).
+2. A paragraph explaining what is shown in the sample and what can be learned.
+3. The knowledge needed to be able to understand this sample (if any). 
+4. One or several images of the samples (if possible).
+5. A table of content summarizing the different points of the sample (if needed).
+6. The sub-titles and the content of the page.
+
+Example:
+```
+# Material Sample
+
+This sample shows you how to create different types of material in Xenko. You will learn how to 
+create metallic, organic and layered and blended materials. 
+
+In order to fully understand this sample, you need to know standard lighting models. To learn more 
+about this have a look  that [Lighting Models](../Graphics/LightingModels.md).
+
+![Material Sample Image1](media/materialSample1.md)
+
+* [PBR Materials](# Physically Based Materials)
+* [Metallic Materials](# Metallic Materials)
+* [Organic Materials](# Organic Materials)
+
+...
+
+```
+
 ##  <a name="SectionHeader"> Section Header Pages
+
+Section headers are the top pages of the folders of the documentation. The goal of header pages is 
+to introduce the section topic, to expose the best features of the engine and to provide quick links 
+to the main topics of the section.
+
+A header page consists of:
+
+1. The name of the section as title
+2. An image illustrating the section (for sub-folder this image can be skipped)
+3. A short introduction sentence explaining what is the section about.
+4. A paragraph exposing the main and best features of the engine on the topic.
+5. A short paragraph explaining what can be learned by reading this section. 
+6. Links to the section overview and the main topics of the section. For the main sections,
+one image per link illustrating the sub-topic will be added as a grid.
+
+Note: for sub-folder headers the section header page can be replaced by the overview page when appropriate.
+
+Example
+```
+# Physics
+
+![Physic Section Image](media/PhysicSection.png)
+
+Physics allows you to make physic simulations in your game.
+
+Xenko has a physic system fully integrated in its game studio. Its dedicated physic editor allows you to
+directly edit physic shapes of objects or to automatically generate them from the models. 
+
+In this section you will learn how to simulate collisions between objects, add trigger regions, apply 
+physic law on objects, etc.
+
+|Overview| Physic Shapes| Simulation
+|![OverviewImage](media/Overview.png)|![Physic Shapes](media/PhysicShapes.png)|![Simulation](media/Simulation.png)
+```
+
 ##  <a name="Overview"> Overview Pages
+
+The purpose of overview pages is to give a full insight of a wide topic to the reader. It should 
+expose and explain the main concepts from a high level point of view.
+
+An overview page consists of:
+
+1. The Page title (Section name + Overview).
+2. A short paragraph explaining what is the topic or section about.
+3. A paragraph exposing the objectives, the challenges and the limitations (if applicable).
+4. An explanation of the main or base concept (if applicable)
+5. A paragraph listing the more specific solutions and corresponding concepts (if applicable)
+6. A table of content of the sub-topics of the page.
+7. The sub-topics with their content (if possible add an image after each sub-topic title).
+
+Example
+```
+Physics Overview
+
+This page introduces you the different ways to simulate physic interaction in your game.
+
+The goal of the physic engine is to provide ways to produce and automate actions on your game elements
+so that they seems to follow physic laws. Accurate physic simulations being very costly all physic behaviors
+have to be approximated. 
+
+To simplify the computation we use simplified physic shapes and different types of physic objects 
+for the physic calculations. 
+
+* Physic Shapes(# Physic Shapes)
+* Physic Object Types(# Physic Object Types)
+* Physic Constrains(# Physic Constrains)
+* Physic Forces(# Physic Forces)
+
+# Physic Shapes
+
+![Physic Shapes Image](media/PhysicShapes.png)
+
+...
+
+```
+
 ##  <a name="Reference"> Reference Pages
+
+Reference pages explain in depth a specific concept, feature, or element.
+
+A reference page consists of:
+
+1. The page title (name of the concept)
+2. The definition of the concept.
+3. The standard usages of the concept.
+4. An image illustrating the concept (if possible)
+5. A table of content of the sub-topic of the page (if needed)
+6. The sub-topics with the content.
+
+Example
+```
+# Materials
+
+A material is a set of rules defining how to render an element.
+
+You can use materials with model, particles system and sprites to define the color, lighting and shadowing
+of your element.
+
+![Material Image](media/Material.png)
+
+* Object Geometry(# Object Geomatry) 
+* Object Shading(# Object Shading)
+* Layers(# Layers)
+
+1. Object Geometry
+
+...
+```
+
+
+##  <a name="Howtos"> HOWTO Pages
+
+The goal of the HOWTO pages is to provide a list of clear instructions to realize a specific thing. 
+Each HOWTO page should be independent from other HOWTO pages and guide the reader towards 
+only one and single target. It should not define nor explain any concept.
+
+A HOWTO page consists of:
+
+1. The page title (phrase starting with a verb describing the target)
+2. The goal of the page and what the user will learn to doc-audience
+3. The knowledge needed to understand the instructions.
+4. An image of the final realization (if possible)
+5. A table of content of the main steps taken to reach the objective
+6. The main steps and their explanations and sub-instructions (add the step number in the sub-title)
+
+Example
+```
+# Add particles inside our UI
+
+In this page you will learn how to attach particles to an UI element.
+
+This page assumes that you know how to use particles and UI elements in general.
+
+![Particles In UI Image](media/ParticlesInUI.png)
+
+1. Create your particle Effect(# Create your particle Effect)
+2. Create your UI(# Create your UI)
+3. Add a UI link component(# Add a UI link component)
+
+## 1. Create your particle Effect.
+
+...
+
+```
+
 ##  <a name="LongExplanations"> Avoid Long Explanations
 
 Long explanation are quite indigestible for the reader. Most of the time, he simply skips them.
@@ -142,6 +415,12 @@ This guideline is even more important for Getting Started, Samples, Tutorials an
 where the text should correspond more to instructions than explanations about Xenko concepts.
 In those pages, you should either try to explain the concept in a simple lline or replace the
 explanation by a reference to the page dedicated to the concept.
+
+##  <a name="LongArticles"> Avoid Long Articles
+
+Try to avoid writing articles longer than 8 to 10 screen heights. Long articles discourage users 
+to start reading and make the navigation harder. If the content of your article cannot fit in
+the above number of screen, split your article into several articles.
 
 ##  <a name="UseImagesVideos"> Use Images & Videos
 
@@ -173,8 +452,14 @@ As much as possible we recommend you not to go beyond 4 levels of depth.
 >   - Common Topic
 >   - Targeted Audience
 >      - Topic
-> Samples & Tutorials
->   TODO decide hierarchy
+> Tutorials
+>   - My 2D game
+>   - My 3D game
+> Samples
+>   - Graphics
+>     - Material sample
+>   - Physics
+>     - Raycasting sample
 > Section Header
 >   - Overview
 >   - Topic
@@ -336,7 +621,7 @@ Lorem ipsum...
 
 Whenever you have explanations that is not necessary for the understanding of a concept but that
 can be very useful in application, add them as remarks so that the reader knows that it is extra information
-that can be skipped depending on its objective. We provide several types of remarks such as notes, warnings and
+that can be skipped depending on his objective. We provide several types of remarks such as notes, warnings and
 tips to give an addition clue to the reader on what kind of extra information he is going to find.  
 
 You can add note, tip and warnings using the following syntax:
@@ -353,19 +638,22 @@ Available types:
 
 Note that current styling will be improved.
 
-## <a name="Notices"> Notices
+## <a name="PlatformRemarks"> Platform Specific Remarks
 
-TODO Pierre Explanations
-
-TODO Virgile styling
-
-## <a name="PlatformNotices"> Platform Notices
-
-When there are explanations, notices or remarks that are specific to a given platform, you should
+Whenever there are explanations or remarks that are specific to a given platform, you should
 use the following formatting style to show the reader that the section can be skipped depending on 
 the targeted platform.
 
 TODO Virgile styling Android/iOS + example
+
+## <a name="Notices"> Notices
+
+Whenever your page is missing some key information or is out-of-date, you should  
+add a notice at the top of the page to inform the reader. 
+
+TODO Pierre Detailled Explanations
+
+TODO Virgile styling
 
 ## <a name="Media"> Media
 
@@ -403,7 +691,15 @@ For the source files, we prefer the following formats: Photoshop, GIMP, Paint.ne
 
 ### <a name="Diagrams"> Diagrams
 
-Diagrams should be rendered as **PNG**. The source file can be done with Visio or standard image editing tools.
+Diagrams should be rendered as **PNG** or vector image. Since the documentation system automatically 
+adjust the size of the images be careful that all text that you include in diagrams are still
+readable after size readjustment. When a diagram is too big and can't be reduced, allow the reader to 
+click and open it in full size.
+
+You can make diagrams clickable using the following syntax:
+TODO virgile
+
+Diagrams can be created with Visio or standard image editing tools.
 
 ## <a name="Tables"> Tables
 
@@ -452,3 +748,4 @@ word.
 
 You should NEVER fully capitalize a word inside a sentence except when you want to strongly insist on 
 a fact. Words commonly used for this are: ONLY, DO NOT, YES, NO, MAKE SURE TO, BE CAREFUL (TO/ OF).
+
