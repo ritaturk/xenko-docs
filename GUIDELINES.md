@@ -14,10 +14,10 @@ we ask you to follow to the below Guidelines when writing.
   * [Getting Started Pages](#GettingStarted)
   * [Tutorials Pages](#Tutorials)
   * [Samples Pages](#Samples)
-  * [HOWTO Pages](#Howtos)
   * [Section Header Pages](#SectionHeader)
   * [Overview Pages](#Overview)
   * [Reference Pages](#Reference)
+  * [HOWTO Pages](#Howtos)
   * [Avoid Long Explanations](#LongExplanations)
   * [Avoid Long Articles](#LongArticles)
   * [Use Images & Videos](#UseImagesVideos)
@@ -28,6 +28,9 @@ we ask you to follow to the below Guidelines when writing.
   * [Files Name](#FilesName)
 * [Formatting](#Formatting)
   * [Definitions](#Definitions)
+    * [Xenko Terms](#XenkoTerms)
+    * [Video Game Terms](#VideoGameTerms)
+    * [Job Specific Terms](#JobTerms)
   * [Page References](#References)
   * [Related Topics](#RelatedTopics)
   * [API References](#APIReferences)
@@ -165,7 +168,7 @@ This page assume that you are already able to import assets in Xenko.
 
 The purpose of tutorials is to accompany users through the creation of a game component. Each tutorial 
 starts from a initial state (most of the time an empty game) and ends to a final state (mini game or 
-game component completed). A page should be create for each main step of the final realization.
+game component completed). A page should be created for each main step of the final realization.
 Pages should be ordered chronologically and next pages should start exactly were previous pages stop.
 A folder should be created for each tutorial. 
 
@@ -196,10 +199,10 @@ This tutorial assumes that you know how to create a new project and import asset
 A tutorial page consists of the following content:
 
 1. The page title (realization of the page) 
-2. A description what will be realized in the current page and what will be learned. 
-3. One or several pictures illustrating the realization of the page should (if possible).
+2. A description of what will be realized in the current page and what will be learned. 
+3. One or several pictures illustrating the realization of the page (if possible).
 4. A table of content summarizing the main steps of the page. 
-5. The sub-titles and the content of the page.
+5. The sub-steps and the content of the page.
 6. A link to the previous and to the next page of the tutorial.
 
 Example
@@ -221,6 +224,10 @@ design and make it interact with the gameplay.
 
 Previous [Use Physics Collisions](UsePhysicsCollision.md) | Next [Deploy your game](DeployYourGame.md)
 ```
+
+Note: as much as possible each instruction should be surrounded by two images showing the state 
+before and after the instruction. Image before the first instruction should correspond to the initial
+state and last image should correspond to the final state.
 
 ##  <a name="Samples"> Samples Pages
 
@@ -402,6 +409,10 @@ This page assumes that you know how to use particles and UI elements in general.
 
 ```
 
+Note: as much as possible each instruction should be surrounded by two images showing the state 
+before and after the instruction. Image before the first instruction should correspond to the initial
+state and last image should correspond to the final state.
+
 ##  <a name="LongExplanations"> Avoid Long Explanations
 
 Long explanation are quite indigestible for the reader. Most of the time, he simply skips them.
@@ -533,13 +544,97 @@ Examples:
 #  <a name="Formatting"> Formatting
 ##  <a name="Definitions"> Definitions
 
-TODO Pierre Explanations
+When you write your articles, you should be careful of properly defining all the terms that can be
+unknown by the user. We can basically distinguish the following three types of terms.
 
-TODO Virgile styling
+###  <a name="XenkoTerms"> Xenko Terms
+
+These terms are specific to Xenko and absolutely need to be defined. These are terms like Asset, Material,
+Live Scripting, Graphic Compositor, etc. You should create a dedicated page for each term defining and 
+explaining the concept. Add an uid to the page and link it at least every first occurrence of the word 
+in an article. In addition add a shorter version of the definition as metadata in the page. This will be 
+used later to create definition tooltips.
+
+Example
+```
+Material.md:
+---
+uid: material
+Material: List of properties defining how to render an element.
+---
+
+# Material
+
+A material can be considered as a list of properties defining how to render an sprite, particle system, or
+model.
+
+blablabla ...
+
+HowtoSetDiffuse.md:
+# HOWTO Set the diffuse of a model
+
+1. Select the @material use by your model. (<- first reference of the document) 
+```
+
+###  <a name="VideoGameTerms"> Video Game Terms
+
+These terms are specific to the game and graphic industry. They can either be defined and explained in
+the Xenko documentation if it makes sense (Example: Forward rendering, etc.) in which case we will follow
+exactly the same rules as Xenko terms, or explanation can be passed to an external site (wikipedia, etc) 
+in which case we will just provide a short version of the definition for the tooltip and the link to
+the external website. Only the first occurrence of the page will be linked.
+
+Example
+```
+---
+Shader: block of code defining how to process and render a triangle. (<- inline definition)
+---
+
+# Rendering
+
+In Xenko you can choose between @forward-rendering and @deffered-rendering. (<-link to a dedicated page).
+
+Depending on the rendering model the [Shaders](http://wikipedia/shaders) are completely different. 
+(<- external reference)
+
+The more complex shaders are blablabla (<- second reference no link)
+```
+
+Note: If the expected audience for the page is 'Intermediate' or 'Advanced' basic term definitions can 
+be skipped. 
+
+###  <a name="JobTerms"> Job Specific Terms
+
+These terms are specific to a role in the development process. They need to be defined only the when 
+the expected audience for the page is wider than just the specific job. Most of the time we will 
+define them by using an link to an external page and adding a tooltip definition. Only the first occurrence
+of the page has to be defined.
 
 ##  <a name="References"> Page References
 
-TODO Pierre Explanations
+We recommend you to add cross reference to other documentation pages as much as possible to ease
+to reader navigation. 
+
+To add a cross reference proceed as follow:
+
+1. Add a uid at the top of the destination file
+2. Everytimes you want to link the page just reference it using the @uid shortcut.
+
+Example
+```
+material.md:
+---
+uid: material
+---
+
+# Material
+...
+
+sprite.md:
+For more information about sprite color, read @material.
+```
+
+Note: for more information please refer to DocFX documentation.
 
 ## <a name="RelatedTopics"> Related Topics
 
@@ -649,11 +744,28 @@ TODO Virgile styling Android/iOS + example
 ## <a name="Notices"> Notices
 
 Whenever your page is missing some key information or is out-of-date, you should  
-add a notice at the top of the page to inform the reader. 
+add a notice at the top of the page to inform the reader and add the 🔧 character the page title.
 
-TODO Pierre Detailled Explanations
+Example 1
+```
+> [!NOTE]
+> 
+> This topic is currently missing the following points:
+> * sub-topic 1
+> * sub-topic 2
+```
 
-TODO Virgile styling
+Example 2D
+```
+> [!NOTE]
+>
+> The following elements on this page are out-of-date:
+> * element 1
+> * element 2
+```
+
+TODO virgile do we really want to have the same formating as the notes? shoudn't we have a 
+specific formating for this?
 
 ## <a name="Media"> Media
 
