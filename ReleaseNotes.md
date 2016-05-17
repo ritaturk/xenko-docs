@@ -119,6 +119,7 @@ Release date: 2016/05/17
 - Removed a ThrowNotImplementedException in OnSoundControllerListChanged, re-implemented the missing part.
 - Made non generic EventKey and EventReceiver consume bool instead of byte
 - Fixed a possible crash in PhysicsColliderShape Compose
+- Fixed culling of shadows casters when no shadow receivers were present
 
 ### Game Studio
 
