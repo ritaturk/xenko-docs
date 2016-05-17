@@ -7,7 +7,7 @@ Prefabs allow you to assemble entities into building blocks and easily reuse the
 We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won’t break your prefab synchronization!
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/prefabs.gif" align="center" />
-E
+
 ## Archetypes
 
 You can now use any asset as an archetype for another asset. When you change a property of the archetype, the new value will be automatically propagated to all the derived assets, unless you specifically override them. Archetypes can be used with most asset types.
@@ -105,8 +105,8 @@ Release date: 2016/05/17
 
 ### Game Studio
 
-- When an image is added in a sprite sheet, the texture region is sized to the whole image by default.
-- The dialog asking for assembly reloading only pop-up when the Game Studio has focus.
+- When an image is added to a sprite sheet, the texture region is now sized to the whole image by default.
+- The dialog asking for assembly reloading only pops up when the Game Studio has focus.
 
 ## Issues fixed
 
@@ -116,7 +116,7 @@ Release date: 2016/05/17
 
 ### Game Studio
 
-- Fix issues in the sprite editor cache retaining old version of images after their source had been changed.
+- Fix issues in the sprite editor cache keeping old version of images after their source file had been changed.
 - Fix issues in the sprite editor tool that sized incorrectly the texture region, borders or center.
 
 # Version 1.6.4-beta
