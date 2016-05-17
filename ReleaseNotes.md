@@ -107,6 +107,7 @@ Release date: 2016/05/17
 
 - When an image is added to a sprite sheet, the texture region is now sized to the whole image by default.
 - The dialog asking for assembly reloading only pops up when the Game Studio has focus.
+- The dialog asking to save script only pops up for a script created from inside the Game Studio.
 
 ## Issues fixed
 
