@@ -113,11 +113,14 @@ Release date: 2016/05/17
 ### Engine
 
 - Fix negative index parameter of SpriteFromSheet.GetSprite throwing an exception. Negative index now circles around the collection of sprites (e.g. -1 return the last sprite).
+- If a background component was enabled and then disabled, it would still render.
+- MSAA rasterizer state was enabled even when not needed (with level 0 so it didn't affect much, except subtle differences in tessellation tests).
 
 ### Game Studio
 
 - Fix issues in the sprite editor cache keeping old version of images after their source file had been changed.
 - Fix issues in the sprite editor tool that sized incorrectly the texture region, borders or center.
+- When closing editor, there was a NullReferenceException in the Gizmo System.
 
 # Version 1.6.4-beta
 
