@@ -97,6 +97,28 @@ The Game Settings asset has been improved: You can now have different settings d
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
 
+# Version 1.6.5-beta
+
+Release date: 2016/05/17
+
+## Enhancements
+
+### Game Studio
+
+- When an image is added in a sprite sheet, the texture region is sized to the whole image by default.
+- The dialog asking for assembly reloading only pop-up when the Game Studio has focus.
+
+## Issues fixed
+
+### Engine
+
+- Fix negative index parameter of SpriteFromSheet.GetSprite throwing an exception. Negative index now circles around the collection of sprites (e.g. -1 return the last sprite).
+
+### Game Studio
+
+- Fix issues in the sprite editor cache retaining old version of images after their source had been changed.
+- Fix issues in the sprite editor tool that sized incorrectly the texture region, borders or center.
+
 # Version 1.6.4-beta
 
 Release date: 2016/04/28
