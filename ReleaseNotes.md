@@ -68,13 +68,13 @@ Stay tuned for technical details and performance evaluation in the near future!
 
 Direct3D 12 has been added as a new build target. While still experimental, it already supports all parts of our rendering pipeline.
 
-You can try it by changing the ‘Preferred Graphics Platform�? in the ‘Rendering Settings�? of your ‘Game Settings�? asset.
+You can try it by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
 
 ## Better OpenGL support
 
 Our OpenGL renderer has been improved and should behave much better (shadows, PBR, etc.). Also, we now deliver OpenGL and OpenGL ES on Windows as build targets.
 
-You can also try them by changing the ‘Preferred Graphics Platform�? in the ‘Rendering Settings�? of your ‘Game Settings�? asset.
+You can also try them by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
 
 ## Scripts are now components
 
