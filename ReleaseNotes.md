@@ -68,13 +68,13 @@ Stay tuned for technical details and performance evaluation in the near future!
 
 Direct3D 12 has been added as a new build target. While still experimental, it already supports all parts of our rendering pipeline.
 
-You can try it by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
+You can try it by changing the ‘Preferred Graphics Platform�? in the ‘Rendering Settings�? of your ‘Game Settings�? asset.
 
 ## Better OpenGL support
 
 Our OpenGL renderer has been improved and should behave much better (shadows, PBR, etc.). Also, we now deliver OpenGL and OpenGL ES on Windows as build targets.
 
-You can also try them by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
+You can also try them by changing the ‘Preferred Graphics Platform�? in the ‘Rendering Settings�? of your ‘Game Settings�? asset.
 
 ## Scripts are now components
 
@@ -116,12 +116,19 @@ Release date: 2016/05/17
 - Fix negative index parameter of SpriteFromSheet.GetSprite throwing an exception. Negative index now circles around the collection of sprites (e.g. -1 return the last sprite).
 - If a background component was enabled and then disabled, it would still render.
 - MSAA rasterizer state was enabled even when not needed (with level 0 so it didn't affect much, except subtle differences in tessellation tests).
+- Removed a ThrowNotImplementedException in OnSoundControllerListChanged, re-implemented the missing part.
+- Made non generic EventKey and EventReceiver consume bool instead of byte
+- Fixed a possible crash in PhysicsColliderShape Compose
 
 ### Game Studio
 
 - Fix issues in the sprite editor cache keeping old version of images after their source file had been changed.
 - Fix issues in the sprite editor tool that sized incorrectly the texture region, borders or center.
 - When closing editor, there was a NullReferenceException in the Gizmo System.
+- Fix a crash when using audio and sound assets.
+- Fix a crash when trying to copy the crash report itself.
+- Fix a crash when adding scripts to entities
+ 
 
 # Version 1.6.4-beta
 
