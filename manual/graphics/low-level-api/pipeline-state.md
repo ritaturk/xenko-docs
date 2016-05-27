@@ -9,7 +9,7 @@ Xenko offers total control over the graphics pipeline state. This includes:
 - Input layout
 - Output description
 
-State is compiled into immutable @'SiliconStudio.Xenko.Graphics.PipelineState' objects, which describe the whole pipline.
+State is compiled into immutable @'SiliconStudio.Xenko.Graphics.PipelineState' objects, which describe the whole pipeline.
 They are then bound using a @'SiliconStudio.Xenko.Graphics.CommandList'.
 
 **Code:** Creating state objects

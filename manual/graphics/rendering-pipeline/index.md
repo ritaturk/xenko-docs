@@ -5,7 +5,7 @@ Xenko's rendering pipeline aims to provide a maximum in both, performance and ex
 # Render Features
 
 Rendering code is divided into @'SiliconStudio.Xenko.Rendering.RenderFeature's, each of which is responsible for processing a single type of @'SiliconStudio.Xenko.Rendering.RenderObject'.
-Features are executed in multiple phases: **Collect**, **Extract**, **Prepare** and **Draw**. This allows to isolate and apply optimizations to each step of the pipeline separately.
+Features are executed in multiple phases: **Collect**, **Extract**, **Prepare** and **Draw**. This allows to isolate, parallelize and optimize each step of the pipeline separately.
 
 See [Render features](render-features.md) for more details.
 
