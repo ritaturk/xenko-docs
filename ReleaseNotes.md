@@ -97,6 +97,22 @@ The Game Settings asset has been improved: You can now have different settings d
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
 
+# Version 1.6.6-beta
+
+Release date: 2016/05/27
+
+## Enhancements
+
+### Game Studio
+
+- Don't force opening the default scene every time the Game Studio is started (except for new project). The default scene will only open if it was the case during the last session (same behavior as any other editor).
+
+## Issues fixed
+
+### Game Studio
+
+- Fix an issue preventing to save editor layout when the history of projects reach the maximum size (currently 20 projects).
+
 # Version 1.6.5-beta
 
 Release date: 2016/05/17
@@ -118,8 +134,8 @@ Release date: 2016/05/17
 - MSAA rasterizer state was enabled even when not needed (with level 0 so it didn't affect much, except subtle differences in tessellation tests).
 - Removed a ThrowNotImplementedException in OnSoundControllerListChanged, re-implemented the missing part.
 - Made non generic EventKey and EventReceiver consume bool instead of byte
-- Fixed a possible crash in PhysicsColliderShape Compose
-- Fixed culling of shadows casters when no shadow receivers were present
+- Fix a possible crash in PhysicsColliderShape Compose
+- Fix culling of shadows casters when no shadow receivers are present
 
 ### Game Studio
 
@@ -129,7 +145,6 @@ Release date: 2016/05/17
 - Fix a crash when using audio and sound assets.
 - Fix a crash when trying to copy the crash report itself.
 - Fix a crash when adding scripts to entities
- 
 
 # Version 1.6.4-beta
 
