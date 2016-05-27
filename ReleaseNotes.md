@@ -112,6 +112,13 @@ Release date: 2016/05/27
 ### Game Studio
 
 - Fix an issue preventing to save editor layout when the history of projects reach the maximum size (currently 20 projects).
+- Material Selection mode (which allows you to pick a material by clicking directly on the mesh area) was broken.
+
+### Engine
+
+- Changed how OpenGL ES expected vs actual version is handled; this should fix various issues related to context creation on Android and also code targeting older OpenGL should be more consistant across devices.
+- There was some issues for GPU resource disposal that might have lead to incorrect state (might fix some issues when closing scenes in the editor).
+- ShadowMaps across multiple RenderViews were not working properly (same shadow map texture can be reused but in fact was not).
 
 # Version 1.6.5-beta
 
