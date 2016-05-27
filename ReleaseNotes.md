@@ -119,6 +119,7 @@ Release date: 2016/05/27
 - Changed how OpenGL ES expected vs actual version is handled; this should fix various issues related to context creation on Android and also code targeting older OpenGL should be more consistant across devices.
 - There was some issues for GPU resource disposal that might have lead to incorrect state (might fix some issues when closing scenes in the editor).
 - ShadowMaps across multiple RenderViews were not working properly (same shadow map texture can be reused but in fact was not).
+- Improved the engine's behavior when mobile apps require to handle multiple orientations.
 
 ### Particles
 
