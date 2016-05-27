@@ -120,6 +120,10 @@ Release date: 2016/05/27
 - There was some issues for GPU resource disposal that might have lead to incorrect state (might fix some issues when closing scenes in the editor).
 - ShadowMaps across multiple RenderViews were not working properly (same shadow map texture can be reused but in fact was not).
 
+### Particles
+
+- Fixed an issue where non-uniform scaling and rotation on the entities resulted in wrong rotation of the particle system. Currently only uniform scaling is supported.
+
 # Version 1.6.5-beta
 
 Release date: 2016/05/17
