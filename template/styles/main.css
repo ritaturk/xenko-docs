@@ -18,7 +18,18 @@ body {
 th, td {
     padding-left: 5px;
     padding-right: 10px;
-	vertical-align: top;
+    vertical-align: top;
+    border:solid 1px #ccc;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+th, td img{
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 .article, #search-results {
@@ -128,60 +139,4 @@ h1:before, h2:before, h3:before, h4:before {
 
 footer {
   text-align: center;
-}
-
-.label-doc-level {
-  background-color: #337ab7;
-}
-
-.label-doc-audience {
-  background-color: #d9534f;
-}
-
-.label-doc-platform {
-  background-color: #f0ad4e;
-}
-
-/* Note, warning, tip, important and caution */
-.NOTE {
-  border-left: 5px solid #4060c0;
-  padding: 12.5px 38px;
-  margin-bottom: 12px;
-}
-
-.WARNING {
-  border-left: 5px solid #f0ad4e;
-  padding: 12.5px 38px;
-  margin-bottom: 12px;
-}
-
-.TIP {
-  border-left: 5px solid #4060c0;
-  padding: 12.5px 38px;
-  margin-bottom: 12px;
-}
-
-.NOTE h5:before,
-.TIP h5:before {
-  font-family: 'Glyphicons Halflings';
-  font-size: 24px;
-  vertical-align: middle;
-  margin-left: -32px;
-  margin-right: 6px;
-  content: "\e086";
-}
-
-.WARNING h5:before {
-  font-family: 'Glyphicons Halflings';
-  font-size: 24px;
-  vertical-align: middle;
-  margin-left: -32px;
-  margin-right: 6px;
-  content: "\e107";
-}
-
-.NOTE p:last-child, blockquote ul:last-child, blockquote ol:last-child,
-.TIP p:last-child, blockquote ul:last-child, blockquote ol:last-child,
-.WARNING p:last-child, blockquote ul:last-child, blockquote ol:last-child {
-    margin-bottom: 0;
 }
