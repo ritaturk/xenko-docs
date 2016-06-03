@@ -35,7 +35,12 @@ th, td {
     display: none !important;
   }
   
-  .article {
+  .article, #search-results {
+    margin-top: 30px !important;
+  }
+  }
+  
+  .article, #search-results {
     margin-top: 30px !important;
   }
 }
