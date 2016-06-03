@@ -6,7 +6,7 @@ This tutorial explains in depth how to create particles which inherit one or mor
 
 You can check the **Child Particles Sample** if you need a quick look at a project which already uses inheritance from particles.
 
-![images/particles-tutorials-inheritance-0.jpg](images/particles-tutorials-inheritance-0.jpg)
+![media/particles-tutorials-inheritance-0.jpg](media/particles-tutorials-inheritance-0.jpg)
 
 ## Step-by-step
 
@@ -22,7 +22,7 @@ This will randomly assign a parent particle for each child particle spawned and 
 
 The *Parent Offset* seed is used to match fields when more than one attributes are inherited. For example if you want to inherit both *Position* and *Color* from the same parent particle (which is chosen at random) you should set the *Parent Offset* seed to be the same. Alternatively you can set the *Parent Offset* seed for both initializers to be different, in which case particles spawning from one parent's position can inherit their color from a different random particle. Usually you want to keep them the same, but in some cases you might want to mix them.
 
-![images/particles-tutorials-inheritance-1.png](images/particles-tutorials-inheritance-1.png)
+![media/particles-tutorials-inheritance-1.png](media/particles-tutorials-inheritance-1.png)
 
 As you can see this kind of inheritance does not control spawn count, maximum particles or any other parameters and is very random. For most effects it is sufficient, but sometimes you want more direct control over the particles.
 
