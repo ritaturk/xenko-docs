@@ -4,7 +4,7 @@
 
 Prefabs allow you to assemble entities into building blocks and easily reuse them in any of your scenes. Changes to your prefabs will be reflected on all instances (as long as properties are not overridden).
 
-We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won’t break your prefab synchronization!
+We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won't break your prefab synchronization!
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/prefabs.gif" align="center" />
 
@@ -18,7 +18,7 @@ You can now use any asset as an archetype for another asset. When you change a p
 
 You can now create and edit particle systems directly in the Xenko Game Studio. Particles are deeply integrated in the game engine and leverage the powerful effect system and its high level of customization.
 
-While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game’s specific needs.
+While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game's specific needs.
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/particle1.gif" align="center" />
 

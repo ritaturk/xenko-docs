@@ -10,7 +10,7 @@ Skeletons can be created alongside other assets, when importing an FBX file or o
 
 ## Root motion support for models, cameras, lights, etc.
 
-Animations now apply root motion if they have no skeleton, or the ‘Root Motion’ property is enabled on the animation asset. The animation will then move the entity itself, instead of the skeleton’s root bone.
+Animations now apply root motion if they have no skeleton, or the ‘Root Motion’ property is enabled on the animation asset. The animation will then move the entity itself, instead of the skeleton's root bone.
 This is especially useful to import animations of lights, cameras or unskinned models, without the need to bind them to the bones of a skeleton.
 
 The FBX importer will now also import animations of various camera parameters (near-plane, far-plane, field of view) and apply them to the CameraComponent of the animated entity. More properties may be supported in the future.
@@ -231,7 +231,7 @@ Release date: 2015/12/17
 - Fix a potential crash when the texture region is outside of the image.
 - Fix a bug preventing to create a frame in the sprite editor when dropping a file.
 - Fix a bug preventing to drop asset in an empty folder.
-- Fix error when attempting to import animation from a model that doesn’t have any.
+- Fix error when attempting to import animation from a model that doesn't have any.
 - Fix incorrect size of full screen window when screen resolution has changed.
 - Fix package dependency issue when removing a dependent package.
 
