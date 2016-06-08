@@ -114,7 +114,7 @@ Release date: 2016/01/15
 
 ### Engine
 
-- Fix problem occuring with debugging async functions (local variable gone, namespace ignored, step over broken).
+- Fix problem occurring with debugging async functions (local variable gone, namespace ignored, step over broken).
 - Fix the issues preventing from passing Windows 10 store certification. 
 - Add support for proper resizing in Windows Universal Apps.
 
