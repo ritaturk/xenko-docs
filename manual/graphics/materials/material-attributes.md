@@ -284,7 +284,7 @@ In the screenshots below, using a material with the following attributes, we can
 
 The specular workflow provides more control on the actual specular color but requires to carefully modify the diffuse color accordingly.
 
-Unlike the metallness workflow, It allows to have a different specular color from the diffuse color even in low reflectance scenarios, allowing some materials with special behavior.
+Unlike the metalness workflow, It allows to have a different specular color from the diffuse color even in low reflectance scenarios, allowing some materials with special behavior.
 
 > **Note**
 > 

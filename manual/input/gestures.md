@@ -132,7 +132,7 @@ var currentFrameGestureEvents = Input.GestureEvents;
 
  
 
-One can use the @'SiliconStudio.Xenko.Input.GestureEvent.Type' field to identidy the gesture type and then cast it to the appropriate event type to have extra info about the event. 
+One can use the @'SiliconStudio.Xenko.Input.GestureEvent.Type' field to identity the gesture type and then cast it to the appropriate event type to have extra info about the event. 
 
 **Code:** Identifying the gesture type
 
@@ -150,7 +150,7 @@ foreach( var gestureEvent in Input.GestureEvents)
 
  
 
-One can know the gesture state by analysing the @' SiliconStudio.Xenko.Input.GestureEvent.State' field.
+One can know the gesture state by analyzing the @' SiliconStudio.Xenko.Input.GestureEvent.State' field.
 
 **Code:** Identifying the event state
 

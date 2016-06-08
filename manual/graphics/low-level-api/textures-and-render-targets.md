@@ -106,7 +106,7 @@ CommandList.SetViewport(0, viewport);
 
 # Scissor
 
-The @'SiliconStudio.Xenko.Graphics.CommandList.SetScissorRectangles(System.Int32,System.Int32,System.Int32,System.Int32)' method is available to set the scissor. Contrary to the viewport, the user must provide the coordinates of the location of the vertices defining the scissor instead of its size. The method can be invocked with an array @'SiliconStudio.Core.Mathematics.Rectangle's in order to support multiple scissors.
+The @'SiliconStudio.Xenko.Graphics.CommandList.SetScissorRectangles(System.Int32,System.Int32,System.Int32,System.Int32)' method is available to set the scissor. Contrary to the viewport, the user must provide the coordinates of the location of the vertices defining the scissor instead of its size. The method can be invoked with an array @'SiliconStudio.Core.Mathematics.Rectangle's in order to support multiple scissors.
 
 **Code:** Setting the scissor
 

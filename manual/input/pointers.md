@@ -22,7 +22,7 @@ The @'SiliconStudio.Xenko.Input.PointerState' is an enumeration describing the *
 
 Pointers information is conveyed via @'SiliconStudio.Xenko.Input.PointerEvent'.
 
-Every time that the user touches the screen the detailed sequence of pointer events is buffered. Then it is provided to the programmer on the next frame turn. All pointer events not analysed during a frame turn are lost.
+Every time that the user touches the screen the detailed sequence of pointer events is buffered. Then it is provided to the programmer on the next frame turn. All pointer events not analyzed during a frame turn are lost.
 
 The pointer that triggered a pointer event can be identified using the @'SiliconStudio.Xenko.Input.PointerEvent.PointerId' field.
 

@@ -75,7 +75,7 @@ commandList.SetVertexBuffers(0, vertexBuffer, 0, vertexBufferBinding.Stride);
 commandList.Draw(vertexCount);
 ```
 
-It is also possible to draw indexed geometry. To use an index buffer, first create it similarily to the vertex buffer and bind it to the pipeline.
+It is also possible to draw indexed geometry. To use an index buffer, first create it similarly to the vertex buffer and bind it to the pipeline.
 It can then be used for drawing using @'SiliconStudio.Xenko.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.
 
 **Code:** Drawing indexed vertices

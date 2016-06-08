@@ -28,7 +28,7 @@ In order to do so, go to "Package Properties" and enable "Record Used Effect" op
 
 Launch again your game. It will connect back to GameStudio automatically and notify it of any effect that are required to run this game session.
 
-In the Asset View, GameStudio has an "import last effects compiled remotely", with a number next to it showing how many new effects would be added (if greyed out a, it means no effects have been compiled, or you have already imported them).
+In the Asset View, GameStudio has an "import last effects compiled remotely", with a number next to it showing how many new effects would be added (if grayed out a, it means no effects have been compiled, or you have already imported them).
 
 ![media/howto-generate-effects-on-mobile-devices-4.png](media/howto-generate-effects-on-mobile-devices-4.png) ![media/howto-generate-effects-on-mobile-devices-5.png](media/howto-generate-effects-on-mobile-devices-5.png) 
 

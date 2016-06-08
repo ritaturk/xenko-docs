@@ -98,9 +98,9 @@ Release date: 2016/02/18
 
 ## Issues fixed
 - Fix a problem in the package upgrade erasing the content of shader and effect files.
-- Fix a crash in the resolution of invalid relative pathes preventing to load the project in the editor.
+- Fix a crash in the resolution of invalid relative paths preventing to load the project in the editor.
 - Do not add pillar boxes when resizing the window of a landscape game under Windows 10 but readjust the size of the buffer.
-- Replace the `MS Mincho` font by an embeded free font in samples (The font is not available on every systems)
+- Replace the `MS Mincho` font by an embedded free font in samples (The font is not available on every systems)
 
 # Version 1.5.2-beta
 Release date: 2016/01/15

@@ -36,7 +36,7 @@ You can then edit those assets in the Property Editor:
 
 ## Samples
 
-Xenko is coming with a set of technical samples for each engine parts (2D, 3D, Sprites, Fonts, UI, Audio, Input...) and a set of small games to help you boostrap into making your own game.
+Xenko is coming with a set of technical samples for each engine parts (2D, 3D, Sprites, Fonts, UI, Audio, Input...) and a set of small games to help you bootstrap into making your own game.
 
 You can access them by creating a new project, and selecting the appropriate sample template. 
 

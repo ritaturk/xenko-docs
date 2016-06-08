@@ -18,7 +18,7 @@ After validating, you are invited to select the configuration of your game.
 
 ![media/howto-create-and-setup-new-game-2.png](media/howto-create-and-setup-new-game-2.png) 
 
-First are the **platforms** you'd like to target. If you do not have requirements needed for a platform a warning message is dispayed.
+First are the **platforms** you'd like to target. If you do not have requirements needed for a platform a warning message is displayed.
 
 Note that without a [Xamarin ](https://xamarin.com/platform) license, you won't be able to build your game on iOS or Android, although you can still create a project for these platform and get a license later.
 

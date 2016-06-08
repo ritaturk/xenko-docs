@@ -202,7 +202,7 @@ pipelineStateDescription.Output = renderOutputDescription;
 For convenience, the @'SiliconStudio.Xenko.Graphics.RenderOutputDescription.CaptureState(SiliconStudio.Xenko.Graphics.CommandList)' method can be used to retrieve the output description, that was last set on a @'SiliconStudio.Xenko.Graphics.CommandList'.
 This is especially useful in combination with @'SiliconStudio.Xenko.Graphics.MutablePipelineState', when the render target might not be known up front.
 
-**Code:** Capturing output desciption
+**Code:** Capturing output description
 
 ```cs
 mutablePipelineState.State.Output.CaptureState(CommandList);

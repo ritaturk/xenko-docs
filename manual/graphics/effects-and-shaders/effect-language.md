@@ -2,20 +2,20 @@
 
 # Create shaders in C&#35;
 
-You can create a shader at runtime with @'SiliconStudio.Xenko.Shaders.ShaderSource' objects. They come in three veriations:
+You can create a shader at runtime with @'SiliconStudio.Xenko.Shaders.ShaderSource' objects. They come in three variations:
 
 - @'SiliconStudio.Xenko.Shaders.ShaderClassSource': corresponding to a unique class
 - @'SiliconStudio.Xenko.Shaders.ShaderMixinSource': mix several @'SiliconStudio.Xenko.Shaders.ShaderSource', setting preprocessor values, defining compositions
 - @'SiliconStudio.Xenko.Shaders.ShaderArraySource': used for arrays of compositions
 
-This method will produce shaders at runtime. However, many platforms do not support HLSL and do not have the ability to compile shaders at runtime. Futhermore, this approach does not benefit from the reusability of mixins. 
+This method will produce shaders at runtime. However, many platforms do not support HLSL and do not have the ability to compile shaders at runtime. Furthermore, this approach does not benefit from the reusability of mixins. 
 
 # Xenko Effects (XKFX)
 
 Many shaders are variations or combinations of pre-existing ones. For example, some meshes cast shadows, others receive them, still others need skinning.
-To reuse code, it is desireable to select which parts to use through conditions, such as "Skinning required".
+To reuse code, it is desirable to select which parts to use through conditions, such as "Skinning required".
 
-This is often solved by "Ã¼ber shaders": Monolithic shaders, which are configured by a set of preprocessor parameters.
+This is often solved by "¼ber shaders": Monolithic shaders, which are configured by a set of preprocessor parameters.
 
 Our goal is to achieve the same kind of control, while keeping extensibility and reusability in mind.
 Therefore, the simple code blocks defined by XKSL classes, can be mixed together by a shader mixer. This mixing process can use more complex logic, which is described in Xenko Effect (*.XKFX) files.

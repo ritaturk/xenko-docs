@@ -123,7 +123,7 @@ class TestClass
 ```
 
 
-**Code:** Stage member bahavior
+**Code:** Stage member behavior
 
 ```cs
 class BaseClass

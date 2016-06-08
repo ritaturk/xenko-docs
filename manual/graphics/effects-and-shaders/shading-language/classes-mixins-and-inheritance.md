@@ -36,7 +36,7 @@ Abstract methods are available in XKSL. They should be prefixed with the `abstra
 
 # Annotations
 
-Like in HLSL, annotations are availables in XKSL. Here are some the most useful ones:
+Like in HLSL, annotations are available in XKSL. Here are some the most useful ones:
 
 - `[Color]` for float4 variables. The ParameterKey will have the type `Color4` instead of `Vector4`. It also specifies to GameStudio that this variable should be treated as a color, giving you the most convenient interface to edit it.
 - `[Link(...)]` specifies which ParameterKey to use to set this value. However an independent default key is still created.
