@@ -1,6 +1,6 @@
 # Material Colors
 
-Material can fetch their values using color (rgb) or scalar (single float) value providers. 
+Material can fetch their values using color (rgb) or scalar (single float) value providers. 
 
 The Material System supports several kinds of color/scalar providers:
 
@@ -52,7 +52,7 @@ The color is provided directly as a constant value over the whole material. In c
 
 Perform a binary operation from 2 color/scalar value providers.
 
-`Result = LeftColor  <operator> RightColor`
+`Result = LeftColor  <operator> RightColor`
 
 ![media/material-colors-4.png](media/material-colors-4.png) 
 

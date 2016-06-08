@@ -50,7 +50,7 @@ The force field is defined by a bounding shape and several force vectors which o
 
 ![media/particles-reference-updaters-1.png](media/particles-reference-updaters-1.png) 
 
- 
+ 
 
 | Property              | Description                                                                                                                      |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------              |
