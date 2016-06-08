@@ -324,7 +324,7 @@ Then, save back your project in GameStudio. You now can open your project with V
 
 ### Engine
 
-- The KeyedSortedList now implements ICollection<T> instead of IList<T> annd is more consistent with CollectionDescriptor.
+- The KeyedSortedList now implements ICollection<T> instead of IList<T> and is more consistent with CollectionDescriptor.
 
 ### Game Studio
 
