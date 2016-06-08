@@ -1,6 +1,6 @@
 # Xenko Studio
 
-A central place to start developing your game with Xenko, the Paradox Studio is helping to fully manage your assets:
+A central place to start developing your game with Xenko, the Xenko Studio is helping to fully manage your assets:
 
 - You can import your assets, modify their parameters and see changes in real-time in the preview window.
 - You can organize your assets by folders, attach tags and get notifications from modified assets on the disk.

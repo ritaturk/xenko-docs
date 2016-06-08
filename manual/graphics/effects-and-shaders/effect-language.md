@@ -29,7 +29,7 @@ A *.XKFX file is a small program used to generate shader permutations. It takes 
 ```cs
 using SiliconStudio.Xenko.Effects.Data;
 
-namespace ParadoxEffects
+namespace XenkoEffects
 {
 	params MyParameters
 	{
