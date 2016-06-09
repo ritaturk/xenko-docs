@@ -126,6 +126,9 @@ Release date: 2016/06/09
 - Fix a crash that could occurs when loading a project that contains broken paths to resource files
 - Prevent the Game Studio process to keep running when a fatal problem occurs during the loading
 
+### Particles
+- Bug fix where two or more child entities concurrently try to update their parent entity's transform matrix.
+
 # Version 1.6.6-beta
 
 Release date: 2016/05/27
