@@ -97,6 +97,19 @@ The Game Settings asset has been improved: You can now have different settings d
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
 
+# Version 1.6.7-beta
+
+Release date: 2016/06/09
+
+## Enhancements
+
+### Game Studio
+- Don't wait for editor initialization before showing the editor window. This should prevent editor layouts from suddendly switching without notice, especially when opening a big scene.
+- Save the list of opened editors more often (everytime a new editor is opened). Before it was only saved when editing the Game Studio properly and thus the list would not be saved when a crash occurred.
+
+## Issues fixed
+
+
 # Version 1.6.6-beta
 
 Release date: 2016/05/27
