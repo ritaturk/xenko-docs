@@ -109,6 +109,16 @@ Release date: 2016/06/09
 
 ## Issues fixed
 
+### Graphics
+- D3D12: Static sampler didn't properly set comparison func and border, resulting in broken shadow maps
+- OpenGL ES: Improved texture format supports depending on OpenGL ES version and extension presents (esp. for float texture on ES2)
+- OpenGL ES: EXT_sRGB doesn't seem to properly work on Adreno 4xx, but since it is usually available through ES3 context, we use that first when available
+- OpenGL: AMD GPU driver didn't like the fact there was no #version in the Copy GLSL shader
+- OpenGL: Even though we use SDL, image loading now uses same code as WinForms/WPF (since SDL_image loading code is not implemented yet)
+
+### Assets
+- AssetCompiler was caching assemblies so that they could be modified while running. This feature is only useful in development and was making thing both slower and causing too long path issues, it has therefore been disabled for end-user install ([#410](https://github.com/SiliconStudio/xenko/issues/410))
+- 
 
 # Version 1.6.6-beta
 
