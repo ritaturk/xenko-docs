@@ -118,7 +118,9 @@ Release date: 2016/06/09
 
 ### Assets
 - AssetCompiler was caching assemblies so that they could be modified while running. This feature is only useful in development and was making thing both slower and causing too long path issues, it has therefore been disabled for end-user install ([#410](https://github.com/SiliconStudio/xenko/issues/410))
-- 
+
+### Engine
+- Added missing XenkoDefaultFont root asset in default package, this makes the profiler system work again out of the box.
 
 # Version 1.6.6-beta
 
