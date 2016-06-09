@@ -15,7 +15,7 @@ This method will produce shaders at runtime. However, many platforms do not supp
 Many shaders are variations or combinations of pre-existing ones. For example, some meshes cast shadows, others receive them, still others need skinning.
 To reuse code, it is desirable to select which parts to use through conditions, such as "Skinning required".
 
-This is often solved by "über shaders": Monolithic shaders, which are configured by a set of preprocessor parameters.
+This is often solved by "uber shaders": Monolithic shaders, which are configured by a set of preprocessor parameters.
 
 Our goal is to achieve the same kind of control, while keeping extensibility and reusability in mind.
 Therefore, the simple code blocks defined by XKSL classes, can be mixed together by a shader mixer. This mixing process can use more complex logic, which is described in Xenko Effect (*.XKFX) files.
