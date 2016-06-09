@@ -122,6 +122,10 @@ Release date: 2016/06/09
 ### Engine
 - Added missing XenkoDefaultFont root asset in default package, this makes the profiler system work again out of the box.
 
+### Game Studio
+- Fix a crash that could occurs when loading a project that contains broken paths to resource files
+- Prevent the Game Studio process to keep running when a fatal problem occurs during the loading
+
 # Version 1.6.6-beta
 
 Release date: 2016/05/27
