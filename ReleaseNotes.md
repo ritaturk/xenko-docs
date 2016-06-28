@@ -4,7 +4,7 @@
 
 Prefabs allow you to assemble entities into building blocks and easily reuse them in any of your scenes. Changes to your prefabs will be reflected on all instances (as long as properties are not overridden).
 
-We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won’t break your prefab synchronization!
+We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won't break your prefab synchronization!
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/prefabs.gif" align="center" />
 
@@ -18,7 +18,7 @@ You can now use any asset as an archetype for another asset. When you change a p
 
 You can now create and edit particle systems directly in the Xenko Game Studio. Particles are deeply integrated in the game engine and leverage the powerful effect system and its high level of customization.
 
-While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game’s specific needs.
+While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game's specific needs.
 
 <img src="http://doc.xenko.com/1.6/media/ReleaseNotes-1.6/particle1.gif" align="center" />
 
@@ -96,6 +96,38 @@ You can create an EventKey from your sender scripts and consume events using `Ev
 The Game Settings asset has been improved: You can now have different settings depending on the platform or GPU.
 
 For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
+
+# Version 1.6.7-beta
+
+Release date: 2016/06/09
+
+## Enhancements
+
+### Game Studio
+- Don't wait for editor initialization before showing the editor window. This should prevent editor layouts from suddendly switching without notice, especially when opening a big scene.
+- Save the list of opened editors more often (everytime a new editor is opened). Before it was only saved when editing the Game Studio properly and thus the list would not be saved when a crash occurred.
+
+## Issues fixed
+
+### Graphics
+- D3D12: Static sampler didn't properly set comparison func and border, resulting in broken shadow maps
+- OpenGL ES: Improved texture format supports depending on OpenGL ES version and extension presents (esp. for float texture on ES2)
+- OpenGL ES: EXT_sRGB doesn't seem to properly work on Adreno 4xx, but since it is usually available through ES3 context, we use that first when available
+- OpenGL: AMD GPU driver didn't like the fact there was no #version in the Copy GLSL shader
+- OpenGL: Even though we use SDL, image loading now uses same code as WinForms/WPF (since SDL_image loading code is not implemented yet)
+
+### Assets
+- AssetCompiler was caching assemblies so that they could be modified while running. This feature is only useful in development and was making thing both slower and causing too long path issues, it has therefore been disabled for end-user install ([#410](https://github.com/SiliconStudio/xenko/issues/410))
+
+### Engine
+- Added missing XenkoDefaultFont root asset in default package, this makes the profiler system work again out of the box.
+
+### Game Studio
+- Fix a crash that could occurs when loading a project that contains broken paths to resource files
+- Prevent the Game Studio process to keep running when a fatal problem occurs during the loading
+
+### Particles
+- Bug fix where two or more child entities concurrently try to update their parent entity's transform matrix.
 
 # Version 1.6.6-beta
 
