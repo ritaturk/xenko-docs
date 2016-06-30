@@ -22,7 +22,7 @@ The **New/open project** window opens.
 
 ![New/open project window](media/create-project-new-open-project-window.png)
 
-_New/open project window _
+_New/open project window_
 
 ## Create a new project
 
@@ -41,7 +41,7 @@ To create a new game from scratch, you need to Create a new project. With this, 
     
 ![create a new game](media/create-project-create-new-game.png)
 
-    _Create a new game window_
+ _Create a new game window_
 
  3. Type a name that can be used for your code sources in the **Namespace** box.
  4.	Select the platform that supports your game from the **Platforms** section. If your system does not have the requirements for a platform installed, a warning message is displayed.
