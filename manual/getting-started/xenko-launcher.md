@@ -17,6 +17,7 @@ The launcher prompts you initially to install latest version as well as the Visu
 You can start the currently displayed version of Game Studio by clicking the Start button. To change the starting version, click a version in the **Switch/update** version section to make the selected version as your current version.
  
  ![Start button](media/xenko-launcher-start-button.png)
+ 
  _Start button of Xenko launcher_
 
 ## Manage Xenko versions
@@ -24,6 +25,7 @@ You can start the currently displayed version of Game Studio by clicking the Sta
 You can switch to another version of Xenko or update your current version of Xenko from the **Switch/update version** section. Xenko has major, minor, and bugs fix version types. The launcher allows you to choose the Xenko version because breaking changes (changes in API or features or behaviors of the game engine) may occur between versions and you may not necessarily want to update your game.
  
  ![Versions of Xenkko](media/xenko-launcher-various versions.png)
+ 
  _Various versions of Xenko_
  
 >**Note:** The bug fix version updates cannot be reverted.
