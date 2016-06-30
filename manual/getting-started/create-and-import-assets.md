@@ -99,6 +99,7 @@ Sound	|Any format
 	In the **Import assets from files** window, the components of the selected asset types are displayed to import.
 
 	![Components of selected asset types](media/asset-creation-components-selected-asset-types.png)
+	
 	_Components of selected asset types_
 
   >**Note:**
