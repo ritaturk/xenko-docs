@@ -17,7 +17,7 @@
 ### [Create a script](getting-started/create-a-script.md)
 ### [Use a script](getting-started/use-a-script.md)
 ### [Launch your game](getting-started/launch-your-game.md)
-# [Work with Xenko launcher](getting-started/work-with-xenko-launcher.md)
+# [Work with Xenko launcher](xenko-launcher/work-with-xenko-launcher.md)
 # [Engine](engine.md)
 ## [Assets](engine/assets.md)
 ## [Package](engine/package.md)
