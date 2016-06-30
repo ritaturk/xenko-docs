@@ -1,15 +1,16 @@
-# Oculus Rift experimental support
+# Oculus Rift Beta Support
 
-Still in very early stage but we are already exposing some interfaces to render to an Oculus rift device.
+Xenko’s Oculus Rift support is still in very early stages but we are already exposing some interfaces to render to the Oculus Rift devices.
 
-The following is a description of how you would proceed to create a basic game with oculus rift VR support.
+The following is a description of how you would proceed to create a basic game supporting Oculus Rift VR.
 
 Create a New Game with LDR support (HDR could be used but the provided script is only supporting basic graphics composition)
 
 ![New Game creation](media/newgame.png)
 
-Add 2 cameras to the scene, and position them exactly at the same position (later in your own scripts you might have to move them together, or things might get messy.. your eyes)
-#### Make sure you remove the FpsCamera Script from the first pre-made camera!
+Add 2 cameras to the scene, and position them to exactly the same position (later in your own scripts you might have to move them together, or else you may get dizzy)
+
+**Make sure you remove the FpsCamera Script from the first pre-made camera!**
 
 ![New cameras](media/cameras.png)
 
@@ -34,8 +35,10 @@ Set the second Render Camera viewport and camera slot
 ![Render camera](media/renderer2.png)
 
 You are done for now in the Game Studio.
-Open the project in Visual Studio and add a new source code file in the Game project using the following code:
-#### Note: you must manually add reference to SharpDX and SharpDX.Direct3D11 in the Game project. You can find those assemblies in the Xenko SDK folder.
+
+Next, open the project in Visual Studio and add a new source code file in the Game project using the following code:
+
+**Note: you must manually add reference to SharpDX and SharpDX.Direct3D11 in the Game project. You can find those assemblies in the Xenko SDK folder (Under the folder where you installed Xenko, by default for example: C:\Program Files\Silicon Studio\Xenko\GamePackages\Xenko.1.6.6-beta\Bin\Windows-Direct3D11\).**
 ```
 using System;
 using System.Threading.Tasks;
@@ -226,7 +229,7 @@ namespace OculusRenderer
 
 ```
 
-Also you must replace your Windows Game script with something like this (in the MyOculusGame.Windows project)
+Then, you must replace your Windows Game script with the following script (in the MyOculusGame.Windows project).
 ```
 using OculusRenderer;
 
@@ -245,8 +248,8 @@ namespace MyOculusGame
 }
 ```
 
-Almost good to go. At this point, build the whole solution but do not run yet. This will populate the output folders with the correct files.
-We need to add 2 extra dlls for Oculus SDK support before running.
+We’re almost done. At this point, build the whole solution but do not run it yet. This will populate the output folders with the correct files. We need to add 2 extra dlls for Oculus SDK support before running. 
+
 Download them [here](media/libOVR.zip)
 
 Drop the content of the zip file in the output folder
@@ -254,6 +257,8 @@ Drop the content of the zip file in the output folder
 ![](media/output.png)
 
 Good to go, try running your game! Enjoy!
+
+![](media/thend.jpg)
 
 
 
