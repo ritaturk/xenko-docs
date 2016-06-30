@@ -45,6 +45,6 @@ In the **Switch/update version** section, you can:
  * You can access various Getting started topics of the Xenko Manual and news streams related to Xenko from the **Getting started** and **News** sections.
  * You can also easily connect with the various Xenko communities from the launcher.
 
-For more information about the various sections of the launcher, see [Work with Xenko launcher](work-with-xenko-launcher.md).
+For more information about the various sections of the launcher, see [Work with Xenko launcher](xenko-launcher/work-with-xenko-launcher.md).
 
 Now, you’re ready to create your first project in Game Studio. For information on how to create a project, see [Create a project](create-project.md).
