@@ -11,7 +11,9 @@ In Xenko, you can start creating a project in two ways, from a new empty project
 To create a new game, first you have to open a **New/open project** window, which guides you further to create games.
 
 To open a **New/open project** window, on the **Xenko launcher**, click the Start button.
+
 ![Start button](media/create-project-start.png)
+
 _Start button of Xenko launcher_
 
 >**Note:** Later, you can open the New/open project window from Game Studio as well by clicking File > New.
@@ -19,6 +21,7 @@ _Start button of Xenko launcher_
 The **New/open project** window opens. 
 
 ![New/open project window](media/create-project-new-open-project-window.png)
+
 _New/open project window _
 
 ## Create a new project
@@ -35,7 +38,9 @@ To create a new game from scratch, you need to Create a new project. With this, 
  2. Click **Select**.
     
 	The **Create a new game** window opens. This window helps you configure your new project.
-    ![create a new game](media/create-project-create-new-game.png)
+    
+![create a new game](media/create-project-create-new-game.png)
+
     _Create a new game window_
 
  3. Type a name that can be used for your code sources in the **Namespace** box.
@@ -70,14 +75,18 @@ You may want to learn about a specific feature or you may want to create a game 
  2. Select the sample. 
     
 	The following is image displays selecting a game sample in **New/open project** window.
-    ![New/open project samples](media/create-project-new-open-project-samples.png)
+ 
+   ![New/open project samples](media/create-project-new-open-project-samples.png)
+
     _New/open project window - samples_
 
 	>**Note:** As an example, a JumpyJet Sample is selected. The right panel of the window displays a summary of the game selected and a preview of the game.
  3. Click **Select**.
 
     The **Select Platforms** window opens.
+    
     ![select platform](media/create-project-select-platform.png)
+    
     _Select Platforms window_
 	
  4. Select a platform from the **Platforms** section.
