@@ -1,6 +1,8 @@
 # Oculus Rift Beta Support
 
-Xenko’s Oculus Rift support is still in very early stages but we are already exposing some interfaces to render to the Oculus Rift devices.
+> **Note** 
+>
+>Xenko’s Oculus Rift support is still in very early stages but we are already exposing some interfaces to render to the Oculus Rift devices.
 
 The following is a description of how you would proceed to create a basic game supporting Oculus Rift VR.
 
@@ -10,7 +12,9 @@ Create a New Game with LDR support (HDR could be used but the provided script is
 
 Add 2 cameras to the scene, and position them to exactly the same position (later in your own scripts you might have to move them together, or else you may get dizzy)
 
-**Make sure you remove the FpsCamera Script from the first pre-made camera!**
+>**Note**
+>
+>Make sure you remove the FpsCamera Script from the first pre-made camera!**
 
 ![New cameras](media/cameras.png)
 
@@ -38,7 +42,9 @@ You are done for now in the Game Studio.
 
 Next, open the project in Visual Studio and add a new source code file in the Game project using the following code:
 
-**Note: you must manually add reference to SharpDX and SharpDX.Direct3D11 in the Game project. You can find those assemblies in the Xenko SDK folder (Under the folder where you installed Xenko, by default for example: C:\Program Files\Silicon Studio\Xenko\GamePackages\Xenko.1.6.6-beta\Bin\Windows-Direct3D11\).**
+> **Note**
+>
+>You must manually add reference to SharpDX and SharpDX.Direct3D11 in the Game project. You can find those assemblies in the Xenko SDK folder (Under the folder where you installed Xenko, by default for example: C:\Program Files\Silicon Studio\Xenko\GamePackages\Xenko.1.6.6-beta\Bin\Windows-Direct3D11\).**
 ```
 using System;
 using System.Threading.Tasks;
