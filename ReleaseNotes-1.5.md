@@ -1,4 +1,4 @@
-# Version 1.5-beta - Highlights
+# Highlights
 
 ## Skeleton asset
 
