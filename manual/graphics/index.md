@@ -31,4 +31,5 @@ A basic prior knowledge of the rendering pipeline is expected from the user.
 - [Rendering pipeling](rendering-pipeline/index.md)
 - [Low-level API](low-level-api/index.md)
 - [Effects and Shaders](effects-and-shaders/index.md)
+- [Oculus Rift experimental support](oculus/index.md)
 - [HOWTOs](howtos/index.md)

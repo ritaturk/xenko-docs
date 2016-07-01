@@ -1,3 +1,5 @@
+**This page is very outdated!! Please refer to the API documentation or samples.**
+
 # Colliders Manipulation
 
 Once the colliders are created within the Game Studio we are ready to manipulate them from the game code.

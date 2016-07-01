@@ -1,3 +1,5 @@
+**This page is very outdated!! Please refer to the API documentation or samples.**
+
 # Colliders Creation
 
 First we create a Collider Shape Asset, this kind of asset can be compared to a model, where it actually describes a simplified shape describing what we are rendering to physics engine.
