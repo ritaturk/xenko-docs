@@ -18,7 +18,7 @@ You will need the following packages:
 To run games on Linux, we use the [SDL2](https://www.libsdl.org/) library which provides us the ability to create windows, handle mouse, keyboard and joystick events. The minimum required version is 2.0.4 and can be installed via:
 
 ```
-sudo apt-get install libsdl2-2.0-0
+sudo apt-get install libsdl2-dev
 ```
 
 ##FreeType
