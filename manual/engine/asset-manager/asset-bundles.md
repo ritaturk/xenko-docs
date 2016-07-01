@@ -101,7 +101,7 @@ Properties:
 
 Select assets based on their path.
 
-Standard .gitignore patterns are supported (except ! (negate), # (comments) and [0-9] (groups)).
+Standard .gitignore patterns are supported (except ! (negate), # (comments) and \[0-9\] (groups)).
 
 Properties:
 
