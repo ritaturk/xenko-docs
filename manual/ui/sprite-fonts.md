@@ -106,6 +106,7 @@ Use SDF fonts when:
 
 - You require multiple sizes for your font
 
+- You have very big font sizes (will consume less memory than runtime-rasterized fonts)
 
 Do **not** use SDF fonts when:
 
@@ -129,6 +130,11 @@ Do **not** use SDF fonts when:
 | Character regions           | Code for regions of characters which need to be baked. For example (32 - 127) is a region sufficient for ASCII character sets. |
 | Default character           | Missing characters will default to this one when rendered. The default code is 32 which is space.       |
 
+### Comparison
+
+![media/fonts-5.png](media/fonts-5.png) 
+
+Comparison between the SDF fonts and the offline-rasterized fonts under magnification.
 
 
 ## Under the hood
