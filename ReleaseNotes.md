@@ -253,4 +253,18 @@ This release brings many improvements to the particle engine.
 - Several crashes occurring when modifying properties of entities
 - Drag'n'drop issues where it was sometimes hard to drag the correct asset or entity
  
+## Version 1.7.1-Beta
 
+Release date: 2016/07/04
+
+### Enhancements
+
+- Increase the speed when manipulating entities that comes from prefabs
+
+### Issues fixed
+
+- Fix scene editor not refreshing when changing properties of a component that was added just before
+- Fix audio engine creation on Windows 7 32bits
+- zlib1.dll was missing and preventing to use SDF fonts
+- Fix the rotation over time updater for particle systems
+- Fix the camera preview that wasn't properly handling when adding or removing the camera component
