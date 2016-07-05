@@ -80,18 +80,16 @@ Under the hood, the [CELT](http://celt-codec.org/) codec (part of [Opus](https:/
 
 Xenko's API now builds on OpenAL for Linux/macOS/iOS, on OpenSLES for Android and on XAudio2 for Windows platforms.
 
-# Version 1.7.0-Beta
+# How To Upgrade
 
-Release date: 2016/07/01
+This section explains how to migrate a project from version 1.6.x to version 1.7.x.
 
-## How To Upgrade
-
-### UIComponent
+## UIComponent
 
 - `VirtualResolution` property has been renamed to `Resolution`
 - `VirtualResolutionMode` property has been renamed to `ResolutionStretch`
 
-### ISpriteProvider
+## ISpriteProvider
 
 The properties of type `Sprite` have been changed to properties of type `ISpriteProvider`. Currently two implementations of `ISpriteProvider` are available:
 * `SpriteFromSheet` for use with a `SpriteSheet` (i.e. a collection of `Sprite`)
@@ -130,7 +128,7 @@ if (provider != null)
   provider.CurrentFrame = SomeIndex;
 ```
 
-### SoundEffect (Instance) and SoundMusic to Sound(Instance)
+## SoundEffect (Instance) and SoundMusic to Sound(Instance)
 
 Kindly note that there is no more `SoundMusic`. Instead, you should now use `Sound` and `SoundInstance` for any kind of sound.
 
@@ -157,18 +155,44 @@ mySoundInstance.Play();
 
 Lastly, you no longer have to register (`AddListener`/`RemoveListener`) `AudioListenerComponent` from your code anymore.
 
-## Enhancements
+# Breaking changes
 
-### General
+## Audio
+
+- Removed `DistanceScale` and `DopplerScale` since internally not all the backends were supporting it ( we might add it back in the future as a global factor if needed)
+- `DynamicSoundEffectInstance` has been removed, you can now use `DynamicSoundSource` to stream your custom sound sources. Works on every platform
+- Removed `SoundEffect`, `SoundEffectInstance`, `SoundMusic`. Please use `Sound` and `SoundInstance` instead of all kind of sounds
+- Removed `AddListener`, `RemoveListener` from `AudioSystem`
+- Many Methods that had `SoundEffect` or `SoundMusic` in the signature now have just `Sound`, e.g. `AudioEmitterComponent.AttachSound`
+
+## UI
+
+- Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically
+- Properties of type `Sprite` have been changed to properties of type `ISpriteProvider`
+
+# Known Issues
+
+- Sometimes duplicate contacts are detected by the physics engine
+- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue
+
+# Changelog
+
+## Version 1.7.0-Beta
+
+Release date: 2016/07/01
+
+### Enhancements
+
+#### General
 
 - Debug locals were not displaying properly in some cases due to Mono.Cecil processing. This has been fixed and should now work properly.
 
-### Audio
+#### Audio
 
 - You can now change the Pitch/Speed of a `SoundInstance`!
 - Added master volume control in `AudioEngine` (`AudioEngine.MasterVolume`)
 
-### Particles
+#### Particles
 
 This release brings many improvements to the particle engine.
 
@@ -179,7 +203,7 @@ This release brings many improvements to the particle engine.
 - More spawner types, including Burst, On-Hit and a few other conditional ones
 - Color updater now uses a Color4 curve
 
-### Game Studio
+#### Game Studio
 
 - The selection history feature has been rewritten. It is now shared by all editors and the asset view. The buttons to navigate the selection history have been moved to the property grid
 - The re-import operation has been replaced by a "Update asset from source" which directly applies the changes from the source to the asset without displaying the import UI. (For skeleton, model, sprite studio assets...)
@@ -187,17 +211,17 @@ This release brings many improvements to the particle engine.
 - The notification when the sources of some assets have changed is now a dialog message instead of a notification popup on the corner of the screen
 - You can now drag & drop assets directly into the Property Grid to create components
 
-### UI
+#### UI
 
 - Signed Distance Field sprite font asset type added, allowing users to create sharp, scalable fonts which can be easily resized at runtime at no extra cost
 - Added support for EditText on Windows 10, Windows Store and Windows Phone platforms
 
-### Assets
+#### Assets
 
 - The internal YAML format of the SceneAsset and PrefabAsset has been updated to be more generic regarding asset composite.
 - The tracking of source files for assets, in particular, has been improved and fixed
 
-### Graphics
+#### Graphics
 
 - Added a way to keep a constrained aspect ratio in Render Camera, and automatically have pillarboxes/letterboxes when there are screens with different ratios
 - Added the concept of "LogicalGroup" to easily do partial updates of constant buffer and resources
@@ -206,13 +230,13 @@ This release brings many improvements to the particle engine.
 - Camera is not affected anymore by scaling
 - Implemented the required changes to allow rendering to Oculus Rift devices. Also, we have already begun including the native interfaces in the API for the Oculus Rift SDK. Check this [link](http://doc.xenko.com/latest/manual/graphics/oculus/index.html) for more info.
 
-### Input
+#### Input
 
 - Added a helper method `InputManager.TransformPosition` to allow you to transform input events in the case of multiple viewports.
 
-## Issues fixed
+### Issues fixed
 
-### Game Studio
+#### Game Studio
 
 - Undo/redo has been fixed in a lot of scenarios
 - GameStudio layout issue when creating a new game with the same name as a previous (but deleted) game
@@ -229,25 +253,4 @@ This release brings many improvements to the particle engine.
 - Several crashes occurring when modifying properties of entities
 - Drag'n'drop issues where it was sometimes hard to drag the correct asset or entity
  
-
-## Breaking changes
-
-### Audio
-
-- Removed `DistanceScale` and `DopplerScale` since internally not all the backends were supporting it ( we might add it back in the future as a global factor if needed)
-- `DynamicSoundEffectInstance` has been removed, you can now use `DynamicSoundSource` to stream your custom sound sources. Works on every platform
-- Removed `SoundEffect`, `SoundEffectInstance`, `SoundMusic`. Please use `Sound` and `SoundInstance` instead of all kind of sounds
-- Removed `AddListener`, `RemoveListener` from `AudioSystem`
-- Many Methods that had `SoundEffect` or `SoundMusic` in the signature now have just `Sound`, e.g. `AudioEmitterComponent.AttachSound`
-
-
-### UI
-
-- Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically
-- Properties of type `Sprite` have been changed to properties of type `ISpriteProvider`
-
-# Known Issues
-
-- Sometimes duplicate contacts are detected by the physics engine
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue
 
