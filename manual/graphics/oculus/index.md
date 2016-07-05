@@ -45,6 +45,7 @@ Next, open the project in Visual Studio and add a new source code file in the Ga
 > **Note**
 >
 >You must manually add reference to SharpDX and SharpDX.Direct3D11 in the Game project. You can find those assemblies in the Xenko SDK folder (Under the folder where you installed Xenko, by default for example: C:\Program Files\Silicon Studio\Xenko\GamePackages\Xenko.1.6.6-beta\Bin\Windows-Direct3D11\).**
+
 ```
 using System;
 using System.Threading.Tasks;
