@@ -80,6 +80,7 @@
 #### [Template](graphics/effects-and-shaders/shading-language/template.md)
 #### [Automatic Shader Stage Input/Output](graphics/effects-and-shaders/shading-language/automatic-shader-stage-input-output.md)
 #### [Shader stages](graphics/effects-and-shaders/shading-language/shader-stages.md)
+## [Oculus Rift experimental support](graphics/oculus/index.md)
 ## [HOWTOs](graphics/howtos/index.md)
 ### [How do I setup a HDR pipeline with posteffects?](graphics/howtos/how-do-i-setup-a-hdr-pipeline-with-posteffects.md)
 # [UI](ui/index.md)
@@ -117,3 +118,5 @@
 # [Physics](physics/index.md)
 ## [Colliders Creation](physics/colliders-creation.md)
 ## [Colliders Manipulation](physics/colliders-manipulation.md)
+# [Platforms](platforms/index.md)
+## [Linux](platforms/linux/index.md)
