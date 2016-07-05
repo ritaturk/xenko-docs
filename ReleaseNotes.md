@@ -86,6 +86,11 @@ Release date: 2016/07/01
 
 ## How To Upgrade
 
+### UIComponent
+
+- `VirtualResolution` property has been renamed to `Resolution`
+- `VirtualResolutionMode` property has been renamed to `ResolutionStretch`
+
 ### ISpriteProvider
 
 The properties of type `Sprite` have been changed to properties of type `ISpriteProvider`. Currently two implementations of `ISpriteProvider` are available:
