@@ -152,3 +152,40 @@ The gravity force ignores most properties like offset and inheritance, and only 
 | Gravitational Acceleration | The gravity force vector which defines the acceleration for all affected particles. The default value matches the average gravity on Earth, but it's editable.          |
 
 
+## Direction from Speed
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+Direction from Speed doesn't have any properties and simply updates the particle's direction to match its speed. It uses the difference between the positions of the particle from the last frame and it is not directly dependant on velocity. This means even if the particle's own velocity is 0 and it's only moved by external forces, Direction from Speed will resolve correctly.
+
+Direction isn't normalized vector and changed its magnitude to match the delta distance. It overwrites any previous Direction parameters, such as from an Initializer.
+
+## Color Animation
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+Color animation updates the particle's Color field by sampling a curve over the particle's normalized lifetime (0 to 1). You can set a secondary curve in which case the particles will have slightly varied colors.
+
+Color animation overwrites any previous Color parameters, such as Initial Color.
+
+The curve values are currently given as Vector4, corresponding to RGBA with standard values between 0 and 1. Values above 1 are valid for RGB only (not Alpha) and can be used for HDR rendering.
+
+## Rotation Animation
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+This is strictly a single axis rotation, used for billboarded particles!
+
+Rotation animation updates the particle's Rotation field by sampling a curve over the particle's normalized lifetime (0 to 1). You can set a secondary curve in which case the particles will have slightly varied rotations.
+
+Rotation animation overwrites any previous Rotation parameters, such as Initial Rotation. If you need additive kind of animation check if the Shape Builder supports it (found in the Shape Builder's properties). Additive animations are not preserved in particle fields and do not persist, but can be applied in addition to any fields the particles already have.
+
+## Size Animation
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+This is strictly an uniform size!
+
+Size animation updates the particle's Size field by sampling a curve over the particle's normalized lifetime (0 to 1). You can set a secondary curve in which case the particles will have slightly varied sizes.
+
+Size animation overwrites any previous Size parameters, such as Initial Size. If you need additive kind of animation check if the Shape Builder supports it (found in the Shape Builder's properties). Additive animations are not preserved in particle fields and do not persist, but can be applied in addition to any fields the particles already have.

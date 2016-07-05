@@ -114,6 +114,7 @@
 ## [Particles Tutorials](particles/particles-tutorials/index.md)
 ### [Ribbons](particles/particles-tutorials/particles-tutorials-ribbons/index.md)
 ### [Inheritance](particles/particles-tutorials/particles-tutorials-inheritance/index.md)
+### [Lasers and Lightnings](particles/particles-tutorials/particles-tutorials-lasers/index.md)
 # [Physics](physics/index.md)
 ## [Colliders Creation](physics/colliders-creation.md)
 ## [Colliders Manipulation](physics/colliders-manipulation.md)

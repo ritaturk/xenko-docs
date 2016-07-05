@@ -38,6 +38,11 @@ th, td {
   .article, #search-results {
     margin-top: 30px !important;
   }
+  }
+  
+  .article, #search-results {
+    margin-top: 30px !important;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
