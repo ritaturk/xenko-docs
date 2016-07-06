@@ -26,7 +26,7 @@ sudo apt-get install libsdl2-dev
 To render font, we use the [FreeType](https://www.freetype.org/) library. The minimum required version is 2.6 and can be installed via:
 
 ```
-sudo apt-get install libfreetype6
+sudo apt-get install libfreetype6-dev
 ```
 
 ##Mono
