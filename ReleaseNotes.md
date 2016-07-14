@@ -286,6 +286,8 @@ Release date: 2016/07/09
 - Fix a serialization issue with scenes that are using prefabs
 - Fix a potential crash that could occur when navigating through the selection history
 - Fix border thickness in UI did not take opacity into account
+- Fix copy of glslangValidator
+- Fix depth-stencil state of GameProfilingSystem
 
 ## Version 1.7.3-Beta
 
