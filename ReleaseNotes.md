@@ -268,3 +268,36 @@ Release date: 2016/07/04
 - zlib1.dll was missing and preventing to use SDF fonts
 - Fix the rotation over time updater for particle systems
 - Fix the camera preview that wasn't properly handling when adding or removing the camera component
+
+## Version 1.7.2-Beta
+
+Release date: 2016/07/09
+
+### Enhancements
+
+- Error messages added when fonts fail to load.
+- Add new identification scheme for Linux deployement
+- Slightly faster initialization of projects in the Game Studio
+
+### Issues fixed
+
+- Fix issue making compute curve properties display improperly in the Game Studio.
+- Fix upgrade of assets that had SourceKeepSideBySide set to true
+- Fix a serialization issue with scenes that are using prefabs
+- Fix a potential crash that could occur when navigating through the selection history
+- Fix border thickness in UI did not take opacity into account
+
+## Version 1.7.3-Beta
+
+Release date: 2016/07/16
+
+### Enhancements
+
+- Prevent unidentified exception to occur when the camera is not set in the graphics compositor 
+
+### Issues fixed
+
+- Fix the property grid that was malfunctioning after certain types of operation
+- Fix updates from prefab that were sometimes not propagated to the instances of this prefab
+- Fix thumbnails of source code asset that were not properly generated sometimes
+- DDS now properly set header flags when saving cubemaps
