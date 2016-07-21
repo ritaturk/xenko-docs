@@ -303,3 +303,29 @@ Release date: 2016/07/16
 - Fix updates from prefab that were sometimes not propagated to the instances of this prefab
 - Fix thumbnails of source code asset that were not properly generated sometimes
 - DDS now properly set header flags when saving cubemaps
+
+## Version 1.7.4-Beta
+
+- Hotfix release (critical crash in editor)
+
+## Version 1.7.5-Beta
+
+Release date: 2016/07/21
+
+### New features
+
+- Effects can now be compiled directly by the runtime without needing an attached developer computer with Connection Router. This is still quite slow (and will be optimized later), but at least it solves many problem caused by the previous workflow. You can still go back to the previous mode in the "package properties" (right-click on the package in solution explorer), and setting the "Remote Compiler"
+
+### Enhancements
+
+- Faster startup time (serialization code is initialized and JIT-ed more lazily)
+- Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)
+
+### Bugfixes
+
+- Some fonts were not working properly with the new Signed Distance Field feature ([#436](https://github.com/SiliconStudio/xenko/issues/436))
+- Green and blue channels were inverted in the color curve editor
+
+# Known issues
+
+- Linux Mono has some troubles with the new effect compiler. Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
