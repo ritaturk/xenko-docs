@@ -321,6 +321,22 @@ Release date: 2016/07/21
 - Some fonts were not working properly with the new Signed Distance Field feature ([#436](https://github.com/SiliconStudio/xenko/issues/436))
 - Green and blue channels were inverted in the color curve editor
 
+## Version 1.7.5-Beta
+
+Release date: 2016/07/22
+
+### New fatures
+
+- In the Sprite component, you can now choose the sampler between linear, point (nearest) and anisotropic ([#409](https://github.com/SiliconStudio/xenko/issues/409))
+
+### Issues fixed
+
+- Default SpriteBatch and others precompiled shaders were missing integer precision, resulting shader links error on iOS
+- Particles: Ribbons geometry can now be split, useful to emit multiple separate groups of particles
+- D3D11: Check if QueryInterface of DebugDevice actually worked (sometimes it doesn't, i.e. when using RenderDoc)
+- Various fixes for additive animation
+- Fixed wrong exception text in AudioLayer initialization
+
 # Known Issues
 
 - Sometimes duplicate contacts are detected by the physics engine.
