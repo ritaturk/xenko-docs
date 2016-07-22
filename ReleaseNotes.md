@@ -170,11 +170,6 @@ Lastly, you no longer have to register (`AddListener`/`RemoveListener`) `AudioLi
 - Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically
 - Properties of type `Sprite` have been changed to properties of type `ISpriteProvider`
 
-# Known Issues
-
-- Sometimes duplicate contacts are detected by the physics engine
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue
-
 # Changelog
 
 ## Version 1.7.0-Beta
@@ -321,11 +316,13 @@ Release date: 2016/07/21
 - Faster startup time (serialization code is initialized and JIT-ed more lazily)
 - Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)
 
-### Bugfixes
+### Issues fixed
 
 - Some fonts were not working properly with the new Signed Distance Field feature ([#436](https://github.com/SiliconStudio/xenko/issues/436))
 - Green and blue channels were inverted in the color curve editor
 
-# Known issues
+# Known Issues
 
-- Linux Mono has some troubles with the new effect compiler. Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
+- Sometimes duplicate contacts are detected by the physics engine.
+- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
+- Linux Mono has some troubles with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
