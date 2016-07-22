@@ -321,7 +321,7 @@ Release date: 2016/07/21
 - Some fonts were not working properly with the new Signed Distance Field feature ([#436](https://github.com/SiliconStudio/xenko/issues/436))
 - Green and blue channels were inverted in the color curve editor
 
-## Version 1.7.5-Beta
+## Version 1.7.6-Beta
 
 Release date: 2016/07/22
 
