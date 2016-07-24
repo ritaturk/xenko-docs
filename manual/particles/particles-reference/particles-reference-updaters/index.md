@@ -33,7 +33,7 @@ A collider is an updater which changes the particle's position and velocity when
 
 | Property              | Description                                                                                                                      |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------              |
-| Shape                 | The shape against which the particles will collide, which can be shpere, cylinder, box or a torus.                               |
+| Shape                 | The shape against which the particles will collide, which can be sphere, cylinder, box or a torus.                               |
 | Is hollow             | If unchecked, the shape is solid and the particles will bounce off it, staying outside. If checked, the shape is hollow, like a container, and the particles will be restricted to the inside volume only.                |
 | Kill Particles        | If checked, the particles will be killed immediately when they first collide with the shape.                                     |
 | Restitution           | The coefficient of restitution is the speed the particle retains in comparison to its speed before the collision. In this updater we use restitution as a *vertical only* speed. It doesn't affect the speed along the surface.                    |
@@ -50,11 +50,11 @@ The force field is defined by a bounding shape and several force vectors which o
 
 ![media/particles-reference-updaters-1.png](media/particles-reference-updaters-1.png) 
 
- 
+ 
 
 | Property              | Description                                                                                                                      |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------              |
-| Shape                 | The bounding shape which can be shpere, cylinder, box or a torus.                                                                |
+| Shape                 | The bounding shape which can be sphere, cylinder, box or a torus.                                                                |
 | Falloff               | The falloff is a simple linear function which dictates the intensity of the force applied on particles. It is based on the particle's distance from its center. Strength inside is how much of the magnitude should apply when the particle is within *falloff start* distance from the center. Strength outside is how much of the magnitude should apply when the particle more than *falloff end* away from the center. Both values are relative to the bounding shape's sizes and values in-between are interpolated between the two magnitudes. Values in the center can still be 0, making the force only work *outside* the bounding shape.                                    |
 | Energy Conservation   | What part of the force energy should be conserved by the particles. Energy which is conserved is stored as particle velocity and results in gradually increasing speed. Energy which is not conserved directly applies to the particle's position and is lost when the force vanishes.                   |
 | Directed Force        | Vector force which moves the particle along the field's central axis (normally upwards)                                          |
@@ -69,9 +69,9 @@ The falloff is the changes in the forces' strength based on the distance pf the 
 
 The falloff is a function of the relative distance, where distance of 0 is the center, 1 is the shape's boundaries, and more 1 means the particle is outside the shape.
 
-Particles closer than falloff start will always be afected with the coefficient Strength Inside.
+Particles closer than falloff start will always be affected with the coefficient Strength Inside.
 
-Particles farther than falloff end will always be afected with the coefficient Strength Outside.
+Particles farther than falloff end will always be affected with the coefficient Strength Outside.
 
 Coefficient for particles in between changes linearly as shown below:
 
@@ -87,7 +87,7 @@ For example, if the bounding shape is a sphere with a radius 10m, particles with
 
 <sub>Image license: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>, sphere image from the <a href="https://commons.wikimedia.org/wiki/File:Sphere_wireframe_10deg_6r.svg">"Sphere wireframe" work</a> by <a href="https://commons.wikimedia.org/wiki/User:Geek3">Geek3</a> under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a></sub>
 
-When the bounding shape is a shpere, the falloff distance is based on the radial distance of the particle from the sphere's center. If the sphere is scaled to an ellipsoid, this distance is also scaled. The distance is relative to the radius, with 1.0 being the sphere's surface.
+When the bounding shape is a sphere, the falloff distance is based on the radial distance of the particle from the sphere's center. If the sphere is scaled to an ellipsoid, this distance is also scaled. The distance is relative to the radius, with 1.0 being the sphere's surface.
 
 The directed force vector is parallel to the sphere's local Y axis.
 
@@ -141,7 +141,7 @@ While the math is a little complicated, using the torus force field is not, and 
 
 The gravity updater is a very simplified force which affects all particles regardless of their position, with a constant force vector which doesn't scale or rotate.
 
-It's eidtable so that it can be used in games with different scales and behavior.
+It's editable so that it can be used in games with different scales and behavior.
 
 ![media/particles-reference-updaters-4.png](media/particles-reference-updaters-4.png) 
 
@@ -152,3 +152,40 @@ The gravity force ignores most properties like offset and inheritance, and only 
 | Gravitational Acceleration | The gravity force vector which defines the acceleration for all affected particles. The default value matches the average gravity on Earth, but it's editable.          |
 
 
+## Direction from Speed
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+Direction from Speed doesn't have any properties and simply updates the particle's direction to match its speed. It uses the difference between the positions of the particle from the last frame and it is not directly dependant on velocity. This means even if the particle's own velocity is 0 and it's only moved by external forces, Direction from Speed will resolve correctly.
+
+Direction isn't normalized vector and changed its magnitude to match the delta distance. It overwrites any previous Direction parameters, such as from an Initializer.
+
+## Color Animation
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+Color animation updates the particle's Color field by sampling a curve over the particle's normalized lifetime (0 to 1). You can set a secondary curve in which case the particles will have slightly varied colors.
+
+Color animation overwrites any previous Color parameters, such as Initial Color.
+
+The curve values are currently given as Vector4, corresponding to RGBA with standard values between 0 and 1. Values above 1 are valid for RGB only (not Alpha) and can be used for HDR rendering.
+
+## Rotation Animation
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+This is strictly a single axis rotation, used for billboarded particles!
+
+Rotation animation updates the particle's Rotation field by sampling a curve over the particle's normalized lifetime (0 to 1). You can set a secondary curve in which case the particles will have slightly varied rotations.
+
+Rotation animation overwrites any previous Rotation parameters, such as Initial Rotation. If you need additive kind of animation check if the Shape Builder supports it (found in the Shape Builder's properties). Additive animations are not preserved in particle fields and do not persist, but can be applied in addition to any fields the particles already have.
+
+## Size Animation
+
+This is a post-updater, meaning it resolves after updaters which are not post-updaters, even if they appear later in the list.
+
+This is strictly an uniform size!
+
+Size animation updates the particle's Size field by sampling a curve over the particle's normalized lifetime (0 to 1). You can set a secondary curve in which case the particles will have slightly varied sizes.
+
+Size animation overwrites any previous Size parameters, such as Initial Size. If you need additive kind of animation check if the Shape Builder supports it (found in the Shape Builder's properties). Additive animations are not preserved in particle fields and do not persist, but can be applied in addition to any fields the particles already have.

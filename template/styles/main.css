@@ -67,7 +67,7 @@ th, td img{
     display: none !important;
   }
   
-  .article, #search-results {
+  .article {
     margin-top: 30px !important;
   }
 }

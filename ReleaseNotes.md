@@ -1,276 +1,344 @@
-# Version 1.6-beta - Highlights
+# Highlights
 
-## Prefabs
+## Rendering
 
-Prefabs allow you to assemble entities into building blocks and easily reuse them in any of your scenes. Changes to your prefabs will be reflected on all instances (as long as properties are not overridden).
+### Forward+
 
-We even took the concept one step further to empower our users, by having prefabs within prefabs, as well as the possibility to use only part of a prefab when you instantiate it. And of course, removing or rearranging a few entities won’t break your prefab synchronization!
+Xenko now features [Practical Clustered Shading](http://www.humus.name/Articles/PracticalClusteredShading.pdf), a technique similar to Forward+ rendering.
 
-<img src="http://doc.xenko.com/1.6/images/ReleaseNotes-1.6/prefabs.gif" align="center" />
+It allows you to use many point and spot lights at the same time.
+You will gain more control over the lighting of your scene by adding lights wherever they are needed.
+It also works with transparent objects out of the box, just like ordinary forward rendering does.
 
-## Archetypes
+[![Hundreds of lights](media/ReleaseNotes-1.7/launcher_lights.jpg)](https://www.youtube.com/watch?v=QWZqNT9xD5Q "Hundreds of lights")
 
-You can now use any asset as an archetype for another asset. When you change a property of the archetype, the new value will be automatically propagated to all the derived assets, unless you specifically override them. Archetypes can be used with most asset types.
+If your game requires Direct3D10+ (or equivalent OpenGL), this will be the default setting - no changes needed! As a bonus, you'll see a decrease in compilation times and the number of shader permutations.
 
-<img src="http://doc.xenko.com/1.6/images/ReleaseNotes-1.6/assset-templating.gif" align="center" />
+We also took this opportunity to rewrite most of our lighting code for improved performance and extensibility.
 
-## Particles
+### Vulkan
 
-You can now create and edit particle systems directly in the Xenko Game Studio. Particles are deeply integrated in the game engine and leverage the powerful effect system and its high level of customization.
+[Vulkan](https://www.khronos.org/vulkan/) joins our happy family of graphics platforms!
+Experimental support has also been added for Windows and Linux. Android will follow soon.
 
-While there are still several features on the roadmap, the current implementation is sufficient for most games. The ability to customize almost all aspects of the particle engine allows you to add features tailored to your game’s specific needs.
+![Vulkan](media/ReleaseNotes-1.7/Vulkan.png)
 
-<img src="http://doc.xenko.com/1.6/images/ReleaseNotes-1.6/particle1.gif" align="center" />
+Together with Direct3D12 and the recent overhaul of our rendering pipeline, this is another step toward preparing Xenko for the next generation of graphics. Stay tuned for performance improvements and hard numbers in the near future.
 
-Feel free to visit our [particle documentation](http://doc.xenko.com/1.6/manual/particles/index.html).
+Try running your project on Vulkan by selecting it as the **Preferred Graphics Platform** in the **Rendering Settings** of your **Game Settings** asset.
 
-### Features
+## GameStudio Improvements
 
-The particle engine supports many features out of the box:
+### Simplified Asset Creation
 
-- Render particles as different shapes like billboards, 3D oriented quads or your own custom implementation
-- Powerful force fields which offer more control than simple attractors and repulsors
-- Collisions
-- Animated attributes such as size, color, rotation
-- Flipbooks, UV animation and support for the Xenko Shading Language
-- Ribbons and trails renderers added to the engine. Check out our [tutorial](http://doc.xenko.com/1.6/manual/particles/particles-tutorials/particles-tutorials-ribbons/index.html) for more details.
+The workflow to create assets has been simplified! The new menu for asset creation contains multiple templates for each type of asset. You can now import assets from files more directly. With Xenko's efficient search function, creating assets should be faster and easier than ever!
 
-### Modular system
+![New add asset menu](media/ReleaseNotes-1.7/NewAddAsset.png)
 
-All aspects of particle systems are broken down into individuals modules like spawners, initializers and updaters, and each of these modules is easily tweakable and customizable. Check out the samples and the Xenko documentation for a detailed walkthrough.
+### Camera Preview
 
-### Curve Editor
+We've updated GameStudio's camera preview to now display only the camera currently selected. It also now displays the borders and the camera's name making it easier to see the camera and it's settings.
 
-The Game Studio now also comes with a built-in curve editor. For now only the particle engine uses curve animation. In the future, it will also power our property animation system and our storyboard system.
+![Camera preview](media/ReleaseNotes-1.7/CameraPreview.png)
 
-<img src="http://doc.xenko.com/1.6/images/ReleaseNotes-1.6/particle2.gif" align="center" />
+### Drag & Drop Assets into the Property Grid
 
-## New Graphics Engine
+So far, you could drag & drop assets into your scene or the tree view.
 
-Most of our graphics pipeline, both low-, medium- and high-level, has been almost completely rewritten, and should be ready for the future.
+New in this release, components can now be added to entities just by dragging & dropping matching assets into the property grid.
 
-The low-level API has been changed to more closely resemble DirectX 12 and Vulkan. For a list of breaking changes, please see below.
+![Drag & Drop into the Property Grid](media/ReleaseNotes-1.7/dragdrop_propertyview.gif)
 
-The high-level pipeline has been completely reworked, to achieve the following goals, most of which we will tackle in the upcoming releases:
+### Drag & Drop scripts
 
-- Introduce a clean and extensible architecture to easily build new graphics features on (hoping to soon add a Forward+ renderer, IBL lightprobes, RLR, etc.)
-- New medium-level layer: lightweight RenderFeature, RenderStage, RenderObject, etc.
-- Easy for users to write small customizations (by implementing RenderFeatures)
-- Allow multi-threading of all parts of the pipeline
-- Make optimal use of next-gen graphics APIs
-- Reduce the amount of "magic" done by the effect system to increase performance
-- Minimize work by taking better advantage of different update frequencies (PerView, PerMaterial, PerLighting, etc.)
-- Take advantage of new API (first class support for Pipeline State Objects, Descriptor Sets, etc.)
+You can also drag & drop scripts directly into the scene, tree view and property view:
 
-Stay tuned for technical details and performance evaluation in the near future!
+![Drag & Drop into the Property Grid](media/ReleaseNotes-1.7/dragdrop_scripts.gif)
 
-## Direct3D 12
+## Linux
 
-Direct3D 12 has been added as a new build target. While still experimental, it already supports all parts of our rendering pipeline.
+Linux users rejoice! Linux is now a supported platform of Xenko among Windows, Android, iOS, and more! All you need is a PC running Linux Ubuntu 16.04 x64 or equivalent with a video card supporting OpenGL 4.2 or Vulkan 1.0. Mono or .NET Core (which need to be installed separately) will be powering your game.
 
-You can try it by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
+In order to use the **Linux** platform, check **Linux** from the list of platforms in the GameStudio then compile.
 
-## Better OpenGL support
+![Select Platforms Dialog](media/ReleaseNotes-1.7/linux2.png)
 
-Our OpenGL renderer has been improved and should behave much better (shadows, PBR, etc.). Also, we now deliver OpenGL and OpenGL ES on Windows as build targets.
+Deployment to a remote Linux box is done via SSH when running your project from GameStudio.
 
-You can also try them by changing the ‘Preferred Graphics Platform’ in the ‘Rendering Settings’ of your ‘Game Settings’ asset.
+![Platform Selector](media/ReleaseNotes-1.7/Platform_selector.png)
 
-## Scripts are now components
+To know more about our Linux support, read the [Linux documentation](manual/platforms/linux/index.md)
 
-So far, there could only be one component per type on an Entity. This was quite cumbersome, especially for scripts, which had to be stored inside the `ScriptComponent.Scripts` list. It also resulted in many special cases to make them work in the editor (i.e. references between scripts, assembly reloading, etc.).
+## Audio
 
-Now multiple components of a type are allowed. This affects scripts and physics components, and can be used for custom components for which more than one instance is sensible.
+We've rewritten our Audio engine! 
+While most changes are internal, the public API has improved, and we are still working to make it great!
 
-We hope this makes your life easier!
+The `SoundEffect` and `SoundMusic` classes have been consolidated into `Sound`, also `SoundEffectInstance` is now `SoundInstance`. Sound formats are now converted using [FFmpeg](https://ffmpeg.org/). Because of these updates, the range of supported formats has also improved.
 
+Under the hood, the [CELT](http://celt-codec.org/) codec (part of [Opus](https://www.opus-codec.org/)) is now being used. We're delighted to say that performance has since skyrocketed! Music can now be mixed and crossfaded while streaming and decompressing directly from disk.
 
-## Event system
+Xenko's API now builds on OpenAL for Linux/macOS/iOS, on OpenSLES for Android and on XAudio2 for Windows platforms.
 
-We added a simple event system that will allow your script to easily communicate with each other.
-Check out the `EventKey<>` and `EventReceiver<>` classes.
-You can create an EventKey from your sender scripts and consume events using `EventReceiver` from other scripts.
+# How To Upgrade
 
-## Game Settings overrides
+This section explains how to migrate a project from version 1.6.x to version 1.7.x.
 
-The Game Settings asset has been improved: You can now have different settings depending on the platform or GPU.
+## UIComponent
 
-For example, you might want to set different off-screen resolutions for your game on Android depending on the GPU model. Or you could use one of our new Direct3D12, OpenGL or OpenGL ES renderers on Windows.
+- `VirtualResolution` property has been renamed to `Resolution`
+- `VirtualResolutionMode` property has been renamed to `ResolutionStretch`
 
-# Version 1.6.2-beta
+## ISpriteProvider
 
-Release date: 2016/04/04
+The properties of type `Sprite` have been changed to properties of type `ISpriteProvider`. Currently two implementations of `ISpriteProvider` are available:
+* `SpriteFromSheet` for use with a `SpriteSheet` (i.e. a collection of `Sprite`)
+* `SpriteFromTexture` for use with a single `Texture`
 
-## Issues fixed
+To upgrade where a single Sprite was previously used cast the assignment with the following (`SpriteFromTexture` provides a convenient explicit converter from `Sprite`).
 
-### Game Studio
-- The Sprite editor was not properly working anymore due to a regression in 1.6.1-beta
-- Referencing an entity inside its own script was crashing the Game Studio
-- Fix a concurrency issue that could make the Game Studio crash occasionally
-- Tooltip with no text were displayed above some properties
+```
+var button = new Button
+{
+  PressedImage = (SpriteFromTexture)new Sprite(Content.Load<Texture>("ImageButtonPressed"))
+}
+```
 
-### Graphics
+To upgrade where a sprite from a SpriteSheet was previously used:
+Create a new `SpriteFromSheet` and provide a reference to the `SpriteSheet` instance and the corresponding frame index.
 
-- Fix a potential issue in the lighting code
+```
+var button = new Button
+{
+  PressedImage = new SpriteFromSheet
+  {
+    Sheet = sprites,
+    CurrentFrame = sprites.FindImageIndex("ButtonPressed")
+  }
+}
+```
 
-# Version 1.6.1-beta
+For convenience, we provide a helper method which does exactly the same: `SpriteFromSheet.Create(sprites, "ButtonPressed")`.
 
-Release date: 2016/03/30
+To change the `CurrentFrame` (which now only exists in `SpriteFromSheet`), a cast is required:
 
-## Enhancements
+```
+var provider = Entity.Get<SpriteComponent>().SpriteProvider as SpriteFromSheet;
+if (provider != null)
+  provider.CurrentFrame = SomeIndex;
+```
 
-### Particles
+## SoundEffect (Instance) and SoundMusic to Sound(Instance)
 
-- Ribbons and trails renderers added to the engine. Check out our [tutorial](http://doc.xenko.com/1.6/manual/particles/particles-tutorials/particles-tutorials-ribbons/index.html) for more details.
+Kindly note that there is no more `SoundMusic`. Instead, you should now use `Sound` and `SoundInstance` for any kind of sound.
 
-### Game Studio
+From the game studio, you can now set compression ratio, spatialization or you have the option to stream the sound directly from disk.
+You now need a `SoundInstance` to play a sound, the helper methods in `Sound` were convenient but a bit confusing.
+You can still assign `Sound` assets to Scripts like before:
 
-- Add statistics on asset usage in the references panel.
-- Edition of a string key (e.g. animation key name) can be done inline.
-- Improve performance of the curve editor.
-- To ease edition of a vector compute curve in the curve editor, other components are also displayed.
-- Textboxes in property grid display their content in tooltip.
-- Allow to see the property of an asset while it is open in its editor
-- Samples and new games now have resource files in an "Resources" folder instead of "RawAssets"
+```
+public Sound MySound;
+private SoundInstance mySoundInstance;
+```
+Also note, the way you use them has changed.
+Before:
+
+```
+MySound.Play();
+```
+After:
+
+```
+mySoundInstance = MySound.CreateInstance();
+mySoundInstance.Play();
+```
+
+Lastly, you no longer have to register (`AddListener`/`RemoveListener`) `AudioListenerComponent` from your code anymore.
+
+# Breaking changes
+
+## Audio
+
+- Removed `DistanceScale` and `DopplerScale` since internally not all the backends were supporting it ( we might add it back in the future as a global factor if needed)
+- `DynamicSoundEffectInstance` has been removed, you can now use `DynamicSoundSource` to stream your custom sound sources. Works on every platform
+- Removed `SoundEffect`, `SoundEffectInstance`, `SoundMusic`. Please use `Sound` and `SoundInstance` instead of all kind of sounds
+- Removed `AddListener`, `RemoveListener` from `AudioSystem`
+- Many Methods that had `SoundEffect` or `SoundMusic` in the signature now have just `Sound`, e.g. `AudioEmitterComponent.AttachSound`
+
+## UI
+
+- Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically
+- Properties of type `Sprite` have been changed to properties of type `ISpriteProvider`
+
+# Changelog
+
+## Version 1.7.0-Beta
+
+Release date: 2016/07/01
+
+### Enhancements
+
+#### General
+
+- Debug locals were not displaying properly in some cases due to Mono.Cecil processing. This has been fixed and should now work properly.
+
+#### Audio
+
+- You can now change the Pitch/Speed of a `SoundInstance`!
+- Added master volume control in `AudioEngine` (`AudioEngine.MasterVolume`)
+
+#### Particles
+
+This release brings many improvements to the particle engine.
+
+- You can now create lightning and laser effects thanks to the arc position initializers and ability to follow two target points
+- Child particles support and attribute inheritance added, allowing one emitter's particles to follow and inherit attributes from another emitter's particles
+- Child ribbon particle samples showing how to create wispy particle trails in a single effect
+- Soft edge particles allow you to smooth out the billboard edges when rendering particles close to opaque objects
+- More spawner types, including Burst, On-Hit and a few other conditional ones
+- Color updater now uses a Color4 curve
+
+#### Game Studio
+
+- The selection history feature has been rewritten. It is now shared by all editors and the asset view. The buttons to navigate the selection history have been moved to the property grid
+- The re-import operation has been replaced by a "Update asset from source" which directly applies the changes from the source to the asset without displaying the import UI. (For skeleton, model, sprite studio assets...)
+- Dropping a large number of files to import is now a lot faster
+- The notification when the sources of some assets have changed is now a dialog message instead of a notification popup on the corner of the screen
+- You can now drag & drop assets directly into the Property Grid to create components
+
+#### UI
+
+- Signed Distance Field sprite font asset type added, allowing users to create sharp, scalable fonts which can be easily resized at runtime at no extra cost
+- Added support for EditText on Windows 10, Windows Store and Windows Phone platforms
+
+#### Assets
+
+- The internal YAML format of the SceneAsset and PrefabAsset has been updated to be more generic regarding asset composite.
+- The tracking of source files for assets, in particular, has been improved and fixed
+
+#### Graphics
+
+- Added a way to keep a constrained aspect ratio in Render Camera, and automatically have pillarboxes/letterboxes when there are screens with different ratios
+- Added the concept of "LogicalGroup" to easily do partial updates of constant buffer and resources
+- Improved OpenGL support: texture buffers, more texture formats, debug markers, etc.
+- Unified OpenTK: we now compile our own OpenTK for Windows, iOS and Android. This means our OpenGL renderer code is now unified and should have fewer bugs
+- Camera is not affected anymore by scaling
+- Implemented the required changes to allow rendering to Oculus Rift devices. Also, we have already begun including the native interfaces in the API for the Oculus Rift SDK. Check this [link](http://doc.xenko.com/latest/manual/graphics/oculus/index.html) for more info.
+
+#### Input
+
+- Added a helper method `InputManager.TransformPosition` to allow you to transform input events in the case of multiple viewports.
+
+### Issues fixed
+
+#### Game Studio
+
+- Undo/redo has been fixed in a lot of scenarios
+- GameStudio layout issue when creating a new game with the same name as a previous (but deleted) game
+- Issue preventing a newly created script to be marked as saved
+- Regression introduced in 1.6.5 where the texture region of a sprite was not correctly resized when the source image had been changed
+- Compilation errors occurring when creating a project with a dash character in its name. Additional checks have been added to replace illegal characters in script names
+- Multiple cases where modifications of a prefab were not propagated to the instances of this prefab
+- Preserve Nodes that were working improperly
+- Tracking changes in source images in the sprite sheet editor
+- Some scenarios where thumbnails never complete to build
+- Improved name collision handling when creating/importing assets
+- Issues with the selection of entities in the scene editor (some entities remained selected from the property grid point of view even after being unselected from the tree view)
+- Some windowing issues when multiple modal dialogs are displayed in the wrong order, preventing to close them
+- Several crashes occurring when modifying properties of entities
+- Drag'n'drop issues where it was sometimes hard to drag the correct asset or entity
  
-### Physics
+## Version 1.7.1-Beta
 
-- Added proper entity offset in CharacterComponent Teleport.
-- Added utility method Ended in Collision, to avoid writing do/while constructs.
+Release date: 2016/07/04
 
-## Issues fixed
+### Enhancements
 
-### Game Studio
+- Increase the speed when manipulating entities that comes from prefabs
 
-- Fix memory leaks happening when opening and closing scene editor repeatedly
-- Fix frequent crash on GameStudio startup because of a thread race condition when setting up file systems
-- Fix issue on tree views that sometimes selected the same item more that once, resulting in incorrect property display on property grid.
-- Fix issue with maximized window size on multi-monitor system ([#361](https://github.com/SiliconStudio/xenko/issues/361))
-- Fix resetting value of a rotation in the property grid.
-- Fix save, undo and redo not working on curve editor when the window is in floating mode (was already working when docked).
-- Fix zooming issue in curve editor.
-- Fix particles not being rendered in thumbnails and asset preview.
-- Fix shaders not being reloaded dynamically on shader code file save.
-- Fix disappearing Physics Gizmos
-- Fix missing settings in NewGame
-- Restored different color for trigger collider shapes in debug renderer.
-- Fix a crash occurring when closing a scene or prefab editor, or closing the GameStudio itself
-- Fix an issue when modifying members of structures in the property grid
-- Prevent the property grid to be cleared when switching from a selection of asset to a selection of entities
+### Issues fixed
 
-### Graphics
+- Fix scene editor not refreshing when changing properties of a component that was added just before
+- Fix audio engine creation on Windows 7 32bits
+- zlib1.dll was missing and preventing to use SDF fonts
+- Fix the rotation over time updater for particle systems
+- Fix the camera preview that wasn't properly handling when adding or removing the camera component
 
-- Structs can now be used in shaders. Switched light shaders to use them
-- Improve `EffectReflection` API
-- Fix many issues related to fullscreen switching and alt-enter is now fully supported.
-- Fix reflection of array texture types ([#369](https://github.com/SiliconStudio/xenko/issues/369))
-- Add missing CommandList.SetBlendFactor() method
+## Version 1.7.2-Beta
 
-### Engine
+Release date: 2016/07/09
 
-- Various memory leaks fixed
-- Remote effect compilation was broken when done with another computer the game was built with
-- Used effect notification was failing when shaders were using custom permutation keys
-- Fix Entity.EnableAll ignored argument, you can now use this method properly.
+### Enhancements
 
-### Physics
+- Error messages added when fonts fail to load.
+- Add new identification scheme for Linux deployement
+- Slightly faster initialization of projects in the Game Studio
 
-- Fixed CylinderColliderShape issues with Scaling.
+### Issues fixed
 
-# Version 1.6.0-beta
+- Fix issue making compute curve properties display improperly in the Game Studio.
+- Fix upgrade of assets that had SourceKeepSideBySide set to true
+- Fix a serialization issue with scenes that are using prefabs
+- Fix a potential crash that could occur when navigating through the selection history
+- Fix border thickness in UI did not take opacity into account
+- Fix copy of glslangValidator
+- Fix depth-stencil state of GameProfilingSystem
 
-Release date: 2016/03/15
+## Version 1.7.3-Beta
 
-## How to upgrade
+Release date: 2016/07/16
 
-Simply open your older projects with new version of GameStudio. It will probably fail to compile your assemblies since API changed little bit, but you can still continue.
+### Enhancements
 
-Then, save back your project in GameStudio. You now can open your project with VIsual Studio and try to fix your game code with latest API changes.
+- Prevent unidentified exception to occur when the camera is not set in the graphics compositor 
 
-## Enhancements
+### Issues fixed
 
-### Assets
+- Fix the property grid that was malfunctioning after certain types of operation
+- Fix updates from prefab that were sometimes not propagated to the instances of this prefab
+- Fix thumbnails of source code asset that were not properly generated sometimes
+- DDS now properly set header flags when saving cubemaps
 
-### Engine
+## Version 1.7.4-Beta
 
-- The KeyedSortedList now implements ICollection<T> instead of IList<T> annd is more consistent with CollectionDescriptor.
+- Hotfix release (critical crash in editor)
 
-### Game Studio
+## Version 1.7.5-Beta
 
-- Support for prefabs, add a prefab editor
-- Create derived assets and support property inheritance
-- Added a curve editor to edit animation curve
-- Layout is saved on a solution basis. When reloading a project, Game Studio will try to present the same layout and reopen all assets that were edited (this include scenes, prefabs and sprite sheets).
-- Add a confirmation dialog to enable saving newly created script automatically.
-- Add a confirmation dialog to enable reloading modified assemblies automatically. This is necessary for the script to appear in the list of components that can be added to an entity.
-- Physics gizmos are shown by default.
-- Preview of an asset can be displayed even if this asset is being edited.
-- Project folder can be opened in Windows explorer from the launcher with right-clicking.
-- Properties of derived asset are displayed in gray, unless they are overridden. In this case they are displayed in bold.
-- Rework scene initialization in the scene editor: the scene will be available almost immediately, and content (model, etc.) will be streamed in as soon as they are (asynchronously) loaded.
-- The entity fixup wizard has been removed. Now when an entity is deleted, all references to it or to one of its component is reset to null.
-- The gizmo and camera menus are now displayed in the top-right corner.
-- Entity hierarchy is synchronized (automatically expanded) with the selected entity in the scene.
+Release date: 2016/07/21
 
-### Graphics
+### New features
 
-- New D3D12 renderer (experimental)
-- New Windows OpenGL and OpenGL ES renderers (experimental)
-- Rewrote most of the low- and high-level graphics code to have better performance and better take advantage of new graphics APIs
-- Properly separated rendering in 4 phases: Collect (collect & cull), Extract (copy data from scene to renderers), Prepare (prepare cbuffer data & heavy computations), Draw (emit draw calls)
-- Introduced concepts of RenderFeature (entry point for extending rendering), RenderStage (effect selection), RenderView and RenderObject
-- Render sorting logic can now be customized (culling will be soon too)
-- Low-level API has been rewritten to match better new API: CommandList, DescriptorSet, DescriptorHeap, PipelineState, etc.
-- Introduced concept of RendererProcessor which are responsible for pushing component data to rendering
-- Many other changes, that will soon be covered in documentation
+- Effects can now be compiled directly by the runtime without needing an attached developer computer with Connection Router. This is still quite slow (and will be optimized later), but at least it solves many problem caused by the previous workflow. You can still go back to the previous mode in the "package properties" (right-click on the package in solution explorer), and setting the "Remote Compiler"
 
-### Input
+### Enhancements
 
-- Improved GamePad event management to resemble the keyboard API.
+- Faster startup time (serialization code is initialized and JIT-ed more lazily)
+- Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)
 
-## Issues fixed
+### Issues fixed
 
-### Game Studio
+- Some fonts were not working properly with the new Signed Distance Field feature ([#436](https://github.com/SiliconStudio/xenko/issues/436))
+- Green and blue channels were inverted in the color curve editor
 
-- Fix Scripts thumbnail generation during project launch.
-- Fix Settings window sharing columns layout with property grid ([#341](https://github.com/SiliconStudio/xenko/issues/341)).
-- Fix default IDE settings incorrectly reset to null.
-- Fix a crash occurring when duplicating an object quickly after selecting it.
-- Fix an issue with the message box incorrectly resizing.
-- Tooltips are always visible even if the control (menu, button…) is disabled.
-- Fix several issues with undo/redo.
-- Fix drag and drop of components into properties
-- Sometimes the Game Studio was not asking to save when closed with some changes in a project.
-- Fix some issues related to folders in scene editor.
-- Redo does not re-open asset picker anymore.
+## Version 1.7.6-Beta
 
-### Graphics
+Release date: 2016/07/22
 
-- Tangents generation was invalid and might have resulted in various swaps
+### New fatures
 
-### Physics
+- In the Sprite component, you can now choose the sampler between linear, point (nearest) and anisotropic ([#409](https://github.com/SiliconStudio/xenko/issues/409))
 
-- Improved collision detection reliability
-- Fixed collision filter groups
-- Fixed enable/disable component behavior
+### Issues fixed
 
-## Breaking changes
-
-### Graphics
-
-- Extending rendering is quite different from before. Please check SpaceEscape and other samples to have a better idea while we prepare documentation.
-- Many methods of GraphicsDevice have been split off into a second class: CommandList
-- Added objects such as PipelineState, DescriptorSet and DescriptorHeap to better match new graphics API
-- Game now contains a GraphicsContext which gives access to the current CommandList
-- GraphicsDevice.BackBuffer and GraphicsDevice.DepthStencilBuffer are gone. Use GraphicsDevice.Presenter.BackBuffer to access the actual backbuffer.
-- In addition to RenderContext, there is now a RenderDrawContext. Some methods have been changed to expect the latter.
-- ParameterCollection has been rewritten to be much more memory and performance efficient (data is now stored directly in buffers).
-- Transferring values from application to shaders and computation of effect permutations used to be done through various inefficient ParameterCollection overrides. This should now be done using RenderFeatures.
-
-### Physics
-
-- PhysicsComponents are now split into 3 different types (Rigidbody, Character, StaticCollider) which can be added multiple times in an entity.
-- PhysicsElements are now removed, including the Collider, Rigidbody and Character classes. They now are merged into the new components.
+- Default SpriteBatch and others precompiled shaders were missing integer precision, resulting shader links error on iOS
+- Particles: Ribbons geometry can now be split, useful to emit multiple separate groups of particles
+- D3D11: Check if QueryInterface of DebugDevice actually worked (sometimes it doesn't, i.e. when using RenderDoc)
+- Various fixes for additive animation
+- Fixed wrong exception text in AudioLayer initialization
 
 # Known Issues
-- Sometimes duplicate contacts are detected by the physics engine
+
+- Sometimes duplicate contacts are detected by the physics engine.
+- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
+- Linux Mono has some troubles with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.

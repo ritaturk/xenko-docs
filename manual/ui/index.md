@@ -8,7 +8,7 @@ Many of the usual components and containers are all here, and on top of that it 
 
 > **Note**
 > 
-> It doesn't support Xaml-like format and editor yet, but please be assured that's in our roadmap.    
+> It doesn't support editor yet, but please be assured that's in our roadmap.    
 
 # Controls
 
@@ -22,9 +22,9 @@ Many components are available out of the box, including:
   - @'SiliconStudio.Xenko.UI.Controls.ContentDecorator'
 - @'SiliconStudio.Xenko.UI.Controls.TextBlock'
   - @'SiliconStudio.Xenko.UI.Controls.ScrollingText'
-- @'SiliconStudio.Xenko.UI.Controls.EditText' (displays soft keyboard on mobile devices)
+- @'SiliconStudio.Xenko.UI.Controls.EditText' (displays soft keyboard on mobile devices)
 - @'SiliconStudio.Xenko.UI.Panels.Panel'
-  - @'SiliconStudio.Xenko.UI.Panels.StackPanel' (supports virtualization)
+  - @'SiliconStudio.Xenko.UI.Panels.StackPanel' (supports virtualization)
   - @'SiliconStudio.Xenko.UI.Panels.Grid'
   - @'SiliconStudio.Xenko.UI.Panels.UniformGrid'
   - @'SiliconStudio.Xenko.UI.Panels.Canvas'
@@ -33,11 +33,11 @@ Many components are available out of the box, including:
 
 And of course, you can create your own!
 
-A class diagram is available [here](controls/uielement-class-diagram.md).
+A class diagram is available [here](controls/uielement-class-diagram.md).
 
 # Examples
 
-You can find a complete example by creating a new project in [Xenko Studio](../xenko-studio/index.md) and selecting the **GameMenu** template.
+You can find a complete example by creating a new project in [Xenko Studio](../xenko-studio/index.md) and selecting the **GameMenu** template.
 
 ![media/ui-1.png](media/ui-1.png) 
 
