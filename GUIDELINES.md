@@ -52,9 +52,9 @@ we ask you to follow to the below Guidelines when writing.
 Note: The following directions are just guidelines not rules. 
 If they are not appropriate to your specific use-case, feel free to ignore them.
 
-# <a name="Style"> Writing Style
+# <a name="Style"> Writing Style </a>
 
-## <a name="Tone"> Conversation Tone
+## <a name="Tone"> Conversation Tone </a>
 
 > **Appropriate**
 > 
@@ -74,7 +74,7 @@ If they are not appropriate to your specific use-case, feel free to ignore them.
 The first paragraph above follows our recommendation conversational style. The second
 is a more academic style. You see the difference immediately. 
 
-##  <a name="Person"> Second Person
+##  <a name="Person"> Second Person </a>
 
 > **Appropriate**
 > 
@@ -92,7 +92,7 @@ is a more academic style. You see the difference immediately.
 The first paragrah follows our recommended style. The second uses 3rd person. 
 Please write in second person. You probably found that much easier to read.
 
-##  <a name="ActiveVoice"> Active Voice
+##  <a name="ActiveVoice"> Active Voice </a>
 
 Write your articles in active voice. Active voice means that the subject of 
 the sentence performs the action (verb) of that sentence. It contrasts with passive voice, 
@@ -112,25 +112,25 @@ The first sentence uses active voice. The second sentence was written in passive
 
 We recommend active voice because it is more readable. Passive voice can be more difficult to read.
 
-##  <a name="SimpleVocabulary"> Simple Vocabulary
+##  <a name="SimpleVocabulary"> Simple Vocabulary </a>
 
 Keep in mind that Xenko users are not all native English speaker when you write your articles.
 Your audience is international and they probably don't have the vocabulary you have.
 
 As a general rule try to *target a 5th grade reading level" when you write.
 
-#  <a name="PagesContent"> Pages Content
+#  <a name="PagesContent"> Pages Content </a>
 
-This documentation is composed of different types of pages. The expected content and layout
+Xenko documentation is composed of different types of pages. The expected content and layout
 of the page directly depends on the type. Before writing your article, start by identifying the 
 type of page you are targeting, then follow the below templates for content and layout.
 
 In addition to content and layout guidelines based on the type of page, we finish this section 
 with a few generic recommendations for the content.
 
-##  <a name="GettingStarted"> Getting Started Pages
+##  <a name="GettingStarted"> Getting Started Pages </a>
 
-Getting Started articles aim at guiding new Xenko user in its first steps. Pages should cover only basic 
+Getting Started articles aim at guiding new Xenko users in their first steps. Pages should cover only basic 
 and essential topics and don't need to explain concepts in depth. Only one subject should be covered per page.
 
 Pages targeting any kind of audience should be inserted directly under the Getting Started root page.
@@ -140,11 +140,12 @@ Started pages order should follow the progress of a Xenko new user.
 A Getting Started page consists of the following content:
 
 1. The page title (the subject dealt in the page).
-2. A paragraph explaining what the reader will learn in the page.
-3. The knowledge needed to be able to follow the instructions (if any).
-4. An image or a video illustrating what the user will learn (if possible).
-5. A table of content summarizing the main steps of the page (if applicable).
-6. The sub-titles and the content of the page.
+2. A short introduction explaining why the topic matters and the purposes of the feature or tool.
+3. A short paragraph explaining what the reader will concretely learn to do in the page.
+4. The knowledge needed to be able to follow the instructions (if any).
+5. An image or a video illustrating what the user will learn (if possible).
+6. A table of content summarizing the main steps of the page (if applicable).
+7. The sub-titles and the content of the page.
 
 Example:
 ```
@@ -164,7 +165,7 @@ This page assume that you are already able to import assets in Xenko.
 ...
 ```
 
-##  <a name="Tutorials"> Tutorials Pages
+##  <a name="Tutorials"> Tutorials Pages </a>
 
 The purpose of tutorials is to accompany users through the creation of a game component. Each tutorial 
 starts from a initial state (most of the time an empty game) and ends to a final state (mini game or 
@@ -199,15 +200,17 @@ This tutorial assumes that you know how to create a new project and import asset
 A tutorial page consists of the following content:
 
 1. The page title (realization of the page) 
-2. A description of what will be realized in the current page and what will be learned. 
-3. One or several pictures illustrating the realization of the page (if possible).
-4. A table of content summarizing the main steps of the page. 
+2. Links to previous and next tutorial pages
+3. A description of what will be realized in the current page and what will be learned. 
+4. One or several pictures illustrating the realization of the page (if possible).
 5. The sub-steps and the content of the page.
-6. A link to the previous and to the next page of the tutorial.
+6. A sentence introducing the next page of the tutorial including a link.
 
 Example
 ```
 # Add UI to the game
+
+Previous [Use Physics Collisions](UsePhysicsCollision.md) | Next [Deploy your game](DeployYourGame.md)
 
 In this page you will add a simple UI to your game. You will learn how to create a UI using Xenko default 
 design and make it interact with the gameplay.
@@ -222,14 +225,15 @@ design and make it interact with the gameplay.
 
 ...
 
-Previous [Use Physics Collisions](UsePhysicsCollision.md) | Next [Deploy your game](DeployYourGame.md)
+In the next section we will see how you can [Deploy your game](DeployYourGame.md).
+
 ```
 
 Note: as much as possible each instruction should be surrounded by two images showing the state 
 before and after the instruction. Image before the first instruction should correspond to the initial
 state and last image should correspond to the final state.
 
-##  <a name="Samples"> Samples Pages
+##  <a name="Samples"> Samples Pages </a>
 
 For each Xenko sample, a documentation sample page should be created. The purpose of this page is to explain
 what is shown in the sample, what is the difficulty and what can be learned.
@@ -263,7 +267,7 @@ about this have a look  that [Lighting Models](../Graphics/LightingModels.md).
 
 ```
 
-##  <a name="SectionHeader"> Section Header Pages
+##  <a name="SectionHeader"> Section Header Pages </a>
 
 Section headers are the top pages of the folders of the documentation. The goal of header pages is 
 to introduce the section topic, to expose the best features of the engine and to provide quick links 
@@ -299,7 +303,7 @@ physic law on objects, etc.
 |![OverviewImage](media/Overview.png)|![Physic Shapes](media/PhysicShapes.png)|![Simulation](media/Simulation.png)
 ```
 
-##  <a name="Overview"> Overview Pages
+##  <a name="Overview"> Overview Pages </a>
 
 The purpose of overview pages is to give a full insight of a wide topic to the reader. It should 
 expose and explain the main concepts from a high level point of view.
@@ -340,7 +344,7 @@ for the physic calculations.
 
 ```
 
-##  <a name="Reference"> Reference Pages
+##  <a name="Reference"> Reference Pages </a>
 
 Reference pages explain in depth a specific concept, feature, or element.
 
@@ -374,7 +378,7 @@ of your element.
 ```
 
 
-##  <a name="Howtos"> HOWTO Pages
+##  <a name="Howtos"> HOWTO Pages </a>
 
 The goal of the HOWTO pages is to provide a list of clear instructions to realize a specific thing. 
 Each HOWTO page should be independent from other HOWTO pages and guide the reader towards 
@@ -413,7 +417,7 @@ Note: as much as possible each instruction should be surrounded by two images sh
 before and after the instruction. Image before the first instruction should correspond to the initial
 state and last image should correspond to the final state.
 
-##  <a name="LongExplanations"> Avoid Long Explanations
+##  <a name="LongExplanations"> Avoid Long Explanations </a>
 
 Long explanation are quite indigestible for the reader. Most of the time, he simply skips them.
 If not, he is not able to remember the essential point of the explanation. 
@@ -427,13 +431,13 @@ where the text should correspond more to instructions than explanations about Xe
 In those pages, you should either try to explain the concept in a simple lline or replace the
 explanation by a reference to the page dedicated to the concept.
 
-##  <a name="LongArticles"> Avoid Long Articles
+##  <a name="LongArticles"> Avoid Long Articles </a>
 
 Try to avoid writing articles longer than 8 to 10 screen heights. Long articles discourage users 
 to start reading and make the navigation harder. If the content of your article cannot fit in
 the above number of screen, split your article into several articles.
 
-##  <a name="UseImagesVideos"> Use Images & Videos
+##  <a name="UseImagesVideos"> Use Images & Videos </a>
 
 As much as possible add images or videos to accompany your explanation. This helps the reader a lot.
 
@@ -443,7 +447,7 @@ because videos were too heavy is over. Nowadays Internet connections and compres
 are good enough to include short videos in the documentation and increase even more the ease of
 understanding.
 
-#  <a name="FilesStructure"> Pages & Files Structure
+#  <a name="FilesStructure"> Pages & Files Structure </a>
 
 The hierarchy of the documentation pages is specified in the [manual/toc.md](manual/toc.md) file
 and is independent from the file hierarchy of this repository. For example, a single article can
@@ -454,7 +458,7 @@ repository files.
 To add a new page in the documentation, just add a new entry at the appropriate place in the 
 [toc](manual/toc.md) file.
 
-## <a name="PagesHierarchy"> Pages Hierarchy
+## <a name="PagesHierarchy"> Pages Hierarchy </a>
 
 As a general rule, we want to avoid deep hierarchies for the ease of navigation. 
 As much as possible we recommend you not to go beyond 4 levels of depth.
@@ -483,7 +487,7 @@ Page naming conventions:
 * No prefix need to be added before the Overview and HOWTO pages ('Overview' and not 'Graphic Overview')
 * The name of the pages under the HOWTO folder should start with a verb and describe an objective ('Activate post-effects to your game', etc)
 
-## <a name="PagesOrder"> Pages Order
+## <a name="PagesOrder"> Pages Order </a>
 
 Documentation pages don't necessary need to be alphabetically ordered.
 
@@ -493,7 +497,7 @@ As a general rule, order your new pages as follow:
 2. Most important subjects first (Overview pages -> References pages -> HOWTOs) 
 3. When pages have the same importance, order them alphabetically.
 
-## <a name="FilesHierarchy"> Files Hierarchy
+## <a name="FilesHierarchy"> Files Hierarchy </a>
 
 Article files should be organized into folders. As much as possible we will try to respect the
 same hierarchy as the documentation. Files corresponding to section header should be included at the 
@@ -522,7 +526,7 @@ Hierarchy example:
 >     - code
 >       - post-effect-code.cs
 
-## <a name="FilesName"> Files Name
+## <a name="FilesName"> Files Name </a>
 
 File names should consist only of lower case letters and dashes to separate the words.
 Also as much as possible, you should give explicit and human-understandable names to files.
@@ -543,13 +547,13 @@ Examples:
 > PointLightFile1.md  
 > Img20150902.png  
 
-#  <a name="Formatting"> Formatting
-##  <a name="Definitions"> Definitions
+#  <a name="Formatting"> Formatting </a>
+##  <a name="Definitions"> Definitions </a>
 
 When you write your articles, you should be careful of properly defining all the terms that can be
 unknown by the user. We can basically distinguish the following three types of terms.
 
-###  <a name="XenkoTerms"> Xenko Terms
+###  <a name="XenkoTerms"> Xenko Terms </a>
 
 These terms are specific to Xenko and absolutely need to be defined. These are terms like Asset, Material,
 Live Scripting, Graphic Compositor, etc. You should create a dedicated page for each term defining and 
@@ -578,7 +582,7 @@ HowtoSetDiffuse.md:
 1. Select the @material use by your model. (<- first reference of the document) 
 ```
 
-###  <a name="VideoGameTerms"> Video Game Terms
+###  <a name="VideoGameTerms"> Video Game Terms </a>
 
 These terms are specific to the game and graphic industry. They can either be defined and explained in
 the Xenko documentation if it makes sense (Example: Forward rendering, etc.) in which case we will follow
@@ -605,14 +609,14 @@ The more complex shaders are blablabla (<- second reference no link)
 Note: If the expected audience for the page is 'Intermediate' or 'Advanced' basic term definitions can 
 be skipped. 
 
-###  <a name="JobTerms"> Job Specific Terms
+###  <a name="JobTerms"> Job Specific Terms </a>
 
 These terms are specific to a role in the development process. They need to be defined only the when 
 the expected audience for the page is wider than just the specific job. Most of the time we will 
 define them by using an link to an external page and adding a tooltip definition. Only the first occurrence
 of the page has to be defined.
 
-##  <a name="References"> Page References
+##  <a name="References"> Page References </a>
 
 We recommend you to add cross reference to other documentation pages as much as possible to ease
 to reader navigation. 
@@ -638,7 +642,7 @@ For more information about sprite color, read @material.
 
 Note: for more information please refer to DocFX documentation.
 
-## <a name="RelatedTopics"> Related Topics
+## <a name="RelatedTopics"> Related Topics </a>
 
 To encourage readers to learn more about a topic and also to ease their navigation,
 we recommand you as much as possible to add links to related topics at the bottom of your articles.
@@ -648,7 +652,7 @@ For this use the AAA(TODO Virgile) style, as follow:
 > TODO Virgile  
 > TODO Virgile  
 
-## <a name="APIReferences"> API References
+## <a name="APIReferences"> API References </a>
 
 A link to the API reference should be added for EACH mention of an API class, interface, function, etc.
 To avoid to add too many times the same links, you can replace the function name by an action verb.
@@ -662,7 +666,7 @@ Use the @'SiliconStudio.Xenko.Audio.SoundEffectInstance.Play' function start pla
 Playing an ongoing sound has no effect. Playing a stop sound restart the sound from beginning.
 ```
 
-## <a name="CodeReference"> Code References
+## <a name="CodeReference"> Code References </a>
 
 Code samples should be as small as possible, well commented and be properly formatted when included. 
 There are two different ways to insert some code in your article. First add the code content directly in your 
@@ -682,14 +686,14 @@ Example:
 > \[\!code-csharp\[Main\]\(index.cs?start=5&end=9\)\]  // add line 5 to 9 of file index.cs
 
 
-## <a name="Placeholders"> Placeholders
+## <a name="Placeholders"> Placeholders </a>
 
 For ease of understanding make all placeholders start by 'My'.
 
 Example:
 > Content.Load("MyFolder/MyAsset");
 
-## <a name="Labels"> Labels
+## <a name="Labels"> Labels </a>
 
 Labels are optional info displayed at the top of the page so that readers can quickly understand intended target audience.
 
@@ -714,7 +718,7 @@ Lorem ipsum...
 ```
 
 
-## <a name="Remarks"> Remarks
+## <a name="Remarks"> Remarks </a>
 
 Whenever you have explanations that is not necessary for the understanding of a concept but that
 can be very useful in application, add them as remarks so that the reader knows that it is extra information
@@ -735,7 +739,7 @@ Available types:
 
 Note that current styling will be improved.
 
-## <a name="PlatformRemarks"> Platform Specific Remarks
+## <a name="PlatformRemarks"> Platform Specific Remarks </a>
 
 Whenever there are explanations or remarks that are specific to a given platform, you should
 use the following formatting style to show the reader that the section can be skipped depending on 
@@ -743,7 +747,7 @@ the targeted platform.
 
 TODO Virgile styling Android/iOS + example
 
-## <a name="Notices"> Notices
+## <a name="Notices"> Notices </a>
 
 Whenever your page is missing some key information or is out-of-date, you should  
 add a notice at the top of the page to inform the reader and add the 🔧 character the page title.
@@ -769,7 +773,7 @@ Example 2D
 TODO virgile do we really want to have the same formating as the notes? shoudn't we have a 
 specific formating for this?
 
-## <a name="Media"> Media
+## <a name="Media"> Media </a>
 
 You can add media content to your articles using the following syntax:
 > \!\[Graphics Compositor Diagram\]\(media/graphics-compositor.png\)  
@@ -790,20 +794,20 @@ this because at some point we may decide to change the width of our documentatio
 a way to zoom into images. The only exceptions to this are heavy videos. We would like you to create 
 a lighter version of the videos to speed up the loading of the pages.
 
-### <a name="Videos"> Videos
+### <a name="Videos"> Videos </a>
 
 As much as possible, we ask you to use the **MP4** format and the **H265** encryption for videos.
 
 Recommenced software to edit the videos is Adobe Premiere.
 
-### <a name="Images"> Images
+### <a name="Images"> Images </a>
 
 We ask you to use the **JPEG** format for heavy high resolution images to reduce the load time and
 and the **PNG** format all the others (probably most of the images).
 
 For the source files, we prefer the following formats: Photoshop, GIMP, Paint.net.
 
-### <a name="Diagrams"> Diagrams
+### <a name="Diagrams"> Diagrams </a>
 
 Diagrams should be rendered as **PNG** or vector image. Since the documentation system automatically 
 adjust the size of the images be careful that all text that you include in diagrams are still
@@ -815,13 +819,13 @@ TODO virgile
 
 Diagrams can be created with Visio or standard image editing tools.
 
-## <a name="Tables"> Tables
+## <a name="Tables"> Tables </a>
 
 You can add tables to the documentation by following the markdown syntax. Tables can improve the
 way information is display but sometimes does not properly scale down. So be sure to try your page
 on small resolution screen like Smartphones before submitting your page.
 
-## <a name="Lists"> Lists
+## <a name="Lists"> Lists </a>
 
 When possible prefer a short phrase than a full sentence for each item of a list. This simplifies and
 speeds the reading up. Start each item with a capital letter.
@@ -841,7 +845,7 @@ Example.
 > - You should capitalize the first letter of each item.
 > - You should write short phrases
 
-## <a name="Headers"> Headers
+## <a name="Headers"> Headers </a>
 
 The markdown '#' mark should be used to make headers. Only top title of the page should have the h1 style.
 All other titles are sub-titles and should be formated into h2+.
@@ -854,7 +858,7 @@ Example
 > \### This is another sub-sub-folder  
 > \## This is another sub-folder  
 
-## <a name="Capitalization"> Letter Capitalization
+## <a name="Capitalization"> Letter Capitalization </a>
 
 When a title is close to a full sentence you should only capitalize first letter of first work.
 When a title is just composed of a few words (1 to 5) you should capitalize the few letter of each 
