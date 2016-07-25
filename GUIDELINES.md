@@ -1,3 +1,7 @@
+---
+breaks: false
+---
+
 # Guidelines
 
 Xenko users will be reading your articles to learn about the engine in their every day work. 
@@ -13,9 +17,7 @@ we ask you to follow to the below Guidelines when writing.
 * [Pages Content](#PagesContent)
   * [Getting Started Pages](#GettingStarted)
   * [Tutorials Pages](#Tutorials)
-  * [Samples Pages](#Samples)
   * [Section Header Pages](#SectionHeader)
-  * [Overview Pages](#Overview)
   * [Reference Pages](#Reference)
   * [HOWTO Pages](#Howtos)
   * [Avoid Long Explanations](#LongExplanations)
@@ -73,6 +75,8 @@ If they are not appropriate to your specific use-case, feel free to ignore them.
 
 The first paragraph above follows our recommendation conversational style. The second
 is a more academic style. You see the difference immediately. 
+
+TODO @Arthur: you should probably add example of inapropriate too friendly langage  here too like "You gonna see", "We'll see", etc
 
 ##  <a name="Person"> Second Person </a>
 
@@ -142,23 +146,17 @@ A Getting Started page consists of the following content:
 1. The page title (the subject dealt in the page).
 2. A short introduction explaining why the topic matters and the purposes of the feature or tool.
 3. A short paragraph explaining what the reader will concretely learn to do in the page.
-4. The knowledge needed to be able to follow the instructions (if any).
-5. An image or a video illustrating what the user will learn (if possible).
-6. A table of content summarizing the main steps of the page (if applicable).
-7. The sub-titles and the content of the page.
+4. An image or a video illustrating what the user will learn (if possible).
+5. The sub-titles and the content of the page.
 
 Example:
 ```
 # Design Scenes with Xenko.
 
-In this article you will learn how to create scenes from the editor in Xenko.
-This page assume that you are already able to import assets in Xenko.
+Scenes are an essential element of your game. They allow you to divide the content of your game into levels and modules.
+In this article you will learn how to create and populate scenes from the editor in Xenko.
 
 [Scene Image](media/scene.png)
-
-* [Drag and drop elements in your scene](#Drag and drop elements in your scene)
-* [Navigate in the scene editor](#Navigate in the scene editor)
-* [Adjust the position of your elements](#Adjust the position of your elements)
 
 ## Drag and drop elements in your scene
 
@@ -233,45 +231,10 @@ Note: as much as possible each instruction should be surrounded by two images sh
 before and after the instruction. Image before the first instruction should correspond to the initial
 state and last image should correspond to the final state.
 
-##  <a name="Samples"> Samples Pages </a>
-
-For each Xenko sample, a documentation sample page should be created. The purpose of this page is to explain
-what is shown in the sample, what is the difficulty and what can be learned.
-
-A sample page consists of the following content:
-
-1. The page title (name of the sample).
-2. A paragraph explaining what is shown in the sample and what can be learned.
-3. The knowledge needed to be able to understand this sample (if any). 
-4. One or several images of the samples (if possible).
-5. A table of content summarizing the different points of the sample (if needed).
-6. The sub-titles and the content of the page.
-
-Example:
-```
-# Material Sample
-
-This sample shows you how to create different types of material in Xenko. You will learn how to 
-create metallic, organic and layered and blended materials. 
-
-In order to fully understand this sample, you need to know standard lighting models. To learn more 
-about this have a look  that [Lighting Models](../Graphics/LightingModels.md).
-
-![Material Sample Image1](media/materialSample1.md)
-
-* [PBR Materials](# Physically Based Materials)
-* [Metallic Materials](# Metallic Materials)
-* [Organic Materials](# Organic Materials)
-
-...
-
-```
-
 ##  <a name="SectionHeader"> Section Header Pages </a>
 
 Section headers are the top pages of the folders of the documentation. The goal of header pages is 
-to introduce the section topic, to expose the best features of the engine and to provide quick links 
-to the main topics of the section.
+to introduce the section topic, to expose the best features of the engine and to provide an overview of the section.
 
 A header page consists of:
 
@@ -280,10 +243,9 @@ A header page consists of:
 3. A short introduction sentence explaining what is the section about.
 4. A paragraph exposing the main and best features of the engine on the topic.
 5. A short paragraph explaining what can be learned by reading this section. 
-6. Links to the section overview and the main topics of the section. For the main sections,
-one image per link illustrating the sub-topic will be added as a grid.
+6. An overview of the section giving a full insight of the topic (objectives, challenges, base concepts).
 
-Note: for sub-folder headers the section header page can be replaced by the overview page when appropriate.
+Note: for sub-folder headers only an overview or links to main subjects can be enough for a section header page.
 
 Example
 ```
@@ -291,7 +253,7 @@ Example
 
 ![Physic Section Image](media/PhysicSection.png)
 
-Physics allows you to make physic simulations in your game.
+Physics allows you to make physics simulations in your game.
 
 Xenko has a physic system fully integrated in its game studio. Its dedicated physic editor allows you to
 directly edit physic shapes of objects or to automatically generate them from the models. 
@@ -299,49 +261,19 @@ directly edit physic shapes of objects or to automatically generate them from th
 In this section you will learn how to simulate collisions between objects, add trigger regions, apply 
 physic law on objects, etc.
 
-|Overview| Physic Shapes| Simulation
-|![OverviewImage](media/Overview.png)|![Physic Shapes](media/PhysicShapes.png)|![Simulation](media/Simulation.png)
-```
-
-##  <a name="Overview"> Overview Pages </a>
-
-The purpose of overview pages is to give a full insight of a wide topic to the reader. It should 
-expose and explain the main concepts from a high level point of view.
-
-An overview page consists of:
-
-1. The Page title (Section name + Overview).
-2. A short paragraph explaining what is the topic or section about.
-3. A paragraph exposing the objectives, the challenges and the limitations (if applicable).
-4. An explanation of the main or base concept (if applicable)
-5. A paragraph listing the more specific solutions and corresponding concepts (if applicable)
-6. A table of content of the sub-topics of the page.
-7. The sub-topics with their content (if possible add an image after each sub-topic title).
-
-Example
-```
-Physics Overview
-
-This page introduces you the different ways to simulate physic interaction in your game.
+## Overview
 
 The goal of the physic engine is to provide ways to produce and automate actions on your game elements
 so that they seems to follow physic laws. Accurate physic simulations being very costly all physic behaviors
 have to be approximated. 
 
-To simplify the computation we use simplified physic shapes and different types of physic objects 
-for the physic calculations. 
-
-* Physic Shapes(# Physic Shapes)
-* Physic Object Types(# Physic Object Types)
-* Physic Constrains(# Physic Constrains)
-* Physic Forces(# Physic Forces)
-
 # Physic Shapes
 
 ![Physic Shapes Image](media/PhysicShapes.png)
-
 ...
 
+# Physic Object Types
+...
 ```
 
 ##  <a name="Reference"> Reference Pages </a>
@@ -351,11 +283,10 @@ Reference pages explain in depth a specific concept, feature, or element.
 A reference page consists of:
 
 1. The page title (name of the concept)
-2. The definition of the concept.
-3. The standard usages of the concept.
+2. The definition and explanation of the concept.
+3. The standard usages of the concept and a explaination why the topic matters.
 4. An image illustrating the concept (if possible)
-5. A table of content of the sub-topic of the page (if needed)
-6. The sub-topics with the content.
+6. The sub-topics with the content (functionalities, usages samples, etc)
 
 Example
 ```
@@ -368,13 +299,13 @@ of your element.
 
 ![Material Image](media/Material.png)
 
-* Object Geometry(# Object Geomatry) 
-* Object Shading(# Object Shading)
-* Layers(# Layers)
-
 1. Object Geometry
 
 ...
+
+2. Object Shading
+...
+
 ```
 
 
@@ -382,33 +313,33 @@ of your element.
 
 The goal of the HOWTO pages is to provide a list of clear instructions to realize a specific thing. 
 Each HOWTO page should be independent from other HOWTO pages and guide the reader towards 
-only one and single target. It should not define nor explain any concept.
+a single target. It should not define nor explain any concept.
 
 A HOWTO page consists of:
 
 1. The page title (phrase starting with a verb describing the target)
-2. The goal of the page and what the user will learn to doc-audience
-3. The knowledge needed to understand the instructions.
+2. The knowledge needed to understand the instructions.
+3. The goal of the page and what the user will learn to doc-audience
 4. An image of the final realization (if possible)
-5. A table of content of the main steps taken to reach the objective
-6. The main steps and their explanations and sub-instructions (add the step number in the sub-title)
+5. The main steps and their explanations and sub-instructions (add the step number in the sub-title)
 
 Example
 ```
 # Add particles inside our UI
 
-In this page you will learn how to attach particles to an UI element.
+Prerequisites: This page assumes that you know how to use particles and UI elements in general.
 
-This page assumes that you know how to use particles and UI elements in general.
+In this page you will learn how to attach particles to an UI element.
 
 ![Particles In UI Image](media/ParticlesInUI.png)
 
-1. Create your particle Effect(# Create your particle Effect)
-2. Create your UI(# Create your UI)
-3. Add a UI link component(# Add a UI link component)
-
 ## 1. Create your particle Effect.
+...
 
+## 2. Create your UI
+...
+
+## 3. Add a UI link component
 ...
 
 ```
@@ -426,7 +357,7 @@ To avoid this, try to never explain more than one concept in a simple paragraph.
 Try to keep your explanation short and simple and when possible add an image or a diagram 
 that corresponds to the concept next to your text.
 
-This guideline is even more important for Getting Started, Samples, Tutorials and HOWTO pages,
+This guideline is even more important for Getting Started, Tutorials and HOWTO pages,
 where the text should correspond more to instructions than explanations about Xenko concepts.
 In those pages, you should either try to explain the concept in a simple lline or replace the
 explanation by a reference to the page dedicated to the concept.
@@ -470,13 +401,7 @@ As much as possible we recommend you not to go beyond 4 levels of depth.
 > Tutorials
 >   - My 2D game
 >   - My 3D game
-> Samples
->   - Graphics
->     - Material sample
->   - Physics
->     - Raycasting sample
-> Section Header
->   - Overview
+> Engine
 >   - Topic
 >   - Sub-Category
 >     - Sub-Topic
@@ -484,7 +409,6 @@ As much as possible we recommend you not to go beyond 4 levels of depth.
 >     - Do something
 
 Page naming conventions:
-* No prefix need to be added before the Overview and HOWTO pages ('Overview' and not 'Graphic Overview')
 * The name of the pages under the HOWTO folder should start with a verb and describe an objective ('Activate post-effects to your game', etc)
 
 ## <a name="PagesOrder"> Pages Order </a>
@@ -502,7 +426,7 @@ As a general rule, order your new pages as follow:
 Article files should be organized into folders. As much as possible we will try to respect the
 same hierarchy as the documentation. Files corresponding to section header should be included at the 
 top of the folder having the same name and be named 'index.md'. Folder and file names should be
-composed of only lower case letters, words should be separated by dashes.
+composed of only **lower case letters, words should be separated by dashes**.
 
 Media files (images and videos) referenced in articles should be placed in a dedicated folder
 named 'media' and put next to the referencing articles.
@@ -528,7 +452,7 @@ Hierarchy example:
 
 ## <a name="FilesName"> Files Name </a>
 
-File names should consist only of lower case letters and dashes to separate the words.
+File names should consist only of **lower case letters** and **dashes to separate the words**.
 Also as much as possible, you should give explicit and human-understandable names to files.
 
 Our recommendations are the following:
@@ -555,50 +479,34 @@ unknown by the user. We can basically distinguish the following three types of t
 
 ###  <a name="XenkoTerms"> Xenko Terms </a>
 
-These terms are specific to Xenko and absolutely need to be defined. These are terms like Asset, Material,
-Live Scripting, Graphic Compositor, etc. You should create a dedicated page for each term defining and 
-explaining the concept. Add an uid to the page and link it at least every first occurrence of the word 
-in an article. In addition add a shorter version of the definition as metadata in the page. This will be 
-used later to create definition tooltips.
+These terms are specific to Xenko and absolutely need to be defined. These are terms like Asset,
+Live Scripting, Graphic Compositor, etc. You don't necessary need to create a dedicated page for each term. 
+You can define the term in the middle of a parent page if the concept is simple to explain. 
+Add the following tagg TODO virgile when we are done in editor doc. 
+Then link it at least every first occurrence of the word in an article. 
+In addition add a shorter version of the definition as metadata in the page.
+This will be used later to create definition tooltips.
 
 Example
+
 ```
-Material.md:
----
-uid: material
-Material: List of properties defining how to render an element.
----
-
-# Material
-
-A material can be considered as a list of properties defining how to render an sprite, particle system, or
-model.
-
-blablabla ...
-
-HowtoSetDiffuse.md:
-# HOWTO Set the diffuse of a model
-
-1. Select the @material use by your model. (<- first reference of the document) 
+TODO @virgile: update this
 ```
 
 ###  <a name="VideoGameTerms"> Video Game Terms </a>
 
-These terms are specific to the game and graphic industry. They can either be defined and explained in
-the Xenko documentation if it makes sense (Example: Forward rendering, etc.) in which case we will follow
-exactly the same rules as Xenko terms, or explanation can be passed to an external site (wikipedia, etc) 
-in which case we will just provide a short version of the definition for the tooltip and the link to
-the external website. Only the first occurrence of the page will be linked.
+These terms are specific to the game and graphic industry. 
+They should be briefly defined in one sentence in the Xenko documentation.
+If the topic is important for Xenko (e.g.: Forward rendering, etc.) we will elaborate more on the matter.
+If not a link to an external site (wikipedia, etc) can also be used.
+The brief definition will be used to build tooltip in the documentation and Game Studio. 
+Only the first occurrence of the page should be linked.
 
 Example
 ```
----
-Shader: block of code defining how to process and render a triangle. (<- inline definition)
----
+TODO @virgile
 
-# Rendering
-
-In Xenko you can choose between @forward-rendering and @deffered-rendering. (<-link to a dedicated page).
+In Xenko you can choose between @forward-rendering and @deffered-rendering. (<-link to a dedicated pages).
 
 Depending on the rendering model the [Shaders](http://wikipedia/shaders) are completely different. 
 (<- external reference)
@@ -612,8 +520,8 @@ be skipped.
 ###  <a name="JobTerms"> Job Specific Terms </a>
 
 These terms are specific to a role in the development process. They need to be defined only the when 
-the expected audience for the page is wider than just the specific job. Most of the time we will 
-define them by using an link to an external page and adding a tooltip definition. Only the first occurrence
+the expected audience for the page is wider than just the specific job or when the term is used in the Xenko API. Most of the time we will 
+define them by using a link to an external page and adding a tooltip definition. Only the first occurrence
 of the page has to be defined.
 
 ##  <a name="References"> Page References </a>
@@ -663,7 +571,7 @@ Adding a link to a reference API can be done the following way:
 Example:
 ```
 Use the @'SiliconStudio.Xenko.Audio.SoundEffectInstance.Play' function start playing a sound.
-Playing an ongoing sound has no effect. Playing a stop sound restart the sound from beginning.
+Playing an ongoing sound has no effect. Playing a stopped sound restart the sound from beginning.
 ```
 
 ## <a name="CodeReference"> Code References </a>
@@ -703,7 +611,8 @@ There are several kinds of labels:
 
 * Level (Beginner, Intermediate, Advanced) with `label-doc-level`
 * Audience (Artist, Programmer, Designer) with `label-doc-audience`
-* Platform (iOS, Android, etc...) with `label-doc-platform`
+* Platform (iOS, Android, etc.) with `label-doc-platform`
+* Version where the feature have been introduced (Xenko 2.1, etc.)with TODO vrigile
 
 Example:
 ```
@@ -761,7 +670,7 @@ Example 1
 > * sub-topic 2
 ```
 
-Example 2D
+Example 2
 ```
 > [!NOTE]
 >
@@ -798,7 +707,7 @@ a lighter version of the videos to speed up the loading of the pages.
 
 As much as possible, we ask you to use the **MP4** format and the **H265** encryption for videos.
 
-Recommenced software to edit the videos is Adobe Premiere.
+Recommenced software to edit the videos is Adobe After Effect.
 
 ### <a name="Images"> Images </a>
 
@@ -842,8 +751,8 @@ Example.
 > **Inappropriate**
 > 
 > How NOT to use lists:
-> - You should capitalize the first letter of each item.
-> - You should write short phrases
+> - you should capitalize the first letter of each item.
+> - you should not write long sentence that will reduce the benefit of using a bullet list.
 
 ## <a name="Headers"> Headers </a>
 
