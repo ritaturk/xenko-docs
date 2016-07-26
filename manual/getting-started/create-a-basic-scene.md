@@ -1,5 +1,9 @@
 # Create a basic scene
 
+*** Add tutorial how to create a basic scene: add object, add ligth, add camera ***
+
+*** Merge with Add entities to a scene ***
+
 You must create a [scene](xref:scene) to place various entities of your game on the scene. After that, you need to add or modify their properties in order to make them work the way you expect.
 
 In this page, you’ll learn how to create a basic scene in [Game Studio] (xref:game-studio).

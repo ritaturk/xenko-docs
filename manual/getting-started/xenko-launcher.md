@@ -1,8 +1,8 @@
 # Xenko launcher
 
-After you install Xenko, the first window that opens on your system is the [Xenko launcher](xref:xenko-launcher). The launcher is the starting point of Xenko. It allows you to manage and select the versions of Xenko.
+After you install Xenko, the first window that opens on your system is the [Xenko launcher](xref:xenko-launcher). The launcher lets you manage te different versions that have been installed on your system.
 
-In this page, you’ll learn the basics of Xenko launcher.
+This page will show you the basics of **Xenko launcher**.
 
 The following image displays the **Xenko launcher**.
 
@@ -22,15 +22,19 @@ You can start the currently displayed version of Game Studio by clicking the Sta
 
 ## Manage Xenko versions
 
-You can switch to another version of Xenko or update your current version of Xenko from the **Switch/update version** section. Xenko has major, minor, and bugs fix version types. The launcher allows you to choose the Xenko version because breaking changes (changes in API or features or behaviors of the game engine) may occur between versions and you may not necessarily want to update your game.
+You can switch to another version of Xenko or update your current version of Xenko from the **Switch/update version** section. The launcher also allows you to choose which Xenko version(s) you want to have installed on your machine. Versions might not be compatible with each other, and therefore the version of Xenko for which the project was developed for, should be installed. This allows for projects that have been developed with different versions to keep working, without the need to upgrade them to a newer version.
+
+>**Note:** It is possible to upgrade projects that have been developed for older versions of Xenko, however manual changes might be needed to get the project working for a newer version. **Be sure to make a backup of your project and all related files before upgrading.**
+
+Xenko version numbers consists of 3 numbers, separated by dots: Major.Minor.Build. Versions that contain _only_ bug fixes, only have a different Build number (The Major.Minor part is the same). We highly recommend you update your version to the version with the latest Build number might one be available. 
+  
+![Versions of Xenkko](media/xenko-launcher-various versions.png)
  
- ![Versions of Xenkko](media/xenko-launcher-various versions.png)
- 
- _Various versions of Xenko_
+_Various versions of Xenko_
  
 >**Note:** The bug fix version updates cannot be reverted.
 
-After the Xenko installation is over for all the available versions, click the required version. You can see the selected version on the Start button. Click the Start button. The respective version of Game Studio is launched.
+After the Xenko installation is completed for all the available versions, click the required version. You can see the selected version on the Start button. Click the Start button. The respective version of Game Studio is launched.
 
 In the **Switch/update version** section, you can:
 
@@ -38,13 +42,6 @@ In the **Switch/update version** section, you can:
  * Click the Download and Install button to install a Xenko version.
  * Click the Uninstall button to uninstall a Xenko version.
 
-## Other functionalities
-
- * The **Visual Studio plugin** provides the various useful features. 
- * You can open your recent Xenko [projects](xref:project) from the **Projects** section just by clicking the name of a project. Your recently opened Xenko project is always displayed at the top of this list.
- * You can access various Getting started topics of the Xenko Manual and news streams related to Xenko from the **Getting started** and **News** sections.
- * You can also easily connect with the various Xenko communities from the launcher.
-
-For more information about the various sections of the launcher, see [Work with Xenko launcher](/xenko-launcher/work-with-xenko-launcher.md).
+For more information about the various sections of the launcher, see [Work with Xenko launcher](/manual/xenko-launcher/working-with-xenko-launcher.md).
 
 Now, you’re ready to create your first project in Game Studio. For information on how to create a project, see [Create a project](create-project.md).

@@ -21,7 +21,7 @@ You can see the following gizmos on the Scene Editor:
 
 The Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png) changes the position of the selected entity. The following video shows how you can translate an entity along one axis, a plane, freely in 3D.
 
-<video controls poster="media/xenko-poster-image-640by480.png" height="480" width="640">
+<video controls autoplay height="480" width="640">
                 <source src="media/manage-entities-in-scene-translation-gizmo.mp4" type="video/mp4">
 </video>
 
@@ -31,7 +31,7 @@ _Video: Translate an entity_
 
 The Rotation gizmo ![Rotation gizmo](media/manage-entities-in-scene-rotation-gizmo.png) changes the orientation of the selected entity. The following video shows how you can rotate an entity along one axis.
 
-<video controls poster="media/xenko-poster-image-640by480.png" height="480" width="640">
+<video controls autoplay height="480" width="640">
                 <source src="media/manage-entities-in-scene-rotation-gizmo.mp4" type="video/mp4">
 </video>
 
@@ -41,7 +41,7 @@ _Video: Rotate an entity_
 
 The Scale gizmo ![Scale gizmo](media/manage-entities-in-scene-scale-gizmo.png) resizes the selected entity. The following video shows how you can scale an entity along one axis and along all three axes.
 
-<video controls poster="media/xenko-poster-image-640by480.png" height="480" width="640">
+<video controls autoplay height="480" width="640">
                 <source src="media/manage-entities-in-scene-scale-gizmo.mp4" type="video/mp4">
 </video>
 

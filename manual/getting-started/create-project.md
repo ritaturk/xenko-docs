@@ -12,11 +12,7 @@ To create a new game, first you have to open a **New/open project** window, whic
 
 To open a **New/open project** window, on the **Xenko launcher**, click the Start button.
 
-![Start button](media/create-project-start.png)
-
-_Start button of Xenko launcher_
-
->**Note:** Later, you can open the New/open project window from Game Studio as well by clicking File > New.
+>**Note:** You can open the New/open project window from Game Studio, by clicking File > New.
 
 The **New/open project** window opens. 
 
@@ -26,33 +22,32 @@ _New/open project window_
 
 ## Create a new project
 
-To create a new game from scratch, you need to Create a new project. With this, a new game is created with all the strict minimum elements that are needed for a game. 
+To create a new game from scratch, you need to Create a new project. With this, a new game is created with all the minimum elements that are needed for a game. 
 
 **To create a new game:**
 
  1. Open **New/open project** window, and then select **New Game**.
     
-	The right side of the **New/open project** window, displays a summary of the selected project along with a preview. 
-    >**Note:** You can type the name and location of your game in the respective fields. The solution name and location can be usually assumed by the application and need to be specified.
+	The right side of the **New/open project** window, displays a summary of the selected project along with a preview. In the bottom part of the window, the name and location of the project can be specified.
 
  2. Click **Select**.
     
 	The **Create a new game** window opens. This window helps you configure your new project.
     
-![create a new game](media/create-project-create-new-game.png)
+ ![create a new game](media/create-project-create-new-game.png)
 
  _Create a new game window_
 
- 3. Type a name that can be used for your code sources in the **Namespace** box.
- 4.	Select the platform that supports your game from the **Platforms** section. If your system does not have the requirements for a platform installed, a warning message is displayed.
+ 3. Enter a value for the **Namespace** you'd like to use, or leave unchanged if you're happy with the given suggestion.
+ 4.	Select the platform(s) you want to develop for from the **Platforms** section. If your development system does not have the required prerequisites installed for any of the selected platform, a warning message is displayed.
     >**Note:** To run your game on iOS and Android, you need to install [Xamarin](https://www.xamarin.com/studio) (free if you have Visual Studio).
 
- 5. Select the configurations for graphic API and colors from the **Rendering** section.
+ 5. Select the desired options from the **Rendering** section.
    
-    5.a. **Graphic API:** The graphics that you can use in your game  are dependent on the API that you select. For advanced graphic features, select the latest version of graphic API.
-    >**Note:** Some of the graphic cards do not support the latest APIs. For mobile devices, restrict the selection to profile 9_3 or profile 10_0.
+    5.a. **Graphics API:** The graphics that you can use in your game  are dependent on the API that you select. For advanced graphic features, select the latest version of the graphics APIs.
+    >**Note:** Some graphics cards do not support the latest APIs. For mobile devices, only DirectX 9.3 / OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
 
-	5.b. **Colors:** This defines the way color is computed in your game. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float values.  HDR enables you to have advanced and more realistic rendering in your game but is heavier and requires at least profile 10_0.
+	5.b. **High / low dynamic range (HDR / LDR):** This defines the way color is computed in your game. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. HDR enables you to have advanced and more realistic rendering in your game but is heavier and requires at least profile DirectX 10.0 / OpenGL ES 3.0.
  6. Select the desired orientation for your game in the **Orientation** section.
     >**Note:** For PC games, use landscape. Portrait is suitable for mobile-based games.
 
@@ -60,19 +55,20 @@ To create a new game from scratch, you need to Create a new project. With this, 
 
 A new game is created and opened in [Game Studio](xref:game-studio).
 
-## Create a new project from existing sample
+## Create a new project from an existing sample
 
 You may want to learn about a specific feature or you may want to create a game similar to the sample; Xenko provides two types of samples:
 
- * Feature specific basic example: To explore and learn about a specific feature.
- * Advanced and complete game: Two complete games to create similar games. 
+ * Feature specific basic samples: To explore and learn about a specific feature.
+ * Advanced and complete games: Two complete games to create similar games. 
 
-**To create a project using sample:**
+**To create a project using a sample:**
 
  1. Open the **New/open project** window.
     
-	The left panel of the window has an option Samples to open the required sample to be created. 
- 2. Select the sample. 
+ 2.	The left side of the window shows a tree of available project templates and samples. Navigate to New project > Samples
+ 
+ 2. Select the sample you'd like your project to be based on. 
     
 	The following is image displays selecting a game sample in **New/open project** window.
  
@@ -94,8 +90,4 @@ You may want to learn about a specific feature or you may want to create a game 
 
  5.	Click **OK**. 
 
-A new game is created and opened in the **Game Studio**.
-
->**Note:** An empty package can also be created to share assets and source code between projects. A package is a library of components, such as assets and scripts. A package is not an executable file like a game, but a container of files that can be shared among various projects along with its components.
-
-Your project is now ready. For more information on how to create a project in game studio, see [Game Studio](xenko-studio.md).
+A new game is created and opened in the **Game Studio**. Your project is now ready. For more information on how to continue to add content to your project in game studio, see [Game Studio](xenko-studio.md).

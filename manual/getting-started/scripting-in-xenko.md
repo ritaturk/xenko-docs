@@ -1,20 +1,28 @@
 # Scripting in Xenko
 
-In this page, you’ll learn how to use a [script](xref:scripting) in your game, types of scripts used in Xenko, and how to make the fields of your script appear in the Game Studio.
+In this page, you’ll learn how to use a [script](xref:scripting) in your game, types of scripts used in Xenko, and how to make the properties of your script appear in the Game Studio.
 
-In Xenko, you can create simple or complex games. It is the script that helps to arrange the events of the game in an order, respond to an input from a player, create effects to the graphics, control the movements and behavior of your [entities](xref:entity), and other actions.
+## Scripting and entities
 
-## Basics of scripting
+A script can be attached to one or more entities. Multiple scripts can also be attached to a single entity. If you attach a script to multiple entities, multiple instances of that script are created. This allows for the same script to have different values for its public properties. You'll learn more about this subject later in this chapter.
 
-A script is a small unit of code, which can be attached to an entity of a game. Scripts can be written for executing simple functionalities such as moving an object or for complex ones such as getting inputs from users and then recomputing the results for the objects on the screen. Without a script, your game is a static image.
+## Public Engine objects
 
-A script can be attached to one or more than one entity, or one or more scripts to a single entity. If you attach a script to multiple entities, multiple instances of that script are created. The multiple instances can be run with the help of priority values set. The priority values for scripts can be set in the **Priority grid** section of Game Studio.
+Scripts can access various Engine objects in Xenko. If you need to animate a graph using a script, the script must use an engine object called GraphicsDevice, which allows access to graphical effects.
 
-Now, you’ve created a script and attached it to an entity. Add that entity to the active scene, and press the **Play** button on the toolbar or press **F5** to execute your script.
-
-## Scripts and services
-
-Scripts can access various services in Xenko. If you need to animate a graph using a script, the script must use an engine service called Graphic Device, which contains all the graphical effects.
+```
+	public AudioSystem Audio { get; }
+	public ContentManager Content { get; }
+	public EffectSystem EffectSystem { get; }
+	public IGame Game { get; }
+	public GraphicsDevice GraphicsDevice { get; }
+	public InputManager Input { get; }
+	public SceneSystem SceneSystem { get; }
+	public ScriptSystem Script { get; }
+	public IServiceRegistry Services { get; }
+	public SpriteAnimationSystem SpriteAnimation { get; }
+	protected Logger Log { get; }
+```
 
 ## Types of scripts
 
@@ -25,105 +33,103 @@ The following are the types of scripts with examples:
 * **Startup script:** This script is used to initialize an entity in a game and is executed to perform loading or unloading of the entity in the game.
 
 ```
-   public class StartUpScriptExample : StartupScript
+public class StartUpScriptExample : StartupScript
+{
+	public override void Start()
 	{
-		public override void Start()
-		{
-			var sphere = SceneSystem.SceneInstance.Where(x => 	x.Name.Equals("Sphere")).FirstOrDefault();
-			sphere.Add(new BasicAsyncScript());
-		}
+		var sphere = SceneSystem.SceneInstance.Where(x => x.Name.Equals("Sphere")).FirstOrDefault();
+		sphere.Add(new BasicAsyncScript());
 	}
+}
 ```
 
 * **Synchronous script:** This script loads sequentially and is executed sequentially. If a script in a sequence is not executed, all the subsequent scripts get terminated.
 
 ```
 public class SampleSyncScript : SyncScript
-    {        
-        public override void Update()
-        {
-            //do stuff every new frame
-            if (Game.IsRunning)
-            {
-                if (Input.IsKeyDown(SiliconStudio.Xenko.Input.Keys.Left))
-                {
-                    this.Entity.Transform.Position.X -= 0.1f;
-                }
-                if (Input.IsKeyDown(SiliconStudio.Xenko.Input.Keys.Right))
-                {
-                    this.Entity.Transform.Position.X += 0.1f;
-                }
-            }
-        }
+{        
+	public override void Update()
+	{
+		if (Game.IsRunning)
+		{
+			// Do some stuff every frame
+		}
 	}
+}
 ```
 
 * **Asynchronous script:** This script is not dependent on the execution of any other script. It can be executed randomly or with a combination of scripts without any dependency.
 
 ```
 public class SampleAsyncScript : AsyncScript
-    {        
-        public override async Task Execute() 
-        {
-            //do stuff every new frame
-            while (Game.IsRunning)
-            {
-                if (Input.IsKeyDown(SiliconStudio.Xenko.Input.Keys.Left))
-                {
-                    this.Entity.Transform.Position.X -= 0.1f;
-                }
-                if (Input.IsKeyDown(SiliconStudio.Xenko.Input.Keys.Right))
-                {
-                    this.Entity.Transform.Position.X += 0.1f;
-                }
-				await Script.NextFrame();
-            }
-        }
-    }
+{        
+	public override async Task Execute() 
+	{
+		while (Game.IsRunning)
+		{
+			// Do some stuff every frame
+			await Script.NextFrame();
+		}
+	}
+}
 ```
 
-## Expose fields of scripts to GS users
+## Using public properties
 
-The public fields are fields, which are accessed by the classes or methods in your script and any other classes that reference it.
+Public properties are values, used by the script, that can be set from the Game Studio.
 
->**Note:** To ignore a public field in Xenko, add the ```[DataMemberIgnore]``` attribute to the property/field.
+>**Note:** To ignore a public property in Xenko, add the ```[DataMemberIgnore]``` attribute to the property.
 
-The following is an example of a public field:
+The following is an example of a public property:
 
 ```
 public class SampleSyncScript : SyncScript
+{
+	// Declared public member variables and properties will be shown in Game Studio
+	public float DelayTimeOut { get; set; }
+	
+	public override void Update()
 	{
-		//declared public member variables and properties will show in the game studio		
-		public float currentPosition { get; set; }
-		
-		public override void Update()
-		{
-			// do your stuff
-			…
-		}
+		// Do some stuff every frame
 	}
+}
 ```
 
-In the above example, a public field is added to the ```SampleSyncScript``` class and the script is attached to an entity in a game.
+In the above example, the ```SampleSyncScript``` class exposes a public property called ```DelayTimeOut```.
 
-### Steps to set public field in Game Studio
+To have the same public property hidden from Game Studio, use the ```[DataMemberIgnore]``` attribute:
 
-After creating a public field, you can set the property of the public fields in the **Property grid** section.
+```
+public class SampleSyncScript : SyncScript
+{
+	// This public property will not be available in Game Studio
+	[DataMemberIgnore]
+	public float DelayTimeOut { get; set; }
+	
+	public override void Update()
+	{
+		// Do some stuff every frame
+	}
+}
+```
 
-**To set the property of public fields:**
+### Steps to set a public property in Game Studio
 
-1. Open your game in Game Studio and select the entity.
-2. In the **Property grid** section, click **Add Component**, and then select the public field created.
+In order to set a value in the public property in the ```SampleSyncScript```. You have to assign it to an asset first.
 
-   ![Select script in Property grid section](media/scripting-in-xenko-select-public-field.png)
+1. Open your game in Game Studio and select the entity you want to attach the script to.
+
+2. In the **Property grid** section, click **Add Component**, and then select the script containing the public property. In our case the script is called **SampleSyncScript**.
+
+   ![Select script in Property grid section](media/scripting-in-xenko-select-public-property.png)
 
    _Select script in Property grid section_
 
-   The public field is added to the entity.
-3. Select the public field and change the value in **current Position**.
+3. The public property is displayed under the header 'SampleSyncScript' and can be set in the Property grid.
+   Select the public property and change the value in ```DelayTimeOut```.
 
-   ![Change value of public field in Property grid section](media/scripting-in-xenko-change-value-public-field.png)
+   ![Change value of public property in Property grid section](media/scripting-in-xenko-change-value-public-property.png)
 
-   _Change value of public field in Property grid section_
+   _Change value of public property in Property grid section_
 
-   The value of the public field is set with the required properties.
+   The value of the public property is set with the required properties.

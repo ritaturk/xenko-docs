@@ -2,6 +2,8 @@
 
 In this section, you’ll learn the basics of [scripting](xref:scripting), how to create a script, how to use a script in your game, and how to launch your game.
 
+## What is scripting
+
 Scripting is an important part of creating a game. It helps you arrange your game events, respond to your inputs, control the movement and behavior of your [entities](xref:entity), and as a whole it helps to make your static game moving.
 
 You can easily create your first game with Xenko assets. However, to move those [assets](xref:asset) and to make your game playing with actions and events, you need a script. In Xenko, you have to write all your scripts in C#. You can create a script for an asset in your game, attach that script to the asset, and then execute the game to make your game work in the expected way.
@@ -10,8 +12,6 @@ The following is a sample script of a game:
 
 ```
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SiliconStudio.Core.Mathematics;
@@ -22,20 +22,11 @@ namespace MyGame
 {
     public class BasicAsyncScript : AsyncScript
     {         
-       //declared public member variables and properties will show in the game studio
-       public override async Task Execute() 
-        {
-            //do stuff every new frame
+		public override async Task Execute() 
+		{
             while(Game.IsRunning)
             {
-                if (Input.IsKeyDown(SiliconStudio.Xenko.Input.Keys.Left))
-                {
-                    this.Entity.Transform.Position.X -= 0.1f;
-                }
-                if (Input.IsKeyDown(SiliconStudio.Xenko.Input.Keys.Right))
-                {
-                    this.Entity.Transform.Position.X += 0.1f;
-                }
+				// Do some stuff every frame
                 await Script.NextFrame();
             }
         }

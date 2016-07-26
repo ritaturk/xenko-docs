@@ -59,8 +59,6 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
 ```
 	using System;
-	using System.Collections.Generic;
-	using System.Linq;
 	using System.Text;
 	using System.Threading.Tasks;
 	using SiliconStudio.Core.Mathematics;
@@ -73,10 +71,9 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 		{			
 			public override void Update()
 			{
-				//do stuff every new frame
 				if (Game.IsRunning)
 				{
-					Entity.Transform.Rotation = Quaternion.RotationY((float)Game.UpdateTime.Total.TotalSeconds);              
+					// Do some stuff every frame
 				}
 			}
 		}
@@ -130,8 +127,6 @@ You can create a script in Game Studio without using any other application.
 
 ```
     using System;
-	using System.Collections.Generic;
-	using System.Linq;
 	using System.Text;
 	using System.Threading.Tasks;
 	using SiliconStudio.Core.Mathematics;
@@ -146,8 +141,7 @@ You can create a script in Game Studio without using any other application.
 			{
 				while(Game.IsRunning)
 				{
-					//do stuff every new frame
-					Entity.Transform.Rotation = Quaternion.RotationY((float)Game.UpdateTime.Total.TotalSeconds);
+					// Do some stuff every frame
 					await Script.NextFrame();
 				}
 			}
