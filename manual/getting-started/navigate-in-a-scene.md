@@ -45,7 +45,7 @@ When you edit a specific material, you need to focus on that material to see the
 
 The selected material is focused. The following video shows how to focus on a material.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-focus-on-material.mp4" type="video/mp4">
 </video>
 
@@ -59,7 +59,7 @@ To speed up your navigation, press the **Shift** key while navigating.
 
 The following video shows how to walk in a scene.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-walk-in-the-scene.mp4" type="video/mp4">
 </video>
 
@@ -87,7 +87,7 @@ Right mouse button              | Rotate the camera
 
 The following video shows the sample actions and effects as listed in the above table.
  
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-fly-in-the-scene.mp4" type="video/mp4">
 </video>
  
@@ -105,7 +105,7 @@ The point of rotation is always the center of the screen and the distance to the
 
 The following video shows orbital rotation.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-orbital-rotation.mp4" type="video/mp4">
 </video>
  
@@ -119,7 +119,7 @@ To do this, first focus on the entity. This action adapts the radius for the orb
 
 The following video shows the combination of focusing on an entity with the orbital rotation motions.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-examine-entity.mp4" type="video/mp4">
 </video>
     
@@ -170,7 +170,7 @@ Corner   | It faces the three adjacent faces with a 45° angle
 
 The following video shows how to change a camera view angle using the view camera gizmo.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-change-view-angle.mp4" type="video/mp4">
 </video>
 

@@ -8,7 +8,7 @@ In this page, you’ll learn how to create an entity from an asset of the **Asse
 
 You can create a new entity directly by dragging an asset from the **Asset view** tab on the Scene Editor. The following video shows how to drag and place an entity onto the Scene Editor.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
    <source src="media/add-entities-to-scene-drag-and-place-entity.mp4" type="video/mp4">
 </video>
 

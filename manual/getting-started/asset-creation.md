@@ -2,9 +2,9 @@
 
 An asset is a representation of an object of your game inside the editor, such as a model, a texture, or an animation. Creating and managing assets is an essential part of game creation.
 
-In this section, you’ll learn how to create new [assets](xref:asset) for your game, how to import, and how to edit them.
+In this section, you’ll learn how to create new [assets](xref:asset) for your game and how to edit them.
 
-Xenko bundles its assets into packages. You can use a package to share assets along with your games. You can also import assets from external packages and integrate them easily with your game.
+Xenko bundles its assets into packages. You can use a package to share assets along with your games. You can also add assets from external packages and integrate them easily with your game.
 
 The following image displays the Knight model asset along with its related animation and skeleton assets in the **Asset view** tab.
 
@@ -14,7 +14,7 @@ _Asset view tab_
 
 
 This section includes the following pages:
- * [Create and import assets](create-and-import-assets.md)
+ * [Create and add assets](create-and-add-assets.md)
  * [Edit assets](edit-assets.md)
 
-Start creating your own assets or try using the sample assets of Xenko for your game. For more information about creating and importing assets, see [Create and import assets](create-and-import-assets.md).
+Start creating your own assets or try using the sample assets of Xenko for your game. For more information about creating and adding assets, see [Create and add assets](create-and-add-assets.md).

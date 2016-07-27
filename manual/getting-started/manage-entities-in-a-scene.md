@@ -21,7 +21,7 @@ You can see the following gizmos on the Scene Editor:
 
 The Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png) changes the position of the selected entity. The following video shows how you can translate an entity along one axis, a plane, freely in 3D.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/manage-entities-in-scene-translation-gizmo.mp4" type="video/mp4">
 </video>
 
@@ -31,7 +31,7 @@ _Video: Translate an entity_
 
 The Rotation gizmo ![Rotation gizmo](media/manage-entities-in-scene-rotation-gizmo.png) changes the orientation of the selected entity. The following video shows how you can rotate an entity along one axis.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/manage-entities-in-scene-rotation-gizmo.mp4" type="video/mp4">
 </video>
 
@@ -41,7 +41,7 @@ _Video: Rotate an entity_
 
 The Scale gizmo ![Scale gizmo](media/manage-entities-in-scene-scale-gizmo.png) resizes the selected entity. The following video shows how you can scale an entity along one axis and along all three axes.
 
-<video controls autoplay height="480" width="640">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/manage-entities-in-scene-scale-gizmo.mp4" type="video/mp4">
 </video>
 
@@ -87,29 +87,31 @@ The following table displays the gizmo axis bases and their functions:
 
 >**Note:** The Translation gizmo and the Rotation gizmo can use all the three axis bases. However, the Scale gizmo can use only the axis base that uses the local coordinates for transformations.
 
-## Multiple scales or translations
+## Scaling and translating in all 3 dimensions
 
-You can perform multiple translations by clicking the center of the Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png).
+You can perform a translation over all 3 axes by clicking the center of the Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png).
 
-**To perform multiple translations:**
+**To perform translation over 3 axes:**
 
 1. Select an entity.
 2. Select the Translation gizmo.
 3. Click the center of the Translation gizmo.
    You can now drag the entity horizontally, vertically, and diagonally.
 
-You can perform multiple scales by clicking the center of the Scale gizmo.
+You can perform multiple scaling over all 3 axes by clicking the center of the Scale gizmo.
 
-**To perform multiple scales:**
+**To perform multiple scaling over 3 axes:**
 
 1. Select an entity.
 2. Select the Scale gizmo.
 3. Click the center of the Scale gizmo.
    You can now increase the size of the entity proportionally.
 
-## Snap entities to the grid
+## Snapping gizmo actions
 
-While using the gizmos, you can snap an entity to the grid by using the Snapping tool. Based on the gizmo you selected, the icon on the Snapping tool changes.
+While using the gizmos, you can snap the action you perform by using the Snapping tool. This means that the amount of rotation / translation / scaling is snapped to the closest multiple of the number you specify. I.e.: if you set the snap to grid value to 22.5 for rotating, your rotation action will be a multiple of 22.5: 0, 22.5, 45, 67.5, 90 etc.
+
+Based on the gizmo you selected, the icon on the Snapping tool changes. 
 
    ![Snap translations](media/manage-entities-in-scene-snap-translation.png)
    
@@ -128,10 +130,8 @@ While using the gizmos, you can snap an entity to the grid by using the Snapping
 1. Select an entity.
 2. Select a gizmo.
 3. Select the Snapping tool and enter a value in the tool.
-4. Drag the entity.
+4. Drag the entity with the gizmo tools.
 
-   The entity snaps as per the value that you specified.
-
-Thus, you can easily move, rotate, and resize the entities in a scene by using gizmos.
+   The gizmo operation (rotate / translate / scaling) snaps as per the value that you specified.
 
 The next step is to animate the entities in your scene. To do this, you need to use scripts. For information about using scripts, see [Scripting in Xenko](scripting-in-xenko.md).

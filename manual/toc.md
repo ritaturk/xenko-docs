@@ -5,7 +5,7 @@
 ## [Game Studio](getting-started/game-studio.md)
 ## [Game project structure](getting-started/game-project-structure.md)
 ## [Asset creation](getting-started/asset-creation.md)
-### [Create and import assets](getting-started/create-and-import-assets.md)
+### [Create and add assets](getting-started/create-and-add-assets.md)
 ### [Edit assets](getting-started/edit-assets.md)
 ## [Scene creation](getting-started/scene-creation.md)
 ### [Create a basic scene](getting-started/create-a-basic-scene.md)
