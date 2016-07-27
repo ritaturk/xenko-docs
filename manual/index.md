@@ -5,4 +5,4 @@ _navPath: toc.html
 _navRel: ../toc.html
 ---
 
-[!include[Getting Started](getting-started/index.md)]
+[!include[Getting Started](getting-started/get-started-with-xenko.md)]

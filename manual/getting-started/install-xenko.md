@@ -74,6 +74,6 @@ After the Xenko setup file is downloaded, you can install the Game Engine.
     
     _Installation status_
 
-After the installation has finished, the [Xenko launcher](xref:xenko-launcher) opens. Shortcuts are created for Xenko on the locations that you selected during the installation.
+After the installation has finished, the [Xenko launcher](xenko-launcher.md) opens. Shortcuts are created for Xenko on the locations that you selected during the installation.
 
 Now, you're ready to start using the Xenko launcher. For more information on how to use Xenko launcher, see [Xenko launcher](xenko-launcher.md).

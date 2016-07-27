@@ -47,7 +47,7 @@ This section shows you how to create a new game project by using the 'New Game' 
 
 A new game is created and opened in [Game Studio](xref:game-studio).
 
-## Create a new project from an existing sample
+## Create a new project from a sample
 
 You may want to learn about a specific feature or you may want to create a game similar to the sample; Xenko provides two types of samples:
 

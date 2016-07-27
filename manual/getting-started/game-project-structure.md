@@ -19,10 +19,10 @@ For example, for a project named 'MyGame', the directory structure is as follows
 5. **Resources** Contains all resources. Resources are the files containing the raw information that needs to be embedded in the game, like: images, audio, FBX files, XML files, etc.
 
 ## Keyword reference
-* [Package](engine/package.md) 
-* [Project](engine/project.md)
-* [Solution](engine/solution.md)
-* [Assets](engine/assets.md)
-* [Resources](engine/resources.md)
+* [Package](../engine/package.md) 
+* [Project](../engine/project.md)
+* [Solution](../engine/solution.md)
+* [Assets](../engine/assets.md)
+* [Resources](../engine/resources.md)
 
 Now, as you know how to organize your project, you can start creating your own assets. For more information about assets, see [Asset creation](asset-creation.md).
