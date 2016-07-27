@@ -1,30 +1,23 @@
 # Create a project
 
-To start developing your game or application, you must first create a [project](xref:project).  A game project is mainly composed of [assets](xref:asset) for the game and code for the gameplay. 
+To start developing your game or application, you must first create a [project](xref:project).
 
-In this page, you’ll learn how to create a new project in Xenko. 
-
-In Xenko, you can start creating a project in two ways, from a new empty project, and from an existing sample.
+This page will show you how to create a new empty project, and how to create a project from an existing sample.
 
 ## Open New/open project window
 
-To create a new game, first you have to open a **New/open project** window, which guides you further to create games.
+To create a new game, first you have to open the **New/open project** window.
 
-To open a **New/open project** window, on the **Xenko launcher**, click the Start button.
-
->**Note:** You can open the New/open project window from Game Studio, by clicking File > New.
-
-The **New/open project** window opens. 
+* To open the **New/open project** window from the **Xenko launcher**, click the Start button.
+* To open the **New/open project** window from the **Game Studio**, click File > New.
 
 ![New/open project window](media/create-project-new-open-project-window.png)
 
 _New/open project window_
 
-## Create a new project
+## Create a new game project
 
-To create a new game from scratch, you need to Create a new project. With this, a new game is created with all the minimum elements that are needed for a game. 
-
-**To create a new game:**
+This section shows you how to create a new game project by using the 'New Game' template. Basic elements like a skybox, ground, light, camera and a sphere are automatically added to the project to help you get started.
 
  1. Open **New/open project** window, and then select **New Game**.
     
@@ -48,8 +41,7 @@ To create a new game from scratch, you need to Create a new project. With this, 
     >**Note:** Some graphics cards do not support the latest APIs. For mobile devices, only DirectX 9.3 / OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
 
 	5.b. **High / low dynamic range (HDR / LDR):** This defines the way color is computed in your game. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. HDR enables you to have advanced and more realistic rendering in your game but is heavier and requires at least profile DirectX 10.0 / OpenGL ES 3.0.
- 6. Select the desired orientation for your game in the **Orientation** section.
-    >**Note:** For PC games, use landscape. Portrait is suitable for mobile-based games.
+ 6. Select the desired orientation for your game in the **Orientation** section. For PC games, use landscape. Portrait is suitable for mobile-based games.
 
  7. Click **OK**. 
 
@@ -60,7 +52,7 @@ A new game is created and opened in [Game Studio](xref:game-studio).
 You may want to learn about a specific feature or you may want to create a game similar to the sample; Xenko provides two types of samples:
 
  * Feature specific basic samples: To explore and learn about a specific feature.
- * Advanced and complete games: Two complete games to create similar games. 
+ * Advanced and complete games: Two complete games to create similar games from.
 
 **To create a project using a sample:**
 
@@ -70,13 +62,11 @@ You may want to learn about a specific feature or you may want to create a game 
  
  2. Select the sample you'd like your project to be based on. 
     
-	The following is image displays selecting a game sample in **New/open project** window.
- 
    ![New/open project samples](media/create-project-new-open-project-samples.png)
 
     _New/open project window - samples_
 
-	>**Note:** As an example, a JumpyJet Sample is selected. The right panel of the window displays a summary of the game selected and a preview of the game.
+	>**Note:** As an example, the JumpyJet Sample is selected. The right panel of the window displays a description of the game selected and a preview of the game.
  3. Click **Select**.
 
     The **Select Platforms** window opens.
@@ -85,9 +75,9 @@ You may want to learn about a specific feature or you may want to create a game 
     
     _Select Platforms window_
 	
- 4. Select a platform from the **Platforms** section.
-    If your system does not have a particular platform installed, a warning message is displayed.
+ 4. Select one or multiple platforms from the **Platforms** section.
 
  5.	Click **OK**. 
+    If your system does not have a particular platform installed, a warning message is displayed.
 
-A new game is created and opened in the **Game Studio**. Your project is now ready. For more information on how to continue to add content to your project in game studio, see [Game Studio](xenko-studio.md).
+A new game is created and opened in the **Game Studio**. Your project is now ready to be used. For more information on how to continue to add content to your project in game studio, see [Game Studio](game-studio.md).
