@@ -1,6 +1,12 @@
 # Install Xenko
 
-Xenko is a powerful cross-platform [Game Engine](xref:game-engine) which helps to build games quickly and easily. To work with Xenko Game Engine, you must first download the installer, and then install Xenko.
+Xenko is a powerful cross-platform [Game Engine](xref:game-engine) which helps to build games and applications that need game elements quickly and easily. Xenko consists of the following features:
+
+* Real-time high quality 3D rendering
+* Physics simulation
+* Audio engine
+
+To work with Xenko Game Engine, you must first download the installer, and then install Xenko.
 
 This page shows the steps to download and install Xenko Game Engine on your system.
 

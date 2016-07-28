@@ -2,7 +2,7 @@
 
 To add content to your game, you need to create [assets](xref:asset). An asset is a representation of an object of your game inside the Game Studio, such as a character of your game, environment of your game, a 3D image, a sound, and an animation.
 
-In this page, you’ll learn how to create new assets and import assets in [Game Studio](xref:game-studio).
+In this page, you’ll learn how to create new assets and add assets in [Game Studio](xref:game-studio).
 
 Xenko provides the following ways to create and import assets in your game:
  * Add assets from the **Asset view** tab

@@ -6,9 +6,9 @@
 
 You must create a [scene](xref:scene) to place various entities of your game in the scene. After that, you need to add or modify their properties in order to make them work the way you expect.
 
-In this page, you’ll learn how to create a basic scene in [Game Studio] (xref:game-studio).
+This page will show how to create a basic scene in [Game Studio] (xref:game-studio).
 
->**Note:** Before you create a scene, you need to create or add some [assets](xref:asset) to your game. For information about creating or importing assets, see [Create and import assets](create-and-import-assets.md).
+>**Note:** Before you create a scene, you need to create or add some [assets](xref:asset) to your game. For information about creating or importing assets, see [Create and add assets](create-and-add-assets.md).
 
 ## Add entities to a scene
 

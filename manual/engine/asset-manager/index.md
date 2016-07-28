@@ -15,7 +15,7 @@ Examples of URLs:
 - knight (user imports knight.fbx directly in main asset folder)
 - level1/room1 (user creates level1 and import room1.fbx inside)
 
-Please check [HOWTO: Create or import asset data](../../getting-started/howto-create-or-import-asset-data.md) for more details.
+Please check [HOWTO: Create or import asset data]() for more details.
 
 ## Loading
 
