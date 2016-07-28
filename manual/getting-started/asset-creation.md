@@ -1,8 +1,8 @@
 # Asset creation
 
-An asset is a representation of an object of your game inside the editor, such as a model, a texture, or an animation. Creating and managing assets is an essential part of game creation.
+An asset is a representation of an object of your game inside the editor, such as a model, a texture, or an animation. Assets are the building blocks of your game and therefore creating and managing assets is an essential part of game creation.
 
-In this section, you’ll learn how to create new [assets](xref:asset) for your game and how to edit them.
+This page will show you how to create new [assets](xref:asset) for your game and how to edit them.
 
 Xenko bundles its assets into packages. You can use a package to share assets along with your games. You can also add assets from external packages and integrate them easily with your game.
 
