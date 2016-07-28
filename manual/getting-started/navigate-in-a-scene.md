@@ -1,5 +1,9 @@
 # Navigate in a scene
 
+* TODO: CONDENSE
+* TODO: MOVE UNRELATED TOPICS TO DIFFERENT LOCATION
+* TODO: CREATE DEDICATED PAGE FOR FOCUS RELATED ACTIONS
+
 When building scenes of your game in the [Scene Editor](xref:scene-editor), you need to move around a scene to accurately place and assemble [entities](xref:entity) together.
 
 In this page, you’ll learn how to quickly and easily navigate in the Scene Editor as well as use the navigation controls, navigation [gizmos](xref:gizmo), and [editor camera](xref:editor-camera) settings.
@@ -31,6 +35,7 @@ The following animations display focusing on an entity using the Magnifier icon 
    </div>
 </div>
 
+<div style="clear: both;"></div>
 
 ### Focus on a material
 
@@ -110,20 +115,6 @@ The following video shows orbital rotation.
 </video>
  
 _Video: Orbital rotation _
-
-### Examine an entity
-
-You can combine focusing on an entity with the orbital rotation motions to very precisely and efficiently examine the entity.
-
-To do this, first focus on the entity. This action adapts the radius for the orbital rotation. Then perform the rotation to examine the entity.
-
-The following video shows the combination of focusing on an entity with the orbital rotation motions.
-
-<video controls autoplay loop height="480" width="640">
-                <source src="media/navigate-in-scene-examine-entity.mp4" type="video/mp4">
-</video>
-    
-_Video: Combination of focus and orbital rotation_
 
 ### Controls summary
 

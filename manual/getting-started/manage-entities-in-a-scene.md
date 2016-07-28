@@ -2,13 +2,13 @@
 
 To build the levels of your game, you need to move, rotate, and resize the entities of your scene. Xenko provides you gizmos to perform all these functions.
 
-In this page, you’ll learn how to move, rotate, and resize your entities in a scene.
+This page will show you how to move, rotate, and resize your entities in a scene.
 
 ## Transformation Gizmos
 
 Gizmos in Game Studio help you move, rotate, and resize your entities effectively. They are present at the top of the Scene Editor.
 
-You can move an entity by first clicking the entity, and then through the Translation gizmo, dragging it along any of the X, Y, and Z axes. For example, to move an entity along the X axis, click the entity, and drag it along the X axis. You can also move the entity along two axes at the same time by clicking the center of the X, Y, and Z axes, and then dragging it in the required direction. Also, you can rotate and resize the entity using the Rotation and Scale gizmos, respectively.
+You can move an entity by first clicking the entity, and then through the Translation gizmo, dragging it along any of the X, Y, and Z axes. For example, to move an entity along the X axis, click the entity, and click and drag it along the X axis. You can also move the entity along two axes at the same time by clicking the center of the X, Y, and Z axes, and then dragging it in the required direction. Also, you can rotate and resize the entity using the Rotation and Scale gizmos, respectively.
 
 Managing the entities in your scene includes switching between gizmos, changing gizmo axis bases, doing multiple scales or translations, and snapping the entities to the grid.
 

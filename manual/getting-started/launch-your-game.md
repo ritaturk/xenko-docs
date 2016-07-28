@@ -1,6 +1,6 @@
 # Launch your game
 
-After your game is ready, you will be curious to launch your game to see the output. You can launch your game either on [Game Studio](xref:game-studio) or in Visual Studio.
+After your game is ready, you will be curious to see what your game looks like outside the Game studio. You can launch your game either on [Game Studio](xref:game-studio) or in Visual Studio.
 
 In this page, you’ll learn various ways to launch your game.
 

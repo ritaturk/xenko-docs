@@ -1,14 +1,10 @@
 # Create a basic scene
 
-*** Add tutorial how to create a basic scene: add object, add ligth, add camera ***
+A scene is automically created when starting the Game studio. To this scene you can add various entities, such as models, cameras and lights.
 
-*** Merge with Add entities to a scene ***
+This page will show how to create and populate a basic scene in [Game Studio] (xref:game-studio).
 
-You must create a [scene](xref:scene) to place various entities of your game in the scene. After that, you need to add or modify their properties in order to make them work the way you expect.
-
-This page will show how to create a basic scene in [Game Studio] (xref:game-studio).
-
->**Note:** Before you create a scene, you need to create or add some [assets](xref:asset) to your game. For information about creating or importing assets, see [Create and add assets](create-and-add-assets.md).
+>**Note:** You need to create or add some [assets](xref:asset) to your game in order to populate the scene with models for example. For information about creating or importing assets, see [Create and add assets](create-and-add-assets.md).
 
 ## Add entities to a scene
 

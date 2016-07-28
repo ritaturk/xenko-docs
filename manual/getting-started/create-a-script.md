@@ -55,7 +55,7 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
    A new class is added to your game.
 
-4. Open the class that you have created. Make the script public and assign the type of script (AsyncScript or SyncScript) manually. Add a function to the code. The following is a code snippet that shows you how to rotate an entity around its Y-axis.
+4. Open the class that you have created. Make the script public and assign the type of script (AsyncScript or SyncScript) manually. Add the function ```Update``` to the code, and put your script implementation the function's body.
 
 ```
 	using System;
@@ -109,7 +109,7 @@ You can create a script in Game Studio without using any other application.
 
    ![New asset button in Asset view tab](media/create-a-script-new-asset.png)
 
-   _New asset button on Asset view tab_
+   _TODO: create new screenshot, this one is misleading. New asset button on Asset view tab_
 
 	The **Script Asset Selection** window opens.
 

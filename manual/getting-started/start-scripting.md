@@ -35,11 +35,4 @@ namespace MyGame
 ```
 _Sample script_
 
-This section includes the following pages:
-
-* [Scripting in Xenko](scripting-in-xenko.md)
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Launch your game](launch-your-game.md)
-
 Start creating your own scripts for your assets. To learn more about scripting concepts, see [Scripting in Xenko](scripting-in-xenko.md).

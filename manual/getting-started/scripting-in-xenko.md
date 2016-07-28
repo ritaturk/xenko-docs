@@ -26,7 +26,7 @@ Scripts can access various Engine objects in Xenko. If you need to animate a gra
 
 ## Types of scripts
 
-Scripts can be classified into Startup scripts, [Synchronous](xref:synchronous) scripts, and [Asynchronous](xref:asynchronous) scripts.
+Scripts can be classified into Startup scripts, Synchronous scripts, and Asynchronous scripts.
 
 The following are the types of scripts with examples:
 
