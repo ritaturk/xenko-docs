@@ -2,13 +2,11 @@
 
 In this page, you’ll learn how to attach a script to an entity, how to test a script, and how to debug a script.
 
-A [script](xref:scripting) 	is a piece of code that is used to perform different actions such as, [entity](xref:entity) movement, user input handling, and other actions. After creating a script, the next step is to use that in your game.
-
-Game Studio enables you to easily attach, test, and debug the script that you’ve created.
+Game Studio enables you to easily attach, test, and debug the script you’ve created.
 
 ## Attach a script
 
-You can attach a script to your entity either from the **Add [component](xref:component)** section of [Game Studio](xref:game-studio) or through code.
+You can attach a script to your entity either from the **Add component** section of [Game Studio](xref:game-studio) or through code.
 
 **To attach a script from the Add component section of Game Studio:**
 

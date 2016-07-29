@@ -1,10 +1,8 @@
 # Edit assets
 
-After you add an asset to your game project, you may need to make some changes to the asset in order to make it suitable to your game environment.
+After you add an asset to your game project, you may need to make some changes to the asset in order to make it suitable your your game environment.
 
 This page will show you how to edit your game assets. As an example, you’ll change the color of a Sphere [Procedural Model](xref:procedural-model).
-
-In the Game Studio, the **Property grid** section includes the required options to edit your assets.
 
 **To change the color of the Sphere Procedural Model:**
 
@@ -24,7 +22,7 @@ In the Game Studio, the **Property grid** section includes the required options 
  
  	_Color picker and Palette_
 	
- 4. Click the **Color picker** and select a red hue color or type the hexadecimal value.
+ 4. Click the **Color picker** and select a red hue color or enter the hexadecimal value.
 	
 	After you set the color for the material, the color of the asset changes.
 	
@@ -32,10 +30,7 @@ In the Game Studio, the **Property grid** section includes the required options 
 
 	_Asset appears in new color_
  
-	The color of the Sphere Procedural Model changes to red.
-	
-	
-To remove the references that have been applied to the Procedural Model, select the model for which you want to remove the references, and then click ![clear icon](media/edit-asset-clear-reference.png). This action directly removes all references that are applied to the model.
+To remove the material from the Sphere asset, select the sphere asset, and click ![clear icon](media/edit-asset-clear-reference.png).
 
 ![Clear reference in Property grid](media/edit-asset-clear-reference-property-grid.png)
  

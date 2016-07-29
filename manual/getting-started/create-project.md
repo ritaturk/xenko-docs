@@ -17,11 +17,11 @@ _New/open project window_
 
 ## Create a new game project
 
-This section shows you how to create a new game project by using the 'New Game' template. Basic elements like a skybox, ground, light, camera and a sphere are automatically added to the project to help you get started.
+By using the 'New Game' template, basic elements like a skybox, ground, light, camera and a sphere are automatically added to the project to help you get started.
 
  1. Open **New/open project** window, and then select **New Game**.
     
-	The right side of the **New/open project** window, displays a summary of the selected project along with a preview. In the bottom part of the window, the name and location of the project can be specified.
+	In the bottom part of the window, the name and location of the project can be specified.
 
  2. Click **Select**.
     
@@ -45,8 +45,6 @@ This section shows you how to create a new game project by using the 'New Game' 
 
  7. Click **OK**. 
 
-A new game is created and opened in [Game Studio](xref:game-studio).
-
 ## Create a new project from a sample
 
 You may want to learn about a specific feature or you may want to create a game similar to the sample; Xenko provides two types of samples:
@@ -66,11 +64,8 @@ You may want to learn about a specific feature or you may want to create a game 
 
     _New/open project window - samples_
 
-	>**Note:** As an example, the JumpyJet Sample is selected. The right panel of the window displays a description of the game selected and a preview of the game.
  3. Click **Select**.
 
-    The **Select Platforms** window opens.
-    
     ![select platform](media/create-project-select-platform.png)
     
     _Select Platforms window_
@@ -78,6 +73,5 @@ You may want to learn about a specific feature or you may want to create a game 
  4. Select one or multiple platforms from the **Platforms** section.
 
  5.	Click **OK**. 
-    If your system does not have a particular platform installed, a warning message is displayed.
 
 A new game is created and opened in the **Game Studio**. Your project is now ready to be used. For more information on how to continue to add content to your project in game studio, see [Game Studio](game-studio.md).

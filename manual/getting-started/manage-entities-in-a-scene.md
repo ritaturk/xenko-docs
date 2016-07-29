@@ -1,8 +1,31 @@
 # Manage entities in a scene
 
-To build the levels of your game, you need to move, rotate, and resize the entities of your scene. Xenko provides you gizmos to perform all these functions.
+To build the levels of your game, you need to move, rotate, and resize the entities of your scene. Game studio provides you with gizmos to perform these operations.
 
 This page will show you how to move, rotate, and resize your entities in a scene.
+
+### Focus on an entity
+
+While editing the properties of a specific entity, you may need to view it in a full screen mode so that you can properly see all the subtle changes that you have made to that entity. To do this, you can press the **F** key after selecting the entity. This action automatically zooms on the entity and adjusts the position of the editor camera.
+
+Alternatively, you can click ![Magnifier icon](media/navigate-in-a-scene-magnifier-icon.png) from the Scene explorer view to focus on the entity without having to select it first.
+
+The following animations display focusing on an entity using the Magnifier icon and using the **F** key, respectively.
+
+<div class="video_container">
+  <div class="video_container_left">
+   ![Switch Projection Mode](media/navigate-in-scene-focus-on-entity-using-magnifier-icon.gif)
+   </video>
+   <div class="video_container_content">_Focus on an entity using Magnifier icon_</div>
+   </div>
+   <div class="video_container_right">
+   ![Switch Projection Mode](media/navigate-in-scene-focus-on-entity-using-f-key.gif)
+   </video>
+   <div class="video_container_content">_Focus on an entity using F key_</div>
+   </div>
+</div>
+
+<div style="clear: both;"></div>
 
 ## Transformation Gizmos
 
@@ -51,25 +74,17 @@ _Video: Scale an entity_
 
 You can switch between Translation, Rotation, and Scale gizmos through simple clicks.
 
-To switch between the gizmos, you must first click anywhere in the Scene Editor. Then, you can:
+To switch between the gizmos, you must first click anywhere in the Scene Editor. Then, you can switch between Translation, Rotation and Scaling by:
 
-* Click a gizmo icon to switch to that particular gizmo.
-  
-  or
- 
-* Press the Spacebar.
-
-  or
-
+* Clicking a gizmo icon to switch to that particular gizmo.
+* Pressing the Spacebar
 * Press the **W** key to switch to the Translation gizmo
 * Press the **E** key to switch to the Rotation gizmo
 * Press the **R** key to switch to the Scale gizmo
 
-## Change gizmo axis bases
+## Change gizmo coordinate system
 
-In Game Studio, gizmo axis bases are present at the top of the Scene Editor.
-
-The following table displays the gizmo axis bases and their functions:
+In Game Studio, you can select in which coordinate system the gizmo operates. The following table displays the gizmo axis bases and their functions:
 
 | Gizmo axis base | Function |
 | ------  |  ------  |
@@ -81,11 +96,11 @@ The following table displays the gizmo axis bases and their functions:
 **To change the axis base for a gizmo:**
 
 1. Select an entity.
-2. Click a gizmo axis base button.
+2. Click the button representing the required coordinate system.
    
    The axis base for a gizmo is changed.
 
->**Note:** The Translation gizmo and the Rotation gizmo can use all the three axis bases. However, the Scale gizmo can use only the axis base that uses the local coordinates for transformations.
+>**Note:** The Translation gizmo and the Rotation gizmo can use all coordinate systems. However, the Scale gizmo can only use the local coordinate system.
 
 ## Scaling and translating in all 3 dimensions
 
@@ -125,13 +140,5 @@ Based on the gizmo you selected, the icon on the Snapping tool changes.
    
    _Snap scale to factor 1.1_
 
-**To snap an entity to the grid:**
 
-1. Select an entity.
-2. Select a gizmo.
-3. Select the Snapping tool and enter a value in the tool.
-4. Drag the entity with the gizmo tools.
-
-   The gizmo operation (rotate / translate / scaling) snaps as per the value that you specified.
-
-The next step is to animate the entities in your scene. To do this, you need to use scripts. For information about using scripts, see [Scripting in Xenko](scripting-in-xenko.md).
+The next step is to make your scene more dynamic. To do this, you need to use scripts. For information about using scripts, see [Scripting in Xenko](scripting-in-xenko.md).

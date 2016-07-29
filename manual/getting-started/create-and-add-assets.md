@@ -1,8 +1,6 @@
 # Create and add assets
 
-To add content to your game, you need to create [assets](xref:asset). An asset is a representation of an object of your game inside the Game Studio, such as a character of your game, environment of your game, a sound, or an animation.
-
-This page will show you how to create new assets and add assets in [Game Studio](xref:game-studio).
+To add content to your game, you need to create [assets](xref:asset). This page will show you how to create new assets and add assets in [Game Studio](xref:game-studio).
 
 Xenko provides the following ways to create and add assets in your game:
  * Add assets from the **Asset view** tab
@@ -10,7 +8,7 @@ Xenko provides the following ways to create and add assets in your game:
  
 ##Adding assets from the Asset view tab
 
- 1. On the **Asset view** tab, click ![New asset](media/create-and-add-assets-add-new-asset-button.png).
+ 1. In the **Asset view** tab, click ![New asset](media/create-and-add-assets-add-new-asset-button.png).
  
 	A list of assets is displayed.
 
@@ -28,7 +26,7 @@ Xenko provides the following ways to create and add assets in your game:
 
 ##Adding assets from the Solution explorer
 
-You can choose and add an asset also from the **Solution explorer** section. To add an asset from the **Solution explorer** section, in **Solution explorer** > right-click **Assets** > click **Create** > click an asset type. The selected asset is added to the **Asset view** tab.
+You can also choose and add an asset from the **Solution explorer** section. To add an asset from the **Solution explorer** section, in **Solution explorer** > right-click **Assets** > click **Create** > click an asset type. The selected asset is added to the **Asset view** tab.
 
 ![Add asset from Solution explorer](media/create-and-add-assets-add-asset-solution-explorer.png)
 

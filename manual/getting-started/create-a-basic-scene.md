@@ -1,30 +1,22 @@
 # Create a basic scene
 
-A scene is automically created when starting the Game studio. To this scene you can add various entities, such as models, cameras and lights.
+* TODO, this chapter makes little sense, as a scene is automatically created and there is no option to create additional scenes at the moment (?)
+* TODO, this chapter basically shows how to add assets to a scene, which is covered on another page
+* TODO, remove page?
+
+A scene is automically created when starting the Game studio. You can add various entities, such as models, cameras and lights to this scene.
 
 This page will show how to create and populate a basic scene in [Game Studio] (xref:game-studio).
 
->**Note:** You need to create or add some [assets](xref:asset) to your game in order to populate the scene with models for example. For information about creating or importing assets, see [Create and add assets](create-and-add-assets.md).
+>**Note:** You need to create or add some [assets](xref:asset) to your game in order to populate the scene. For information about creating or importing assets, see [Create and add assets](create-and-add-assets.md).
 
 ## Add entities to a scene
 
-You can quickly add an entity to your scene from the **Asset view** tab. Select an entity from the **Asset view** tab, drag and place the entity on the [Scene Editor](xref:scene-editor). You can add entities, such as a [model](xref:model), [prefab](xref:prefab), and [texture](xref:texture). For more information on how to add entities to your scene, see [Add entities to a scene](add-entities-to-a-scene.md).
-
-The following image displays a sample basic scene in the Scene Editor. You can see a Knight with default entities, such as camera, light, and others.
+You can quickly add an entity to your scene from the **Asset view** tab. Select an entity from the **Asset view** tab, drag and place the entity in the Scene Editor. For more information on how to add entities to your scene, see [Add entities to a scene](add-entities-to-a-scene.md).
 
    ![Sample basic scene](media/create-a-basic-scene-sample-scene.png)
    _Sample basic scene_
 
 >**Note:** When you add a new entity, Game Studio adds the corresponding [components](xref:component), such as model, texture, and other entities automatically to your game. You can modify the default configurations of your entity. For information on how to configure your entities, see [Edit assets](edit-assets.md).
-
-## Building and running the game
-
-You’ve added the required entities to your scene. Now, you can build and run the game and view what the scene looks like. You can change the position of the camera or add additional effects to your scene after reviewing in the Game Studio.
-
-Click the ![Play button](media/create-a-basic-scene-play-button.png) button that appears below the Menu bar or press **F5**. This action builds the game and starts your game.
-
-   ![Executed game scene](media/create-a-basic-scene-executed-scene.png)
-
-   _Running animation sample game_
 
 You’ve created a simple game. Now, you need to add entities to your scene. For information about how to add entities to a scene, see [Add entities to a scene](add-entities-to-a-scene.md).

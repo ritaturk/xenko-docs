@@ -10,16 +10,16 @@
 ## [Scene creation](getting-started/scene-creation.md)
 ### [Create a basic scene](getting-started/create-a-basic-scene.md)
 ### [Add entities to a scene](getting-started/add-entities-to-a-scene.md)
-### [Navigate in a scene](getting-started/navigate-in-a-scene.md)
+### [Scene navigation](getting-started/scene-navigation.md)
 ### [Manage entities in a scene](getting-started/manage-entities-in-a-scene.md)
 ## [Introduction to Scripting](getting-started/start-scripting.md)
 ### [Scripting in Xenko](getting-started/scripting-in-xenko.md)
 ### [Create a script](getting-started/create-a-script.md)
 ### [Use a script](getting-started/use-a-script.md)
 ## [Launch your game](getting-started/launch-your-game.md)
-
 <!---
 # [Game Studio Manual]()
+## [Game Studio Camera Settings](game-studio/game-studio-camera-settings.md)
 ## [Essential how-to's]()
 ### [1]()
 ### [2]()

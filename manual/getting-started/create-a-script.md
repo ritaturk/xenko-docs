@@ -1,25 +1,8 @@
 # Create a script
 
-In this page, you’ll learn how to create a [script](xref:scripting). Xenko provides two ways to create a script: Create a script in Visual Studio and create a script in Xenko Studio.
+Xenko provides two ways to create a script: Create a script in Visual Studio and create a script in the Game Studio.
 
-You’ve created a game and have added some entities to the game. Now, you’ve to add some scripts to your game to make your static game dynamic. A script is a unit of code that helps to move entities, control their movement, arrange events in your game, and respond to user inputs.
-
->**Note:** The scripts that you create can access the entire set of APIs created by the Xenko [Game Engine](xref:game-engine) for various purposes.
-
-## Open your project in Visual Studio
-
-You can open your existing project in Visual Studio using the Game Studio interface.
-
-**To open a project in Visual Studio:**
-
-1. Open Game Studio.
-2. Click the ![Open in IDE](media/create-a-script-ide-icon.png) (Open in IDE) icon displayed below the Menu bar.
-
-   The project is opened in Visual Studio.
-
-   ![Project opened in Visual Studio](media/create-a-script-open-project.png)
-
-   _Project opened in Visual Studio_
+You’ve created a game and have added some entities to the game. Now, you have to add some scripts to your game to make your static game dynamic. There are two ways to add a script: In Visual Studio, and in the Game Studio. We'll describe both below.
 
 ## Create a script in Visual Studio
 
@@ -55,7 +38,7 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
    A new class is added to your game.
 
-4. Open the class that you have created. Make the script public and assign the type of script (AsyncScript or SyncScript) manually. Add the function ```Update``` to the code, and put your script implementation the function's body.
+4. Open the class that you have created. Make the script public and derive the new class from either AsyncScript or SyncScript manually. Add the function ```Update``` to the code, and put your script implementation the function's body. Here is an example of what your script might look like when you've done that:
 
 ```
 	using System;
@@ -123,7 +106,6 @@ You can create a script in Game Studio without using any other application.
 
    _New script on Asset view tab_
 
->**Note:** The new script with the selected script-type will be automatically added to Visual Studio.
 
 ```
     using System;

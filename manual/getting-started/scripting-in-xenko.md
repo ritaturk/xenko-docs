@@ -4,11 +4,13 @@ In this page, you’ll learn how to use a [script](xref:scripting) in your game,
 
 ## Scripting and entities
 
+A script is a unit of code that helps to move entities, control their movement, arrange events in your game, and respond to user inputs. All scripting in Xenko is done in C#, therefore you can use the C# programming reference, to find out about language specific information you might need.
+
 A script can be attached to one or more entities. Multiple scripts can also be attached to a single entity. If you attach a script to multiple entities, multiple instances of that script are created. This allows for the same script to have different values for its public properties. You'll learn more about this subject later in this chapter.
 
 ## Public Engine objects
 
-Scripts can access various Engine objects in Xenko. If you need to animate a graph using a script, the script must use an engine object called GraphicsDevice, which allows access to graphical effects.
+Scripts can access various Engine objects of the Xenko framework. Below a list of all available objects.
 
 ```
 	public AudioSystem Audio { get; }
@@ -23,6 +25,8 @@ Scripts can access various Engine objects in Xenko. If you need to animate a gra
 	public SpriteAnimationSystem SpriteAnimation { get; }
 	protected Logger Log { get; }
 ```
+
+These objects are described in more detail in the API reference.
 
 ## Types of scripts
 
@@ -76,7 +80,7 @@ public class SampleAsyncScript : AsyncScript
 
 ## Using public properties
 
-Public properties are values, used by the script, that can be set from the Game Studio.
+Public properties are values, used by the script, that can be set from the Game Studio. This functionality allows to configure scripts with dynamic parameters from the Game studio.
 
 >**Note:** To ignore a public property in Xenko, add the ```[DataMemberIgnore]``` attribute to the property.
 
@@ -115,7 +119,7 @@ public class SampleSyncScript : SyncScript
 
 ### Steps to set a public property in Game Studio
 
-In order to set a value in the public property in the ```SampleSyncScript```. You have to assign it to an asset first.
+In order to set a value in the public property in the ```SampleSyncScript```. You have to assign it to an entity first.
 
 1. Open your game in Game Studio and select the entity you want to attach the script to.
 
@@ -132,4 +136,5 @@ In order to set a value in the public property in the ```SampleSyncScript```. Yo
 
    _Change value of public property in Property grid section_
 
-   The value of the public property is set with the required properties.
+   
+  Now that you've learned about the basics of scripting in Xenko, let's continue to [Create a script](create-a-script.md)

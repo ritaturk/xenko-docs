@@ -1,10 +1,8 @@
 # Launch your game
 
-After your game is ready, you will be curious to see what your game looks like outside the Game studio. You can launch your game either on [Game Studio](xref:game-studio) or in Visual Studio.
+After your game is ready, you will be curious to see what your game looks like. 
 
-In this page, you’ll learn various ways to launch your game.
-
-Xenko has an integrated IDE which automatically opens your game in Visual Studio and allows you to write your script. This saves your time to open a project and create from scratch in Visual Studio.
+In this page, you’ll learn how to start your game using either the Game studio or Visual Studio.
 
 ## Run your Game in Game Studio
 

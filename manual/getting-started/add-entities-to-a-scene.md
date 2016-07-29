@@ -18,7 +18,7 @@ You can see the **Asset view** tab at the bottom-center of Game Studio. After yo
 
 When you add a new entity, Game Studio adds the corresponding [components](xref:component), such as model and texture automatically.
 
-## Create an entity from hierarchy
+## Create an entity from the Scene explorer
 
 You can add an entity from the Scene explorer. You can see the Scene explorer on the left side of the Scene Editor in Game Studio.
 
@@ -51,8 +51,6 @@ You can add an entity from the Scene explorer. You can see the Scene explorer on
    ![Add model component](media/add-entities-to-a-scene-add-model-component.png)
 
    _Add model component in Property grid_
-
-   >**Note:** As this is an empty entity, you need to add the **Model** component first, and then you can add other components.
 
    A model component is added.
 
@@ -107,6 +105,4 @@ After you have duplicated an entity, Xenko assigns a default name to the duplica
    
    _Renamed entity in a scene_
 
-The duplicated entity is renamed.
-
-Now that you are able to add entities to your scene, the next step is to explore how to move around in your scene. For information on how to move around in your scene, see [Navigate in a scene](navigate-in-a-scene.md).
+Now that you are able to add entities to your scene, the next step is to explore how to move around in your scene. For information on how to move around in your scene, see [Scene navigation](scene-navigation.md).
