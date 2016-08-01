@@ -19,4 +19,4 @@ The following image displays a sample scene with a single Knight and default ele
 
    _Basic scene in Xenko_
 
-To create your first basic scene, see [Create a basic scene](create-a-basic-scene.md).
+To start adding content to your scene, see [Positioning entities](positioning-entities.md)

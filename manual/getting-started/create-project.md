@@ -2,34 +2,34 @@
 
 To start developing your game or application, you must first create a [project](xref:project).
 
-This page will show you how to create a new empty project, and how to create a project from an existing sample.
+This page will show you how to create a new empty project, and how to create a project based on a template or sample. Templates are projects that contain just the necessary elements to start working on a specific type of game. Samples are complete games, on which you can base your game, or use to learn from.
 
-## Open New/open project window
+## Create or open a project dialog
 
-To create a new game, first you have to open the **New/open project** window.
+To create a new game, first you have to open the **New/open project** dialog.
 
-* To open the **New/open project** window from the **Xenko launcher**, click the Start button.
-* To open the **New/open project** window from the **Game Studio**, click File > New.
+* To open the **New/open project** dialog from the **Xenko launcher**, click the Start button.
+* To open the **New/open project** dialog from the **Game Studio**, click File > New.
 
 ![New/open project window](media/create-project-new-open-project-window.png)
 
-_New/open project window_
+_New/open project dialog
 
-## Create a new game project
+## Create a new project
 
 By using the 'New Game' template, basic elements like a skybox, ground, light, camera and a sphere are automatically added to the project to help you get started.
 
- 1. Open **New/open project** window, and then select **New Game**.
+ 1. Open **New/open project** dialog, and then select **New Game**.
     
-	In the bottom part of the window, the name and location of the project can be specified.
+	In the bottom part of the dialog, the name and location of the project can be specified.
 
  2. Click **Select**.
     
-	The **Create a new game** window opens. This window helps you configure your new project.
+	The **Create a new game** dialog opens. This dialog helps you configure your new project.
     
  ![create a new game](media/create-project-create-new-game.png)
 
- _Create a new game window_
+ _Create a new game dialog_
 
  3. Enter a value for the **Namespace** you'd like to use, or leave unchanged if you're happy with the given suggestion.
  4.	Select the platform(s) you want to develop for from the **Platforms** section. If your development system does not have the required prerequisites installed for any of the selected platform, a warning message is displayed.
@@ -54,9 +54,9 @@ You may want to learn about a specific feature or you may want to create a game 
 
 **To create a project using a sample:**
 
- 1. Open the **New/open project** window.
+ 1. Open the **New/open project** dialog.
     
- 2.	The left side of the window shows a tree of available project templates and samples. Navigate to New project > Samples
+ 2.	The left side of the dialog shows a tree of available project templates and samples. Navigate to New project > Samples
  
  2. Select the sample you'd like your project to be based on. 
     

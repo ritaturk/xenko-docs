@@ -16,29 +16,13 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
    _Visual Studio application_
 
-   The game in Visual Studio by default creates two extensions: ```.Game``` and ```.Windows```.
-
-   ![Game extensions in Visual Studio](media/create-a-script-game-extensions.png)
-
-   _Game extensions in Visual Studio_
-
 2. Add a new class in the ```.Game``` extension of your project. To add a new class, right-click the ```.Game``` extension, click **Add**, and then click **New Item**.
-
-   ![Create a new class](media/create-a-script-create-new-class.png)
-
-   _Create a new class_
-
-   The **Add New Item** window opens.
-
-   ![Add new item window](media/create-a-script-add-new-item-window.png)
-
-   _Add New Item window_
 
 3. In **Visual C#** items, select **Class**, and then click **Add**.
 
    A new class is added to your game.
 
-4. Open the class that you have created. Make the script public and derive the new class from either AsyncScript or SyncScript manually. Add the function ```Update``` to the code, and put your script implementation the function's body. Here is an example of what your script might look like when you've done that:
+4. Open the class that you have created. Make the script public and derive the new class from either AsyncScript or SyncScript manually and implement the needed abstract method(s). Here is an example of what your script might look like when you've done that:
 
 ```
 	using System;
@@ -63,18 +47,14 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 	}
 ```
 
-5. From the **Build** menu, click **Build Solution** to build the current project.
-6. After the build is successful, open your game in Game Studio, and then reload your project. To reload your project, in the **File** menu, click **Reload Project**.
-
-   The following confirmation message is displayed.
+5. Save your project and script files
+6. Go to the Game Studio, and select **Yes** in the displayed popup prompting you for reload of the affected assemblies.
 
    ![Confirmation message](media/create-a-script-confirmation-message.png)
 
    _Confirmation message_
 
-7. Click **Yes**.
-
-   Xenko adds your class files to your [component](xref:component) list.
+   Game Studio adds your class files to your [component](xref:component) list.
 
 8. Select your entity. In the **Priority grid** section, click **Add component**, and then select the class that you created.
 
@@ -105,7 +85,8 @@ You can create a script in Game Studio without using any other application.
    ![New script on Asset view tab](media/create-a-script-new-script-asset-view.png)
 
    _New script on Asset view tab_
-
+   
+   >**Tip:** You can edit the new script in the text editor, however we strongly encourage to use Visual Studio instead, as it gives more control over the overal project structure, and code. To edit the new script, right-click the script in the **Asset view** tab and then click **Open in Text Editor**. Update the script and then save.
 
 ```
     using System;
@@ -130,7 +111,5 @@ You can create a script in Game Studio without using any other application.
 		}
 	}
 ```
-
->**Tip:** You can edit the new script in the text editor. To edit the new script, right-click the script in the **Asset view** tab and then click **Open in Text Editor**. Update the script and then save.
 
 Now, you’ve learned how to create a script in Xenko. You can use your script for an entity now. For information on how to use a script, see [Use a script](use-a-script.md).

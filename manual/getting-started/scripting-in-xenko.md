@@ -8,46 +8,27 @@ A script is a unit of code that helps to move entities, control their movement, 
 
 A script can be attached to one or more entities. Multiple scripts can also be attached to a single entity. If you attach a script to multiple entities, multiple instances of that script are created. This allows for the same script to have different values for its public properties. You'll learn more about this subject later in this chapter.
 
-## Public Engine objects
+Scripting allows you to control all elements of the game. There are a couple of Xenko specific base types from which you can derive your classes from, which you can use for functionality that needs to be called every frame, or just once at startup.
 
-Scripts can access various Engine objects of the Xenko framework. Below a list of all available objects.
-
-```
-	public AudioSystem Audio { get; }
-	public ContentManager Content { get; }
-	public EffectSystem EffectSystem { get; }
-	public IGame Game { get; }
-	public GraphicsDevice GraphicsDevice { get; }
-	public InputManager Input { get; }
-	public SceneSystem SceneSystem { get; }
-	public ScriptSystem Script { get; }
-	public IServiceRegistry Services { get; }
-	public SpriteAnimationSystem SpriteAnimation { get; }
-	protected Logger Log { get; }
-```
-
-These objects are described in more detail in the API reference.
-
-## Types of scripts
+## Xenko specific types of scripts
 
 Scripts can be classified into Startup scripts, Synchronous scripts, and Asynchronous scripts.
 
 The following are the types of scripts with examples:
 
-* **Startup script:** This script is used to initialize an entity in a game and is executed to perform loading or unloading of the entity in the game.
+* **Startup script:** This script's ```Start``` method is called once during startup, and can be used to initialize certain game elements.
 
 ```
 public class StartUpScriptExample : StartupScript
 {
 	public override void Start()
 	{
-		var sphere = SceneSystem.SceneInstance.Where(x => x.Name.Equals("Sphere")).FirstOrDefault();
-		sphere.Add(new BasicAsyncScript());
+		// Do some stuff during initialization
 	}
 }
 ```
 
-* **Synchronous script:** This script loads sequentially and is executed sequentially. If a script in a sequence is not executed, all the subsequent scripts get terminated.
+* **Synchronous script:** The script's ```Update``` method is called each frame. Because the script is synchronous, execution of other scripts waits until the active script is done.
 
 ```
 public class SampleSyncScript : SyncScript
@@ -62,7 +43,7 @@ public class SampleSyncScript : SyncScript
 }
 ```
 
-* **Asynchronous script:** This script is not dependent on the execution of any other script. It can be executed randomly or with a combination of scripts without any dependency.
+* **Asynchronous script:** The script's ```Execute``` method is called each frame. Because the script is a-synchronous, execution of other scripts is not blocked.
 
 ```
 public class SampleAsyncScript : AsyncScript
@@ -78,15 +59,28 @@ public class SampleAsyncScript : AsyncScript
 }
 ```
 
+### Available Engine Modules
+
+If a script is derived from either ```SyncScript``` or ```AsyncScript```, the script can access various Engine Modules of the Xenko framework:
+
+* **Audio**: Gives access to the audio system.
+* **Content**: Lets you load and save content from Assets.
+* **EffectSystem**: Lets you load and compile effects and shaders.
+* **Game**: 
+* **GraphicsDevice**: Gives you very advanced access to the low-level graphics device, in order to create GPU resources.
+* **Input**: Gives you access to keyboard, mouse and joypad states and event.
+* **SceneSystem**: Gives you access to the currently displayed scene. Here you can manage Entities.
+* **Log**: Gives you access to logging system, in order to log messages and errors from script.
+
+These objects are described in more detail in the Xenko API reference.
+
 ## Using public properties
 
-Public properties are values, used by the script, that can be set from the Game Studio. This functionality allows to configure scripts with dynamic parameters from the Game studio.
+Public properties can be set from the Game Studio and allow to configure scripts with dynamic parameters from the Game studio. In order to use a public property in Game Studio, it needs to be serializable. 
 
->**Note:** To ignore a public property in Xenko, add the ```[DataMemberIgnore]``` attribute to the property.
+The following is an example of a script with a public property called DelayTimeOut:
 
-The following is an example of a public property:
-
-```
+```cs
 public class SampleSyncScript : SyncScript
 {
 	// Declared public member variables and properties will be shown in Game Studio
@@ -101,9 +95,9 @@ public class SampleSyncScript : SyncScript
 
 In the above example, the ```SampleSyncScript``` class exposes a public property called ```DelayTimeOut```.
 
-To have the same public property hidden from Game Studio, use the ```[DataMemberIgnore]``` attribute:
+If you need to have a public property in your script, that should be hidden in Game Studio, use the ```[DataMemberIgnore]``` attribute as follows:
 
-```
+```cs
 public class SampleSyncScript : SyncScript
 {
 	// This public property will not be available in Game Studio

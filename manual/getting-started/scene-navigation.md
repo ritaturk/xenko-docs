@@ -120,4 +120,4 @@ This gizmo indicates the current orientation of the scene.
 
    _Scene orientation gizmo_
 
-You’ve explored how to navigate through a scene. Next we'll show you how to move and rotate your entities, see [Manage entities in a scene](manage-entities-in-a-scene.md).
+You’ve explored how to navigate through a scene. Next we'll show you how to move and rotate your entities, see [Positioning entities](positioning-entities.md).

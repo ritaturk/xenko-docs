@@ -2,8 +2,6 @@
 
 In this page, you’ll learn how to attach a script to an entity, how to test a script, and how to debug a script.
 
-Game Studio enables you to easily attach, test, and debug the script you’ve created.
-
 ## Attach a script
 
 You can attach a script to your entity either from the **Add component** section of [Game Studio](xref:game-studio) or through code.
@@ -33,9 +31,8 @@ You can write a code in Game Studio to attach a script to an entity.
 In the following sample **BasicAsyncScript** (Script name) is attached to **Sphere** (entity name).
 
 ```Code: 
-var sphere = SceneSystem.SceneInstance.Where(x => x.Name.Equals("Sphere")).FirstOrDefault();
-
-sphere.Add(new BasicAsyncScript());
+// myEntity being an existing entity in the scene
+myEntity.Add(new BasicAsyncScript());
 ```
 
 ## Test a script
