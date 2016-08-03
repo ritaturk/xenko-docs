@@ -1,7 +1,5 @@
 # Create a script
 
-Xenko provides two ways to create a script: Create a script in Visual Studio and create a script in the Game Studio.
-
 You’ve created a game and have added some entities to the game. Now, you have to add some scripts to your game to make your static game dynamic. There are two ways to add a script: In Visual Studio, and in the Game Studio. We'll describe both below.
 
 ## Create a script in Visual Studio
@@ -10,11 +8,7 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
 **To create a script in Visual Studio:**
 
-1. In the Visual Studio application, open the project.
-
-   ![Visual Studio application](media/create-a-script-visual-studio-application.png)
-
-   _Visual Studio application_
+1. Open Visual Studio, by clicking the 'Open in IDE' button <img src="media/create-a-script-ide-icon.png" hspace="10" title="Open in IDE" /> in the Game Studio toolbar.
 
 2. Add a new class in the ```.Game``` extension of your project. To add a new class, right-click the ```.Game``` extension, click **Add**, and then click **New Item**.
 
@@ -47,16 +41,18 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 	}
 ```
 
-5. Save your project and script files
-6. Go to the Game Studio, and select **Yes** in the displayed popup prompting you for reload of the affected assemblies.
+**Loading your new script in Game Studio**
+
+1. Save your project and script files
+2. Go to the Game Studio, and select **Yes** in the displayed popup prompting you for reload of the affected assemblies.
 
    ![Confirmation message](media/create-a-script-confirmation-message.png)
 
    _Confirmation message_
 
-   Game Studio adds your class files to your [component](xref:component) list.
+   Game Studio adds your class script to your [component](xref:component) list.
 
-8. Select your entity. In the **Priority grid** section, click **Add component**, and then select the class that you created.
+3. Select your entity. In the **Priority grid** section, click **Add component**, and then select the class that you created.
 
    ![Add script in Add component](media/create-a-script-add-component.png)
 

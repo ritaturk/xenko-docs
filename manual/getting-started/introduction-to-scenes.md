@@ -1,11 +1,12 @@
 # Scene creation
 
-In this section, you’ll learn how to:
+This section will discuss the following subjects:
 
-* Create a basic [scene](xref:scene) in Xenko
-* Move around your scene using navigation controls, navigation gizmos
-* Add [entities](xref:entity) to your scene
-* Move, rotate, and resize entities in your scene
+* [Scene navigation](scene-navigation.md) - how to move and look around.
+* [Populating your scene](populating-your-scene.md) - how to put Assets in your Scene.
+* [Positioning entites](positioning-entities.md) - how to move / rotate / scale your entities.
+
+<small>If you're looking for more advanced topics, see [Scenes](/manual/game-studio/scenes.md) in the Game Studio documentation.</small>
 
 A scene is a blank canvas, on which you can add entities. Entities refer to the objects that you added to your scene. 
 
@@ -19,4 +20,4 @@ The following image displays a sample scene with a single Knight and default ele
 
    _Basic scene in Xenko_
 
-To start adding content to your scene, see [Positioning entities](positioning-entities.md)
+To learn more about basic Scene concepts, see [Scene navigation](scene-navigation.md).

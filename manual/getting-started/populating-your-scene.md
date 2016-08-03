@@ -1,20 +1,18 @@
-# Populate your scene
+# Populating your scene
 
 After you create a scene, you can add entities to your scene to build your game level. You can add an entity to your scene in a couple of ways.
 
-In this page, you’ll learn how to create an entity from an asset of the **Asset view**, add a new entity in the Scene explorer, and how to duplicate an existing entity with all its properties.
+In this page, you’ll learn how to create an entity from an asset, add a new entity in the Scene explorer, and how to duplicate an existing entity with all its properties.
 
 ## Add an entity from Asset view
 
-You can create a new entity directly by dragging an asset from the **Asset view** tab on the Scene Editor. The following video shows how to drag and place an entity onto the Scene Editor.
+You can create a new entity by dragging an asset from the **Asset view** tab in the Scene Editor. The following video shows how to drag and place an entity onto the Scene Editor.
 
 <video controls autoplay loop height="480" width="640">
    <source src="media/add-entities-to-scene-drag-and-place-entity.mp4" type="video/mp4">
 </video>
 
 _Video: Drag and place an entity_
-
-You can see the **Asset view** tab at the bottom-center of Game Studio. After you select an asset from the **Asset view** tab, drag and drop it in the [Scene Editor](xref:scene-editor).
 
 When you add a new entity, Game Studio adds the corresponding [components](xref:component), such as model and texture automatically.
 
@@ -88,7 +86,7 @@ Instead of creating a new entity, you can also start from an existing entity by 
 
 2. Select **Duplicate selected entities**.
 
-   The selected entity is duplicated with all the properties.
+   The selected entity is duplicated with all its properties.
 
    >**Note:** Alternatively, you can select the entity to be copied, and then click the ![gizmo](media/add-entities-to-a-scene-gizmo.png) [gizmo](xref:gizmo). Use the mouse to drag the entity on the Scene Editor while keeping the **Ctrl** button pressed. A duplicate entity is created from the selected entity.
 
@@ -105,4 +103,4 @@ After you have duplicated an entity, Xenko assigns a default name to the duplica
    
    _Renamed entity in a scene_
 
-Now that you are able to add entities to your scene, the next step is to explore how to move around in your scene. For information on how to move around in your scene, see [Scene navigation](scene-navigation.md).
+Now that you are able to add entities to your scene, the next step is to move, rotate and scale your entites, see [Positioning entites](positioning-entities.md).

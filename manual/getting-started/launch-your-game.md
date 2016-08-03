@@ -1,43 +1,32 @@
 # Launch your game
 
-After your game is ready, you will be curious to see what your game looks like. 
+When your game is ready, you will be curious to see what your game looks like. 
 
-In this page, you’ll learn how to start your game using either the Game studio or Visual Studio.
+This page will show you how to start your game using either the Game studio or Visual Studio.
 
 ## Launch Game from Game Studio
 
-**To launch your game using the play icon:**
+<div style="float:left;">Click</div> <div style="float:left;"><img src="media/launch-your-game-play-icon.png" title="Play" hspace="10" /></div> to run or press **F5**.
+<div style="clear: both;"></div>
 
-1. Click ![Build](media/launch-your-game-build-icon.png) to build your game or press **F6**.
-   Your game build is created.
+You can see the build status in the Output window. When the build has finished, your game will start in the selected platform.
 
-2. Click ![Play](media/launch-your-game-play-icon.png) to run or press **F5**.
-
-   You can see the build status in the Output window. Your game starts in the selected platform.
+> **Note:** Currently not all platforms can be started from Game Studio
 
 ## Launch your Game from Visual Studio
 
-You can run your game in Visual Studio. From Game Studio, you can initiate this.
+1. <div style="float: left;">Open Visual Studio: In Game Studio, click</div> <div style="float: left;"><img src="media/launch-your-game-ide-icon.png" title="IDE" hspace="10" />.</div>
+<div style="clear: both;"></div>
 
-**To launch a game in Visual Studio:**
+2. Select the profile you want to build and run for in the top. Note that the correct startup project will become active automatically.
 
-1. Open Visual Studio.
-
-   In Game Studio, click ![IDE](media/launch-your-game-ide-icon.png).
-
-2. Select your platform, by right clicking the desired platform name and then click **Set as Startup Project**.
-
-3. Click ![Start button](media/launch-your-game-start-button.png) or press **F5**.
-
-   Your game starts in debug mode in Windows.
+	![Select build profile Visual Studio](media/launch-your-game-visual-studio-profiles.png)
    
+3. To start the game with or without debugging:
+   * Press **Ctrl + F5** to start the game without debugging
+   * <div style="float: left;">Click</div> <div style="float: left;"><img src="media/launch-your-game-start-button.png" title="Start button" hspace="10" /></div> <div style="float: left;">or press **F5** to start the game with debugging.</div>
+   <div style="clear: both;"></div><br/><br/>
+
    ![MyGame running](media/launch-your-game-mygame-running.png)
    _Your running game_
    
-4. Press **Ctrl + F5**.
-
-	Your game starts.
-
-   ![Solution explorer](media/launch-your-game-select-platform.png)
-
-   _Select Platform in Solution Explorer_

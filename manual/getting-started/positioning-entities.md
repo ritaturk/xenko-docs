@@ -6,11 +6,12 @@ This page will show you how to move, rotate, and resize your entities in a scene
 
 ### Focus on an entity
 
-While editing the properties of a specific entity, you may need to view it in a full screen mode so that you can properly see all the subtle changes that you have made to that entity. To do this, you can press the **F** key after selecting the entity. This action automatically zooms on the entity and adjusts the position of the editor camera.
+While editing the properties of a specific entity, you may need to view it in a full screen mode so that you can properly see all the subtle changes that you have made to that entity. To do this, you can press the **F** key after selecting the entity. This action automatically zooms in on the entity and adjusts the position of the editor camera.
 
-Alternatively, you can click ![Magnifier icon](media/navigate-in-a-scene-magnifier-icon.png) from the Scene explorer view to focus on the entity without having to select it first.
+<div style="float:left;">Alternatively, you can click</div> <div style="float:left;"><img src="media/navigate-in-a-scene-magnifier-icon.png" hspace="10" title="Magnifier icon" /></div> <div style="float:left;">from the Scene explorer view to focus on the entity without having to select it first.</div>
+<div style="clear:both;"></div>
 
-The following animations display focusing on an entity using the Magnifier icon and using the **F** key, respectively.
+The following animations display focusing on an entity using the Magnifier icon and using the **F** key.
 
 <div class="video_container">
   <div class="video_container_left">
@@ -29,7 +30,7 @@ The following animations display focusing on an entity using the Magnifier icon 
 
 ## Transformation Gizmos
 
-Gizmos in Game Studio help you move, rotate, and resize your entities effectively. They are present at the top of the Scene Editor.
+Gizmos in Game Studio help you move, rotate, and resize your entities. You can find these gizmos at the top of the Scene Editor.
 
 You can move an entity by first clicking the entity, and then through the Translation gizmo, dragging it along any of the X, Y, and Z axes. For example, to move an entity along the X axis, click the entity, and click and drag it along the X axis. You can also move the entity along two axes at the same time by clicking the center of the X, Y, and Z axes, and then dragging it in the required direction. Also, you can rotate and resize the entity using the Rotation and Scale gizmos, respectively.
 
@@ -42,7 +43,7 @@ You can see the following gizmos on the Scene Editor:
 
 ### Translation gizmo
 
-The Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png) changes the position of the selected entity. The following video shows how you can translate an entity along one axis, a plane, freely in 3D.
+The Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png) changes the position of the selected entity. The following video shows how you can translate an entity along one axis, a plane (2 axes) or freely in 3D.
 
 <video controls autoplay loop height="480" width="640">
                 <source src="media/manage-entities-in-scene-translation-gizmo.mp4" type="video/mp4">
@@ -70,39 +71,7 @@ The Scale gizmo ![Scale gizmo](media/manage-entities-in-scene-scale-gizmo.png) r
 
 _Video: Scale an entity_
 
-## Switch between gizmos
-
-You can switch between Translation, Rotation, and Scale gizmos through simple clicks.
-
-To switch between the gizmos, you must first click anywhere in the Scene Editor. Then, you can switch between Translation, Rotation and Scaling by:
-
-* Clicking a gizmo icon to switch to that particular gizmo.
-* Pressing the Spacebar
-* Press the **W** key to switch to the Translation gizmo
-* Press the **E** key to switch to the Rotation gizmo
-* Press the **R** key to switch to the Scale gizmo
-
-## Change gizmo coordinate system
-
-In Game Studio, you can select in which coordinate system the gizmo operates. The following table displays the gizmo axis bases and their functions:
-
-| Gizmo axis base | Function |
-| ------  |  ------  |
-| ![World space coordinates](media/manage-entities-in-scene-wsc.png) | Uses the world coordinates for transformations. The X, Y, and Z axes are the same for every entity. |
-| ![Object space coordinates](media/manage-entities-in-scene-osc.png)  | Uses the local coordinates for transformations. The axes are oriented in the same direction as the selected entity. |
-| ![Camera space coordinates](media/manage-entities-in-scene-csc.png) | Uses the current camera projection coordinates for transformations. The axes are oriented in the same direction as the editor camera. |
-
-
-**To change the axis base for a gizmo:**
-
-1. Select an entity.
-2. Click the button representing the required coordinate system.
-   
-   The axis base for a gizmo is changed.
-
->**Note:** The Translation gizmo and the Rotation gizmo can use all coordinate systems. However, the Scale gizmo can only use the local coordinate system.
-
-## Scaling and translating in all 3 dimensions
+### Scaling and translation in all 3 dimensions
 
 You can perform a translation over all 3 axes by clicking the center of the Translation gizmo ![Translation gizmo](media/manage-entities-in-scene-translation-gizmo.png).
 
@@ -110,8 +79,7 @@ You can perform a translation over all 3 axes by clicking the center of the Tran
 
 1. Select an entity.
 2. Select the Translation gizmo.
-3. Click the center of the Translation gizmo.
-   You can now drag the entity horizontally, vertically, and diagonally.
+3. Left-click and drag the center of the Translation gizmo to move the entity over all 3 axes.
 
 You can perform multiple scaling over all 3 axes by clicking the center of the Scale gizmo.
 
@@ -119,8 +87,34 @@ You can perform multiple scaling over all 3 axes by clicking the center of the S
 
 1. Select an entity.
 2. Select the Scale gizmo.
-3. Click the center of the Scale gizmo.
-   You can now increase the size of the entity proportionally.
+3. Left-click and drag the center of the Scale gizmo to scale the entity in all 3 axes.
+
+## Switching between gizmos
+
+To switch between the gizmos, you can either click on the respective buttons, or use keyboard shortcuts to change between them. Before using the keyboard shortcuts, you must first make the Scene editor active, by clicking anywhere in the Scene Editor. Then, you can switch between Translation, Rotation and Scaling by:
+
+* Pressing the Spacebar - this rotates between the Translate, Rotate, and Scale gizmos.
+* Press the **W** key to switch to the Translation gizmo.
+* Press the **E** key to switch to the Rotation gizmo.
+* Press the **R** key to switch to the Scale gizmo.
+
+## Change gizmo coordinate system
+
+In Game Studio, you can select in which coordinate system the gizmo operates. The following table displays the gizmo axis bases and their functions:
+
+| Gizmo axis base | Function |
+| ------  |  ------  |
+| ![World space coordinates](media/manage-entities-in-scene-wsc.png) | Uses the world coordinate system for transformations. The X, Y, and Z axes are the same for every entity. |
+| ![Object space coordinates](media/manage-entities-in-scene-osc.png)  | Uses the local coordinate system for transformations. The axes are oriented in the same direction as the selected entity. |
+| ![Camera space coordinates](media/manage-entities-in-scene-csc.png) | Uses the current camera coordinate system for transformations. The axes are oriented in the same direction as the editor camera. |
+
+
+**To change the axis base for a gizmo:**
+
+1. Select an entity.
+2. Click the button representing the required coordinate system.
+   
+>**Note:** The Translation gizmo and the Rotation gizmo can use all coordinate systems. However, the Scale gizmo can only use the local coordinate system.
 
 ## Snapping gizmo actions
 
@@ -141,4 +135,4 @@ Based on the gizmo you selected, the icon on the Snapping tool changes.
    _Snap scale to factor 1.1_
 
 
-The next step is to make your scene more dynamic. To do this, you need to use scripts. For information about using scripts, see [Scripting in Xenko](scripting-in-xenko.md).
+The next step is to make your scene more dynamic. To do this, you need to use scripts. For information about using scripts, see [Introduction to scripting](introduction-to-scripting.md).

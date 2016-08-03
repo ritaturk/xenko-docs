@@ -10,7 +10,7 @@ _Xenko launcher_
 
 ## Installing Xenko and starting the Game Studio
 
-The launcher prompts  initially to install the latest version of Xenko and the Xenko Visual Studio plugin. Using this plugin, you can edit your [shaders](xref:shaders) directly from Visual Studio. It also provides syntax highlighting, live-code-analysis with validation, error-checking, and navigation. It is not mandatory to install this plugin, however we recommend to install it.
+The launcher prompts  initially to install the latest version of Xenko and the Xenko Visual Studio plugin. Using this plugin, you can edit your [shaders](xref:shaders) directly from Visual Studio. It also provides syntax highlighting, live code analysis with validation, error-checking, and navigation. It is not mandatory to install this plugin, however we recommend to install it.
 
 To change the active version of Game Studio, click a version in the **Switch/update version** section to make the selected version active. You can start the active version of Game Studio by clicking the Start button. 
 
@@ -20,7 +20,7 @@ _Start button of Xenko launcher_
 
 ## Version management
 
-The Xenko launcher allows you to install multiple versions of Xenko, because different versions might not be compatible with each other. Therefore if you have a project that was developed for an older version of Xenko, you can choose not to upgrade this project to the latest version, and still be able to continue developing on this project.
+The Xenko launcher allows you to install multiple versions of Xenko. Typically you would be working with the latest version of Xenko, however it is possible to install an older version of Xenko in order to work with an old project. This is due to the fact that different versions of Xenko, might contain changes that require old projects to be upgraded.
 
 For bug fix versions, only the last number in the version number is changed. Bug fix versions do not contain breaking changes, meaning it is safe, and highly recommended to install them. Note that these versions cannot be reverted.
 

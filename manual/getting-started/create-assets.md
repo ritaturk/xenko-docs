@@ -4,7 +4,7 @@ To add content to your game, you need to import assets. This page will show you 
 
 Xenko provides the following ways to create and add assets in your game:
  * Add assets from the **Asset view** tab
- * Add assets from by dragging and dropping resource files (images, audio, etc.) in the **Asset view** tab
+ * Add assets by dragging and dropping resource files (images, audio, etc.) in the **Asset view** tab
  
 ##Adding assets from the Asset view tab
 
@@ -24,7 +24,7 @@ Xenko provides the following ways to create and add assets in your game:
 
 	_Procedural Model added to Asset view tab_
 	
-Note that some Assets require a source file, such as textures. In these cases, you will be prompted to select the required resource file in order to continue.	
+> **Note**: Some Assets require a source file, such as textures. When adding these Assets, you will be prompted to select the required resource file in order to continue.	
 
 ##Adding assets with drag and drop
 
@@ -32,11 +32,10 @@ You can also add Assets by dragging and dropping files directly from the Windows
 
 __TODO ADD IMAGE__
 
-After the asset is added to the **Asset view** tab, move your mouse pointer over the asset to see the URL, Type, and other details of the asset as a tooltip (for example, material, @texture, [sky box](xref:sky-box), and other details).
+After the asset is added to the **Asset view** tab, move your mouse pointer over the asset to see the URL, Type, and other details of the asset as a tooltip.
 	
   ![Details of new asset in Asset view tab](media/asset-creation-solution-explorer.png)
 	
-   _Details of new asset in Asset view tab_
-	
+   _Details of new asset in Asset view tab_	
 	
 You’ve learned how to create and add assets to your game project. You may want to customize the assets to suit your game environment. For information on editing assets, see [Manage assets](manage-assets.md).
