@@ -13,7 +13,7 @@ To create a new game, first you have to open the **New/open project** dialog.
 
 ![New/open project window](media/create-project-new-open-project-window.png)
 
-_New/open project dialog
+_New/open project dialog_
 
 ## Create a new project
 
