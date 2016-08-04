@@ -26,7 +26,7 @@ For bug fix versions, only the last number in the version number is changed. Bug
 
 After the Xenko installation has finished for the selected versions, click the required version. The version number of the selected version is displayed on the Start button. Now click the start button to launch the selected version.
 
-![Various versions of Xenko](media/xenko-launcher-various versions.png)
+![Various versions of Xenko](media/xenko-launcher-various-versions.png)
 
 _Various versions of Xenko_
 

@@ -30,8 +30,6 @@ Xenko provides the following ways to create and add assets in your game:
 
 You can also add Assets by dragging and dropping files directly from the Windows explorer into the **Asset view** tab.
 
-__TODO ADD IMAGE__
-
 After the asset is added to the **Asset view** tab, move your mouse pointer over the asset to see the URL, Type, and other details of the asset as a tooltip.
 	
   ![Details of new asset in Asset view tab](media/asset-creation-solution-explorer.png)

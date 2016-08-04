@@ -68,8 +68,6 @@ You can create a script in Game Studio without using any other application.
 
    ![New asset button in Asset view tab](media/create-a-script-new-asset.png)
 
-   _TODO: create new screenshot, this one is misleading. New asset button on Asset view tab_
-
 	The **Script Asset Selection** window opens.
 
    ![Script Asset Selection window](media/create-a-script-script-asset-selection.png)
