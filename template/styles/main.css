@@ -21,6 +21,12 @@ footer {
   z-index: auto;
 }
 
+/* Updated style for menu items */
+
+.toc .level1 > li {
+  font-weight: normal;
+}
+
 /********************************************/
 
 .sidefilter {
