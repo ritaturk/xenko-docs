@@ -382,7 +382,7 @@ Release date: 2016/08/05
 
 Release date: 2016/08/05
 
-Note: emergency bugfix of 1.7.8 release, which was not properly copying native libraries.
+Note: emergency bugfix for 1.7.8 release, which was not properly copying native libraries.
 
 # Known Issues
 
