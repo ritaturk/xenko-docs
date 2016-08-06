@@ -337,6 +337,53 @@ Release date: 2016/07/22
 - Various fixes for additive animation
 - Fixed wrong exception text in AudioLayer initialization
 
+## Version 1.7.7-Beta
+
+Release date: 2016/07/29
+
+### New features
+
+- FBX: Added PivotPosition in ModelAsset (in case it is not properly centered)
+- Engine: Added an experimental "DebugConsoleSystem" to easily display text (API might change)
+
+### Issues fixed
+
+- GameStudio: Undo was not working properly for the first change (due to the undo flag not being properly reset)
+- GameStudio: Some asset change notifications were not sent properly in case of undo/redo
+- GameStudio: Entity focus was not working in some cases
+- GameStudio: Fix EntityComponent reloading after assembly reload
+- GameStudio: Picking in GameStudio was not working properly with some AMD cards
+- GameStudio: String could not be used on the value side of a dictionary (in property grid)
+- Audio: Only create one audio engine, even if multiple game are started
+- FBX: Fix some cases where a material was not properly set
+- Various bugfixes
+
+## Version 1.7.8-Beta
+
+Release date: 2016/08/05
+
+### New features
+
+- Greatly improved performance when building assets (esp. when no changes) and loading Visual Studio solution; it was due to wildcard patterns in our build target files, forcing MSBuild to list files recursively
+- Serialization code is now lockless for the hot path (faster startup)
+- Graphics profile are now cached on D3D, making it faster to open new 3D windows in the GameStudio
+
+### Issues fixed
+
+- Physics bugfixes & optimizations (don't process bone when disabled, and disabled in editor)
+- SDL2.dll was missing when targeting OpenGL
+- Vulkan: sometimes texture pixel size was not properly computed, resulting in invalid Texture CPU readback
+- Fixed a crash when creating new packages
+- D3D12: pipeline state was not properly reset on ClearState & CommandList resets
+- D3D12: rewrote texture and buffer initial data upload, which was failing on AMD hardware
+- D3D12: optimizations to avoid calling unecessary state changes
+
+## Version 1.7.9-Beta
+
+Release date: 2016/08/05
+
+Note: emergency bugfix of 1.7.8 release, which was not properly copying native libraries.
+
 # Known Issues
 
 - Sometimes duplicate contacts are detected by the physics engine.
