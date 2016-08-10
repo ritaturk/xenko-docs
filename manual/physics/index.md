@@ -10,6 +10,4 @@ The Xenko engine provides you with tools to realistically simulate physics in yo
 
 This section will show you how to enable physics in Game Studio, how to use the correct physics component for your needs, and how to apply forces to an Entity through scripting. We will also show you how to use triggers, which allow you to trigger an event when an object enters a certain space for instance.
 
-2D physics?
-
 
