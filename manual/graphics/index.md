@@ -1,6 +1,16 @@
 # Graphics
 
-In this section you will find details about how to use the editor and API related to Graphics and Rendering.
+In this section you will find details about how to use the editor and API related to Graphics and Rendering. Xenko offers an advanced physically based rendering engine, resulting in life like results.
+
+This section will discuss the following subjects:
+
+* [Lighting and Shadows](lighting-and-shadows/index.md)
+* [Graphics Compositor](graphics-compositor/index.md)
+* [Materials](materials/index.md)
+* [Post-Effects](post-effects/index.md)
+* [Rendering pipeling](rendering-pipeline/index.md)
+* [Low-level API](low-level-api/index.md)
+* [Effects and Shaders](effects-and-shaders/index.md)
 
 # Shaders
 
@@ -21,15 +31,3 @@ Xenko shaders are converted automatically to the target graphics platform, eithe
 The Graphics module provides a set of comprehensive methods to display the game. Although the engine is available on multiple platforms, the whole system behaves like DirectX 11 from the user perspective.
 
 A basic prior knowledge of the rendering pipeline is expected from the user.
-
-## Topics
-
-- [Lighting and Shadows](lighting-and-shadows/index.md)
-- [Graphics Compositor](graphics-compositor/index.md)
-- [Materials](materials/index.md)
-- [Post-Effects](post-effects/index.md)
-- [Rendering pipeling](rendering-pipeline/index.md)
-- [Low-level API](low-level-api/index.md)
-- [Effects and Shaders](effects-and-shaders/index.md)
-- [Oculus Rift experimental support](oculus/index.md)
-- [HOWTOs](howtos/index.md)
