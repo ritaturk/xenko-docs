@@ -26,7 +26,7 @@
 ## [Creating a game]()
 ### [Game Studio Camera Settings](game-studio/game-studio-camera-settings.md)
 ## [Advanced techniques]()
-# [Graphics]()
+# [Graphics](graphics/index.md)
 ## [Lighting]()
 ## [Lasers and Lightning effects](particles/particles-tutorials/particles-tutorials-lasers/index.md)
 ## [Materials]()
