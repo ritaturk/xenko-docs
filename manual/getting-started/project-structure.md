@@ -14,17 +14,16 @@ A package can depend on other packages. A package and all its dependencies make 
 
 ## Package directory structure
 
-In Xenko, a package refers to a game project and comprises of various sub-folders. In Game Studio, the Solution explorer section displays the folder hierarchy of your game, which matches the package folder structure.
+In Xenko, a package is a collection of Assets, Resources, Scripts. In Game Studio, the Solution explorer section displays the folder hierarchy of your game, which matches the package folder structure.
 
 For example, for a project named 'MyGame', the directory structure is as follows:
 
 ![Xenko Sample Directory Structure](media/sample-project-directory-structure.png)
 
 1. **Assets** Contains all the assets used in the project. (Models, materials, etc.)
-2. **Bin** Contains the binary (compiled) files needed to run the game on the respective platform. A subdirectory for each platform is created, and contains the files needed to run on that platform.
+2. **Bin** Contains all the binariesof yours game on the respective platform. A subdirectory for each platform is created, and contains the files needed to run on that platform.
 3. **MyGame.Game** Contains all the game specific source code.
-4. **MyGame.Linux** Contains all the Linux platform specific source code. A subdirectory containing the platform name is created for every selected platform.
-4. **MyGame.Windows** Contains all the Windows platform specific source code.
+4. **MyGame._Platform_** Contains all the platform specific source code. A subdirectory containing the platform name is created for every selected platform. (e.g. MyGame.Linux, MyGame.Windows etc.).
 5. **Resources** Contains all files containing the raw information that needs to be embedded in the game, like: images, audio, FBX files, XML files, etc.
 
 Now, as you know how to organize your project, you can start creating your own assets, see [Introduction to Assets](introduction-to-assets.md).

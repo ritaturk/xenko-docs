@@ -2,11 +2,11 @@
 
 After you add an asset to your game project, you may need to make some changes to the asset in order to make it suitable to your game environment.
 
-This page will show you how to edit your game assets. As an example, you’ll change the color of a Sphere [Procedural Model](xref:procedural-model).
+This page will show you how to edit your game assets. As an example, you’ll change the color of a Material.
 
 > **Note**: At all times, you can see your changes in real-time in the asset preview window.
 
-## To change the color of the Sphere Procedural Model
+## Change Material color
 
  1. In the **Asset view** tab, select the Sphere Material.
  
@@ -40,8 +40,13 @@ In the Scene explorer view in the top-left of the Game Studio, you will see all 
 
 Assets are not included in the game data by default. They are only included in the game data, if they are referenced by another Asset included in the game data, or when they are explicitly included. By clicking the dot in the top-left of an Asset in the Asset view, you can control if an Asset is included or not. The color of the dot indicates the include status:
 
-* Green: the Asset is included in the game data.
-* Blue: the Asset is included in the game data, because it was referenced or included by another Asset that is included in the game data.
-* No color / transparant: the Asset is not included in the game data.  
+![Green](media/manage-assets-include-asset.png)
+_Green: the Asset is included in the game data, because it was referenced or included by another Asset that is included in the game data._
+
+![Blue](media/manage-assets-reference-asset.png)
+_Blue: the Asset is included in the game data. Note that this Asset has not been referenced by any other Asset. A reason to include Assets this way, is for instance, if you want to use them through script._
+
+![Transparant](media/manage-assets-exclude-asset.png)
+_No color / transparant: the Asset is not included in the game data._
 	
 You’ve learned how to edit an asset. In the next section you'll learn how to use assets, see [Use assets](use-assets.md)

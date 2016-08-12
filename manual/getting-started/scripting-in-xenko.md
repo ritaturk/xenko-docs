@@ -1,6 +1,6 @@
 # Scripting in Xenko
 
-In this page, you’ll learn how to use a [script](xref:scripting) in your game, about the different types of scripts used in Xenko, and how to make certain properties of your script appear in the Game Studio in order to configure script parameters.
+In this page, you’ll learn how to use a [script](xref:scripting) in your game, the different types of scripts used in Xenko, and how to make certain properties of your script appear in the Game Studio in order to configure script parameters.
 
 ## Scripting and entities
 
@@ -43,7 +43,7 @@ public class SampleSyncScript : SyncScript
 }
 ```
 
-* **Asynchronous script:** The script's ```Execute``` method is called each frame. Because the script is a-synchronous, execution of other scripts is not blocked.
+* **Asynchronous script:** The script's ```Execute``` method is called once when the script is added to the scene. Because the script is asynchronous, execution of other scripts is not blocked.
 
 ```
 public class SampleAsyncScript : AsyncScript
@@ -61,7 +61,7 @@ public class SampleAsyncScript : AsyncScript
 
 ### Available Engine Modules
 
-If a script is derived from either ```SyncScript``` or ```AsyncScript```, the script can access various Engine Modules of the Xenko framework:
+If a script is derived from ```ScriptComponent```, the script can access various Engine Modules of the Xenko framework:
 
 * **Audio**: Gives access to the audio system.
 * **Content**: Lets you load and save content from Assets.
@@ -73,9 +73,11 @@ If a script is derived from either ```SyncScript``` or ```AsyncScript```, the sc
 
 These objects are described in more detail in the Xenko API reference.
 
-## Using public properties
+## Using public properties and fields
 
-Public properties can be set from the Game Studio and allow to configure scripts with dynamic parameters from the Game studio. In order to use a public property in Game Studio, it needs to be serializable. 
+Public properties and fields can be set from the Game Studio and allow to configure scripts with dynamic parameters. This allows for easy communication by, for instance, the artist and the scripts, without having to deal directly with the script code.
+
+>**Note**: In order to use a public property or field in Game Studio, it needs to be serializable. 
 
 The following is an example of a script with a public property called DelayTimeOut:
 
@@ -97,17 +99,11 @@ public class SampleSyncScript : SyncScript
 If you need to have a public property in your script, that should be hidden in Game Studio, use the ```[DataMemberIgnore]``` attribute as follows:
 
 ```cs
-public class SampleSyncScript : SyncScript
-{
+
 	// This public property will not be available in Game Studio
 	[DataMemberIgnore]
 	public float DelayTimeOut { get; set; }
 	
-	public override void Update()
-	{
-		// Do some stuff every frame
-	}
-}
 ```
 
 ![Hide public property with [DataMemberIgnore]](media/scripting-in-xenko-public-property-with-datamemberignore.png)

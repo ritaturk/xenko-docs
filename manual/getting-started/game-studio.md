@@ -27,6 +27,6 @@ You can find this tab at the bottom-center of the Game studio. This tab displays
 
 ### Asset preview
 
-This tab displays a preview of the selected asset, you can playback animations and sounds in the preview for instance. The preview changes based on the type of the asset you have selected. You can find this tab at the bottom-right of the Game studio.
+This tab displays a preview of the selected asset, you can playback animations and sounds in the preview for instance. The preview changes based on the type of the asset you have selected. The Asset preview tab gives you a quick and convenient preview of settings you change for this Asset in the 'Property grid'. You can find this tab at the bottom-right of the Game studio.
 
 Now you’re familiar with the Game Studio interface, you can start organizing your project, see [Project structure](project-structure.md).

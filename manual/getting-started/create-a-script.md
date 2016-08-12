@@ -16,7 +16,7 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
    A new class is added to your game.
 
-4. Open the class that you have created. Make the script public and derive the new class from either AsyncScript or SyncScript manually and implement the needed abstract method(s). Here is an example of what your script might look like when you've done that:
+4. Open the script file that you have created. Make the script is public and derive the new class from either AsyncScript or SyncScript manually and implement the needed abstract method(s). Here is an example of what your script might look like when you've done that:
 
 ```
 	using System;
@@ -80,8 +80,6 @@ You can create a script in Game Studio without using any other application.
 
    _New script on Asset view tab_
    
-   >**Tip:** You can edit the new script in the text editor, however we strongly encourage to use Visual Studio instead, as it gives more control over the overal project structure, and code. To edit the new script, right-click the script in the **Asset view** tab and then click **Open in Text Editor**. Update the script and then save.
-
 ```
     using System;
 	using System.Text;

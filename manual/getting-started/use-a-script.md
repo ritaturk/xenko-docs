@@ -8,15 +8,14 @@ You can attach a script to your entity either from the **Add component** section
 
 **Attaching a script in Game Studio:**
 
-1. Open your project in Game Studio.
-2. Open your [scene](xref:scene), and then click the entity to which you want to attach a script.
-3. Now drag and drop the script from the **Asset view** into the **Property grid** of the selected entity, in order to attach the script.
+1. Open your [scene](xref:scene), and then click the entity to which you want to attach a script.
+2. Now drag and drop the script from the **Asset view** into the **Property grid** of the selected entity, in order to attach the script.
    
 > **Note:** It is also possible to attach a script by using the **Add component** button in the **Property grid**.
 
 **To attach a script through code:**
 
-You can use code in Game Studio to attach a script to an entity.
+You can also use code to attach a script to an entity.
 
 1. In Visual studio, create a script called **BasicAsyncScript** and save it.
 
@@ -33,8 +32,7 @@ You can test your script by running the game. Your script gets executed automati
 
 **To test a script:**
 
-1. Open your game in Game Studio.
-2. Click ![Play icon](media/use-a-script-play-icon.png)to run your game.
+Click ![Play icon](media/use-a-script-play-icon.png)to run your game.
 
 If your code is working correctly, you'll see it's output in the running game. If something is not working correctly, you need to debug your script.
 

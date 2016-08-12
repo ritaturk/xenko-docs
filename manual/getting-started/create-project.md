@@ -19,7 +19,7 @@ _New/open project dialog_
 
 By using the 'New Game' template, basic elements like a skybox, ground, light, camera and a sphere are automatically added to the project to help you get started.
 
- 1. Open **New/open project** dialog, and then select **New Game**.
+ 1. Select **New Game** from the **New/open project** dialog
     
 	In the bottom part of the dialog, the name and location of the project can be specified.
 
@@ -32,13 +32,16 @@ By using the 'New Game' template, basic elements like a skybox, ground, light, c
  _Create a new game dialog_
 
  3. Enter a value for the **Namespace** you'd like to use, or leave unchanged if you're happy with the given suggestion.
+ 
+ >**Note:** If you're not familiar with Namespaces, please refer to the [Introduction to scripting section](introduction-to-scripting.md). For now it's fine to leave this at it's default value.
+
  4.	Select the platform(s) you want to develop for from the **Platforms** section. If your development system does not have the required prerequisites installed for any of the selected platform, a warning message is displayed.
     >**Note:** To run your game on iOS and Android, you need to install [Xamarin](https://www.xamarin.com/studio) (free if you have Visual Studio).
 
  5. Select the desired options from the **Rendering** section.
    
     5.a. **Graphics API:** The graphics that you can use in your game  are dependent on the API that you select. For advanced graphic features, select the latest version of the graphics APIs.
-    >**Note:** Some graphics cards do not support the latest APIs. For mobile devices, only DirectX 9.3 / OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
+    >**Note:** Some graphics cards do not support the latest APIs. For some mobile devices, only DirectX 9.3 / OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
 
 	5.b. **High / low dynamic range (HDR / LDR):** This defines the way color is computed in your game. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. HDR enables you to have advanced and more realistic rendering in your game but is heavier and requires at least profile DirectX 10.0 / OpenGL ES 3.0.
  6. Select the desired orientation for your game in the **Orientation** section. For PC games, use landscape. Portrait is suitable for mobile-based games.
@@ -51,7 +54,7 @@ You may want to learn about a specific feature or you may want to create a game 
 
  * Feature specific basic samples: To explore and learn about a specific feature.
  * Advanced and complete games: Two complete games to create similar games from.
-
+    
 **To create a project using a sample:**
 
  1. Open the **New/open project** dialog.
