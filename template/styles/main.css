@@ -27,6 +27,12 @@ footer {
   font-weight: normal;
 }
 
+/* Updated style for images in list */
+
+ul li  img, ol li img {
+    display: inline;
+}
+
 /********************************************/
 
 .sidefilter {

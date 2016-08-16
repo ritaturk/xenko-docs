@@ -43,6 +43,8 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
 **Loading your new script in Game Studio**
 
+Because your project has been modified outside of Game Studio, Game Studio needs to reload certain information to show your changes.
+
 1. Save your project and script files
 2. Go to the Game Studio, and select **Yes** in the displayed popup prompting you for reload of the affected assemblies.
 
@@ -50,13 +52,9 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
    _Confirmation message_
 
-   Game Studio adds your class script to your [component](xref:component) list.
+   Game Studio adds your class script to your component list.
 
-3. Select your entity. In the **Priority grid** section, click **Add component**, and then select the class that you created.
-
-   ![Add script in Add component](media/create-a-script-add-component.png)
-
-   _Add script in Add component_
+3. Select the Assembly you've added your script to, and you'll find your script in the Asset view window, ready to be used.
 
 ## Create a script in Game Studio
 
@@ -64,17 +62,14 @@ You can create a script in Game Studio without using any other application.
 
 **To create a script in Game Studio:**
 
-1. On the **Asset view** tab, click **New Assets**, and then click **Script Source Code**.
+1. On the **Asset view** tab, click **New Assets**, and then click **Scripts**.
 
    ![New asset button in Asset view tab](media/create-a-script-new-asset.png)
 
-	The **Script Asset Selection** window opens.
+2. Select a script type from the **Script Types** list. The new script is added to the **Asset view** tab.
 
    ![Script Asset Selection window](media/create-a-script-script-asset-selection.png)
-
-   _Script Asset Selection window_
-
-2. Select a script type from the **Script Types** list. The new script is added to the **Asset view** tab.
+   _Select script type_
 
    ![New script on Asset view tab](media/create-a-script-new-script-asset-view.png)
 

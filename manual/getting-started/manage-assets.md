@@ -35,6 +35,9 @@ This page will show you how to edit your game assets. As an example, you’ll ch
 ## Organize Assets
 
 In the Scene explorer view in the top-left of the Game Studio, you will see all the Assets that are currently contained in your scene. You can easily organize your Assets in folders, by right-clicking in the Scene explorer, and selecting 'Create Folder'. Type a name for the new folder, and press enter. Now you can simple drag and drop selected Assets in the folder, in order to create a clean and well organized project.
+
+> **Note**: Hover your mouse pointer over the asset to see the URL, Type, and other details of the asset as a tooltip.
+>  ![Details of new asset in Asset view tab](media/asset-creation-solution-explorer.png)
  
 ## Include assets in build
 

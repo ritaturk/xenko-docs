@@ -14,7 +14,7 @@ You can create a new entity by dragging an asset from the **Asset view** tab in 
 
 _Video: Drag and place an entity_
 
-When you add a new entity, Game Studio adds the corresponding [components](xref:component), such as model and texture automatically.
+When you add a new entity, Game Studio adds the corresponding components, such as model and texture automatically.
 
 ## Create an entity from the Scene explorer
 
@@ -38,13 +38,7 @@ You can add an entity from the Scene explorer. You can see the Scene explorer on
 
    _Empty entity in MainScene_
 
-3. Type a name for the entity in the **Name** field of the **Property grid**.
-
-   ![Name entity](media/add-entities-to-a-scene-rename-entity.png)
-
-   _Name entity in Property grid_
-
-4. Click **Add component**, and then select **Model** to add a model component to the entity.
+3. Click **Add component**, and then select **Model** to add a model component to the entity.
 
    ![Add model component](media/add-entities-to-a-scene-add-model-component.png)
 
@@ -56,7 +50,7 @@ You can add an entity from the Scene explorer. You can see the Scene explorer on
 
    _Model component added in Property grid_
 
-5. Click ![Hand icon](media/add-entities-to-a-scene-hand-icon.png).
+4. Click ![Hand icon](media/add-entities-to-a-scene-hand-icon.png).
 
    The **Asset Picker** window opens. It displays various related components that can be selected as a model. Additionally, you can add new assets.
 
@@ -64,7 +58,7 @@ You can add an entity from the Scene explorer. You can see the Scene explorer on
 
    _Add Procedural Model in Asset Picker window_
 
-6. Select the **Model**, and then click **OK**.
+5. Select the **Model**, and then click **OK**.
 
    An entity is created. The selected model is assigned to the entity and displayed in the Scene Editor.
    

@@ -28,7 +28,7 @@ public class StartUpScriptExample : StartupScript
 }
 ```
 
-* **Synchronous script:** The script's ```Update``` method is called each frame. Because the script is synchronous, execution of other scripts waits until the active script is done.
+* **Synchronous script:** The script's ```Update``` method is called each frame. Because the script is synchronous, execution of other scripts wait until the active script is done.
 
 ```
 public class SampleSyncScript : SyncScript
@@ -96,7 +96,7 @@ public class SampleSyncScript : SyncScript
 
 ![Change value of public property in Property grid section](media/scripting-in-xenko-change-value-public-property.png)
 
-If you need to have a public property in your script, that should be hidden in Game Studio, use the ```[DataMemberIgnore]``` attribute as follows:
+If you need to have a public property in your script, that should be hidden in Game Studio, or is not serializeable, use the ```[DataMemberIgnore]``` attribute as follows:
 
 ```cs
 
