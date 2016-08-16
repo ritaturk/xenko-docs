@@ -1,6 +1,6 @@
 # Scripting in Xenko
 
-In this page, you’ll learn how to use a [script](xref:scripting) in your game, the different types of scripts used in Xenko, and how to make certain properties of your script appear in the Game Studio in order to configure script parameters.
+In this page, you’ll learn how to use a script in your game, the different types of scripts used in Xenko, and how to make certain properties of your script appear in the Game Studio in order to configure script parameters.
 
 ## Scripting and entities
 

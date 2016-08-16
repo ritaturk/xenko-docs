@@ -82,7 +82,7 @@ Instead of creating a new entity, you can also start from an existing entity by 
 
    The selected entity is duplicated with all its properties.
 
-   >**Note:** Alternatively, you can select the entity to be copied, and then click the ![gizmo](media/add-entities-to-a-scene-gizmo.png) [gizmo](xref:gizmo). Use the mouse to drag the entity on the Scene Editor while keeping the **Ctrl** button pressed. A duplicate entity is created from the selected entity.
+   >**Note:** Alternatively, you can select the entity to be copied, and then click the ![gizmo](media/add-entities-to-a-scene-gizmo.png) gizmo. Use the mouse to drag the entity on the Scene Editor while keeping the **Ctrl** button pressed. A duplicate entity is created from the selected entity.
 
 ## Rename an entity
 

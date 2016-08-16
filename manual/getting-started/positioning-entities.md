@@ -37,9 +37,9 @@ You can move an entity by first clicking the entity, and then through the Transl
 Positioning the entities in your scene includes switching between gizmos, changing gizmo axis bases, doing multiple scales or translations, and snapping these operations.
 
 You can see the following gizmos on the Scene Editor:
-* [Translation](xref:translation) gizmo
-* [Rotation](xref:rotation) gizmo
-* [Scale](xref:scale) gizmo
+* Translation gizmo
+* Rotation gizmo
+* Scale gizmo
 
 ### Translation gizmo
 

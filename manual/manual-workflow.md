@@ -2,9 +2,8 @@ Predesign pages / sections with team
 * Determine contents of section (preferable per page if time allows)
 * How should the content be split over pages (which subjects)
 * Determine special notes / tips / warnings
-* Come up with samples
 * Define howto's
-* Define tutorials
+[* Define tutorials]
 
 
 Then:

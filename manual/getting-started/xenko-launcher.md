@@ -10,7 +10,7 @@ _Xenko launcher_
 
 ## Installing Xenko and starting the Game Studio
 
-The launcher prompts  initially to install the latest version of Xenko and the Xenko Visual Studio plugin. Using this plugin, you can edit your [shaders](xref:shaders) directly from Visual Studio. It also provides syntax highlighting, live code analysis with validation, error-checking, and navigation. It is not mandatory to install this plugin, however we recommend to install it.
+The launcher prompts  initially to install the latest version of Xenko and the Xenko Visual Studio plugin. Using this plugin, you can edit your shaders directly from Visual Studio. It also provides syntax highlighting, live code analysis with validation, error-checking, and navigation. It is not mandatory to install this plugin, however we recommend to install it.
 
 To change the active version of Game Studio, click a version in the **Switch/update version** section to make the selected version active. You can start the active version of Game Studio by clicking the Start button. 
 

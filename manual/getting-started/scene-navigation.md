@@ -1,14 +1,14 @@
 # Scene navigation
 
-When building scenes of your game in the [Scene Editor](xref:scene-editor), you need to move around a scene to accurately place entities in the scene.
+When building scenes of your game in the Scene Editor, you need to move around a scene to accurately place entities in the scene.
 
-This page will show you how to quickly and easily navigate in the Scene Editor as well as how to use the navigation controls, and navigation [gizmos](xref:gizmo).
+This page will show you how to quickly and easily navigate in the Scene Editor as well as how to use the navigation controls, and navigation gizmos.
 
 ## Navigation controls
 
 ### Walk in a scene
 
-You can use the [Walk Navigation](xref:walk-navigation) mode by pressing the left mouse button and moving the mouse in the corresponding direction. The Walk Navigation mode lets you freely move along the X and Z dimensions of the scene.
+You can use the Walk Navigation mode by pressing the left mouse button and moving the mouse in the corresponding direction. The Walk Navigation mode lets you freely move along the X and Z dimensions of the scene.
 
 >**Note:** In any navigation mode, holding down the **Shift** key will speed up the action. This applies for all movement and rotation actions described in this chapter
 
@@ -88,7 +88,7 @@ You can use the view camera gizmo cube to change the orientation of the camera. 
 
    _View camera gizmo_
 
-By using this gizmo, you can easily set the camera view angle to the preset values and switch between the [Perspective](xref:perspective-projection) and [Orthographic](xref:orthographic-projection) projections.
+By using this gizmo, you can easily set the camera view angle to the preset values and switch between Perspective and Orthographic projections.
 
 ### Change camera view angle
 
