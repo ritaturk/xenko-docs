@@ -4,8 +4,6 @@ After you add an asset to your game project, you may need to make some changes t
 
 This page will show you how to edit your game assets. As an example, you’ll change the color of a Material.
 
-> **Note**: At all times, you can see your changes in real-time in the asset preview window.
-
 ## Change Material color
 
  1. In the **Asset view** tab, select the Sphere Material.
@@ -31,6 +29,8 @@ This page will show you how to edit your game assets. As an example, you’ll ch
 	![Asset appears in new color](media/edit-asset-color-change-selected-asset.png)
 
 	_Asset appears in new color_
+
+> **Note**: At all times, you can see your changes in real-time in the asset preview window.
 	
 ## Organize Assets
 
