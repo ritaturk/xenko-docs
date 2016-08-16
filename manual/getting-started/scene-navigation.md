@@ -14,7 +14,7 @@ You can use the [Walk Navigation](xref:walk-navigation) mode by pressing the lef
 
 The following video shows how to walk in a scene.
 
-<video controls autoplay loop height="240" width="320">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-walk-in-the-scene.mp4" type="video/mp4">
 </video>
 
@@ -39,7 +39,7 @@ Right mouse button              | Rotate the camera
 
 The following video shows the sample actions and effects as listed in the above table.
  
-<video controls autoplay loop height="240" width="320">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-fly-in-the-scene.mp4" type="video/mp4">
 </video>
  
@@ -55,7 +55,7 @@ When you want to rotate around objects of your scene, you can use the orbital ro
 
 The point of rotation is always the center of the screen and the distance to the center can be adjusted with the mouse wheel.
 
-<video controls autoplay loop height="240" width="320">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-orbital-rotation.mp4" type="video/mp4">
 </video>
  
@@ -104,7 +104,7 @@ Corner   | It faces the three adjacent faces with a 45° angle
 
 The following video shows how to change a camera view angle using the view camera gizmo.
 
-<video controls autoplay loop height="240" width="320">
+<video controls autoplay loop height="480" width="640">
                 <source src="media/navigate-in-scene-change-view-angle.mp4" type="video/mp4">
 </video>
 
