@@ -1,10 +1,10 @@
 # Project structure
 
-This page will show how Xenko organizes its project structure. Understanding the Xenko project structure is essential for knowing where to place and find files, collaboration and scaling your project.
+This page will show how Game Studio organizes its project structure. Understanding the Xenko project structure is essential for knowing where to place and find files, collaboration and scaling your project.
 
-#Packages
+# Packages
 
-Xenko organizes its projects in packages. A package is an aggregation of:
+Game Studio organizes its projects in packages. A package is an collection of:
 
 * Assets: An asset is a representation of an object or resource inside the editor, see [Introduction to Assets](introduction-to-assets.md) for more information.
 * Resources: Resources refers to raw files such as images, textures, and audio, that are embedded in the package.
@@ -14,7 +14,7 @@ A package can depend on other packages. A package and all its dependencies make 
 
 ## Package directory structure
 
-In Xenko, a package is a collection of Assets, Resources, Scripts. In Game Studio, the Solution explorer section displays the folder hierarchy of your game, which matches the package folder structure.
+In Game Studio, a package is a collection of Assets, Resources, Scripts. The Solution explorer in Game Studio displays the folder hierarchy of your game, which matches the package folder structure.
 
 For example, for a project named 'MyGame', the directory structure is as follows:
 

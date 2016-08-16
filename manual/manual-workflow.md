@@ -9,15 +9,15 @@ Predesign pages / sections with team
 
 Then:
 
-Write
-Review
-Fix
-English review
-Fix
-Final page
+* Write
+* Review
+* Fix
+* English review
+* Fix
+* Final page
 
 
 Reviews
 
-Create a dedicated yira project / section for reviews.
-Treat feedback as 'bugs' that need to be fixed
+* Create a dedicated yira project / section for reviews.
+* Treat feedback as 'bugs' that need to be fixed

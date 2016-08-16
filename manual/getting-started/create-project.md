@@ -1,10 +1,10 @@
 # Create a project
 
-To start developing your game or application, you must first create a [project](xref:project).
+To start developing your game or application, you must first create a project.
 
 This page will show you how to create a new empty project, and how to create a project based on a template or sample. Templates are projects that contain just the necessary elements to start working on a specific type of game. Samples are complete games, on which you can base your game, or use to learn from.
 
-## Create or open a project dialog
+## Create or open project dialog
 
 To create a new game, first you have to open the **New/open project** dialog.
 
@@ -43,8 +43,8 @@ By using the 'New Game' template, basic elements like a skybox, ground, light, c
     5.a. **Graphics API:** The graphics that you can use in your game  are dependent on the API that you select. For advanced graphic features, select the latest version of the graphics APIs.
     >**Note:** Some graphics cards do not support the latest APIs. For some mobile devices, only DirectX 9.3 / OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
 
-	5.b. **High / low dynamic range (HDR / LDR):** This defines the way color is computed in your game. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. HDR enables you to have advanced and more realistic rendering in your game but is heavier and requires at least profile DirectX 10.0 / OpenGL ES 3.0.
- 6. Select the desired orientation for your game in the **Orientation** section. For PC games, use landscape. Portrait is suitable for mobile-based games.
+	5.b. **High / low dynamic range (HDR / LDR):** This defines the way color is computed in your game. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. HDR enables you to have advanced and more realistic rendering in your game but requires more processing power and at least profile DirectX 10.0 / OpenGL ES 3.0.
+ 6. Select the desired orientation for your game in the **Orientation** section. For PC games, use landscape. Portrait can be used for mobile-based games.
 
  7. Click **OK**. 
 

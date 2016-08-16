@@ -19,6 +19,8 @@ Xenko provides the following ways to create and add assets in your game:
  
 	_Add asset from Asset view tab_
 
+    And then selecting the specific model we'd like to add. In our case: Sphere.
+
 	The asset is added to the **Asset view** tab.
 
 	![Procedural Model added to Asset view tab](media/asset-creation-asset-view-tab-procedural-model.png)

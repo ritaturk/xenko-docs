@@ -8,7 +8,7 @@ You can create a script in Visual Studio. On the tool bar of Game Studio, you ca
 
 **To create a script in Visual Studio:**
 
-1. Open Visual Studio, by clicking the 'Open in IDE' button <img src="media/create-a-script-ide-icon.png" hspace="10" title="Open in IDE" /> in the Game Studio toolbar.
+1. Open Visual Studio, by clicking the 'Open in IDE' button ![Open in IDE](media/create-a-script-ide-icon.png) in the Game Studio toolbar.
 
 2. Add a new class in the ```.Game``` extension of your project. To add a new class, right-click the ```.Game``` extension, click **Add**, and then click **New Item**.
 

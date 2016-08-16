@@ -1,6 +1,6 @@
 # Game Studio
 
-The Game Studio is the central tool for game and application production. Its main purpose is to create and manage content for your game, but it also allows you to configure, preview and launch your game.
+Game Studio is the central tool for game and application production. Its main purpose is to create and manage content for your game, but it also allows you to configure, preview and launch your game.
 
 This page will introduce you to the different views and tabs of Game Studio. 
 
@@ -9,15 +9,15 @@ _Game Studio_
 
 ## Asset Editors 
 
-The center of the Game Studio window is dedicated to asset editors. Some asset types have their specific editor. If there is an editor available for the asset type, it can be opened by double clicking the asset, or right clicking the asset and selecting 'Edit asset' in the context menu. In the above image, the Scene Editor, which allows you to manage elements in the scene, is active.
+The center of the Game Studio window is dedicated to asset editors. Some asset types have their specific editor. If there is an editor available for the asset type, it can be opened by double clicking the asset, or right clicking the asset and selecting 'Edit asset' in the context menu. In the above image, the Scene Editor is active.
 
 ## Property grid
 
-The **Property grid** section displays the properties of the selected asset or entity. From this tab, you can modify all the properties of your game elements. You can find this tab at the upper-right of the Game studio window.
+The **Property grid** displays the properties of the selected asset or entity. From this tab, you can modify all the properties of your game elements. You can find this tab in the upper-right corner of the Game studio window.
 
 ## Solution explorer
 
-The **Solution explorer** tab displays the hierarchy of all the elements of your game. It helps you browse your assets, code files, [packages](xref:package) and dependencies. In this view you can create folders and objects, rename them and move them around.
+The **Solution explorer** tab displays the hierarchy of all the elements of your game. It helps you browse your assets, code files, packages and dependencies. In this view you can create folders and objects, rename them and move them around.
 
 >**Note**: All assets are placed in the 'Asset' folder of the solution, and all code (script) files should be put in the assembly they are part of.
 
