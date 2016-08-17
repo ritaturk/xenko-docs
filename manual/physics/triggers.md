@@ -16,47 +16,46 @@ Now a trigger has been created, to handle the trigger, we need to add a script.
 
 **Handle trigger event with script:**
 
-1. Create a an Async script in your game project
+  1. Create a an Async script in your game project
 
-2. Open the script in Visual Studio and enter the following sample code:
+  2. Open the script in Visual Studio and enter the following sample code:
 
 ```
-using SiliconStudio.Xenko.Engine;
-using SiliconStudio.Xenko.Physics;
-using System.Threading.Tasks;
-using SiliconStudio.Core;
-using SiliconStudio.Xenko.Engine.Events;
+    using SiliconStudio.Xenko.Engine;
+    using SiliconStudio.Xenko.Physics;
+    using System.Threading.Tasks;
+    using SiliconStudio.Core;
+    using SiliconStudio.Xenko.Engine.Events;
 
-namespace VolumeTrigger
-{
-    public class Trigger : AsyncScript
+    namespace VolumeTrigger
     {
-        public override async Task Execute()
+        public class Trigger : AsyncScript
         {
-            var trigger = Entity.Get<PhysicsComponent>();
-            trigger.ProcessCollisions = true;
-
-            //start out state machine
-            while (Game.IsRunning)
+            public override async Task Execute()
             {
-                //wait for entities coming in
-                var firstCollision = await trigger.NewCollision();
+                var trigger = Entity.Get<PhysicsComponent>();
+                trigger.ProcessCollisions = true;
 
-                // Now do something, your trigger has been hit!
-
-                //now wait for entities exiting
-                Collision collision;
-                do
+                // Start state machine
+                while (Game.IsRunning)
                 {
-                    collision = await trigger.CollisionEnded();
-                } while (collision != firstCollision);
-               
-                // Now do something else, the trigger has been deactivated
+                    // Wait for entities coming in
+                    var firstCollision = await trigger.NewCollision();
+
+                    // Now do something, your trigger has been hit!
+
+                    // Now wait for entities exiting
+                    Collision collision;
+                    do
+                    {
+                        collision = await trigger.CollisionEnded();
+                    } while (collision != firstCollision);
+                
+                    // Now do something else, the trigger has been deactivated
+                }
             }
         }
     }
-}
 ```
 
-3. Put in the necessary code to handle what happens when the trigger has been activated and de-activated
-
+  3. Finally put in the necessary code to handle what happens when the trigger has been activated and de-activated

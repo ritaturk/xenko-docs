@@ -15,7 +15,6 @@ Then:
 * Fix
 * Final page
 
-
 Reviews
 
 * Create a dedicated yira project / section for reviews.

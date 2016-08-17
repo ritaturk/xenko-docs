@@ -1,8 +1,6 @@
-# Phyiscs collider shapes
+# Physics collider shapes
 
 This section will briefly discuss the different available physics collider shapes. Note that all physics colliders have the properties 'Local offset' and 'Local rotation'. Local offset determines how much, and in which direction the physics model will be offsetted from the Entity it will be a part of. Local rotation determines how the physics object is oriented from it Entity.
-
-Is2D?
 
 ## Box
 

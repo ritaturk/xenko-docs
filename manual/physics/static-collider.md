@@ -16,5 +16,19 @@ A static collider is an object that itself is not affected by forces like gravit
 
 6. Select the '+' icon behind 'Collider Shapes' and select 'Infinite Plane'
 
-
 Now you've created a static collide for the ground plane in the empty Game Studio project, which allows other physics objects to interact with.
+
+## Static collider properties
+
+Property              | Description
+----------------------|---------------------------------------------------------
+Collision group       | Defines to which collision group this entity belongs.
+Can collide with      | Defines with which groups this entity can collide.
+Collision events      | Toggles whether this entity received collision events.
+Can Sleep             | Toggles whether this entity can sleep. ??
+Restitution           | Defines how much this entity absorbes energy, and therefore bouncyness.
+Friction              | Defines how much surface friction this entity has.
+Rolling Friction      | Defines how much rolling friction this entity has.
+Ccd Motion Threshold  | ??
+Ccd Swept Sphere Radius | ??
+Is Trigger            | Toggles whether this entity is a trigger.
