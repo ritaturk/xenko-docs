@@ -163,7 +163,7 @@ In this article you will learn how to create and populate scenes from the editor
 ...
 ```
 
-##  <a name="Tutorials"> Tutorials Pages </a>
+##  <a name="Tutorials"> Tutorial Pages </a>
 
 The purpose of tutorials is to accompany users through the creation of a game component. Each tutorial 
 starts from a initial state (most of the time an empty game) and ends to a final state (mini game or 
