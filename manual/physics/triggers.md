@@ -10,9 +10,9 @@ Triggers allow you to trigger an event when a certain object enters a trigger ar
 
 3. Add a static collider object
 
-4. In the static collider section, check the 'Is Trigger' option
+4. In the static collider section, check the 'Is Trigger' option. This allows for physics objects not to actually be affected by the collision with this collider, and just pass through it.
 
-Now a trigger has been created, to handle the trigger, we need to add a script.
+Now a trigger has been created. To handle the trigger, we need to add a script.
 
 **Handle trigger event with script:**
 
@@ -46,10 +46,12 @@ Now a trigger has been created, to handle the trigger, we need to add a script.
 
                     // Now wait for entities exiting
                     Collision collision;
+
                     do
                     {
                         collision = await trigger.CollisionEnded();
-                    } while (collision != firstCollision);
+                    }
+                    while (collision != firstCollision);
                 
                     // Now do something else, the trigger has been deactivated
                 }
@@ -58,4 +60,4 @@ Now a trigger has been created, to handle the trigger, we need to add a script.
     }
 ```
 
-  3. Finally put in the necessary code to handle what happens when the trigger has been activated and de-activated
+  3. Finally put in the your code in the above example, to handle what happens when the trigger has been activated and de-activated.
