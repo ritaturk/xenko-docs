@@ -25,9 +25,9 @@
 ## [Raycasting](physics/raycasting.md)
 ## [Character controller](physics/character-controller.md)
 ## [Constraints](physics/constraints.md)
-## [Physics HOWTO]()
-### [Create a bouncing ball]()
-### [Find objects under mouse cursor]()
+## [Physics HOWTOs](physics/howtos.md)
+### [Create a bouncing ball](physics/how-to-create-a-bouncing-ball.md)
+### [Find objects under the mouse cursor](physics/how-to-find-objects-under-the-mouse-cursor.md)
 <!---
 Future documentation
 # Xenko for Unity Developers

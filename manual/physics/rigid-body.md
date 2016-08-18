@@ -29,8 +29,8 @@ Property              | Description
 Collision group       | Defines to which collision group this entity belongs.
 Can collide with      | Defines with which groups this entity can collide.
 Collision events      | Toggles whether this entity received collision events.
-Can Sleep             | Toggles whether this entity can sleep. ?? Why not on by default, why is this an option ??
-Restitution           | Defines how much this entity absorbes energy, and therefore bouncyness. ?? What values? How does it work??
+Can Sleep             | Toggles whether this entity can sleep.
+Restitution           | This coefficient defines how much energy remains after a collision for the objects to rebound from one another. Typical values range from 0...1 where 0 means all energy is lost, and 1 means all energy is preserved and the objects will move away from each other at the same speed they collided.
 Friction              | Defines how much surface friction this entity has.
 Rolling Friction      | Defines how much rolling friction this entity has.
 Ccd Motion Threshold  | Continuous collision detected velocity threshold - this value indicates at which velocity the Ccd kicks in to prevent errors for objects that are moving very fast.
@@ -42,4 +42,4 @@ Linear Damping        | Damping factor for directional forces.
 Angular Damping       | Damping factor for rotational forces.
 Override gravity      | Use custom set gravity vector.
 Gravity               | Defines a custom gravity vector.
-Node Name             | ?? What is this used for ??
+Node Name             | If the entity this collider is part of contains a bones structure, the node name can refer to a bones node name to be linked to that specific bone.
