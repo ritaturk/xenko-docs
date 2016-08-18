@@ -8,11 +8,11 @@ At design time, since all instances of a prefab are based on the original prefab
 
 You can create an empty Prefab with "Add Asset" in the Asset View:
 
-![media/create-new-prefab.jpg](media/create-new-prefab.jpg)
+![media/create-new-prefab.png](media/create-new-prefab.png)
 
 Alternatively, you can create one from a group of entities in a scene:
 
-![media/create-prefab-from-selection.jpg](media/create-prefab-from-selection.jpg)
+![media/create-prefab-from-selection.png](media/create-prefab-from-selection.png)
 
 Once you've created a Prefab, you can easily drag and drop the Prefab from the Asset view into the Scene editor to instantiate it, like any other Asset.
 
@@ -27,7 +27,9 @@ private void InstantiateBulletPrefab()
 {
     // Note that "MyBulletPrefab" refers to the name and location of your prefab Asset
     var myBulletPrefab = Asset.Load<Prefab>("MyBulletPrefab");
-    var bullet = myBulletPrefab.Instantiate();
+    
+    // Assume there is only one top-level entity (could be multiple)
+    var bullet = myBulletPrefab.Instantiate().First();
 
     // Change the X coordinate
     bullet.Transform.Position.X = 20.0f;
