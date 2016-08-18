@@ -23,6 +23,7 @@
 ## [Entity-Component Model](engine/entity-component-model/index.md)
 ### [Managing Entities](engine/entity-component-model/managing-entities.md)
 ### [Most used Entity Components](engine/entity-component-model/most-used-entity-components.md)
+## [Prefabs](engine/prefabs/index.md)
 ## [File System](engine/file-system.md)
 ## [Preprocessor variables](engine/preprocessor-variables.md)
 ## [Scripts](engine/scripts.md)
