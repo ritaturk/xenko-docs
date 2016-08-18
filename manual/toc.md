@@ -17,6 +17,7 @@
 ### [Create a script](getting-started/create-a-script.md)
 ### [Use a script](getting-started/use-a-script.md)
 ## [Launch your game](getting-started/launch-your-game.md)
+# [Prefabs](prefabs/index.md)
 # [Physics](physics/index.md)
 ## [Static collider](physics/static-collider.md)
 ## [Rigid body](physics/rigid-body.md)

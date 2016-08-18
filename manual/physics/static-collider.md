@@ -30,5 +30,5 @@ Restitution           | Defines how much this entity absorbes energy, and theref
 Friction              | Defines how much surface friction this entity has.
 Rolling Friction      | Defines how much rolling friction this entity has.
 Ccd Motion Threshold  | Continuous collision detected velocity threshold - this value indicates at which velocity the Ccd kicks in to prevent errors for objects that are moving very fast.
-Ccd Swept Sphere Radius | Continuous collision detected sphere radius - this is the radius of the bounding sphere between 2 physics steps.
+Ccd Swept Sphere Radius | Continuous collision detected sphere radius - this is the radius of the bounding sphere containing the position between 2 physics frames.
 Is Trigger            | Toggles whether this entity is a trigger.

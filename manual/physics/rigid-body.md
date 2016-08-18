@@ -18,10 +18,6 @@ Rigid body simulation refers to the simulation of physics for objects that do no
 
 Now you've created a Rigidbody for a sphere, the sphere and ground plane are ready to interact with each other. Run your game and you can see how the sphere is affected by gravity and collides with the plane.
 
-## How to handle collision events
-
-Show example
-
 ## Rigid body properties
 
 Property              | Description
@@ -34,7 +30,7 @@ Restitution           | This coefficient defines how much energy remains after a
 Friction              | Defines how much surface friction this entity has.
 Rolling Friction      | Defines how much rolling friction this entity has.
 Ccd Motion Threshold  | Continuous collision detected velocity threshold - this value indicates at which velocity the Ccd kicks in to prevent errors for objects that are moving very fast.
-Ccd Swept Sphere Radius | Continuous collision detected sphere radius - this is the radius of the bounding sphere between 2 physics steps.
+Ccd Swept Sphere Radius | Continuous collision detected sphere radius - this is the radius of the bounding sphere containing the position between 2 physics frames.
 Is Trigger            | Toggles whether this entity is a trigger.
 Is Kinematic          | Toggles whether this entity is kinemetic, i.e. interacting with other physics objects.
 Mass                  | Defines the mass of this entity in KG.
