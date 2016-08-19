@@ -18,6 +18,8 @@
 ### [Use a script](getting-started/use-a-script.md)
 ## [Launch your game](getting-started/launch-your-game.md)
 # [Prefabs](prefabs/index.md)
+## [Use prefabs in Game Studio](prefabs/use-prefabs-in-game-studio.md)
+## [Use prefabs in script](prefabs/use-prefabs-in-script.md)
 # [Physics](physics/index.md)
 ## [Static collider](physics/static-collider.md)
 ## [Rigid body](physics/rigid-body.md)
@@ -42,11 +44,14 @@ Future documentation
 ## [Creating a game]()
 ### [Game Studio Camera Settings](game-studio/game-studio-camera-settings.md)
 ## [Advanced techniques]()
+-->
+
 # [Graphics](graphics/index.md)
-## [Lighting]()
-## [Lasers and Lightning effects](particles/particles-tutorials/particles-tutorials-lasers/index.md)
-## [Materials]()
-## [Particle Effects]()
+## [Lighting](graphics/lighting-and-shadows/index.md)
+## [Lasers and Lightning effects](graphics/particles/particles-tutorials/particles-tutorials-lasers/index.md)
+## [Materials](graphics/materials/index.md)
+## [Particle Effects](graphics/particles/index.md)
+<!--
 ### [Inherited Particle Effects](particles/particles-tutorials/particles-tutorials-inheritance/index.md)
 ## [Tutorial]()
 # [Scripting]()
