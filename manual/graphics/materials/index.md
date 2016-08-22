@@ -1,6 +1,6 @@
 # Materials
 
-* Add explanation how to use materials + PBR and it's effects
+* _TODO: Add explanation how to use materials + PBR and it's effects_
 
 A Material defines the appearance of the surface of a 3D model and how it reacts to light. A Material can have an impact on both the geometry of a model (vertex shading) as well as on pixels (pixel shading).
 

@@ -47,10 +47,21 @@ Future documentation
 -->
 
 # [Graphics](graphics/index.md)
-## [Lighting](graphics/lighting-and-shadows/index.md)
-## [Lasers and Lightning effects](graphics/particles/particles-tutorials/particles-tutorials-lasers/index.md)
+## [Lighting](graphics/lighting/index.md)
+### [Directonal Lights](graphics/lighting/directional-lights.md)
+### [Spot Lights](graphics/lighting/spot-lights.md)
+### [Point Lights](graphics/lighting/point-lights.md)
+### [Skybox Lights](graphics/lighting/skybox-lights.md)
+### [Ambient Lights](graphics/lighting/ambient-lights.md)
 ## [Materials](graphics/materials/index.md)
+### [Material Colors](graphics/materials/material-colors.md)
+### [Material Attributes](graphics/materials/material-attributes.md)
+### [Material Layers](graphics/materials/material-layers.md)
+### [Materials for Developers](graphics/materials/materials-for-developers.md)
 ## [Particle Effects](graphics/particles/index.md)
+### [Reference](graphics/particles/reference.md)
+### [Samples](graphics/particles/samples.md)
+### [Tutorials](graphics/particles/tutorials.md)
 <!--
 ### [Inherited Particle Effects](particles/particles-tutorials/particles-tutorials-inheritance/index.md)
 ## [Tutorial]()
