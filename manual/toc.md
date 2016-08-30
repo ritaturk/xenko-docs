@@ -87,6 +87,7 @@
 ## [Controls](ui/controls/index.md)
 ### [UIElement class diagram](ui/controls/uielement-class-diagram.md)
 ## [Layout System](ui/layout-system.md)
+## [Editor](ui/editor/index.md)
 # [Audio](audio/index.md)
 ## [AudioSystem](audio/audiosystem.md)
 ## [AudioEngine](audio/audioengine.md)
