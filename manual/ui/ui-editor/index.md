@@ -20,7 +20,7 @@ protected override void LoadScene()
 public void InitializeUI()
 {
     var rootElement = MyPage.RootElement;
-    // to look for a specific element in the UI page, extensions methods can be used:
+    // to look for a specific element in the UI page, extensions methods can be used
     var button = rootElement.FindVisualChildOfType<Button>("buttonOk");
 
     // if there is no element named "buttonOk" in the UI tree or the type does not match,
@@ -70,7 +70,7 @@ public Button CreateButton()
 
 ## Using the editor
 
-
+![UI editor overview](media/ui-editor-overview.png)
 
 ### UI Asset properties
 
