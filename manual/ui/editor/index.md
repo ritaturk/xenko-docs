@@ -114,22 +114,42 @@ children (e.g. Panel such as Grid), while some can only have one child (e.g. But
 ![Visual tree context menu](media/ui-editor-context-menu.png)
 
 When right-clicking on an element in the visual tree, a context menu will appear and offer several options.
-Depending on the type of the selected element and also on the type of its parent, some options will or will not be available.
+Depending on the type of the selected element and also on the type of its parent, some options will or will not be
+available.
 
 * Layout category
-  * Group into: the selected element(s) will be replaced by a panel (which type is selectable in a sub-menu) and added as children of this new panel.
+  * Group into: the selected element(s) will be replaced by a panel (which type is selectable in a sub-menu) and
+    added as children of this new panel.
   * Ungroup: all children of the selected panel will be move to its parent
-  * Change layout type: the selected panel type will be change to another panel type (e.g. from a Grid to a UniformGrid)
+  * Change layout type: the selected panel type will be change to another panel type (e.g. from a Grid to a 
+    UniformGrid)
 * Panel specific category (in case of the screenshot above, it is a UniformGrid)
-  * Depending on the parent panel type, it will offer different options, such as moving the element to a different column
+  * Depending on the parent panel type, it will offer different options, such as moving the element to a different
+    column
 * Action category
   * Rename: to change the name of the selected element
   * Delete selection: remove the selected elements from the visual tree
-  * Duplicate selection: will copy the selected element and all its sub-tree into a new sibling element (i.e. added as child of the same parent)
-  * Create page from selection: create a new page asset containing a copy of the selected element (single selection)
-  * Create library from selection: create a new library asset containing a copy of all selected elements (single or multi selection)
+  * Duplicate selection: will copy the selected element and all its sub-tree into a new sibling element (i.e.
+    added as child of the same parent)
+  * Create page from selection: create a new page asset containing a copy of the selected element (single
+    selection)
+  * Create library from selection: create a new library asset containing a copy of all selected elements (single
+    or multi selection)
 
 ### UI View
+
+The UI view provides a WYSIWYG experience. The rendering of this view is equivalent of the rendering in the final
+game, assuming the design resolution is the same as the UI component that will use the edited asset (see 
+[UI Asset properties](#ui-asset-properties)).
+
+Note that the camera used for this view is orthographic and that the UI is set to always face the camera.
+
+Zooming and panning is available by using the mouse wheel and clicking on the mouse middle button respectively.
+Holding SHIFT during these operations will make it stronger to zoom or faster to pan.
+
+![UI editor view options](media/ui-editor-view-options.png)
+
+The view toolbar offer options such as zooming in and out, resetting the view. Also changing the color of the tools in the view (such as color of selection, sizing rectangle, etc.).
 
 #### Selecting an element
 
