@@ -9,7 +9,7 @@ Also, for your cutting edge rendering needs, we now support **SSAO** and **cel (
 
 This release introduces new UI assets along with a brand-new UI editor, so that you can create amazing UI directly from the Game Studio!
 
-[![UI Editor](http://img.youtube.com/vi/YlCViinxviI/0.jpg)](https://www.youtube.com/watch?v=YlCViinxviI "UI Editor")
+[![UI Editor](https://img.youtube.com/vi/YlCViinxviI/0.jpg)](https://www.youtube.com/watch?v=YlCViinxviI "UI Editor")
 
 The UI editor provides a full WYSIWYG experience. You can author the whole visual tree of your UI, edit the properties of each UI element (such as layout, background color, etc.) and preview its rendering.
 
@@ -26,7 +26,7 @@ And since it is built on the same system as archetypes and prefabs, you can easi
 
 Many computationally intensive systems have been multithreaded. Expect a major increase in performance and better scaling to correspond with the size of your game! We have observed up to 6 times higher frame rates for heavily CPU bound scenes so far (on a typical 4-core CPU).
 
-[![Multithreading demo](http://img.youtube.com/vi/sJ2p982cZFc/0.jpg)](https://www.youtube.com/watch?v=sJ2p982cZFc "Multithreading demo")
+[![Multithreading demo](https://img.youtube.com/vi/sJ2p982cZFc/0.jpg)](https://www.youtube.com/watch?v=sJ2p982cZFc "Multithreading demo")
 
 Parallelized code includes many `EntityProcessors` and almost every part of our recently rewritten **rendering pipeline**. On **Vulkan** and **Direct3D12** this includes also recording of drawing command lists, giving them an edge over the other APIs.
 
@@ -49,7 +49,7 @@ Make sure that the base prefab is just containing static entities as only `Model
 
 ### SSAO
 
-Ambient Occlusion was added to the list of post-processing effects. The current technique implements [Scalable Ambient Obscurance](http://graphics.cs.williams.edu/papers/SAOHPG12/). It exposes a variety of options, including number of tap samples, intensity, tap radius and back buffer size.
+Ambient Occlusion was added to the list of post-processing effects. The current technique implements [Scalable Ambient Obscurance](https://graphics.cs.williams.edu/papers/SAOHPG12/). It exposes a variety of options, including number of tap samples, intensity, tap radius and back buffer size.
 
 ![SAO comparison shots](media/ReleaseNotes-1.8/SAO.jpg)
 
@@ -59,7 +59,7 @@ It is currently part of the post-effect pipeline, but will later move to the lig
 
 Cel shading (or Toon shading) is now available as a rendering model with both Diffuse and Specular rendering options. The default implementation limits the light product to binary or 3-cuts discrete levels. You can also reference a ramp texture for better artistic control.
 
-[![Cel Shading](http://img.youtube.com/vi/RJDrG1QR3Uo/0.jpg)](https://www.youtube.com/watch?v=RJDrG1QR3Uo "Cel Shading")
+[![Cel Shading](https://img.youtube.com/vi/RJDrG1QR3Uo/0.jpg)](https://www.youtube.com/watch?v=RJDrG1QR3Uo "Cel Shading")
 
 # How To Upgrade
 
@@ -184,5 +184,3 @@ Release date: 2016/08/31
 
 - On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
 - Linux Mono has some issue with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
-
-[SAO]: http://graphics.cs.williams.edu/papers/SAOHPG12/
