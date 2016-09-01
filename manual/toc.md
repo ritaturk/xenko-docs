@@ -89,6 +89,7 @@
 ### [UIElement class diagram](ui/controls/uielement-class-diagram.md)
 ## [Layout System](ui/layout-system.md)
 ## [Sprite Fonts](ui/sprite-fonts.md)
+## [Editor](ui/editor/index.md)
 # [Audio](audio/index.md)
 ## [AudioSystem](audio/audiosystem.md)
 ## [AudioEngine](audio/audioengine.md)
