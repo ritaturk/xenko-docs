@@ -10,6 +10,8 @@ Please visit [API Reference](api/SiliconStudio.Xenko.Engine.yml).
 
 ## Release Notes
 
+[Release Notes 1.8](ReleaseNotes.md)
+
 [Release Notes 1.7](ReleaseNotes-1.7.md)
  
 [Release Notes 1.6](ReleaseNotes-1.6.md)
