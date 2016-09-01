@@ -154,13 +154,19 @@ tools in the view (such as color of selection, sizing rectangle, etc.).
 
 #### Selecting an element
 
+![UI editor selecting an element](media/ui-editor-selecting.gif)
+
 UI element can be selected in the UI View by left-clicking.
 
 #### Moving an element
 
+![UI editor moving an element](media/ui-editor-moving.gif)
+
 To move an element, first select it then press the mouse left button, and while holding move the selected element.
 
 #### Resizing an element
+
+![UI editor resizing an element](media/ui-editor-resizing.gif)
 
 When selected, an element can be resized thanks to the eight small squares surrounding it.
 
