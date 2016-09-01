@@ -118,22 +118,22 @@ Depending on the type of the selected element and also on the type of its parent
 available.
 
 * Layout category
-  * Group into: the selected element(s) will be replaced by a panel (which type is selectable in a sub-menu) and
+  * *Group into*: the selected element(s) will be replaced by a panel (which type is selectable in a sub-menu) and
     added as children of this new panel.
-  * Ungroup: all children of the selected panel will be move to its parent
-  * Change layout type: the selected panel type will be change to another panel type (e.g. from a Grid to a 
+  * *Ungroup*: all children of the selected panel will be move to its parent
+  * *Change layout type*: the selected panel type will be change to another panel type (e.g. from a Grid to a 
     UniformGrid)
 * Panel specific category (in case of the screenshot above, it is a UniformGrid)
   * Depending on the parent panel type, it will offer different options, such as moving the element to a different
     column
 * Action category
-  * Rename: to change the name of the selected element
-  * Delete selection: remove the selected elements from the visual tree
-  * Duplicate selection: will copy the selected element and all its sub-tree into a new sibling element (i.e.
+  * *Rename*: to change the name of the selected element
+  * *Delete selection*: remove the selected elements from the visual tree
+  * *Duplicate selection*: will copy the selected element and all its sub-tree into a new sibling element (i.e.
     added as child of the same parent)
-  * Create page from selection: create a new page asset containing a copy of the selected element (single
+  * *Create page from selection*: create a new page asset containing a copy of the selected element (single
     selection)
-  * Create library from selection: create a new library asset containing a copy of all selected elements (single
+  * *Create library from selection*: create a new library asset containing a copy of all selected elements (single
     or multi selection)
 
 ### UI View
@@ -149,17 +149,46 @@ Holding SHIFT during these operations will make it stronger to zoom or faster to
 
 ![UI editor view options](media/ui-editor-view-options.png)
 
-The view toolbar offer options such as zooming in and out, resetting the view. Also changing the color of the tools in the view (such as color of selection, sizing rectangle, etc.).
+The view toolbar offer options such as zooming in and out, resetting the view. Also changing the color of the
+tools in the view (such as color of selection, sizing rectangle, etc.).
 
 #### Selecting an element
 
+UI element can be selected in the UI View by left-clicking.
+
 #### Moving an element
+
+To move an element, first select it then press the mouse left button, and while holding move the selected element.
 
 #### Resizing an element
 
+When selected, an element can be resized thanks to the eight small squares surrounding it.
+
 ### Property Grid
 
+Once selected, the element properties are shown in the property grid. These properties are grouped by category.
+
 #### Property categories
+
+##### Appearance
+
+This category contains the properties controlling the appearance of the UI element. Common properties include
+`BackgroundColor`, `Opacity`, `Visibility`, `ClipToBounds`...
+
+##### Behavior
+
+This category contains the properties controlling the behavior of the element. Common properties include whether the
+element will respond to touch events (`CanBeHitByUser`).
+
+##### Layout
+
+This category contains the properties controlling how the element is layed out. Common properties include the size
+of the element (`Height`, `Width` and `Depth`), its alignment (`HorizontalAlignment`, `VerticalAlignment`,
+`DepthAlignement`), `Margin`...
+
+##### Misc
+
+This category contains the `Name` property. 
 
 ## Creating a page
 
