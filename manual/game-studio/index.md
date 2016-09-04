@@ -14,7 +14,7 @@ For game developers, the editor is also tightly integrated with your Visual Stud
 
 # Interface
 
-More information can be found on the page [Game Studio interface](../getting-started/game-studio.md).
+More information can be found on the page [Game Studio interface](../get-started/game-studio.md).
 
 ## Assets
 
