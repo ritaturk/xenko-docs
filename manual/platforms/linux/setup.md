@@ -9,17 +9,10 @@ You will also need a Windows PC to build your projects for Linux using GameStudi
 # Setup
 
 You will need the following packages:
-* [SDL2](#sdl2)
 * [FreeType](#freetype)
+* [OpenAL](#openal)
+* [SDL2](#sdl2)
 * Mono or .NET Core: one of them needs to be installed and it is ok to install both
-
-##SDL2
-
-To run games on Linux, we use the [SDL2](https://www.libsdl.org/) library which provides us the ability to create windows, handle mouse, keyboard and joystick events. The minimum required version is 2.0.4 and can be installed via:
-
-```
-sudo apt-get install libsdl2-dev
-```
 
 ##FreeType
 
@@ -27,6 +20,22 @@ To render font, we use the [FreeType](https://www.freetype.org/) library. The mi
 
 ```
 sudo apt-get install libfreetype6-dev
+```
+
+##OpenAL
+
+To play sounds and music, we use the [OpenAL](https://www.openal.org/) library. It can be installed via:
+
+```
+sudo apt-get install libopenal-dev
+```
+
+##SDL2
+
+To run games on Linux, we use the [SDL2](https://www.libsdl.org/) library which provides us the ability to create windows, handle mouse, keyboard and joystick events. The minimum required version is 2.0.4 and can be installed via:
+
+```
+sudo apt-get install libsdl2-dev
 ```
 
 ##Mono
