@@ -18,7 +18,7 @@
 ### [Use a Script](get-started/use-a-script.md)
 ## [Launch a Game](get-started/launch-a-game.md)
 # [Xenko Launcher](xenko-launcher/index.md)
-# [Xenko Studio](xenko-studio/index.md)
+# [Game Studio](game-studio/index.md)
 # [Engine](engine/index.md)
 ## [Assemblies diagrams](engine/assemblies-diagrams.md)
 ## [Asset Control](engine/asset-control.md)
@@ -138,6 +138,8 @@
 # [Platforms](platforms/index.md)
 ## [Linux](platforms/linux/index.md)
 ### [Requirements and Setup](platforms/linux/setup.md)
+# [Scripting](scripting/index.md)
+## [Preprocessor Variables](scripting/preprocessor-variables.md)
 <!---
 Future documentation
 # Xenko for Unity Developers
