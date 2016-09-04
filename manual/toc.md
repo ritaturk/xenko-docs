@@ -123,3 +123,4 @@
 ## [Colliders Manipulation](physics/colliders-manipulation.md)
 # [Platforms](platforms/index.md)
 ## [Linux](platforms/linux/index.md)
+### [Requirements and Setup](platforms/linux/setup.md)
