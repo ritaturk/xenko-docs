@@ -1,4 +1,4 @@
-# Launch your game
+# Launch a Game
 
 When your game is ready, you will be curious to see what your game looks like. 
 

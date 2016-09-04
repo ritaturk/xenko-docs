@@ -1,4 +1,4 @@
-# Create a project
+# Create a Project
 
 To start developing your game or application, you must first create a project.
 
