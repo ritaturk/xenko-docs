@@ -1,4 +1,6 @@
-# Reference
+<div class="doc-incomplete"/>
+
+In this section you will find a user's reference about how to create, edit and use particle effects.
 
 - [Terminology](particles-reference/particles-reference-terminology/index.md)
 - [Editing Particle Effects](particles-reference/particles-reference-editor/index.md)

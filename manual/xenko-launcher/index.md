@@ -1,3 +1,6 @@
+<div class="doc-incomplete"/>
+<span class="label label-doc-level">Beginner</span>
+
 # Xenko launcher
 
 After you install Xenko, the first window that opens on your system is the [Xenko launcher](xref:xenko-launcher). The launcher lets you manage te different versions that have been installed on your system. The [Xenko launcher](xref:xenko-launcher) helps you manage and start the various versions of [Game Studio](xref:game-studio). Using the **Xenko launcher**, you can also:

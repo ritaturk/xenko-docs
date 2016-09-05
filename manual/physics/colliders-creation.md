@@ -1,4 +1,4 @@
-**This page is very outdated!! Please refer to the API documentation or samples.**
+<div class="doc-outofdate"/>
 
 # Colliders Creation
 

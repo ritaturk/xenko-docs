@@ -1,3 +1,5 @@
+<div class="doc-incomplete"/>
+
 # Triggers
 
 Triggers allow you to trigger an event when a certain object enters a trigger area / volume. In order to create a trigger you need to take the following steps:

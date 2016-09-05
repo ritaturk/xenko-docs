@@ -1,3 +1,5 @@
+<div class="doc-incomplete"/>
+
 # Creating a custom asset - step by step
 
 > **Note**

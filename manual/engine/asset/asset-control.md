@@ -1,3 +1,5 @@
+<div class="doc-incomplete"/>
+
 # Asset Control
 
 Until now, all assets of a game package, and its dependencies, were compiled as part of your game.

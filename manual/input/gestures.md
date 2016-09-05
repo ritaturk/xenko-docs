@@ -1,3 +1,7 @@
+<div class="doc-incomplete"/>
+<span class="label label-doc-level">Intermediate</span>
+<span class="label label-doc-audience">Programmer</span>
+
 # Gestures
 
 Gestures are special patterns made by pointers that the system is able to recognize and trigger. Gestures can be single or multiple fingers depending on their type.

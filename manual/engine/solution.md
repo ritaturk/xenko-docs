@@ -1,6 +1,6 @@
-#Solution
+<div class="doc-incomplete"/>
 
-> **Note**: This page is under construction
+#Solution
 
 In Xenko Studio, the **Solution explorer** displays the hierarchy of your game.
 

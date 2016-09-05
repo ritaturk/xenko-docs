@@ -1,8 +1,6 @@
-# Input
+<div class="doc-incomplete"/>
 
-# Xenko Input System
-
- 
+# Input 
 
 The xenko input system is composed of several modules.
 

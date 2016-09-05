@@ -1,3 +1,7 @@
+<div class="doc-incomplete"/>
+<span class="label label-doc-level">Intermediate</span>
+
+
 # Introduction to using Prefabs
 
 Prefabs are essentially collections of various kinds of Entities that can be re-used in your project, and need a single point where they can be configured and maintained. Prefabs are ideal to use for things like scenery and props.

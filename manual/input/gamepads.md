@@ -1,4 +1,4 @@
-# Gamepads
+<div class="doc-incomplete"/>
 
-TODO
+# Gamepads
 

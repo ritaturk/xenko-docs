@@ -1,3 +1,5 @@
+<div class="doc-incomplete"/>
+
 # Serialization
 
 # High-level serialization (Assets and Chunks)
@@ -20,7 +22,7 @@ When building assets, each chunk will be a separate file. However, at the end of
 
 Each chunk is accessible through its Murmur hash (git-like immutable storage).
 
-> **Tip**
+> [!Tip]
 > 
 > If you want to implement your own chunk serializer, you can do so by inheriting @'SiliconStudio.Core.Serialization.Contents.ContentSerializerBase`1'.
 > 
@@ -32,7 +34,7 @@ Low-level serialization can serialize structures (and their references) in a sin
 
 You can use the low-level serialization directly through the @'SiliconStudio.Core.Serialization.BinarySerializationWriter' and @'SiliconStudio.Core.Serialization.BinarySerializationReader' classes.
 
-> **Tip**
+> [!Tip]
 > 
 > If you want to implement your own serializer, you need to inherit from @'SiliconStudio.Core.Serialization.DataSerializer`1' and register it with a @'SiliconStudio.Core.Serialization.Serializers.DataSerializerAttribute' or a @'SiliconStudio.Core.Serialization.Serializers.DataSerializerGlobalAttribute' attribute.    
 

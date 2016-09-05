@@ -1,6 +1,6 @@
-# Scripting
+<div class="doc-incomplete"/>
 
-> **Note**: This page is under construction
+# Scripting
 
 For basic information about scripting, see [Introduction to Scripting](../get-started/introduction-to-scripting.md)
 

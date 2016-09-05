@@ -1,11 +1,14 @@
+<span class="label label-doc-level">Advanced</span>
+<span class="label label-doc-audience">Programmer</span>
+
 # Preprocessor variables
 
 If you need to have different code depending on the platforms and the graphics APIs, various preprocessor variables can be used in scripts.
 
-> **Note**: Using `Platform.Type (ref:{SiliconStudio.Core.Platform.Type})` and 
-`GraphicsDevice.Platform (ref:{SiliconStudio.Xenko.Graphics.GraphicsDevice.Platform})` rather than 
-preprocessor variables is recommended when possible. It avoids you to forget to update code 
-for a specific platform after modification (the code is always compiled for all platforms).
+> [!WARNING]
+> Using @'SiliconStudio.Core.Platform.Type' and 'SiliconStudio.Xenko.Graphics.GraphicsDevice.Platform' rather than 
+> preprocessor variables is recommended when possible. It avoids you to forget to update code 
+> for a specific platform after modification (the code is always compiled for all platforms).
 
 # Platforms
 

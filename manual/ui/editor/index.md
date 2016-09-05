@@ -1,3 +1,5 @@
+<div class="doc-incomplete"/>
+
 # Editing UI Assets
 
 ## Assets and runtime counterparts
