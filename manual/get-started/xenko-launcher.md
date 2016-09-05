@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Xenko Launcher
 
 After you install Xenko, the first window you'll see is the Xenko launcher. 

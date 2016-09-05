@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Create a Project
 
 To start developing your game or application, you must first create a project.

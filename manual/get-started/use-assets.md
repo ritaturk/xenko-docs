@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Use Assets
 
 This page will show you how to use your assets once you've created them.

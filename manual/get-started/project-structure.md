@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Project Structure
 
 This page will show how Game Studio organizes its project structure. Understanding the Xenko project structure is essential for knowing where to place and find files, collaboration and scaling your project.

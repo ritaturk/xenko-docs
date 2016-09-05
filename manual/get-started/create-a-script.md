@@ -1,3 +1,6 @@
+<span class="label label-doc-level">Beginner</span>
+<span class="label label-doc-audience">Programmer</span>
+
 # Create a Script
 
 You’ve created a game and have added some entities to the game. Now, you have to add some scripts to your game to make your static game dynamic. There are two ways to add a script: In Visual Studio, and in the Game Studio. We'll describe both below.

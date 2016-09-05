@@ -1,3 +1,6 @@
+<span class="label label-doc-level">Beginner</span>
+<span class="label label-doc-audience">Artist</span>
+
 # Introduction to Scenes
 
 A scene is a blank canvas, on which you can add entities. Entities refer to the objects that you added to your scene. 

@@ -1,3 +1,6 @@
+<span class="label label-doc-level">Beginner</span>
+<span class="label label-doc-audience">Artist</span>
+
 # Navigate inside the Scene Editor
 
 When building scenes of your game in the Scene Editor, you need to move around a scene to accurately place entities in the scene.

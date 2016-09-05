@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Introduction to Assets
 
 An asset is a representation of any item that can be used in your project. An asset can be created from any file such as a model, a texture, an audio file, a material, or an animation. There are also Assets that are not based on any external file or resource, such as scenes and physics colliders.

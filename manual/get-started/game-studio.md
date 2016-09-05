@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Game Studio
 
 Game Studio is the central tool for game and application production. Its main purpose is to create and manage content for your game, but it also allows you to configure, preview and launch your game.

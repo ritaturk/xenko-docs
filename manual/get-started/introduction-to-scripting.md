@@ -1,3 +1,6 @@
+<span class="label label-doc-level">Beginner</span>
+<span class="label label-doc-audience">Programmer</span>
+
 # Introduction to Scripting
 
 Scripting is an important part of game creation. Scripting, for example helps you handle game events, respond to user inputs, helps you control the movement and behavior of your Entities, and as a whole it helps to make your static game interactive.

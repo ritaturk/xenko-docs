@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Manage Assets
 
 After you add an asset to your game project, you may need to make some changes to the asset in order to make it suitable to your game environment.

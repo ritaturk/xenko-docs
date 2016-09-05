@@ -1,3 +1,5 @@
+<span class="label label-doc-level">Beginner</span>
+
 # Create Assets
 
 To add content to your game, you need to create assets. This page will show you how to create assets in Game Studio.
