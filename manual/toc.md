@@ -32,7 +32,6 @@
 ## [Prefabs](engine/prefabs/index.md)
 ## [File System](engine/file-system.md)
 ## [Preprocessor variables](engine/preprocessor-variables.md)
-## [Scripts](engine/scripts.md)
 # [Graphics](graphics/index.md)
 ## [Lighting and Shadows](graphics/lighting-and-shadows/index.md)
 ### [Directional Lights](graphics/lighting-and-shadows/directional-lights.md)
