@@ -76,7 +76,8 @@ If they are not appropriate to your specific use-case, feel free to ignore them.
 The first paragraph above follows our recommendation conversational style. The second
 is a more academic style. You see the difference immediately. 
 
-TODO @Arthur: you should probably add example of inapropriate too friendly langage  here too like "You gonna see", "We'll see", etc
+One the other hand, you should be careful not to become too much colloquial too.
+Expressions like "You gonna see", "We'll see", "We've" are to avoid.
 
 ##  <a name="Person"> Second Person </a>
 
@@ -93,7 +94,7 @@ TODO @Arthur: you should probably add example of inapropriate too friendly langa
 > some pronoun or noun to use when referring to the reader. A reader might often find 
 > this 3rd person style less engaging and less enjoyable to read.
 
-The first paragrah follows our recommended style. The second uses 3rd person. 
+The first paragraph follows our recommended style. The second uses 3rd person. 
 Please write in second person. You probably found that much easier to read.
 
 ##  <a name="ActiveVoice"> Active Voice </a>
@@ -284,7 +285,7 @@ A reference page consists of:
 
 1. The page title (name of the concept)
 2. The definition and explanation of the concept.
-3. The standard usages of the concept and a explaination why the topic matters.
+3. The standard usages of the concept and a explanation why the topic matters.
 4. An image illustrating the concept (if possible)
 6. The sub-topics with the content (functionalities, usages samples, etc)
 
@@ -554,12 +555,16 @@ Note: for more information please refer to DocFX documentation.
 ## <a name="RelatedTopics"> Related Topics </a>
 
 To encourage readers to learn more about a topic and also to ease their navigation,
-we recommand you as much as possible to add links to related topics at the bottom of your articles.
+we recommend you as much as possible to add links to related topics at the bottom of your articles.
 
-For this use the AAA(TODO Virgile) style, as follow: 
-> TODO Virgile  
-> TODO Virgile  
-> TODO Virgile  
+For this use the doc-relatedtopics style, as follow: 
+```
+<div class="doc-relatedtopics">
+* [Page1](link-to-page1)
+* [Page2](link-to-page2)
+* [Page3](link-to-page3)
+</div>
+```
 
 ## <a name="APIReferences"> API References </a>
 
@@ -613,7 +618,7 @@ There are several kinds of labels:
 * Level (Beginner, Intermediate, Advanced) with `label-doc-level`
 * Audience (Artist, Programmer, Designer) with `label-doc-audience`
 * Platform (iOS, Android, etc.) with `label-doc-platform`
-* Version where the feature have been introduced (Xenko 2.1, etc.)with TODO vrigile
+* Version where the feature have been introduced (Xenko 2.1, etc.)with `label-doc-version`
 
 Example:
 ```
@@ -655,33 +660,26 @@ Whenever there are explanations or remarks that are specific to a given platform
 use the following formatting style to show the reader that the section can be skipped depending on 
 the targeted platform.
 
-TODO Virgile styling Android/iOS + example
+To do this, simply add one of the following style classes:
+```
+<div class="doc-android">Android specific text</div>
+<div class="doc-iOS">iOS specific text</div>
+<div class="doc-Windows">Windows specific text</div>
+<div class="doc-Linux">Linux specific text</div>
+```
 
 ## <a name="Notices"> Notices </a>
 
 Whenever your page is missing some key information or is out-of-date, you should  
-add a notice at the top of the page to inform the reader and add the 🔧 character the page title.
+add a notice at the top of the page to inform the reader.
 
-Example 1
+To do this, simply add one of the following tag at the top of the page:
 ```
-> [!NOTE]
-> 
-> This topic is currently missing the following points:
-> * sub-topic 1
-> * sub-topic 2
+<div class="doc-incomplete"/>  -> The current page is incomplete
+<div class="doc-outofdate"/> -> The current page is out-of-date
 ```
 
-Example 2
-```
-> [!NOTE]
->
-> The following elements on this page are out-of-date:
-> * element 1
-> * element 2
-```
-
-TODO virgile do we really want to have the same formating as the notes? shoudn't we have a 
-specific formating for this?
+Doing so will automatically add the 🔧 character to the page title to warn the user.
 
 ## <a name="Media"> Media </a>
 
@@ -733,7 +731,7 @@ Diagrams can be created with Visio or standard image editing tools.
 
 You can add tables to the documentation by following the markdown syntax. Tables can improve the
 way information is display but sometimes does not properly scale down. So be sure to try your page
-on small resolution screen like Smartphones before submitting your page.
+on small resolution screen like Smart-phones before submitting your page.
 
 ## <a name="Lists"> Lists </a>
 
