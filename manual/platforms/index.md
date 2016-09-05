@@ -19,8 +19,9 @@ Xenko currently supports for following platforms:
 
 For information concerning a specific platform, click on the corresponding link.
 
-> **Note**: At runtime, you can check on which platform your game is executing by using the 
-`Platform.Type (ref:{SiliconStudio.Core.Platform.Type})` variable.
+> [!TIP]
+> At runtime, you can check on which platform your game is executing by using the 
+> [Platform.Type](xref:SiliconStudio.Core.Platform.Type) variable.
 
 
 ## Supported Graphic APIs
@@ -33,8 +34,9 @@ Xenko currently support the following graphics back-ends:
 
 For information concerning a specific API, click on the corresponding link.
 
-> **Note**: At runtime, you can check on which graphics back-end your game is executing by using the 
-`GraphicsDevice.Platform (ref:{SiliconStudio.Xenko.Graphics.GraphicsDevice.Platform})` variable.
+> [!TIP]
+> At runtime, you can check on which graphics back-end your game is executing by using the 
+> [GraphicsDevice.Platform](xref:SiliconStudio.Xenko.Graphics.GraphicsDevice.Platform) variable.
 
 ## Preprocessor Variables
 

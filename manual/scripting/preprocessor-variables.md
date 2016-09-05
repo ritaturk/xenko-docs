@@ -6,7 +6,8 @@
 If you need to have different code depending on the platforms and the graphics APIs, various preprocessor variables can be used in scripts.
 
 > [!WARNING]
-> Using @'SiliconStudio.Core.Platform.Type' and 'SiliconStudio.Xenko.Graphics.GraphicsDevice.Platform' rather than 
+> Using [Platform.Type](xref:SiliconStudio.Core.Platform.Type) and 
+> [GraphicsDevice.Platform](xref:SiliconStudio.Xenko.Graphics.GraphicsDevice.Platform) rather than 
 > preprocessor variables is recommended when possible. It avoids you to forget to update code 
 > for a specific platform after modification (the code is always compiled for all platforms).
 
@@ -27,11 +28,11 @@ If you need to have different code depending on the platforms and the graphics A
 
 | Variable                                      | Value                 |
 | --------------------------------------------- | --------------------- |
-| SILICONSTUDIO_PARADOX_GRAPHICS_API_DIRECT3D   | Direct3D 11           |
-| SILICONSTUDIO_PARADOX_GRAPHICS_API_OPENGL     | OpenGL (Core and ES)  |
-| SILICONSTUDIO_PARADOX_GRAPHICS_API_OPENGLCORE | OpenGL Core (Desktop) |
-| SILICONSTUDIO_PARADOX_GRAPHICS_API_OPENGLES   | OpenGL ES             |
-| SILICONSTUDIO_PARADOX_GRAPHICS_API_VULKAN     | Vulkan                |
+| SILICONSTUDIO_XENKO_GRAPHICS_API_DIRECT3D   | Direct3D 11           |
+| SILICONSTUDIO_XENKO_GRAPHICS_API_OPENGL     | OpenGL (Core and ES)  |
+| SILICONSTUDIO_XENKO_GRAPHICS_API_OPENGLCORE | OpenGL Core (Desktop) |
+| SILICONSTUDIO_XENKO_GRAPHICS_API_OPENGLES   | OpenGL ES             |
+| SILICONSTUDIO_XENKO_GRAPHICS_API_VULKAN     | Vulkan                |
 
 
 # Example

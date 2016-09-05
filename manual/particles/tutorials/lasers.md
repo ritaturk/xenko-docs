@@ -1,6 +1,6 @@
 # Lasers and Lightnings
 
-**Prerequisite:** You must check the [Ribbons Tutorial](../particles-tutorials-ribbons/index.md) first because lasers and lightnings build on it.
+**Prerequisite:** You must check the [Ribbons Tutorial](ribbons.md) first because lasers and lightnings build on it.
 
 This tutorial explains in depth how to create lasers and lightnings using particles and custom materials.
 

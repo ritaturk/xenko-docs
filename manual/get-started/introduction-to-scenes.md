@@ -19,9 +19,9 @@ When you create a new project, the Scene Editor displays your scene with the def
 
 This section will discuss the following subjects:
 
-* [Scene navigation](scene-navigation.md) - how to move and look around.
-* [Populating your scene](populating-your-scene.md) - how to put Assets in your Scene.
-* [Positioning entites](positioning-entities.md) - how to move / rotate / scale your entities.
+* [Navigate in the Scene Editor](navigate-in-the-editor.md) - how to move and look around.
+* [Populate a scene](populate-a-scene.md) - how to put Assets in your Scene.
+* [Arrange entites](arrange-entities.md) - how to move / rotate / scale your entities.
 
 If you're looking for more advanced topics, see [Scenes](/manual/game-studio/scenes.md) in the Game Studio documentation.
 

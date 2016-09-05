@@ -4,7 +4,7 @@ In this section you will find details about how to use the editor and API relate
 
 This section will discuss the following subjects:
 
-* [Lighting and Shadows](lighting/index.md)
+* [Lighting and Shadows](lighting-and-shadows/index.md)
 * [Graphics Compositor](graphics-compositor/index.md)
 * [Materials](materials/index.md)
 * [Post-Effects](post-effects/index.md)

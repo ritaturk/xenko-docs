@@ -4,5 +4,5 @@
 
 This section describes the following HOWTOs:
 
-* [Create a bouncing ball](howtos/create-a-bouncing-ball.md)
-* [Find objects under the mouse cursor](howtos/find-objects-under-the-mouse-cursor.md)
+* [Create a bouncing ball](create-a-bouncing-ball.md)
+* [Find objects under the mouse cursor](find-entities-under-cursor.md)

@@ -82,7 +82,7 @@ Initial rotation sets the particle's angular rotation when facing the camera. Po
 
 ## Color
 
-Initial color sets the particle's initial color at spawn time. It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself. If setting the color has no effect please refer to the [Material](../particles-reference-materials/index.md) page for further discussion.
+Initial color sets the particle's initial color at spawn time. It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself. If setting the color has no effect please refer to the [Material](materials.md) page for further discussion.
 
 ![media/particles-reference-initializers-7.png](media/particles-reference-initializers-7.png) 
 

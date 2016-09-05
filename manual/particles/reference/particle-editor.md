@@ -2,7 +2,7 @@
 
 ![media/particles-reference-editor-0.png](media/particles-reference-editor-0.png) 
 
-This document assumes you are already familiar with the [Terminology](../particles-reference-terminology/index.md) regarding particles.
+This document assumes you are already familiar with the [Terminology](terminology.md) regarding particles.
 
 ## Creating Particle Systems
 
@@ -52,7 +52,7 @@ Contains a user-defined shape used by the engine for culling and optimizations.
 
 #### Emitters
 
-The list of the [Emitters](../particles-reference-emitters/index.md) contained by the particle system. They are updated and drawn in the order they appear on the list and can be reordered.
+The list of the [Emitters](emitters.md) contained by the particle system. They are updated and drawn in the order they appear on the list and can be reordered.
 
 #### Exposed values
 
