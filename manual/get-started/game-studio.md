@@ -19,7 +19,8 @@ The **Property grid** displays the properties of the selected asset or entity. F
 
 The **Solution explorer** tab displays the hierarchy of all the elements of your game. It helps you browse your assets, code files, packages and dependencies. In this view you can create folders and objects, rename them and move them around.
 
->**Note**: All assets are placed in the 'Asset' folder of the solution, and all code (script) files should be put in the assembly they are part of.
+> [!TIP]
+> All assets are placed in the 'Asset' folder of the solution, and all code (script) files should be put in the assembly they are part of.
 
 ## Asset view
 

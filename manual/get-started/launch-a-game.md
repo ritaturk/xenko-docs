@@ -14,7 +14,8 @@ This page will show you how to start your game using either the Game studio or V
 
   You can see the build status in the Output window. When the build has finished, your game will start in the selected platform.
 
-> **Note:** Currently it is not possible to start your Game for the **Windows Store** and **Windows 10** platforms from Game Studio.
+> [!WARNING]
+> Currently it is not possible to start your Game for the **Windows Store** and **Windows 10** platforms from Game Studio.
 
 ## Launch your Game from Visual Studio
 

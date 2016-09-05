@@ -11,7 +11,8 @@ You can attach a script to your entity either from the **Add component** section
 1. Open your scene, and then click the entity to which you want to attach a script.
 2. Now drag and drop the script from the **Asset view** into the **Property grid** of the selected entity, in order to attach the script.
    
-> **Note:** It is also possible to attach a script by using the **Add component** button in the **Property grid**.
+> [!TIP] 
+> It is also possible to attach a script by using the **Add component** button in the **Property grid**.
 
 **To attach a script through code:**
 
@@ -53,4 +54,4 @@ You need to debug your script if the script is not running properly or you are g
 4. Verify the code.
 5. Press **F10** (step over) if you want to execute the code line-by-line or press **F5** to continue code execution.
 
-Now, you know how to attach, test, and debug a script. You can try to launch your game. For information on how to launch your game, see [Launch your game](launch-your-game.md).
+Now, you know how to attach, test, and debug a script. You can try to launch your game. For information on how to launch your game, see [Launch your game](launch-a-game.md).

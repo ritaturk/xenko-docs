@@ -27,7 +27,9 @@ Xenko provides the following ways to create and add assets in your game:
 
 	_Procedural Model added to Asset view tab_
 
-> **Note**: Some Assets require a source file, such as textures. When adding these Assets, you will be prompted to select the required resource file in order to continue.	
+> [!Note]
+> Some Assets require a source file, such as textures. When adding these Assets, 
+> you will be prompted to select the required resource file in order to continue.	
 
 ## Adding assets with drag and drop
 
@@ -44,7 +46,10 @@ _Drop resource in Game Studio_
 3. Select the correct template from Game Studio
 ![Select the correct template for the resource file(s)](media/create-assets-drag-drop-select-asset-template.png)
 
->**Note**: When dragging and dropping multiple files of _different_ types (e.g. texture and model files), only the files that match your selection in step 3 will be added. I.e.: when adding model and texture files, and you select the 'Model' Asset template, only the files that are model files will be added.
+> [!Note] 
+> When dragging and dropping multiple files of _different_ types (e.g. texture and model files), 
+> only the files that match your selection in step 3 will be added. I.e.: when adding model and texture files, 
+> and you select the 'Model' Asset template, only the files that are model files will be added.
 
 Resource files that can be imported are:
 

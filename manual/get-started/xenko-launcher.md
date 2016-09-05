@@ -15,9 +15,10 @@ _Xenko launcher_
 The launcher initially prompts to install the latest version of Xenko and the Xenko 
 Visual Studio plugin. 
 
->**Note:** Using Xenko VS plugin, you can edit your shaders directly from Visual Studio. 
-It also provides syntax highlighting, live code analysis with validation, error-checking, 
-and navigation. It is not mandatory to install this plugin, however we recommend to install it. 
+> [!NOTE]
+> Using Xenko VS plugin, you can edit your shaders directly from Visual Studio. 
+> It also provides syntax highlighting, live code analysis with validation, error-checking, 
+> and navigation. It is not mandatory to install this plugin, however we recommend to install it. 
 
 Accept the invitation and proceed to the installation.
 

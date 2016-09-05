@@ -114,7 +114,9 @@ In Game Studio, you can select in which coordinate system the gizmo operates. Th
 1. Select an entity.
 2. Click the button representing the required coordinate system.
    
->**Note:** The Translation gizmo and the Rotation gizmo can use all coordinate systems. However, the Scale gizmo can only use the local coordinate system.
+> [!WARNING] 
+> The Translation gizmo and the Rotation gizmo can use all coordinate systems. 
+> However, the Scale gizmo can only use the local coordinate system.
 
 ## Snapping gizmo actions
 

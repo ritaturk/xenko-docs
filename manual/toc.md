@@ -1,4 +1,4 @@
-# [Get Started](get-started/get-started.md)
+# [Get Started](get-started/index.md)
 ## [Install Xenko](get-started/install-xenko.md)
 ## [Xenko Launcher](get-started/xenko-launcher.md)
 ## [Create a Project](get-started/create-a-project.md)

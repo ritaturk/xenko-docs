@@ -10,7 +10,9 @@ This page will show you how to quickly and easily navigate in the Scene Editor a
 
 You can use the Walk Navigation mode by pressing the left mouse button and moving the mouse in the corresponding direction. The Walk Navigation mode lets you freely move along the X and Z dimensions of the scene.
 
->**Note:** In any navigation mode, holding down the **Shift** key will speed up the action. This applies for all movement and rotation actions described in this chapter
+> [!TIP]
+> In any navigation mode, holding down the **Shift** key will speed up the action. 
+> This applies for all movement and rotation actions described in this chapter
 
 The following video shows how to walk in a scene.
 
@@ -120,4 +122,5 @@ This gizmo indicates the current orientation of the scene.
 
    _Scene orientation gizmo_
 
-You’ve explored how to navigate through a scene. Next we'll show you how to add entities to your scene, see [Populating your scene](populating-your-scene.md).
+You’ve explored how to navigate through a scene. Next we'll show you how to add entities to your scene, 
+see [Populating your scene](populate-a-scene.md).

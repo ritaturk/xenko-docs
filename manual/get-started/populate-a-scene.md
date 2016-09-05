@@ -62,7 +62,8 @@ You can add an entity from the Scene explorer. You can see the Scene explorer on
 
    An entity is created. The selected model is assigned to the entity and displayed in the Scene Editor.
    
-   >**Note:** To clear the assigned model component, click ![Eraser icon](media/add-entities-to-a-scene-eraser-icon.png)
+   > [!TIP]
+   > To clear the assigned model component, click ![Eraser icon](media/add-entities-to-a-scene-eraser-icon.png)
 
 ## Duplicate an existing entity
 
@@ -82,7 +83,10 @@ Instead of creating a new entity, you can also start from an existing entity by 
 
    The selected entity is duplicated with all its properties.
 
-   >**Note:** Alternatively, you can select the entity to be copied, and then click the ![gizmo](media/add-entities-to-a-scene-gizmo.png) gizmo. Use the mouse to drag the entity on the Scene Editor while keeping the **Ctrl** button pressed. A duplicate entity is created from the selected entity.
+   > [!TIP] 
+   > Alternatively, you can select the entity to be copied, and then click the ![gizmo](media/add-entities-to-a-scene-gizmo.png) 
+   > gizmo. Use the mouse to drag the entity on the Scene Editor while keeping the **Ctrl** button pressed. 
+   > A duplicate entity is created from the selected entity.
 
 ## Rename an entity
 
@@ -97,4 +101,4 @@ After you have duplicated an entity, Xenko assigns a default name to the duplica
    
    _Renamed entity in a scene_
 
-Now that you are able to add entities to your scene, the next step is to move, rotate and scale your entites, see [Positioning entites](positioning-entities.md).
+Now that you are able to add entities to your scene, the next step is to move, rotate and scale your entites, see [Arrange entites](arrange-entities.md).

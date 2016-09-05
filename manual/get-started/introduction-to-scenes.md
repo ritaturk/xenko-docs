@@ -22,4 +22,4 @@ This section will discuss the following subjects:
 
 If you're looking for more advanced topics, see [Scenes](/manual/game-studio/scenes.md) in the Game Studio documentation.
 
-To learn more about basic Scene concepts, see [Scene navigation](scene-navigation.md).
+To learn more about basic Scene concepts, see [Scene navigation](navigate-in-the-editor.md).

@@ -47,8 +47,12 @@ In the above example we user ```Content.Load<Model>(...) ```, there are differen
     Texture texture = Content.Load("AssetFolder/MyTexture"); // load a texture
 ```
 
->**Warning**: Be sure to properly include the Asset as described in the previous chapter, by marking the Asset to be included in the ***Asset view***. Also make sure to add the Script as a component to an Entity in the Scene in order to get executed.
+> [!Warning] 
+> Be sure to properly include the Asset as described in the previous chapter, by marking the Asset to be included 
+> in the ***Asset view***. Also make sure to add the Script as a component to an Entity in the Scene in order to get executed.
 
->**Note**: The URL used can be retrieved from Game Studio, by hovering an asset, and looking at the URL in the tooltip. Typically it is build up like : 'AssetFolder/AssetName'
+> [!Note]
+> The URL used can be retrieved from Game Studio, by hovering an asset, and looking at the URL in the tooltip. 
+> Typically it is build up like : 'AssetFolder/AssetName'
 
 Next, you'll learn how to create a Scene in Game Studio, see [Introduction to scenes](introduction-to-scenes.md)

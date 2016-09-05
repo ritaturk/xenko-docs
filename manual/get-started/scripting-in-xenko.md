@@ -77,7 +77,8 @@ These objects are described in more detail in the Xenko API reference.
 
 Public properties and fields can be set from the Game Studio and allow to configure scripts with dynamic parameters. This allows for easy communication by, for instance, the artist and the scripts, without having to deal directly with the script code.
 
->**Note**: In order to use a public property or field in Game Studio, it needs to be serializable. 
+> [!WARNING] 
+> In order to use a public property or field in Game Studio, it needs to be serializable. 
 
 The following is an example of a script with a public property called DelayTimeOut:
 
