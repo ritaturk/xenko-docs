@@ -453,7 +453,8 @@ Hierarchy example:
 ## <a name="FilesName"> Files Name </a>
 
 File names should consist only of **lower case letters** and **dashes to separate the words**.
-Also as much as possible, you should give explicit and human-understandable names to files.
+Also as much as possible, you should give explicit and human-understandable names to files and 
+start the page name by either an active verb or a noun (avoid -ing form verbs).
 
 Our recommendations are the following:
 - Section Header files should always be named 'index.md'
@@ -759,13 +760,17 @@ Example.
 The markdown '#' mark should be used to make headers. Only top title of the page should have the h1 style.
 All other titles are sub-titles and should be formated into h2+.
 
+
+As much as possible header text should be short and simple. Whenever possible use a active verb 
+or a noun to start your header. Avoid verbs in -ing form.
+
 Example
-> \# Page Top Title: How to write headers.  
+> \# Top Title: How to write headers.  
 > \___  
-> \## This is a sub-folder  
-> \### This is a sub-sub-folder  
-> \### This is another sub-sub-folder  
-> \## This is another sub-folder  
+> \## Write a sub-Title
+> \### Write a sub-sub-folder  
+> \### Write a sub-sub-folder  
+> \## Write a sub-folder  
 
 ## <a name="Capitalization"> Letter Capitalization </a>
 
