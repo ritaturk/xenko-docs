@@ -1,2 +1,0 @@
-
->**Note:** An empty package can also be created to share assets and source code between projects. A package is a library of components, such as assets and scripts. A package is not an executable file like a game, but a container of files that can be shared among various projects along with its components.
