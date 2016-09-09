@@ -159,7 +159,6 @@ Release date: 2016/08/31
 #### Game Studio
 * Credential dialog will now save the credential settings when closing.
 * Credential dialog will not appear if you checked "Do not ask again".
-* Fixed error message in credential dialog when remote location did not exist instead of reporting invalid credentials.
 * Fixed hang when launching a Linux game remotely.
 
 ### Breaking changes
@@ -182,8 +181,20 @@ Release date: 2016/08/31
 * Added audio, status and re-center support for Oculus Rift.
 
 #### Linux
-* Fixed failure when compiling shaders for the Vulkan backend on the remote host.
 * Fixed Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
+
+## Version 1.8.1-Beta
+
+Release date: 2016/09/09
+
+### Issues Fixed
+* Particles materials refactored, significantly improving memory performance
+
+#### Game Studio
+* Fixed error message in credential dialog when remote location did not exist instead of reporting invalid credentials.
+
+#### Linux
+* Fixed failure when compiling shaders for the Vulkan backend on the remote host.
 
 # Known Issues
 
