@@ -196,6 +196,9 @@ Release date: 2016/09/09
 
 ### Issues fixed
 
+- Fix a compilation issue with Prefab Models using other Prefab Models to be compiled
+- Fix and improve edition of Generics and Composition Nodes for Shader class nodes in materials
+- 
 #### Game Studio
 
 - Fix a potential NullReferenceException when validating a range value in the property grid.
