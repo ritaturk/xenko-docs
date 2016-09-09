@@ -184,8 +184,29 @@ Release date: 2016/08/31
 
 Release date: 2016/09/09
 
-### Issues Fixed
-* Particles materials refactored, significantly improving memory performance
+### Enhancements
+
+#### Game Studio
+
+- Current selection in the UI editor can be changed from the context menu. This is especially useful to select an element that is covered by another.
+- Add snapping when moving or resizing a element in the UI editor.
+
+### Issues fixed
+
+#### Game Studio
+
+- Fix a potential NullReferenceException when validating a range value in the property grid.
+- Creation of derived asset (ArcheType) for UI page or UI library are not supported, but were still allowed.
+- Fix an issue with message box that returned a wrong value when the user chose to close it instead of clicking on one of its button. This could result in data loss when asked to save the project upon closing the Game Studio.
+- Removed incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
+
+#### Particles
+
+- Particles materials refactored, significantly improving memory performance.
+
+#### Samples
+
+- Fix samples were depending on the wrong version of Xenko.
 
 # Known Issues
 
