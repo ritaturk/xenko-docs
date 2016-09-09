@@ -159,6 +159,7 @@ Release date: 2016/08/31
 #### Game Studio
 * Credential dialog will now save the credential settings when closing.
 * Credential dialog will not appear if you checked "Do not ask again".
+* Fixed error message in credential dialog when remote location did not exist instead of reporting invalid credentials.
 * Fixed hang when launching a Linux game remotely.
 
 ### Breaking changes
@@ -180,7 +181,10 @@ Release date: 2016/08/31
 #### VR
 * Added audio, status and re-center support for Oculus Rift.
 
+#### Linux
+* Fixed failure when compiling shaders for the Vulkan backend on the remote host.
+* Fixed Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
+
 # Known Issues
 
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
-- Linux Mono has some issue with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
+- On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
