@@ -180,6 +180,13 @@ Release date: 2016/08/31
 #### VR
 * Added audio, status and re-center support for Oculus Rift.
 
+## Version 1.8.1-Beta
+
+Release date: 2016/09/09
+
+### Issues Fixed
+* Particles materials refactored, significantly improving memory performance
+
 # Known Issues
 
 - On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
