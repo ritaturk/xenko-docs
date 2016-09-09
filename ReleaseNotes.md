@@ -198,13 +198,17 @@ Release date: 2016/09/09
 
 - Fix a compilation issue with Prefab Models using other Prefab Models to be compiled
 - Fix and improve edition of Generics and Composition Nodes for Shader class nodes in materials
-- 
+
 #### Game Studio
 
 - Fix a potential NullReferenceException when validating a range value in the property grid.
 - Creation of derived asset (ArcheType) for UI page or UI library are not supported, but were still allowed.
 - Fix an issue with message box that returned a wrong value when the user chose to close it instead of clicking on one of its button. This could result in data loss when asked to save the project upon closing the Game Studio.
-- Removed incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
+- Remove incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
+- Display error message in credential dialog when remote location does not exist instead of reporting invalid credentials.
+
+#### Linux
+- Fix failure when compiling shaders for the Vulkan backend on the remote host.
 
 #### Particles
 
@@ -213,12 +217,6 @@ Release date: 2016/09/09
 #### Samples
 
 - Fix samples were depending on the wrong version of Xenko.
-
-#### Game Studio
-* Fixed error message in credential dialog when remote location did not exist instead of reporting invalid credentials.
-
-#### Linux
-* Fixed failure when compiling shaders for the Vulkan backend on the remote host.
 
 # Known Issues
 
