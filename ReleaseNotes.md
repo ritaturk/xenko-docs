@@ -180,7 +180,44 @@ Release date: 2016/08/31
 #### VR
 * Added audio, status and re-center support for Oculus Rift.
 
+#### Linux
+* Fixed Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
+
+## Version 1.8.1-Beta
+
+Release date: 2016/09/09
+
+### Enhancements
+
+#### Game Studio
+
+- Current selection in the UI editor can be changed from the context menu. This is especially useful to select an element that is covered by another.
+- Add snapping when moving or resizing a element in the UI editor.
+
+### Issues fixed
+
+- Fix a compilation issue with Prefab Models using other Prefab Models to be compiled
+- Fix and improve edition of Generics and Composition Nodes for Shader class nodes in materials
+
+#### Game Studio
+
+- Fix a potential NullReferenceException when validating a range value in the property grid.
+- Creation of derived asset (ArcheType) for UI page or UI library are not supported, but were still allowed.
+- Fix an issue with message box that returned a wrong value when the user chose to close it instead of clicking on one of its button. This could result in data loss when asked to save the project upon closing the Game Studio.
+- Remove incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
+- Display error message in credential dialog when remote location does not exist instead of reporting invalid credentials.
+
+#### Linux
+- Fix failure when compiling shaders for the Vulkan backend on the remote host.
+
+#### Particles
+
+- Particles materials refactored, significantly improving memory performance.
+
+#### Samples
+
+- Fix samples were depending on the wrong version of Xenko.
+
 # Known Issues
 
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
-- Linux Mono has some issue with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
+- On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
