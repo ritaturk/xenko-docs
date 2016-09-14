@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{_rel}}styles/docfx.vendor.css">
   <link rel="stylesheet" href="{{_rel}}styles/docfx.css">
   <link rel="stylesheet" href="https://xenko.com/css/site.css">
+  <script src="https://xenko.com/scripts/site.js" type="text/javascript"></script>
   <link rel="stylesheet" href="{{_rel}}styles/main.css">
   <meta property="docfx:navrel" content="{{_navRel}}">
   <meta property="docfx:tocrel" content="{{_tocRel}}">

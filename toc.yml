@@ -1,4 +1,4 @@
-- name: Home
+- name: Doc
   href: index.md
 - name: Manual
   href: manual/
