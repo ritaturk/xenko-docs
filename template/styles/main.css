@@ -1,13 +1,19 @@
 body {
     padding-bottom: 0px;
+    color: #000;
 }
 
 .sidefilter {
-    top: 95px;
+    top: 90px;
 }
 
 .sidetoc {
-    top: 161px;
+    top: 156px;
+}
+
+.breadcrumb {
+    padding: 6px 0 0 0;
+    margin: 0;
 }
 
 .row {
@@ -22,7 +28,11 @@ th, td {
 }
 
 .article, #search-results {
-    margin-top: 91px;
+    margin-top: 81px;
+}
+
+.search-list {
+    padding-top: 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -43,8 +53,10 @@ th, td {
 /* Already defined on navbar, but since we have conflict with current Xenko navbar we redefine them on breadcrumb */
 .navbar {
     z-index: 50;
-    box-shadow: 0 4px 12px rgba(1, 1, 1, 0.2);
     margin-bottom: 0px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    min-height: 36px;
 }
 
 /* Don't try to make a collapsable navbar, even on smaller devices */
@@ -87,8 +99,8 @@ th, td {
   max-width: 1370px;
 }
 
-.level1 {
-  margin-top: 5px;
+.toc .nav > li > a {
+  margin-left: 5px;
 }
 
 .toc .level1 > li {
@@ -97,28 +109,24 @@ th, td {
 
 .toc .level3 {
     font-weight: normal;
-    margin-top: 5px;
     margin-left: 15px;
     font-size: 12px;
 }
 
+.toc .level1, .toc .level2, .toc .level3, .toc .level4, .toc .level5 {
+    margin-top: 0px;
+}
+
 .toc .level4 {
     font-weight: normal;
-    margin-top: 5px;
     margin-left: 15px;
     font-size: 12px;
 }
 
 .toc .level5 {
     font-weight: normal;
-    margin-top: 5px;
     margin-left: 15px;
     font-size: 12px;
-}
-
-.breadcrumb {
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, span.xref {
@@ -126,20 +134,15 @@ h1, h2, h3, h4, h5, h6, span.xref {
     word-break: normal;
 }
 
-/* In this article right menu */
-.affix {
-  top: 95px;
-}
-
 /* adjust before size so that anchor (#title) makes text scroll to proper location without hiding it under title bar */
 h1:before, h2:before, h3:before, h4:before {
-  height: 180px;
-  margin-top: -180px;
+  height: 106px;
+  margin-top: -106px;
 }
 
 /* View Source and Improve this doc buttons */
 #_content>a{
-  margin-top: 185px;
+  margin-top: 165px;
 }
 
 footer {
