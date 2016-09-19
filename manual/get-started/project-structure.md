@@ -2,30 +2,50 @@
 
 # Project Structure
 
-This page will show how Game Studio organizes its project structure. Understanding the Xenko project structure is essential for knowing where to place and find files, collaboration and scaling your project.
+This page explains how the Game Studio organizes game projects. 
+Understanding Xenko project structure is essential for knowing where to put and find files, 
+team member collaboration and scaling your projects up.
 
-# Packages
+## Packages
 
-Game Studio organizes its projects in packages. A package is an collection of:
+The Game Studio organizes your project into packages. 
 
-* Assets: An asset is a representation of an object or resource inside the editor, see [Introduction to Assets](introduction-to-assets.md) for more information.
-* Resources: Resources refers to raw files such as images, textures, and audio, that are embedded in the package.
-* Scripts: Scripts contain logic that make your game dynamic, see [Scripting in Xenko](scripting-in-xenko.md) for more information.
+A package is a container composed of:
 
-A package can depend on other packages. A package and all its dependencies make up an independent unit that can be reused in other games or applications.
+* Assets: An asset is a representation of an object of your game inside the editor. 
+  See [Introduction to Assets](introduction-to-assets.md) for more information.
+* Resources: A resource is a data file used by an asset such as an image, a 3D model, a sound file, etc.
+* Code files: The code files of your game, that is scripts, shader and effect files. 
+  For more information about scripts, see [Scripting in Xenko](scripting-in-xenko.md).
+* Dependencies to other packages.
 
-## Package directory structure
+A package (with its dependencies) makes up an independent block that can be reused in other games or applications.
 
-In Game Studio, a package is a collection of Assets, Resources, Scripts. The Solution explorer in Game Studio displays the folder hierarchy of your game, which matches the package folder structure.
+> [!NOTE]
+> A game is a package having a main executable (entry point).
 
-For example, for a project named 'MyGame', the directory structure is as follows:
+## Package Directory Structure
+
+The Game Studio creates one dedicated folder for each package of your game.
+Inside each of these folders, it organizes the different files as follow (example of a package named 'MyPackage'): 
 
 ![Xenko Sample Directory Structure](media/sample-project-directory-structure.png)
 
-1. **Assets** Contains all the assets used in the project. (Models, materials, etc.)
-2. **Bin** Contains all the binariesof yours game on the respective platform. A subdirectory for each platform is created, and contains the files needed to run on that platform.
-3. **MyGame.Game** Contains all the game specific source code.
-4. **MyGame._Platform_** Contains all the platform specific source code. A subdirectory containing the platform name is created for every selected platform. (e.g. MyGame.Linux, MyGame.Windows etc.).
-5. **Resources** Contains all files containing the raw information that needs to be embedded in the game, like: images, audio, FBX files, XML files, etc.
+1. **Assets**: Contains all the assets of the package. The Game Studio automatically creates an asset file for each asset created inside the editor.
+2. **Bin**: Contains all the binaries of your package or game. A sub-directory is created for each platform. 
+   In the case of a game, it contains all the files needed to run your game on the specified platform.
+3. **MyPackage.Game**: Contains all the source code of your package.
+4. **MyPackage._Platform_**: It the case of a game, it contains all the platform specific source code and main entry points for the platform. 
+5. **obj**: Contains all build cached files. If you want to force a complete asset and code rebuild, you can delete this folder.
+6. **Resources**: This is the place where you should copy all resource files. 
 
-Now, as you know how to organize your project, you can start creating your own assets, see [Introduction to Assets](introduction-to-assets.md).
+> [!WARNING]
+> Xenko doesn't automatically copy resource files into the dedicated resource folder, it is your job to do so. 
+> We made this choice to avoid useless copies and so that you can organize your resource files as you want.
+> However make sure that relative paths to the resource files are the same on all your machines.
+> If not, your project won't be sharable between the different members of your team.
+
+> [!TIP]
+> Note that the directory structure matches what the Solution explorer displays inside the Game Studio.
+
+Now that you know how to properly organize your project, you can start creating the assets of your game, see [Introduction to Assets](introduction-to-assets.md).
