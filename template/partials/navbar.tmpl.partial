@@ -1,63 +1,62 @@
-<div id="xk-header">
+	<div id="x_wrap">
+		<div id="xk-header">
+			
+
 <!-- Static navbar -->
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
-	<div class="row">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="rt-logo" href="http://xenko.com/" alt="Xenko"></a>
-		</div>
-		<div id="navbar2" class="navbar-collapse collapse">
-			<div class="navbar-right">
+  <div id="x_head_openBG"></div>
+  <div id="x_head">
+		<h1><a href="//xenko.com">Xenko</a></h1>
+		<div id="x_menuButton"><span>OPEN / CLOSE</span></div>
+		<div id="x_head_container">
 				
-				
-				<ul class="nav navbar-nav">
-	
-	
-	<li ><a href="http://xenko.com/">Home</a></li>
-	
-	
-	<li ><a href="http://xenko.com/features">Features</a></li>
-	
-	
-	<li class='active'><a href="http://doc.xenko.com/latest">Documentation</a></li>
-	
-	
-	<li ><a href="http://xenko.com/download">Download</a></li>
-	
-	
-	<li ><a href="http://xenko.com/community">Community</a></li>
-	
-</ul>
+            <ul class="x_menu">
+                <li><a href="{{_rel}}.">Documentation</a></li>
+                <li><a href="{{_rel}}manual">Manual</a></li>
+                <li><a href="{{_rel}}api/SiliconStudio.Xenko.Engine.html">API</a></li>
+                <li><a href="{{_rel}}ReleaseNotes.html">Release Notes</a></li>
+            </ul>
+
+			<div id="x_head_subContainer">
+
+    <a class="x_download" href="//xenko.com/download" target="_self"><span>(icon)</span> Download</a>
+
+    <h3 class="x_search_title"></h3>
+    <div class="x_search">
+    	<form role="search" id="search">
+    		<input name="search_paths[]" type="hidden" value="/en">
+    		<input id="search-query" class="txt" name="query" type="text" value="">
+    		<input class="send" name="submit" type="submit" value="Search">
+    	</form>
+    </div>
+    
+    <ul class="x_sns">
+					<li class="facebook"><a href="https://www.facebook.com/xenko3d" target="_blank">Facebook</a></li>
+					<li class="twitter"><a href="https://twitter.com/xenko3d" target="_blank">Twitter</a></li>
+					<li class="youtube"><a href="https://www.youtube.com/channel/UCfP5ubydYEslNRtacmZBjuQ" target="_blank">YouTube</a></li>
+				</ul>
+				<div class="x_lang">
+					<p>LANGUAGE</p>
+				</div>
 			</div>
+			<div id="x_head_subButton"><span>OPEN / CLOSE</span></div>
+			<div id="x_head_langList"><ul>
+					<li><span>English</span></li>
+					<!--<li><a href="https://stg.xenko.com/ja">日本語</a></li>-->
+			</ul></div>
 		</div>
 	</div>
+    
+<!--<nav class="navbar" role="navigation">
+  <div class="container">
+    <div id="navbar">
+      <form class="navbar-form navbar-right" role="search" id="search">
+        <div class="form-group">
+          <input type="text" class="form-control" id="search-query" placeholder="Search doc..." autocomplete="off">
+        </div>
+      </form>
+    </div>
   </div>
-</nav>
+</nav>-->
+
+    </div>
 </div>
-
-
-<nav class="navbar2 navbar-inverse">
-     <div class="container">
-       <div class="navbar-header ">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-       </div>
-       <div class="collapse navbar-collapse" id="navbar">
-         <form class="navbar-form navbar-right" role="search" id="search">
-           <div class="form-group">
-             <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-           </div>
-         </form>
-       </div>
-     </div>
-   </nav>

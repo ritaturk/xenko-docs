@@ -1,5 +1,6 @@
 body {
     padding-bottom: 0px;
+    color: #000;
 }
 
 /* AVDW: Updated style for notes */
@@ -36,11 +37,16 @@ ul li  img, ol li img {
 /********************************************/
 
 .sidefilter {
-    top: 174px;
+    top: 90px;
 }
 
 .sidetoc {
-    top: 240px;
+    top: 156px;
+}
+
+.breadcrumb {
+    padding: 6px 0 0 0;
+    margin: 0;
 }
 
 .row {
@@ -66,7 +72,11 @@ th, td img{
 }
 
 .article, #search-results {
-    margin-top: 180px;
+    margin-top: 81px;
+}
+
+.search-list {
+    padding-top: 25px;
 }
 
 .video_container{
@@ -105,16 +115,47 @@ th, td img{
   }
 }
 
-@media only screen and (max-width: 1199px) {
-  .article, #search-results {
-    margin-top:230px
-  }
-  .sidefilter {
-    top: 244px;
-  }
-  .sidetoc {
-    top: 310px;
-  }
+/* Already defined on navbar, but since we have conflict with current Xenko navbar we redefine them on breadcrumb */
+.navbar {
+    z-index: 50;
+    margin-bottom: 0px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    min-height: 36px;
+}
+
+/* Don't try to make a collapsable navbar, even on smaller devices */
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-right {
+    float: right !important;
+}
+
+.navbar-nav {
+    border-left: 1px solid #e7e7e7;
+    width: 530px;
+    height: 54px;
+    margin-top: 0 !important;
+}
+
+.navbar-nav > li {
+    height: 54px;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+}
+
+.navbar-nav > li > a {
+    color: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 54px;
+}
+
+.navbar-nav > li > a:hover {
+    background: #f0f0f0;
 }
 
 /* make container auto adjust up to 1370px */
@@ -123,8 +164,8 @@ th, td img{
   max-width: 1370px;
 }
 
-.level1 {
-  margin-top: 5px;
+.toc .nav > li > a {
+  margin-left: 5px;
 }
 
 .toc .level1 > li {
@@ -133,37 +174,24 @@ th, td img{
 
 .toc .level3 {
     font-weight: normal;
-    margin-top: 5px;
     margin-left: 15px;
     font-size: 12px;
 }
 
+.toc .level1, .toc .level2, .toc .level3, .toc .level4, .toc .level5 {
+    margin-top: 0px;
+}
+
 .toc .level4 {
     font-weight: normal;
-    margin-top: 5px;
     margin-left: 15px;
     font-size: 12px;
 }
 
 .toc .level5 {
     font-weight: normal;
-    margin-top: 5px;
     margin-left: 15px;
     font-size: 12px;
-}
-
-/* Already defined on navbar, but since we have conflict with current Xenko navbar we redefine them on breadcrumb */
-.navbar-default2 {
-    border-style: solid;
-    border-width: 0 0 1px;
-    border-radius: 0;
-    background-color: #f5f5f5;
-    border-color: #d0d0d0;
-}
-
-.breadcrumb {
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, span.xref {
@@ -171,24 +199,15 @@ h1, h2, h3, h4, h5, h6, span.xref {
     word-break: normal;
 }
 
-#search {
-    margin-top: 8px !important;
-}
-
-/* In this article right menu */
-.affix {
-  top: 150px;
-}
-
 /* adjust before size so that anchor (#title) makes text scroll to proper location without hiding it under title bar */
 h1:before, h2:before, h3:before, h4:before {
-  height: 180px;
-  margin-top: -180px;
+  height: 106px;
+  margin-top: -106px;
 }
 
 /* View Source and Improve this doc buttons */
 #_content>a{
-  margin-top: 185px;
+  margin-top: 165px;
 }
 
 footer {
