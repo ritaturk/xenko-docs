@@ -2,9 +2,15 @@
 
 # Introduction to Assets
 
-An asset is a representation of any item that can be used in your project. An asset can be created from any file such as a model, a texture, an audio file, a material, or an animation. There are also Assets that are not based on any external file or resource, such as scenes and physics colliders.
+An asset is a representation of an element of your project inside the Game Studio. 
+Some assets require an input data file (a resource) such as a model, a texture, an audio file, etc. 
+Others are not based on any external resource and can be entirely created and configure from the Game Studio, 
+such as scenes, physics colliders, game settings, etc.
 
-This section will show you how to create Assets and the basics of Asset management.
+To populate your game with elements such as models, sounds and sprites, 
+you first need to create the corresponding assets inside the Game Studio.
+
+This section will explain you the basics about Asset creation, management and usage.
 
 ![Asset view tab](media/asset-creation-asset-view-tab-knight.png)
 
@@ -12,9 +18,14 @@ _Different types of assets displayed in the *Asset view* tab_
 
 ## Overview
 
-You can create Assets by using the **Add asset** button or by directly dragging and dropping files in the Game Studio.
+You can create Assets by using the _Add Asset_ button or by directly dragging and dropping resource files in the Game Studio.
 
-With the Asset view you can easily organize, search and visualize your Assets. Assets can be dragged and dropped in the Scene editor to start using them. Properties of the Asset can be set through the property grid in the top-left in Game Studio.
+You can modify and configure Assets using the dedicated editors and the property grid.
+
+With the Asset view you can easily organize, search and visualize your Assets. 
+Assets can be dragged and dropped into the editors or the property grid to start using them. 
+
+## The Basics
 
 This section will discuss the following subjects:
 
@@ -22,6 +33,9 @@ This section will discuss the following subjects:
 * [Manage Assets](manage-assets.md) - changing Asset properties to customize them, just the way you want.
 * [Use Assets](use-assets.md) - loading and referencing Assets.
 
-For more advanced topics, please refer to [Assets](/manual/game-studio/assets.md) in the Game Studio documentation.
-
 Let's continue to learn more about basic Asset concepts, see [Create Assets](create-assets.md).
+
+<!---
+## Going Further
+For more advanced topics, please refer to [Assets](/manual/game-studio/assets.md) in the Game Studio documentation.
+-->
