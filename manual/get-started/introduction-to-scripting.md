@@ -3,45 +3,55 @@
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Programmer</span>
 
-Scripting is an important part of game creation. Scripting, for example helps you handle game events, respond to user inputs, helps you control the movement and behavior of your Entities, and as a whole it helps to make your static game interactive.
+Scripting is another fundamental part of game creation. 
+
+Scripting allows you to handle game events, respond to user inputs and control the movement and the behavior of your entities.
+In short, it is what makes your static game interactive by adding a gameplay to it.
+
+Below is an example of script in Xenko.
+
+```cs
+public class BasicAsyncScript : AsyncScript
+{         
+	public override async Task Execute() 
+	{
+		while(Game.IsRunning)
+		{
+			// Do some stuff every frame
+			
+			await Script.NextFrame();
+		}
+	}
+ }
+```
+
+_Sample script_
 
 ## Overview
 
-All scripting in Xenko is done in C#, therefore you can use the C# programming reference, to find out about language specific information you might need.
+All the scripting in Xenko is done in C#.
 
-Below you'll see an example of a C# script for Xenko.
+There are two main types of script in Xenko: Asynchronous and Synchronous Scripts.
 
-```cs
-using System;
-using System.Text;
-using System.Threading.Tasks;
-using SiliconStudio.Core.Mathematics;
-using SiliconStudio.Xenko.Input;
-using SiliconStudio.Xenko.Engine;
+The public fields of your scripts are displayed and can be setup from the Game Studio property grid.
 
-namespace MyGame
-{
-    public class BasicAsyncScript : AsyncScript
-    {         
-		public override async Task Execute() 
-		{
-            while(Game.IsRunning)
-            {
-				// Do some stuff every frame
-                await Script.NextFrame();
-            }
-        }
-     }
-}
-```
-_Sample script_
+A script can be created both from Visual Studio and the Game Studio.
 
-This section will discuss the following subjects:
+You can use a script by instantiating and attaching it to an entity of your scene.
+This can be done either from the scene editor or from the code.
+
+To debug a script use Visual Studio and simply put a break point in the desired code section.
+
+## The Basics
+
+This section will explain the following subjects:
 
 * [Scripting in Xenko](scripting-in-xenko.md) - Basic concepts about scripting in Xenko.
 * [Create a script](create-a-script.md) - How to create a script in both Visual Studio and Game Studio
 * [Use a script](use-a-script.md) - How to attach and test scripts
 
+<!--
 For more advanced topics, please refer to [Scripting](/manual/game-studio/scripting.md) in the Game Studio documentation
+-->
 
 Let's continue to learn more about basic scripting concepts, see [Scripting in Xenko](scripting-in-xenko.md).

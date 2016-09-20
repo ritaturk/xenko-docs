@@ -3,23 +3,54 @@
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Programmer</span>
 
-In this page, you’ll learn how to use a script in your game, the different types of scripts used in Xenko, and how to make certain properties of your script appear in the Game Studio in order to configure script parameters.
+A script is a unit of code that enables you to add behaviors to your entities. 
 
-## Scripting and entities
+In this page, you’ll learn what is a script, the different types of scripts in Xenko, 
+and how to make certain properties of your script appear in the Game Studio so that artists can configure script parameters.
 
-A script is a unit of code that helps to control their movement, handle events in your game, and respond to user input. All scripting in Xenko is done in C#, therefore you can use the C# programming reference, to find out about language specific information you might need.
+## Scripting and C#
 
-A script can be attached to one or more entities. Multiple scripts can also be attached to a single entity. If you attach a script to multiple entities, multiple instances of that script are created. This allows for the same script to have different values for its public properties. You'll learn more about this subject later in this chapter.
+In Xenko, all the scripting is done in C#, an advanced and efficient programming language.
+The scripts are edited and debugged from Microsoft Visual Studio.
 
-There are a couple of Xenko specific base types from which you can derive your classes. These Xenko specific base classes can be used for functionality that needs to be called every frame, or just once at startup. Other scripts are free to have no base class, or derived from custom base classes, just like you're used to when programming in C#.
+> [!NOTE]
+> The learning of C# is out of the scope of this manual.
+> To learn the C# programming language please refer to C# programming books or tutorials
 
-## Xenko specific types of scripts
+This doesn't mean that all the C# code of your game are scripts.
+A script is a C# class inheriting from the [ScriptComponent](xref:"SiliconStudio.Xenko.Engine.ScriptComponent") class.
+A script can be attached to an entity from the editor and has access to the [ScriptContext](xref:SiliconStudio.Xenko.Engine.IScriptContext").
 
-Scripts can be classified into Startup scripts, Synchronous scripts, and Asynchronous scripts.
+The script context gives access to all of the main modules of the engine:
+* **Audio**: Gives access to the audio system.
+* **Content**: Lets you load and save content from Assets.
+* **EffectSystem**: Lets you load and compile effects and shaders.
+* **Entity**: The entity to which the script is attached.
+* **Game**: Gives you access to all information related to your game.
+* **GraphicsDevice**: Gives you advanced access to the low-level graphics device, in order to create GPU resources.
+* **Input**: Gives you access to keyboard, mouse and joypad states and events.
+* **Services**: a registry of services that you can use to register your own services.
+* **SceneSystem**: Gives you access to the currently displayed scene. Here you can manage Entities.
+* **Script**: Gives you access to the script manager to schedule or await the termination of scripts.
+* **Log**: Gives you access to the logging system, in order to log messages and errors from script.
 
-The following are the types of scripts with examples:
+These objects are described in more detail in the Xenko API reference.
 
-* **Startup script:** This script's ```Start``` method is called once during startup, and can be used to initialize certain game elements.
+Of course you can still use standard C# class in Xenko, but those classes are not called *Scritps*
+and the Game Studio will not let you attach those class to entities or your scenes.
+
+## Script Types
+
+There are three main types of scripts in Xenko: Startup scripts, Synchronous scripts, and Asynchronous scripts. 
+Each of these scripts has a precise function. 
+When writing your script inherit from the script type that provides the most adequate behavior.
+
+### Startup Script
+
+This script is called at load time and unload time (e.g. when the attached entity is loaded and unloaded). 
+It is used mostly to initialize certain game elements and destroy them when the scene is unloaded. 
+It has a [Start](xref:"SiliconStudio.Xenko.Engine.StartupSctipt.Start") method for initialization and
+a [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method for cancellation that should be override.
 
 ```
 public class StartUpScriptExample : StartupScript
@@ -31,54 +62,54 @@ public class StartUpScriptExample : StartupScript
 }
 ```
 
-* **Synchronous script:** The script's ```Update``` method is called each frame. Because the script is synchronous, execution of other scripts wait until the active script is done.
+### Synchronous Script
+
+This script gets first initialized, then updated every frame and finally canceled.
+The initialization code, if any, should be placed in the [Start](xref:"SiliconStudio.Xenko.Engine.StartupScript.Start") method.
+The code performing the update should be placed in the [Update](xref:"SiliconStudio.Xenko.Engine.SyncScript.Update") method.
+The code performing the cancellation should be placed in the [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method.
+This script is used to perform updates that should happen every frames whatever happens.
 
 ```
 public class SampleSyncScript : SyncScript
 {        
 	public override void Update()
 	{
-		if (Game.IsRunning)
-		{
-			// Do some stuff every frame
-		}
+		// Performs the update on the entity - this code is executed every frames.
 	}
 }
 ```
 
-* **Asynchronous script:** The script's ```Execute``` method is called once when the script is added to the scene. Because the script is asynchronous, execution of other scripts is not blocked.
+## Asynchronous script
+
+This script is asynchronous, it gets executed only once and then canceled when removed from the scene.
+The asynchronous code should go inside the [Execute](xref:"SiliconStudio.Xenko.Engine.AsyncScript.Execute") function.
+The code performing the cancellation should be placed in the [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method.
+This script is used to perform actions that depends on events and triggers in the game.
 
 ```
 public class SampleAsyncScript : AsyncScript
 {        
 	public override async Task Execute() 
 	{
-		while (Game.IsRunning)
+		// The initialization code should come here, if necessary
+		
+		while (Game.IsRunning) // loop until the game finishes (optional depending on the script)
 		{
-			// Do some stuff every frame
-			await Script.NextFrame();
+			await MyEvent;
+
+			// Do some stuff
+			
+			await Script.NextFrame(); // await the next frame (optional depending on the script)
 		}
 	}
 }
 ```
 
-### Available Engine Modules
-
-If a script is derived from ```ScriptComponent```, the script can access various Engine Modules of the Xenko framework:
-
-* **Audio**: Gives access to the audio system.
-* **Content**: Lets you load and save content from Assets.
-* **EffectSystem**: Lets you load and compile effects and shaders.
-* **GraphicsDevice**: Gives you advanced access to the low-level graphics device, in order to create GPU resources.
-* **Input**: Gives you access to keyboard, mouse and joypad states and events.
-* **SceneSystem**: Gives you access to the currently displayed scene. Here you can manage Entities.
-* **Log**: Gives you access to the logging system, in order to log messages and errors from script.
-
-These objects are described in more detail in the Xenko API reference.
-
 ## Using public properties and fields
 
-Public properties and fields can be set from the Game Studio and allow to configure scripts with dynamic parameters. This allows for easy communication by, for instance, the artist and the scripts, without having to deal directly with the script code.
+In Xenko, all the public properties and fields automatically appears and can be set from the Game Studio.
+This allows you or your artist to configure each instance of scripts attached to entities differently.
 
 > [!WARNING] 
 > In order to use a public property or field in Game Studio, it needs to be serializable. 
@@ -86,21 +117,19 @@ Public properties and fields can be set from the Game Studio and allow to config
 The following is an example of a script with a public property called DelayTimeOut:
 
 ```cs
-public class SampleSyncScript : SyncScript
+public class SampleSyncScript : StartupScript
 {
-	// Declared public member variables and properties will be shown in Game Studio
+	// This public member will appear in Game Studio
 	public float DelayTimeOut { get; set; }
-	
-	public override void Update()
-	{
-		// Do some stuff every frame
-	}
 }
 ```
 
+The above script appears as following in the Game Studio.
+
 ![Change value of public property in Property grid section](media/scripting-in-xenko-change-value-public-property.png)
 
-If you need to have a public property in your script, that should be hidden in Game Studio, or is not serializeable, use the ```[DataMemberIgnore]``` attribute as follows:
+If you don't want the field to appear in the Game Studio, you can either declare your member internal or private, or 
+use the [DataMemberIgnore](xref:"SiliconStudio.Core.DataMemberIgnoreAttribute") attribute as follows:
 
 ```cs
 
@@ -113,10 +142,6 @@ If you need to have a public property in your script, that should be hidden in G
 ![Hide public property with [DataMemberIgnore]](media/scripting-in-xenko-public-property-with-datamemberignore.png)
 
 _Public property has been hidden with ```[DataMemberIgnore]```_
-
-## Script location
-
-In your Visual Studio solution, you'll find a project ending in ***.Game***. Any scripts that are game specific (i.e. not ***Platform*** specific) should be placed in this project. Any scripts that are ***Platform*** specific should be placed in the project for the specific platform. Projects for platforms end in their platform name, for example: .Linux, .Android, .Windows etc.
    
 Now that you've learned about the basics of scripting in Xenko, let's continue to [Create a script](create-a-script.md)
  
