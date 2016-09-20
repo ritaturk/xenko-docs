@@ -209,8 +209,8 @@ footer {
   text-align: center;
 }
 
-.article li {
-    list-style: initial;
+.article ul li, .article ol li {
+    list-style: inherit;
     list-style-position: inside;
 }
 
