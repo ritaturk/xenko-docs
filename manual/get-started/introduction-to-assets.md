@@ -12,9 +12,7 @@ you first need to create the corresponding assets inside the Game Studio.
 
 This section will explain you the basics about Asset creation, management and usage.
 
-![Asset view tab](media/asset-creation-asset-view-tab-knight.png)
-
-_Different types of assets displayed in the *Asset view* tab_
+![Different types of assets displayed in the *Asset view* tab](media/asset-creation-asset-view-tab-knight.png)
 
 ## Overview
 

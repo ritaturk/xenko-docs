@@ -24,14 +24,14 @@ _Asset Picker_
 
 To **add a reference**:
 - Directly drag-and-drop your asset onto the asset picker dock, or
-  ![drag-and-drop](media/use-assets-drag-and-drop.png)
+  ![Drag-and-drop an Asset](media/use-assets-drag-and-drop.png)
 - Click on the hand icon ![](media/use-assets-hand-icon.png). This opens the asset picker. 
   Select the appropriate asset and validate.  
-  ![drag-and-drop](media/use-assets-asset-picker.png)
+  ![Asset picker](media/use-assets-asset-picker.png)
   
 After the reference is added the asset picker dock displays the name and the image of the referenced asset.
 
-![drag-and-drop](media/use-assets-reference-added.png)
+![Reference set in the asset picker dock](media/use-assets-reference-added.png)
 
 > [!NOTE]
 > The type of the expected asset is not explicitly specified in the property grid, 

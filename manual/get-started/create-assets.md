@@ -10,25 +10,21 @@ Xenko provides two main ways to create assets for your game:
  
 ## Use the 'Add Asset' button
 
- 1. In the 'Asset View' tab, click ![New asset](media/create-and-add-assets-add-new-asset-button.png).
+ 1. In the 'Asset View' tab, click ![](media/create-and-add-assets-add-new-asset-button.png).
  
 	A list of assets is displayed.
 
  2. Select a type of asset you would like to create.
 
-	![Add asset from Asset view tab](media/asset-creation-create-new-asset-asset-view-tab.png)
- 
-	_Add asset using the 'Add Asset' button_
-	
+	![Add asset using the 'Add Asset' button](media/asset-creation-create-new-asset-asset-view-tab.png)
+ 	
 	A list of template appears. An asset template is an asset that is already preset for a specific use.
 	
  3. Select the template that that is the closest to your needs. In this sample we'll create a procedural model by selecting 'Cube':
 
     The asset is added to the 'Asset View' tab.
 
-	![Procedural Model added to Asset view tab](media/asset-creation-asset-view-tab-procedural-model.png)
-
-	_Procedural Model added to 'Asset View' tab_
+	![Procedural Model added to 'Asset View' tab](media/asset-creation-asset-view-tab-procedural-model.png)
 
 > [!Note]
 > Some Assets require a source file, such as textures. When adding these Assets, 
@@ -48,20 +44,17 @@ To create a asset file by drag-and-dropping:
    
 2. Drag-and-Drop the resource file into 'Asset View' tab of the Game Studio.
   
-   ![Drop resource from Windows Explorer into Game Studio](media/create-assets-drop-resource.png)
-   _Drap-and-drop resource in Game Studio_
+   ![Drap-and-drop resource in Game Studio](media/create-assets-drop-resource.png)
   
    A list of asset template appears.
    
-   ![Select the correct template for the resource file(s)](media/create-assets-drag-drop-select-asset-template.png)
-   _List of asset templates_
+   ![List of asset templates](media/create-assets-drag-drop-select-asset-template.png)
 
 3. Select the adequate template.
 
    The asset is added to the 'Asset View' tab.
    
-   ![Asset Created](media/create-assets-drag-drop-asset-created.png)
-   _Texture asset created_
+   ![Texture asset created](media/create-assets-drag-drop-asset-created.png)
 
 > [!Note] 
 > When dragging and dropping multiple files of _different_ types (e.g. texture and sound files), 

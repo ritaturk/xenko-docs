@@ -20,8 +20,6 @@ The following image displays a sample scene with a single Knight and default ele
 
 ![Basic scene in Xenko](media/scene-creation-basic-scene-in-xenko.png)
 
-_Basic scene in Xenko_
-
 ## Overview
 
 The Game Studio provides an easy way to create and build scenes for your game.

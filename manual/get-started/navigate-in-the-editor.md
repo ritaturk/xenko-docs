@@ -59,8 +59,6 @@ When you want to rotate around objects of your scene, you can use the orbital ro
 
 ![Orbital rotation schema](media/navigate-in-scene-orbital-rotation-schema.png)
 
-_Orbital rotation schema_
-
 The point of rotation is always the center of the screen and the distance to the center can be adjusted with the mouse wheel.
 
 <video controls autoplay loop height="240" width="320">
@@ -126,8 +124,6 @@ The following image displays the view camera gizmo.
 
    ![View camera gizmo](media/navigate-in-a-scene-view-camera-gizmo.png)
 
-   _View camera gizmo_
-
 By using this gizmo, you can easily set the camera view angle to the preset values and switch between Perspective and Orthographic projections.
 
 #### Change Camera View Angle
@@ -170,8 +166,6 @@ The scene orientation gizmo is displayed in the bottom-left corner of the Scene 
 This gizmo indicates the current orientation of the scene.
 
    ![Scene orientation gizmo](media/navigate-in-a-scene-scene-orientation-gizmo.png)
-
-   _Scene orientation gizmo_
 
 The next step is to make your scene more dynamic. To do this, you need to use scripts. For information about using scripts, see [Introduction to scripting](introduction-to-scripting.md).
 

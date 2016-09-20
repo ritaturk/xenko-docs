@@ -2,14 +2,18 @@
 
 <span class="label label-doc-level">Beginner</span>
 
-This chapter helps you get started with Xenko. After installing Xenko, you can start creating your first project and add your first assets. After that you can learn more about Game Studio, project structure, and find out how to write scripts. First start off by [installing Xenko](install-xenko.md)
+This chapter helps you get started with Xenko. 
+After installing Xenko, you can start creating your first project and add your first assets. 
+After that you can learn more about Game Studio, project structure, and find out how to write scripts. 
+First start off by [installing Xenko](install-xenko.md)
 
-   ![Game Studio](media/getting-started.png)
-   _Game Studio_
+![Game Studio](media/getting-started.png)
 
 ## Overview
 
-In this section we will show you the basics of the Game Studio, and how to use them to create your first game. This section will discuss the following subjects:
+In this section we will show you the basics of the Game Studio, and how to use them to create your first game. 
+
+This section will discuss the following subjects:
 
 * [Install Xenko](install-xenko.md) - how to install Xenko and Game Studio
 * [Xenko Launcher](xenko-launcher.md) - how to use the Xenko Launcher

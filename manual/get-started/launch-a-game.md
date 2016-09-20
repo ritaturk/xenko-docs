@@ -12,7 +12,7 @@ This page will show you how to start your game using either the Game studio or V
 
   ![Platform selection](media/launch-your-game-game-studio-profiles.png)
 
-  2. Click ![Play](media/launch-your-game-play-icon.png) to run or press **F5**.
+  2. Click ![](media/launch-your-game-play-icon.png) to run or press **F5**.
 
   You can see the build status in the Output window. 
   When the build has finished, your game starts on the selected platform.
@@ -23,7 +23,7 @@ This page will show you how to start your game using either the Game studio or V
 
 ## Launch your Game from Visual Studio
 
-1. Open Visual Studio by clicking on ![IDE](media/launch-your-game-ide-icon.png) icon in the Game Studio.
+1. Open Visual Studio by clicking on ![](media/launch-your-game-ide-icon.png) icon in the Game Studio.
 
 2. Identify the project corresponding to the platform you want to run your game to.
 
@@ -40,9 +40,8 @@ This page will show you how to start your game using either the Game studio or V
   
 5. To start the game with or without debugging:
    * Press **Ctrl + F5** to start the game without debugging
-   * Click ![Start button](media/launch-your-game-start-button.png) or press **F5** to start the game with debugging.
+   * Click ![](media/launch-your-game-start-button.png) or press **F5** to start the game with debugging.
 
-   ![MyGame running](media/launch-your-game-mygame-running.png)
-   _Your running game_
+   ![Your running gam](media/launch-your-game-mygame-running.png)
    
 Congratulation! You finished the get started pages. Continue your learning by reading the reference and tutorial pages.

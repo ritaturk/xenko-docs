@@ -53,7 +53,7 @@ You can test your script by running the game. Your script gets executed automati
 
 **To test a script:**
 
-1. Click ![Play icon](media/use-a-script-play-icon.png)to run your game.
+1. Click ![](media/use-a-script-play-icon.png)to run your game.
 
 If your code is working correctly, you'll see it's output in the running game. If something is not working correctly, you need to debug your script.
 

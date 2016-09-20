@@ -126,7 +126,7 @@ public class SampleSyncScript : StartupScript
 
 The above script appears as following in the Game Studio.
 
-![Change value of public property in Property grid section](media/scripting-in-xenko-change-value-public-property.png)
+![Public property appears in the Property grid](media/scripting-in-xenko-change-value-public-property.png)
 
 If you don't want the field to appear in the Game Studio, you can either declare your member internal or private, or 
 use the [DataMemberIgnore](xref:"SiliconStudio.Core.DataMemberIgnoreAttribute") attribute as follows:
@@ -139,9 +139,7 @@ use the [DataMemberIgnore](xref:"SiliconStudio.Core.DataMemberIgnoreAttribute") 
 	
 ```
 
-![Hide public property with [DataMemberIgnore]](media/scripting-in-xenko-public-property-with-datamemberignore.png)
-
-_Public property has been hidden with ```[DataMemberIgnore]```_
+![Public property has been hidden with ```[DataMemberIgnore]```](media/scripting-in-xenko-public-property-with-datamemberignore.png)
    
 Now that you've learned about the basics of scripting in Xenko, let's continue to [Create a script](create-a-script.md)
  

@@ -8,8 +8,7 @@ but it also allows you to configure, preview and launch your game.
 
 This page will introduce you to the different views and tabs of the Game Studio. 
 
-![main interface](media/game-studio-main-interface.png)
-_The Game Studio_
+![The Game Studio](media/game-studio-main-interface.png)
 
 ## Asset Editors 
 

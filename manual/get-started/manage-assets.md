@@ -14,9 +14,7 @@ As an example, we will show you how to change the color of a Material.
 
  1. Select a material in the 'Asset View' tab. 
  
-	![Sphere Material on the Asset view tab](media/edit-asset-sphere-material-asset-view-tab.png)
-
-	_Material on the Asset view tab_
+	![Material on the Asset view tab](media/edit-asset-sphere-material-asset-view-tab.png)
 	
 	The properties of the selected material appear in the 'Property Grid' tab.
 
@@ -24,17 +22,13 @@ As an example, we will show you how to change the color of a Material.
  
  3. Click the colored box indicating the current color (yellow in this example), the color picker is displayed, allowing for easy selection of the diffuse color.
  
-	![Color picker and Palette](media/edit-asset-color-picker-palette-diffuse.png)	
- 
- 	_Color picker and Palette_
+	![Color picker and Palette](media/edit-asset-color-picker-palette-diffuse.png)
 	
  4. Click the **Color picker** and select a red hue color or enter the hexadecimal value.
 	
 	After you set the color for the material, the color of the asset changes. 
 	
 	![Asset appears in new color](media/edit-asset-color-change-selected-asset.png)
-
-	_Asset appears in new color_
 
 > [!TIP]
 > At all times, you can see your changes in real-time in the asset preview window.
@@ -100,9 +94,9 @@ You can see which assets will be included to the game database by looking at the
 
 Color | Status
 ------|--------
-![Blue](media/manage-assets-reference-asset.png) | Blue: The Asset has been marked as root asset and is included in the build.
-![Green](media/manage-assets-include-asset.png) | Green: The Asset is included in the build, because it was referenced by another asset that is included in the build.
-![Transparent](media/manage-assets-exclude-asset.png) | Gray: The Asset is not included in the build
+![](media/manage-assets-reference-asset.png) | Blue: The Asset has been marked as root asset and is included in the build.
+![](media/manage-assets-include-asset.png) | Green: The Asset is included in the build, because it was referenced by another asset that is included in the build.
+![](media/manage-assets-exclude-asset.png) | Gray: The Asset is not included in the build
 
 Whenever you are planning to load and use your asset at run-time using scripts, start by checking that your asset is properly included your game database.
 

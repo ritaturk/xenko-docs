@@ -29,7 +29,7 @@ A package (with its dependencies) makes up an independent block that can be reus
 The Game Studio creates one dedicated folder for each package of your game.
 Inside each of these folders, it organizes the different files as follow (example of a package named 'MyPackage'): 
 
-![Xenko Sample Directory Structure](media/sample-project-directory-structure.png)
+![Package Directory Structure](media/sample-project-directory-structure.png)
 
 1. **Assets**: Contains all the assets of the package. The Game Studio automatically creates an asset file for each asset created inside the editor.
 2. **Bin**: Contains all the binaries of your package or game. A sub-directory is created for each platform. 

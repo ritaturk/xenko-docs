@@ -68,8 +68,6 @@ Because your project has been modified outside of Game Studio, Game Studio needs
    
       ![Confirmation message](media/create-a-script-confirmation-message.png)
 
-   _Confirmation message_
-   
 3. Select **Yes** in the displayed dialog.
 
    The Game Studio adds your class script to your component list.
@@ -89,13 +87,10 @@ The second method is to create a script from Game Studio without using any other
 
 2. Select a script type from the **Script Types** list. The new script is added to the **Asset view** tab.
 
-   ![Script Asset Selection window](media/create-a-script-script-asset-selection.png)
-   _Select script type_
+   ![Select script type window](media/create-a-script-script-asset-selection.png)
 
    ![New script on Asset view tab](media/create-a-script-new-script-asset-view.png)
-
-   _New script on Asset view tab_
-   
+  
 
 Save your project and go to Visual Studio. You should be able to see the new script that has been added to your project.
 ```

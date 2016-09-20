@@ -98,9 +98,9 @@ The following table displays the different coordinate bases possible:
 
 | Coordinate System | Function |
 | ------  |  ------  |
-| ![World space coordinates](media/manage-entities-in-scene-wsc.png) | Uses the world coordinate system for transformations. The X, Y, and Z axes are the same for every entity. |
-| ![Object space coordinates](media/manage-entities-in-scene-osc.png)  | Uses the local coordinate system for transformations. The axes are oriented in the same direction as the selected entity. |
-| ![Camera space coordinates](media/manage-entities-in-scene-csc.png) | Uses the current camera coordinate system for transformations. The axes are oriented in the same direction as the editor camera. |
+| ![](media/manage-entities-in-scene-wsc.png) | Uses the world coordinate system for transformations. The X, Y, and Z axes are the same for every entity. |
+| ![](media/manage-entities-in-scene-osc.png)  | Uses the local coordinate system for transformations. The axes are oriented in the same direction as the selected entity. |
+| ![](media/manage-entities-in-scene-csc.png) | Uses the current camera coordinate system for transformations. The axes are oriented in the same direction as the editor camera. |
 
 
 **To change the coordinate system for a gizmo:**
@@ -123,9 +123,9 @@ Based on the gizmo you selected, the icon on the Snapping tool changes.
 
 | Icon | Function |
 | --- | ---- |
-| ![Snap translations](media/manage-entities-in-scene-snap-translation.png) | Snap translations to multiple of 1 |
-| ![Snap rotations](media/manage-entities-in-scene-snap-rotation.png) | Snap rotations to multiple of 22.5 |
-| ![Snap scale](media/manage-entities-in-scene-snap-scale.png) | Snap scale to multiple of 1.1 |
+| ![](media/manage-entities-in-scene-snap-translation.png) | Snap translations to multiple of 1 |
+| ![](media/manage-entities-in-scene-snap-rotation.png) | Snap rotations to multiple of 22.5 |
+| ![](media/manage-entities-in-scene-snap-scale.png) | Snap scale to multiple of 1.1 |
 
 Now you know how to arrange the entities in your scene. Next you will learn how to move inside the scene editor.
 See [Navigate inside the scene editor](navigate-in-the-editor.md).

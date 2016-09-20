@@ -19,9 +19,7 @@ To create an empty game:
 
  1. Start Xenko by clicking on launcher **Start Button**. This opens the **New Project** dialog.
 	
-![New/open project window](media/create-project-new-open-project-window.png)
-
-_New Project dialog_
+![New Project dialog](media/create-project-new-open-project-window.png)
  
  > [!Note]
  > This dialog can also be reached from inside the Game Studio by clicking File > New.
@@ -34,9 +32,7 @@ _New Project dialog_
     
 	The **Create a new game** dialog opens. This dialog helps you configure your new project.
     
- ![create a new game](media/create-project-create-new-game.png)
-
- _Create a new game dialog_
+ ![Create a new game dialog](media/create-project-create-new-game.png)
 
  4. Enter a value for the **Namespace** you'd like to use, or leave unchanged if you're happy with the given suggestion.
  
@@ -81,16 +77,12 @@ Xenko provides two types of sample project:
  
  2. Select the sample you'd like your project to be based on. 
     
-   ![New/open project samples](media/create-project-new-open-project-samples.png)
-
-    _New Project window - samples_
+   ![New Project window - samples](media/create-project-new-open-project-samples.png)
 
  3. Click **Select**.
 
-    ![select platform](media/create-project-select-platform.png)
-    
-    _Select Platforms window_
-	
+    ![Select Platforms window](media/create-project-select-platform.png)
+    	
  4. Select the platforms that you would like your game to support.
 
  5.	Click **OK**. 

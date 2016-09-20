@@ -27,56 +27,42 @@ You can download Xenko installer from the [Xenko website](http://xenko.com/downl
     The **Xenko Setup Wizard** opens.
 
     ![Xenko Setup Wizard](media/install-xenko-setup-wizard.png)
-
-    _Xenko setup wizard_
 	
  2. Click **Next**.
  
     The **Xenko License Agreement** window opens.
 
-    ![Xenko License Agreement](media/install-xenko-license-agreement.png)
-
-    _Xenko license agreement window_
+    ![Xenko license agreement window](media/install-xenko-license-agreement.png)
 	
  3. Click **Accept**.
  
     The **Xenko installation type** window opens.
 
-    ![Installation type](media/install-xenko-installation-type.png)
-
-    _Xenko installation type window_
+    ![Xenko installation type window](media/install-xenko-installation-type.png)
 	
  4. Select an installation type, and click **Next**. 
 
     The **Select installation folder** window opens.
 
-    ![Select installation folder](media/install-xenko-select-installation-folder.png)
-
-    _Select installation folder window_
+    ![Select installation folder window](media/install-xenko-select-installation-folder.png)
 	
  5. Select a destination folder, and click **Next**.
 
     The **Create application shortcuts** window opens.
     
-    ![Create application shortcuts](media/install-xenko-create-application-shortcuts.png)
-    
-    _Create application shortcuts window_
+    ![Create application shortcuts window](media/install-xenko-create-application-shortcuts.png)
 	
  6. Select the options to create shortcuts, and click **Next**.
  
     The **Ready to Install** window opens.
     
-    ![Ready to install](media/install-xenko-ready-to-install.png)
-    
-    _Ready to install window_
+    ![Ready to install window](media/install-xenko-ready-to-install.png)
 
  7. Click **INSTALL**.
  
     Installation begins. You can see the status of installation on the installation window.
  
     ![Installation status](media/install-xenko-installation-status.png)
-    
-    _Installation status_
 
 After the installation has finished, the [Xenko launcher](xenko-launcher.md) opens. Shortcuts are created for Xenko in the selected locations.
 

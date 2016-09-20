@@ -8,9 +8,7 @@ on your system.
 
 This page will show you how to use the launcher.
 
-![Xenko launcher interface](media/xenko-launcher-interface.png)
-
-_Xenko launcher_
+![Xenko launcher](media/xenko-launcher-interface.png)
 
 ## Install last version of Xenko
 
@@ -24,9 +22,7 @@ Visual Studio plugin.
 
 Accept the invitation and proceed to the installation.
 
-![Install last version](media/xenko-launcher-install-last-version.png)
-
-_Install last verion of Xenko_
+![Install last version of Xenko](media/xenko-launcher-install-last-version.png)
 
 ## Version management
 
@@ -43,9 +39,7 @@ To install or upgrade to a new version click the *Download & Install* button on 
 of the version name. Before proceeding to the installation you can also view the list of changes 
 and fixes by clicking on the *Release Notes* button on the left.
 
-![Various versions of Xenko](media/xenko-launcher-various-versions.png)
-
-_Manage versions of Xenko_
+![Manage versions of Xenko](media/xenko-launcher-various-versions.png)
 
 ## Start the Game Studio
 
@@ -58,9 +52,7 @@ in the *Switch/update version* section.
 
 2. Launch the Game Studio by clicking the Start button. 
 
-![Xenko launcher: Start button](media/xenko-launcher-start-button.png)
-
-_Start button of Xenko launcher_
+![Start button of Xenko launcher](media/xenko-launcher-start-button.png)
 
 For more details about the Xenko launcher see [Xenko launcher](/manual/xenko-launcher/).
 

@@ -37,22 +37,18 @@ and then set up their component from the property grid.
 
 **To create an entity from the Entity Hierarchy View:**
 
-1. Click on the ![Plus icon](media/add-entities-to-a-scene-plus-icon.png) icon. 
+1. Click on the ![](media/add-entities-to-a-scene-plus-icon.png) icon. 
 
    A context menu opens.
 
-   ![Context menu](media/add-entities-to-a-scene-context-menu.png)
-
-   _Context menu of MainScene_
+   ![Context menu of MainScene](media/add-entities-to-a-scene-context-menu.png)
 
 2. Select ***Empty entity*** to create an entity free from any component, 
    or select an entity template to create an entity preset for a specific function.
 
    An new entity is created.
 
-   ![Empty entity](media/add-entities-to-a-scene-empty-entity.png)
-
-   _New Entity in MainScene_
+   ![New Entity in MainScen](media/add-entities-to-a-scene-empty-entity.png)
    
 Next step is to **add and setup a component** to your entity to add a specific function to it.
    
@@ -62,15 +58,11 @@ Next step is to **add and setup a component** to your entity to add a specific f
 
 2. Click on **Add component** button from the property grid, and add the desired component (if needed).
 
-   ![Add model component](media/add-entities-to-a-scene-add-model-component.png)
-
-   _Add new component in Property grid_
+   ![Add new component in Property grid](media/add-entities-to-a-scene-add-model-component.png)
 
    A new component is added.
 
-   ![Model component](media/add-entities-to-a-scene-add-model-component-added.png)
-
-   _New component added in Property grid_
+   ![New component added in Property grid](media/add-entities-to-a-scene-add-model-component-added.png)
 
 3. **Set the properties** of your new component.
 
@@ -81,7 +73,7 @@ Instead of creating a new entity, you can also start from an existing entity by 
 **To duplicate an existing entity:**
 
 1. Select the entity to duplicate
-2. Activate the translation gizmo by clicking on the ![gizmo](media/add-entities-to-a-scene-gizmo.png) icon.
+2. Activate the translation gizmo by clicking on the ![](media/add-entities-to-a-scene-gizmo.png) icon.
 3. Maintain the *Ctrl* button down and translate the entity along one axis.
 
    The entity and all its properties are duplicated.
@@ -103,9 +95,7 @@ After you have duplicated an entity, Xenko assigns a default name to the duplica
 1.	Select the entity and press **F2**.
 2.	Type a name for the entity, and then press **Enter**.
 
-   ![Renamed entity on scene](media/add-entities-to-a-scene-renamed-entity.png)
+   ![Renamed entity in a scene](media/add-entities-to-a-scene-renamed-entity.png)
    
-   _Renamed entity in a scene_
-
 Now that you are able to add entities to your scene, the next step is to move, rotate and scale your entities to build a full word, 
 see [Arrange entities](arrange-entities.md).
