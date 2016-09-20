@@ -209,6 +209,11 @@ footer {
   text-align: center;
 }
 
+.article li {
+    list-style: initial;
+    list-style-position: inside;
+}
+
 /* Tip, Note and Warning
    TODO: Perform some HTML or CSS transform to directly map boostrap instead?
 */
@@ -216,6 +221,8 @@ footer {
     border: 1px solid #fff;
     border-radius: 4px;
     padding: 10px 10px 10px 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .TIP, .NOTE {
