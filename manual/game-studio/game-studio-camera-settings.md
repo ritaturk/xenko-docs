@@ -1,12 +1,4 @@
-### Switch projection modes
 
-You need to switch the projection modes to view the objects in your scene from different dimensions. To switch between perspective and orthographic projection modes, click the view camera gizmo cube while you are facing it.
-
-The following animation shows how to switch between perspective and orthographic projection modes.
-
-   ![Switch between perspective and orthographic projections](media/navigate-in-scene-switch-projection-mode.gif)
-
-   _Switch between perspective and orthographic projections_
 
 ## Editor camera settings
 

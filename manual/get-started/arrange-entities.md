@@ -1,35 +1,12 @@
 # Arrange Entities
 
 <span class="label label-doc-level">Beginner</span>
-<span class="label label-doc-audience">Artist</span>
+<span class="label label-doc-audience">Level Designer</span>
 
 To build the levels of your game, you need to move, rotate, and resize the entities of your scene. Game studio provides you with gizmos to perform these operations.
 
 This page will show you how to move, rotate, and resize your entities in a scene.
 
-### Focus on an entity
-
-While editing the properties of a specific entity, you may need to view it in a full screen mode so that you can properly see all the subtle changes that you have made to that entity. To do this, you can press the **F** key after selecting the entity. This action automatically zooms in on the entity and adjusts the position of the editor camera.
-
-<div style="float:left;">Alternatively, you can click</div> <div style="float:left;"><img src="media/navigate-in-a-scene-magnifier-icon.png" hspace="10" title="Magnifier icon" /></div> <div style="float:left;">from the Scene explorer view to focus on the entity without having to select it first.</div>
-<div style="clear:both;"></div>
-
-The following animations display focusing on an entity using the Magnifier icon and using the **F** key.
-
-<div class="video_container">
-  <div class="video_container_left">
-   ![Switch Projection Mode](media/navigate-in-scene-focus-on-entity-using-magnifier-icon.gif)
-   </video>
-   <div class="video_container_content">_Focus on an entity using Magnifier icon_</div>
-   </div>
-   <div class="video_container_right">
-   ![Switch Projection Mode](media/navigate-in-scene-focus-on-entity-using-f-key.gif)
-   </video>
-   <div class="video_container_content">_Focus on an entity using F key_</div>
-   </div>
-</div>
-
-<div style="clear: both;"></div>
 
 ## Transformation Gizmos
 
@@ -139,5 +116,5 @@ Based on the gizmo you selected, the icon on the Snapping tool changes.
    
    _Snap scale to factor 1.1_
 
-
-The next step is to make your scene more dynamic. To do this, you need to use scripts. For information about using scripts, see [Introduction to scripting](introduction-to-scripting.md).
+Now you know how to arrange the entities in your scene. Next you will learn how to move inside the scene editor.
+See [Navigate inside the scene editor](navigate-in-the-editor.md).

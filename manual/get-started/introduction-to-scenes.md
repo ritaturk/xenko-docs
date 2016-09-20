@@ -3,7 +3,7 @@
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Level Designer</span>
 
-Scenes are the levels of your game. They are a very important elements of a game. 
+Scenes are the levels of your game. They are very important elements of a game. 
 As a level designer, most of the time that you will spend is to build the scenes of your game.
 
 A scene is composed of entities, the objects of your level.
@@ -16,12 +16,11 @@ For example:
 - Audio Component: add a sound to your entity
 
 
-
 The following image displays a sample scene with a single Knight and default elements, such as light, background, and camera.
 
-   ![Basic scene in Xenko](media/scene-creation-basic-scene-in-xenko.png)
+![Basic scene in Xenko](media/scene-creation-basic-scene-in-xenko.png)
 
-   _Basic scene in Xenko_
+_Basic scene in Xenko_
 
 ## Overview
 
@@ -41,9 +40,10 @@ In the scene editor, you can easily move around and focus on specific entities a
 
 This section will discuss the following subjects:
 
-* [Navigate in the Scene Editor](navigate-in-the-editor.md) - how to move and look around.
+* [Create and open a scene](create-a-scene.md) - how to create and open the scene in the scene editor.
 * [Populate a scene](populate-a-scene.md) - how to put Assets in your Scene.
 * [Arrange entites](arrange-entities.md) - how to move / rotate / scale your entities.
+* [Navigate in the Scene Editor](navigate-in-the-editor.md) - how to move and look around.
 
 <!--
 If you're looking for more advanced topics, see [Scenes](/manual/game-studio/scenes.md) in the Game Studio documentation.
