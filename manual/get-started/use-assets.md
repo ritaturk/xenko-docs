@@ -70,7 +70,7 @@ The above script shows how you can load a model at runtime and add it to your sc
 > The URL used can be retrieved from Game Studio, by hovering an asset. 
 > Typically it is built up like : 'AssetFolder/AssetName'
 
-> [!Warning] 
+> [!WARNING] 
 > When loading assets from scripts, be sure to properly include the asset in the build as described in the previous chapter.
 > Also make sure to add the Script as a component to an Entity in the Scene in order to get executed.
 
