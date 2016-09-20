@@ -2,59 +2,81 @@
 
 # Use Assets
 
-This page will show you how to use your assets once you've created them.
+This page explains you how to use the assets in your game once you've created them.
 
-## Referencing Assets
+## Reference Assets
 
-Some Assets require a reference to other Assets. Examples are:
+The first and most common way to use an asset is to reuse it in another of your assets by adding a reference.
 
-* A (procedural) model Asset can have a reference to a ***Material***
-* An animation Asset uses a reference to a ***Model*** Asset, and a reference to a ***Skeleton*** Asset
+Common examples are:
 
-By clicking these Assets, note that you can select an Asset to reference in the Property grid. These references typically have specific names to indicate what the reference is for, such as ***Material***, ***Model*** or ***Skeleton***.
+* Using a material in a model asset
+* Using a texture in a material asset
+* Referencing a model or a sprite asset in the entity components of a scene.
 
-## Loading Assets from code
+References are added from the property grid tab.
+You can easily identify properties that need references to other assets thanks to the **asset picker** dock.
+Every time you see the asset picker dock, the property is expecting an asset as input. 
 
-It is also possible to load Assets from script using the [ContentManager] object, as shown by the code below:
+![Asset Picker](media/use-assets-asset-picker-dock.png)
+
+_Asset Picker_
+
+To **add a reference**:
+- Directly drag-and-drop your asset onto the asset picker dock, or
+  ![drag-and-drop](media/use-assets-drag-and-drop.png)
+- Click on the hand icon ![](media/use-assets-hand-icon.png). This opens the asset picker. 
+  Select the appropriate asset and validate.  
+  ![drag-and-drop](media/use-assets-asset-picker.png)
+  
+After the reference is added the asset picker dock displays the name and the image of the referenced asset.
+
+![drag-and-drop](media/use-assets-reference-added.png)
+
+> [!NOTE]
+> The type of the expected asset is not explicitly specified in the property grid, 
+> but the asset picker shows and lets you select only the proper asset types for the given property.
+
+To **clear a reference** to an asset, use the eraser icon ![](media/use-assets-eraser.png) of the asset picker dock.
+
+To examine the reference between assets, you can use the 'References' tab at the bottom-right corner of the Game Studio.
+The 'Referencees' button shows you all the asset referenced by the current selected asset and 
+the 'Referencers' button shows you all the asset that the currently selected asset reference.
+
+![References tab](media/use-assets-references-tab.png)
+
+_References tab_
+
+## Load Assets from code
+
+Another way to use your assets is to load them at runtime and use them in your scripts.
+
+To load an asset from a script use the [ContentManager](xref:SiliconStudio.Xenko.Engine.IScriptContext.Content), as shown by the code below:
 
 ```cs
+// Load a model (the URL should be replace by the valid pass)
+var model = Content.Load<Model>("AssetFolder/MyModel");
 
-public class AddAssetScript : StartupScript
-{
-	public override void Start()
-	{
-		// URL should be replaced with the URL to the Model you'd like to add to your scene
-		Model model = Content.Load<Model>("URL");
+// Create a new entity to add to our scene
+Entity entity = new Entity(position, "Entity Added by Script") { new ModelComponent { Model = model } };
 
-		// The entity's initial position
-		Vector3 position = new Vector3(0.0f, 0.0f, 0.0f);
-
-		// Now create a new entity to add to our current Scene
-		Entity entity = new Entity(position, "Entity Added by Script")
-		{
-			new ModelComponent { Model = model }
-		};
-
-		SceneSystem.SceneInstance.Scene.Entities.Add(entity);
-	}
-}
-
+// Add the new entity in the current scene
+SceneSystem.SceneInstance.Scene.Entities.Add(entity);
 ```
 
-In the above example we user ```Content.Load<Model>(...) ```, there are different calls for each type of content, for example:
+The above script shows how you can load a model at runtime and add it to your scene.
 
-```
-    Model model = Content.Load("AssetFolder/MyModel"); // load a model
-    SpriteFont font = Content.Load("AssetFolder/MyFont"); // load a font
-    Texture texture = Content.Load("AssetFolder/MyTexture"); // load a texture
-```
+> [!TIP]
+> The URL used can be retrieved from Game Studio, by hovering an asset. 
+> Typically it is built up like : 'AssetFolder/AssetName'
 
 > [!Warning] 
-> Be sure to properly include the Asset as described in the previous chapter, by marking the Asset to be included 
-> in the ***Asset view***. Also make sure to add the Script as a component to an Entity in the Scene in order to get executed.
+> When loading assets from scripts, be sure to properly include the asset in the build as described in the previous chapter.
+> Also make sure to add the Script as a component to an Entity in the Scene in order to get executed.
 
-> [!Note]
-> The URL used can be retrieved from Game Studio, by hovering an asset, and looking at the URL in the tooltip. 
-> Typically it is build up like : 'AssetFolder/AssetName'
+> [!WARNING]
+> When loading asset manually, you should not forget to unload the asset when you don't need them anymore.
+> For this you can use the following code "Content.Unload(myAsset)".
+> If you forget to do so, asset loaded manually will stay in memory the full time of your game.
 
 Next, you'll learn how to create a Scene in Game Studio, see [Introduction to scenes](introduction-to-scenes.md)
