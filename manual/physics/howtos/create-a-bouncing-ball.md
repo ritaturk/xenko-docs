@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # How to create a bouncing ball
+
+<div class="doc-incomplete"/>
 
 This page will show you how to create a bouncing ball.
 

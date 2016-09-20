@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Install Xenko
+
+<span class="label label-doc-level">Beginner</span>
 
 Xenko is a powerful cross-platform Game Engine which helps to build games and applications that need game modules quickly and easily. Xenko contains modules such as (but is not limited to):
 

@@ -1,7 +1,7 @@
+# UI
+
 <div class="doc-incomplete"/>
 <div class="doc-outofdate"/>
-
-# UI
 
 Xenko contains a complete UI system to build visually impressive in-game UI interfaces.
 

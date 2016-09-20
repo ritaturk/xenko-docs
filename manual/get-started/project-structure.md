@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Project Structure
+
+<span class="label label-doc-level">Beginner</span>
 
 This page explains how the Game Studio organizes game projects. 
 Understanding Xenko project structure is essential for knowing where to put and find files, 

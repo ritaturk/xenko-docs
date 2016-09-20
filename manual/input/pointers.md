@@ -1,12 +1,12 @@
+# Pointers
+
 <div class="doc-incomplete"/>
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Programmer</span>
 
-# Pointers
+## Definitions
 
-# Definitions
-
-## Pointers
+### Pointers
 
 Pointers are points on the device screen corresponding to **finger touches**.
 
@@ -14,15 +14,15 @@ On devices supporting multi-touches,there can be several pointers simultaneously
 
 For the desktop platform pointers are simulated by the mouse left-button. 
 
-## Pointer Events
+### Pointer Events
 
 A @'SiliconStudio.Xenko.Input.PointerEvent' contains **information about a pointer** status. It is thrown every time that a modification happens on the a pointer.
 
-## Pointer States
+### Pointer States
 
 The @'SiliconStudio.Xenko.Input.PointerState' is an enumeration describing the **action performed by the pointer**. The three principal states are: *Down, Move, Up*.
 
-# Overview
+## Overview
 
 Pointers information is conveyed via @'SiliconStudio.Xenko.Input.PointerEvent'.
 
@@ -34,13 +34,13 @@ The **action** that the pointer performed can be found by analyzing the @'Silico
 
 The new **position** of the pointer can be found by analyzing the @'SiliconStudio.Xenko.Input.PointerEvent.Position' field.
 
-# Usage
+## Usage
 
 The @'SiliconStudio.Xenko.Input.IInputManager' interface provides access to the list of @'SiliconStudio.Xenko.Input.PointerEvent' that happened during the last draw call via the **@'SiliconStudio.Xenko.Input.IInputManager.PointerEvents' field**. The list is cleared every frame, so the user does not need to clear it manually. 
 
 The @'SiliconStudio.Xenko.Input.IInputManager' interface is accessible from the @'SiliconStudio.Xenko.Game' and @'SiliconStudio.Xenko.Script' classes via their *Input* property.
 
-## Sample
+### Sample
 
 Here is a simple sample program that tracks of the pointer currently on the screen and print their positions. To have access to the *Input* field, the class inherit from the @'SiliconStudio.Xenko.Script' class.
 
@@ -79,7 +79,7 @@ Here is a simple sample program that tracks of the pointer currently on the scre
 ```
 
 
-# Remarks
+## Remarks
 
 - A **pointer event** contains information on **only one pointer**. If several pointers are modified simultaneously one pointer event is sent for each of them.
 - Pointer events are **listed by** **chronological order** (time of the event).

@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Entity-Component Model
+
+<div class="doc-incomplete"/>
 
 # Overview
 

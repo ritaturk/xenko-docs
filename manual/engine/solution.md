@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
+# Solution
 
-#Solution
+<div class="doc-incomplete"/>
 
 In Xenko Studio, the **Solution explorer** displays the hierarchy of your game.
 

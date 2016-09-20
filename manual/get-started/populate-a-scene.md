@@ -1,7 +1,7 @@
+# Populate a Scene
+
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Artist</span>
-
-# Populate a Scene
 
 After you create a scene, you can add entities to your scene to build your game level. You can add an entity to your scene in a couple of ways.
 

@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # How to find objects under the mouse cursor
+
+<div class="doc-incomplete"/>
 
 This page will show you how to find objects under the mouse cursor.
 

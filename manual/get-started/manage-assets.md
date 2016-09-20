@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Manage Assets
+
+<span class="label label-doc-level">Beginner</span>
 
 After adding an new asset to your game project, you may need to make some changes to the asset in order to make it suitable to your game.
 

@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Use Assets
+
+<span class="label label-doc-level">Beginner</span>
 
 This page explains you how to use the assets in your game once you've created them.
 

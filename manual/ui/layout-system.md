@@ -1,7 +1,7 @@
+# Layout System
+
 <div class="doc-incomplete"/>
 <span class="label label-doc-level">Intermediate</span>
-
-# Layout System
 
 In Xenko, Layout System is very similar to the one in WPF.
 

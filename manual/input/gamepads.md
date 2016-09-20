@@ -1,4 +1,3 @@
-<div class="doc-incomplete"/>
-
 # Gamepads
 
+<div class="doc-incomplete"/>

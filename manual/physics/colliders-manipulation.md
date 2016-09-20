@@ -1,6 +1,6 @@
-<div class="doc-outofdate"/>
-
 # Colliders Manipulation
+
+<div class="doc-outofdate"/>
 
 Once the colliders are created within the Game Studio we are ready to manipulate them from the game code.
 

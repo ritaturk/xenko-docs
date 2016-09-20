@@ -1,7 +1,7 @@
+# Controls
+
 <div class="doc-outofdate"/>
 <div class="doc-incomplete"/>
-
-# Controls
 
 Many components are available out of the box, including:
 

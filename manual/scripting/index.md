@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Scripting
+
+<div class="doc-incomplete"/>
 
 For basic information about scripting, see [Introduction to Scripting](../get-started/introduction-to-scripting.md)
 

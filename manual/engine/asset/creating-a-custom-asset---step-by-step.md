@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Creating a custom asset - step by step
+
+<div class="doc-incomplete"/>
 
 > **Note**
 > 

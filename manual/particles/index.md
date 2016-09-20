@@ -1,4 +1,3 @@
-<div class="doc-incomplete"/>
-
 # Particles
 
+<div class="doc-incomplete"/>

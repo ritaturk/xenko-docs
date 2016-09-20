@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
+# HOWTOs
 
-## HOWTOs
+<div class="doc-incomplete"/>
 
 This section describes the following HOWTOs:
 

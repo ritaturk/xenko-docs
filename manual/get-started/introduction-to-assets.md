@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Introduction to Assets
+
+<span class="label label-doc-level">Beginner</span>
 
 An asset is a representation of an element of your project inside the Game Studio. 
 Some assets require an input data file (a resource) such as a model, a texture, an audio file, etc. 

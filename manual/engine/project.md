@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Project
+
+<div class="doc-incomplete"/>
 
 In Xenko, a project refers to a game project. You can create new games, new packages, and play sample games.
 

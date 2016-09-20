@@ -1,7 +1,7 @@
+# Scripting in Xenko
+
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Programmer</span>
-
-# Scripting in Xenko
 
 In this page, you’ll learn how to use a script in your game, the different types of scripts used in Xenko, and how to make certain properties of your script appear in the Game Studio in order to configure script parameters.
 

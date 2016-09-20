@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Materials
+
+<div class="doc-incomplete"/>
 
 * _TODO: Add explanation how to use materials + PBR and it's effects_
 

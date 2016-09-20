@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Launch a Game
+
+<span class="label label-doc-level">Beginner</span>
 
 When your game is ready, you will be curious to see what your game looks like. 
 

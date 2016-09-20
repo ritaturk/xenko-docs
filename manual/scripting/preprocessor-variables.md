@@ -1,7 +1,7 @@
+# Preprocessor variables
+
 <span class="label label-doc-level">Advanced</span>
 <span class="label label-doc-audience">Programmer</span>
-
-# Preprocessor variables
 
 If you need to have different code depending on the platforms and the graphics APIs, various preprocessor variables can be used in scripts.
 
@@ -11,7 +11,7 @@ If you need to have different code depending on the platforms and the graphics A
 > preprocessor variables is recommended when possible. It avoids you to forget to update code 
 > for a specific platform after modification (the code is always compiled for all platforms).
 
-# Platforms
+## Platforms
 
 | Variable                               | Value                          |
 | -------------------------------------- | ------------------------------ |
@@ -24,7 +24,7 @@ If you need to have different code depending on the platforms and the graphics A
 | SILICONSTUDIO_PLATFORM_IOS             | Xamarin.iOS                    |
 
 
-# Graphics APIs
+## Graphics APIs
 
 | Variable                                      | Value                 |
 | --------------------------------------------- | --------------------- |
@@ -35,7 +35,7 @@ If you need to have different code depending on the platforms and the graphics A
 | SILICONSTUDIO_XENKO_GRAPHICS_API_VULKAN     | Vulkan                |
 
 
-# Example
+## Example
 
 ```cs
 #if SILICONSTUDIO_PLATFORM_WINDOWS

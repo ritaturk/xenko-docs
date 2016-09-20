@@ -1,7 +1,7 @@
+# Sprite Fonts
+
 <div class="doc-incomplete"/>
 <span class="label label-doc-level">Intermediate</span>
-
-# Sprite Fonts
 
 In games it is often inefficient to render fonts directly and we usually want to only rasterize them once and then only render the image of a character every time we need it.
 

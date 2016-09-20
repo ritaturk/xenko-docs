@@ -1,7 +1,7 @@
+# Use a Script
+
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Programmer</span>
-
-# Use a Script
 
 In this page, you’ll learn how to attach a script to an entity, how to test a script, and how to debug a script.
 

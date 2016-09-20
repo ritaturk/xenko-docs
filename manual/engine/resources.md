@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Resources
+
+<div class="doc-incomplete"/>
 
 Resources are images, texture ([```.dds```](https://en.wikipedia.org/wiki/DirectDraw_Surface) files and entity images used in your game. Resources are stored in the **Resources** folder of a game application.
 

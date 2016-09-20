@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Oculus Rift Beta Support
+
+<div class="doc-incomplete"/>
 
 > [!Note] 
 >

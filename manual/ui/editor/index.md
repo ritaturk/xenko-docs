@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Editing UI Assets
+
+<div class="doc-incomplete"/>
 
 ## Assets and runtime counterparts
 There are two type of assets for the UI: UIPageAsset and UILibraryAsset with their runtime counterparts

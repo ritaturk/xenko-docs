@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Audio
+
+<div class="doc-incomplete"/>
 
 The audio system is composed of two different APIs:
 

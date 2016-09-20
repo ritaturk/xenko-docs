@@ -1,7 +1,7 @@
+# Arrange Entities
+
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Artist</span>
-
-# Arrange Entities
 
 To build the levels of your game, you need to move, rotate, and resize the entities of your scene. Game studio provides you with gizmos to perform these operations.
 

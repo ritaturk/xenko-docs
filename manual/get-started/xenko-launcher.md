@@ -1,6 +1,6 @@
-<span class="label label-doc-level">Beginner</span>
-
 # Xenko Launcher
+
+<span class="label label-doc-level">Beginner</span>
 
 After you install Xenko, the first window you'll see is the Xenko launcher. 
 The launcher lets you manage and run the different versions that have been installed 

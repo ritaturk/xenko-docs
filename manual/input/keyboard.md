@@ -1,4 +1,3 @@
-<div class="doc-incomplete"/>
-
 # Keyboard
 
+<div class="doc-incomplete"/>

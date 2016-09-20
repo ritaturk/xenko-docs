@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Package
+
+<div class="doc-incomplete"/>
 
 Xenko uses a package system, wherein each game is contained in a package; a game can also use content from other packages. Thus, sharing resources across multiple games becomes possible.
 

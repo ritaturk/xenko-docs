@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Character controller
+
+<div class="doc-incomplete"/>
 
 The Character controller allows for some specific functionality, useful to have when moving around a character in your world, that needs to interact with colliders, but also needs to respond to user input (such as keyboard, or mouse inputs) in an interactive way. The character controller handles similar to a rigid body collider with the 'Is Kinematic' option switched on.
 

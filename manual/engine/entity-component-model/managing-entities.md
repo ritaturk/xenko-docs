@@ -1,8 +1,8 @@
-<div class="doc-incomplete"/>
-
 # Managing Entities
 
-# Overview
+<div class="doc-incomplete"/>
+
+## Overview
 
 User usually want to manipulate Component contained in a specific entity, while engine wants to access component by types (i.e. all Mesh Component while drawing, all animation components while updating animations, etc...):
 
@@ -18,7 +18,7 @@ User will add component-based entities into an entity manager.
 
 Engine or user registers entity processors that can process specific entities and/or components.
 
-# Entity Processor
+## Entity Processor
 
 To solve this problem, the concept of Entity Processor has been added. An Entity Processor will access Entities that matches specific requirements (i.e. process all entities with MeshComponent) and process all of them in a single update function. This allows for greater efficiency and cache-friendliness, as there is no need to check every entity/components many times per frame.
 
@@ -32,7 +32,7 @@ Here is some examples of entity processors:
 - @'SiliconStudio.Xenko.Engine.MeshProcessor': Add @'SiliconStudio.Xenko.Engine.ModelComponent.Model' to rendering.
 - @'SiliconStudio.Xenko.Engine.LightProcessor': Collects and update lights, and transfer it to rendering system. It can hides implementation details (deferred or forward rendering, etc...)
 
-# Entity System
+## Entity System
 
 Entity are grouped together in an @'SiliconStudio.Xenko.EntityModel.EntitySystem'. It will also contains the list of entity processors. When an entity is added or an entity components changes, it will ask entity processors if they should be included.
 

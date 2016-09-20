@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
+# Constraints
 
-## Constraints
+<div class="doc-incomplete"/>
 
 Constraints allow for interaction and dependency among colliders. Examples of constraints are:
 

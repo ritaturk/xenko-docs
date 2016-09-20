@@ -1,6 +1,6 @@
-<div class="doc-incomplete"/>
-
 # Serialization
+
+<div class="doc-incomplete"/>
 
 # High-level serialization (Assets and Chunks)
 

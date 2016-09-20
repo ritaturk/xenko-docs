@@ -205,16 +205,14 @@ h1:before, h2:before, h3:before, h4:before {
   margin-top: -106px;
 }
 
-/* View Source and Improve this doc buttons */
-#_content>a{
-  margin-top: 165px;
-}
-
 footer {
   text-align: center;
 }
 
-.TIP, .NOTE, .WARNING {
+/* Tip, Note and Warning
+   TODO: Perform some HTML or CSS transform to directly map boostrap instead?
+*/
+.TIP, .NOTE, .WARNING, .doc-incomplete {
     border: 1px solid #fff;
     border-radius: 4px;
     padding: 10px 10px 10px 36px;
@@ -226,7 +224,7 @@ footer {
     border-color: #bce8f1;
 }
 
-.WARNING {
+.WARNING, .doc-incomplete {
     color: #8a6d3b;
     background-color: #fcf8e3;
     border-color: #faebcc;
@@ -242,7 +240,8 @@ footer {
 
 .TIP > :first-child::before,
 .NOTE > :first-child::before,
-.WARNING > :first-child::before {
+.WARNING > :first-child::before,
+.doc-incomplete::before {
     position: absolute;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
@@ -256,12 +255,37 @@ footer {
     content: "\e086";
 }
 
-.WARNING > :first-child::before {
+.WARNING > :first-child::before,
+.doc-incomplete::before {
     content: "\e107";
 }
 
 .TIP > :last-child,
 .NOTE > :last-child,
-.WARNING > :last-child {
+.WARNING > :last-child,
+.doc-incomplete > :last-child {
     margin-bottom: 0;
+}
+
+/* Labels
+   TODO: Perform some HTML or CSS transform to directly map boostrap instead?
+*/
+.label-doc-level {
+    background-color: #337ab7;
+}
+
+.label-doc-audience {
+    background-color: #5cb85c;
+}
+
+.doc-incomplete {
+    margin-bottom: 10px;
+}
+
+.doc-incomplete::before {
+    margin-top: 0;
+}
+
+.doc-incomplete::after {
+    content: "This documentation is under construction";
 }
