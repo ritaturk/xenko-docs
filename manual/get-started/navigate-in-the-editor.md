@@ -57,9 +57,9 @@ _Video: Fly in a scene_
 
 When you want to rotate around objects of your scene, you can use the orbital rotation by pressing the **Alt** key and the **left mouse button**.
 
-   ![Orbital rotation schema](media/navigate-in-scene-orbital-rotation-schema.png)
-   
-   _Orbital rotation schema_
+![Orbital rotation schema](media/navigate-in-scene-orbital-rotation-schema.png)
+
+_Orbital rotation schema_
 
 The point of rotation is always the center of the screen and the distance to the center can be adjusted with the mouse wheel.
 

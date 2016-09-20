@@ -86,11 +86,11 @@ Instead of creating a new entity, you can also start from an existing entity by 
 
    The entity and all its properties are duplicated.
    
-<video controls autoplay loop height="360" width="480">
-   <source src="media/populate-scene-duplicate-entity.mp4" type="video/mp4">
-</video>
+	<video controls autoplay loop height="360" width="480">
+	   <source src="media/populate-scene-duplicate-entity.mp4" type="video/mp4">
+	</video>
 
-_Video: Duplicate an entity_
+	_Video: Duplicate an entity_
 
 Alternatively you can duplicate entities using the *Duplicate selected entities* option of the context menu.
 

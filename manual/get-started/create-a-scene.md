@@ -38,6 +38,7 @@ To create a new scene:
 2. Go under the *Scenes* category and select the appropriate scene template
 
 The following templates are available by default in Xenko.
+
 Template | Result
 ---------|--------
 Empty Scene | An empty scene containing no entity and with no pre-configured rendering pipeline
