@@ -3,7 +3,7 @@
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Level Designer</span>
 
-After you create a scene, you need to add entities to your scene to build your game level. 
+After you create a scene, you need to **add entities** to your scene to **build your game** level. 
 You can add an entity to your scene in a couple of different ways.
 
 In this page, you’ll learn how to create an entity from an asset, add a new entity in the entity hierarchy view, 
@@ -11,7 +11,7 @@ and duplicate an existing entity.
 
 ## Add an entity from the asset view
 
-You can create a new entity in your scene by simply drag-and-dropping an asset from the *Asset view* tab in the Scene Editor. 
+You can create a new entity in your scene by simply **drag-and-dropping an asset** from the *Asset view* tab in the Scene Editor. 
 
 The following video shows how to proceed.
 
@@ -37,7 +37,7 @@ and then set up their component from the property grid.
 
 **To create an entity from the Entity Hierarchy View:**
 
-1. Click on the ![](media/add-entities-to-a-scene-plus-icon.png) icon. 
+1. Click on the ![](media/add-entities-to-a-scene-plus-icon.png) **icon**. 
 
    A context menu opens.
 
@@ -68,13 +68,13 @@ Next step is to **add and setup a component** to your entity to add a specific f
 
 ## Duplicate an existing entity
 
-Instead of creating a new entity, you can also start from an existing entity by duplicating it, and then modifying its properties.
+Instead of creating a new entity, you can also **start from an existing entity** by duplicating it, and then modifying its properties.
 
 **To duplicate an existing entity:**
 
-1. Select the entity to duplicate
-2. Activate the translation gizmo by clicking on the ![](media/add-entities-to-a-scene-gizmo.png) icon.
-3. Maintain the *Ctrl* button down and translate the entity along one axis.
+1. **Select the entity** to duplicate
+2. Activate the **translation gizmo** by clicking on the ![](media/add-entities-to-a-scene-gizmo.png) icon.
+3. Maintain the **Ctrl** button down and **translate the entity** along one axis.
 
    The entity and all its properties are duplicated.
    

@@ -3,15 +3,15 @@
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Programmer</span>
 
-A script is a unit of code that enables you to add behaviors to your entities. 
+A script is a **unit of code** that enables you to **add behaviors** to your entities. 
 
 In this page, you’ll learn what is a script, the different types of scripts in Xenko, 
 and how to make certain properties of your script appear in the Game Studio so that artists can configure script parameters.
 
 ## Scripting and C#
 
-In Xenko, all the scripting is done in C#, an advanced and efficient programming language.
-The scripts are edited and debugged from Microsoft Visual Studio.
+In Xenko, all the scripting is done in **C#**, an advanced and efficient programming language.
+The scripts are edited and debugged from Microsoft **Visual Studio**.
 
 > [!NOTE]
 > The learning of C# is out of the scope of this manual.
@@ -41,14 +41,14 @@ and the Game Studio will not let you attach those class to entities or your scen
 
 ## Script Types
 
-There are three main types of scripts in Xenko: Startup scripts, Synchronous scripts, and Asynchronous scripts. 
+There are three main types of scripts in Xenko: **Startup scripts**, **Synchronous scripts**, and **Asynchronous scripts**. 
 Each of these scripts has a precise function. 
-When writing your script inherit from the script type that provides the most adequate behavior.
+When writing your script **inherit** from the script type that provides the **most adequate behavior**.
 
 ### Startup Script
 
-This script is called at load time and unload time (e.g. when the attached entity is loaded and unloaded). 
-It is used mostly to initialize certain game elements and destroy them when the scene is unloaded. 
+This script is called at **load** time and **unload** time (e.g. when the attached entity is loaded and unloaded). 
+It is used mostly to **initialize** certain game elements and **destroy** them when the scene is unloaded. 
 It has a [Start](xref:"SiliconStudio.Xenko.Engine.StartupSctipt.Start") method for initialization and
 a [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method for cancellation that should be override.
 
@@ -64,11 +64,11 @@ public class StartUpScriptExample : StartupScript
 
 ### Synchronous Script
 
-This script gets first initialized, then updated every frame and finally canceled.
+This script gets first initialized, then **updated every frame** and finally canceled.
 The initialization code, if any, should be placed in the [Start](xref:"SiliconStudio.Xenko.Engine.StartupScript.Start") method.
 The code performing the update should be placed in the [Update](xref:"SiliconStudio.Xenko.Engine.SyncScript.Update") method.
 The code performing the cancellation should be placed in the [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method.
-This script is used to perform updates that should happen every frames whatever happens.
+This script is used to perform **updates** that should happen **every frames** whatever happens.
 
 ```
 public class SampleSyncScript : SyncScript
@@ -82,10 +82,10 @@ public class SampleSyncScript : SyncScript
 
 ## Asynchronous script
 
-This script is asynchronous, it gets executed only once and then canceled when removed from the scene.
+This script is **asynchronous**, it gets **executed only once** and then canceled when removed from the scene.
 The asynchronous code should go inside the [Execute](xref:"SiliconStudio.Xenko.Engine.AsyncScript.Execute") function.
 The code performing the cancellation should be placed in the [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method.
-This script is used to perform actions that depends on events and triggers in the game.
+This script is used to **perform actions that depends on events** and triggers in the game.
 
 ```
 public class SampleAsyncScript : AsyncScript
@@ -108,7 +108,7 @@ public class SampleAsyncScript : AsyncScript
 
 ## Using public properties and fields
 
-In Xenko, all the public properties and fields automatically appears and can be set from the Game Studio.
+In Xenko, all the **public properties** and fields automatically **appears** and can be set from the **Game Studio**.
 This allows you or your artist to configure each instance of scripts attached to entities differently.
 
 > [!WARNING] 

@@ -3,8 +3,8 @@
 <span class="label label-doc-level">Beginner</span>
 
 After you install Xenko, the first window you'll see is the Xenko launcher. 
-The launcher lets you manage and run the different versions that have been installed 
-on your system. 
+
+The launcher lets you **manage and run the different versions** that have been installed on your system. 
 
 This page will show you how to use the launcher.
 
@@ -17,8 +17,8 @@ Visual Studio plugin.
 
 > [!NOTE]
 > Using Xenko VS plugin, you can edit your shaders directly from Visual Studio. 
-> It also provides syntax highlighting, live code analysis with validation, error-checking, 
-> and navigation. It is not mandatory to install this plugin, however we recommend to install it. 
+> It also provides **syntax highlighting**, live **code analysis** with validation, **error-checking**, 
+> and **navigation**. It is not mandatory to install this plugin, however we recommend to install it. 
 
 Accept the invitation and proceed to the installation.
 
@@ -26,7 +26,7 @@ Accept the invitation and proceed to the installation.
 
 ## Version management
 
-The Xenko launcher allows you to install multiple versions of Xenko. Typically you would be 
+The Xenko launcher allows you to install **multiple versions** of Xenko. Typically you would be 
 working with the latest version of Xenko, however it is possible to install an older version 
 of Xenko in order to work with an old project. This is needed by the fact that different 
 versions of Xenko might contain changes that require old projects to be upgraded.
@@ -45,12 +45,12 @@ and fixes by clicking on the *Release Notes* button on the left.
 
 Now that you have installed Xenko, it's time to start the Game Studio and play with it.
 
-1. Select the version of Xenko that you want to use by clicking on the version name 
+1. **Select the version** of Xenko that you want to use by clicking on the version name 
 in the *Switch/update version* section. 
 
    The version number of the selected version is updated on the Start button.
 
-2. Launch the Game Studio by clicking the Start button. 
+2. **Launch the Game Studio** by clicking the Start button. 
 
 ![Start button of Xenko launcher](media/xenko-launcher-start-button.png)
 

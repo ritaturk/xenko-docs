@@ -7,14 +7,14 @@ In this page, you’ll learn how to attach a script to an entity, how to test a 
 
 ## Attach a script
 
-To add behaviors to your entities, you should attach a script to them.
+To **add behaviors** to your **entities**, you should **attach a script** to them.
 
 In Xenko, a single script can be attached to one or more entities. 
 Reciprocally, multiple scripts can also be attached to a single entity. 
-If you attach a script to multiple entities, multiple instances of that script are created. 
+If you attach a script to multiple entities, multiple **instances** of that script are created. 
 This allows for the same script to have different values for its public properties. 
 
-You can attach a script to your entity either from the Game Studio or through code.
+You can **attach a script** to your entity either from the **Game Studio** or through **code**.
 
 ### Attach a script from the Game Studio
 
@@ -31,7 +31,7 @@ You can attach a script to your entity either from the Game Studio or through co
    
 > [!TIP] 
 > If you don't like drag-and-drop, alternatively it is also possible to attach a script by using 
-> the **Add component** button in the **Property grid**.
+> the **Add component** button in the *Property grid*.
 
 ### Attach a script from code
 
@@ -49,17 +49,19 @@ myEntity.Add(new BasicAsyncScript());
 
 ## Test a script
 
-You can test your script by running the game. Your script gets executed automatically when the entity to which you attached your script is loaded in the active scene.
+You can test your script by **running the game**. 
+Your script gets **executed automatically** when the entity to which you attached your script is **loaded in the active scene**.
 
 **To test a script:**
 
-1. Click ![](media/use-a-script-play-icon.png)to run your game.
+1. **Click** ![](media/use-a-script-play-icon.png)to run your game.
 
-If your code is working correctly, you'll see it's output in the running game. If something is not working correctly, you need to debug your script.
+If your code is working correctly, you'll see it's output in the running game. 
+ something is not working correctly, you need to **debug your script**.
 
 ## Debug a script
 
-You need to debug your script if the script is not running properly or you are getting unexpected results.
+You need to debug your script if the script is **not running** properly or you are getting **unexpected results**.
 
 **To debug a script:**
 
@@ -73,7 +75,7 @@ You need to debug your script if the script is not running properly or you are g
 
    Your game starts in a new window. In Visual Studio, on the script page, the first break-point highlights and stops the execution.
    
-5. Verify the state of your variables
+5. **Verify** the state of your variables
 
 6. Press **F10** (step over) if you want to execute the code line-by-line or press **F5** to continue code execution.
 

@@ -11,7 +11,7 @@ This page will show you how to use those gizmos to adapt the entities of your sc
 
 ## Transformation Gizmos
 
-You can find the transformation gizmo tool box at the top of the scene editor.
+You can find the transformation gizmo tool box at the **top of the scene editor**.
 
 ![Transformation Gizmos Tool Box](media/manage-entities-in-scene-gizmos.png)
 
@@ -20,7 +20,7 @@ There are three types of the transformation gizmo:
 - The **rotation gizmo**: allow you to rotate your entities
 - The **scale gizmo**: allow you to scale your entities
 
-Only one type of gizmo can be active at a given type. 
+Only **one type of gizmo** can be **active** at a given type. 
 To adjust your entities and build a full scene you need to constantly switch between the different types of gizmos.
 
 To display the transformation gizmos in the scene, simply select one or several entities. 
@@ -35,7 +35,7 @@ Use the ![](media/manage-entities-in-scene-translation-gizmo.png) icon to activa
 The Translation gizmo allows you to **move selected entities** in your scene.
 
 You can either move them along a single axis, along a plane or freely in 3D depending on the region of the gizmo clicked.
-To move your entities, click on the tranlation gizmo and drag the entities in the desired direction.
+To move your entities, click on the translation gizmo and **drag the entities** in the desired direction.
 
 The following video shows how you can translate an entity along one axis, a plane and freely in 3D.
 
@@ -81,7 +81,7 @@ _Video: Scale an entity_
 
 ## Switching between gizmos
 
-To switch between the gizmos, you can either click on the respective buttons in the scene editor tool box, or use keyboard shortcuts. 
+To switch between the gizmos, you can either click on the respective buttons in the scene editor tool box, or use **keyboard shortcuts**. 
 
 To use the keyboard shortcuts, make the Scene editor active by clicking anywhere in the Scene Editor, then:
 
@@ -92,7 +92,7 @@ To use the keyboard shortcuts, make the Scene editor active by clicking anywhere
 
 ## Change gizmo coordinate system
 
-You can change the coordinate system in which the gizmo operates by using the scene editor tool box.
+You can **change the coordinate system** in which the gizmo operates by using the scene editor tool box.
 
 The following table displays the different coordinate bases possible:
 
@@ -109,13 +109,13 @@ The following table displays the different coordinate bases possible:
 2. Click the button representing the required coordinate system.
    
 > [!WARNING] 
-> The Scale gizmo can work only in local coordinate system.
+> The Scale gizmo can work only in **local** coordinate system.
 
 ## Snapping gizmo actions
 
-You can snap the action performed using the transformation gizmos by enabling the Snapping tool. 
-This means that the amount of rotation, translation or scaling applied to your entity is rounded 
-to the closest multiple of the number specified. 
+You can **snap** the action performed using the transformation gizmos by enabling the Snapping tool. 
+This means that the **amount** of rotation, translation or scaling applied to your entity is **rounded** 
+to the **closest multiple** of the number specified. 
 
 For example, if you set the snap to grid value to 22.5 for rotating, your rotation action will be a multiple of 22.5: 0, 22.5, 45, 67.5, 90 etc.
 

@@ -2,13 +2,13 @@
 
 <span class="label label-doc-level">Beginner</span>
 
-An asset is a representation of an element of your project inside the Game Studio. 
+An asset is a representation of **an element of your game** inside the Game Studio. 
 Some assets require an input data file (a resource) such as a model, a texture, an audio file, etc. 
 Others are not based on any external resource and can be entirely created and configure from the Game Studio, 
 such as scenes, physics colliders, game settings, etc.
 
 To populate your game with elements such as models, sounds and sprites, 
-you first need to create the corresponding assets inside the Game Studio.
+you first need to **create** the corresponding **assets** inside the Game Studio.
 
 This section will explain you the basics about Asset creation, management and usage.
 
@@ -16,12 +16,12 @@ This section will explain you the basics about Asset creation, management and us
 
 ## Overview
 
-You can create Assets by using the _Add Asset_ button or by directly dragging and dropping resource files in the Game Studio.
+You can create Assets by using the **Add Asset** button or by directly **dragging and dropping** resource files in the Game Studio.
 
-You can modify and configure Assets using the dedicated editors and the property grid.
+You can modify and configure Assets using the **dedicated editors** and the **property grid**.
 
 With the Asset view you can easily organize, search and visualize your Assets. 
-Assets can be dragged and dropped into the editors or the property grid to start using them. 
+Assets can be **dragged and dropped** into the editors or the property grid to start using them. 
 
 ## The Basics
 

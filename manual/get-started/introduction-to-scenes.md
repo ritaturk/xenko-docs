@@ -3,12 +3,12 @@
 <span class="label label-doc-level">Beginner</span>
 <span class="label label-doc-audience">Level Designer</span>
 
-Scenes are the levels of your game. They are very important elements of a game. 
+Scenes are the **levels of your game**. They are **very important** elements of a game. 
 As a level designer, most of the time that you will spend is to build the scenes of your game.
 
-A scene is composed of entities, the objects of your level.
-An entity can contain one or several components.
-Each type of component adds a special property to your entity.
+A scene is composed of **entities**, the objects of your level.
+An entity can contain one or several **components**.
+Each type of component adds a **special property** to your entity.
 
 For example:
 - Model Component: add a 3D model to your entity
@@ -22,16 +22,16 @@ The following image displays a sample scene with a single Knight and default ele
 
 ## Overview
 
-The Game Studio provides an easy way to create and build scenes for your game.
+The Game Studio provides an easy way to create and **build scenes** for your game.
 
 When you create a new scene, the Game Studio automatically populates it 
-with all the required basic elements such as a light, a camera, and an skybox.
+with all the required **basic elements** such as a light, a camera, and an skybox.
 
-You can add entities to your new scene by simply drag-and-dropping existing assets from the asset view to the scene editor. 
+You can **add entities** to your new scene by simply **drag-and-dropping existing assets** from the asset view to the scene editor. 
 
-You can translate, rotate, and resize your scene entities very easily and intuitively using the scene editor gizmos.
+You can **translate, rotate, and resize** your scene entities very easily and intuitively using the scene editor **gizmos**.
 
-In the scene editor, you can easily move around and focus on specific entities accurately adjust new entities.
+In the scene editor, you can easily **move around and focus** on specific entities accurately adjust new entities.
 
 
 ## The Basics

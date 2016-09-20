@@ -6,7 +6,7 @@
 Scripting is another fundamental part of game creation. 
 
 Scripting allows you to handle game events, respond to user inputs and control the movement and the behavior of your entities.
-In short, it is what makes your static game interactive by adding a gameplay to it.
+In short, it is what makes your static game interactive by adding a **gameplay** to it.
 
 Below is an example of script in Xenko.
 
@@ -29,15 +29,15 @@ _Sample script_
 
 ## Overview
 
-All the scripting in Xenko is done in C#.
+All the **scripting in Xenko** is done in **C#**.
 
-There are two main types of script in Xenko: Asynchronous and Synchronous Scripts.
+There are two main types of script in Xenko: **Asynchronous** and **Synchronous** Scripts.
 
-The public fields of your scripts are displayed and can be setup from the Game Studio property grid.
+The **public fields** of your scripts are displayed and can be setup from the Game Studio **property grid**.
 
 A script can be created both from Visual Studio and the Game Studio.
 
-You can use a script by instantiating and attaching it to an entity of your scene.
+You can **use a script** by instantiating and **attaching it to an entity** of your scene.
 This can be done either from the scene editor or from the code.
 
 To debug a script use Visual Studio and simply put a break point in the desired code section.
