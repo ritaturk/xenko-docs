@@ -29,6 +29,7 @@ we ask you to follow to the below Guidelines when writing.
   * [Files Hierarchy](#FilesHierarchy)
   * [Files Name](#FilesName)
 * [Formatting](#Formatting)
+  * [Text Styling](#Styling)
   * [Definitions](#Definitions)
     * [Xenko Terms](#XenkoTerms)
     * [Video Game Terms](#VideoGameTerms)
@@ -474,6 +475,15 @@ Examples:
 > Img20150902.png  
 
 #  <a name="Formatting"> Formatting </a>
+
+##  <a name="Styling"> Text Styling </a>
+
+In order to simplify the reading of the documentation, it is important that you properly use bold and italic styles.
+
+Put every important words or steps in bold using the **Text in bold** syntax.
+
+Put every UI element or Window names in italic using the *Text in italic* syntax.
+
 ##  <a name="Definitions"> Definitions </a>
 
 When you write your articles, you should be careful of properly defining all the terms that can be
