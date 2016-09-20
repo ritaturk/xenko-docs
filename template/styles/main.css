@@ -213,3 +213,55 @@ h1:before, h2:before, h3:before, h4:before {
 footer {
   text-align: center;
 }
+
+.TIP, .NOTE, .WARNING {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px 10px 10px 36px;
+}
+
+.TIP, .NOTE {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.WARNING {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.TIP > :first-child,
+.NOTE > :first-child,
+.WARNING > :first-child {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.TIP > :first-child::before,
+.NOTE > :first-child::before,
+.WARNING > :first-child::before {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-size: initial;
+    margin-left: -22px;
+    margin-top: 5px;
+}
+
+.TIP > :first-child::before,
+.NOTE > :first-child::before {
+    content: "\e086";
+}
+
+.WARNING > :first-child::before {
+    content: "\e107";
+}
+
+.TIP > :last-child,
+.NOTE > :last-child,
+.WARNING > :last-child {
+    margin-bottom: 0;
+}
