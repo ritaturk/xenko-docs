@@ -236,16 +236,19 @@ article table {
     margin-bottom: 10px;
 }
 
-.TIP, .NOTE {
-    color: #31708f;
-    background-color: #d9edf7;
-    border-color: #bce8f1;
+.TIP {
+    background-color: #f3f9f4;
+    border-color: #91c89c;
+}
+
+.NOTE {
+    background-color: #e5ebf6;
+    border-color: #7d9fc1;
 }
 
 .WARNING, .doc-incomplete {
-    color: #8a6d3b;
-    background-color: #fcf8e3;
-    border-color: #faebcc;
+    background: #fff8f7;
+    border-color: #d04437;
 }
 
 .TIP > :first-child,
@@ -268,13 +271,19 @@ article table {
     margin-top: 5px;
 }
 
-.TIP > :first-child::before,
+.TIP > :first-child::before {
+    color: #14892c;
+    content: "\e089";
+}
+
 .NOTE > :first-child::before {
+    color: #4a6785;
     content: "\e086";
 }
 
 .WARNING > :first-child::before,
 .doc-incomplete::before {
+    color: #cf4336;
     content: "\e107";
 }
 
