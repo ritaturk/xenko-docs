@@ -221,6 +221,10 @@ article .img-caption {
     color: #555;
 }
 
+article table {
+    margin-bottom: 10px;
+}
+
 /* Tip, Note and Warning
    TODO: Perform some HTML or CSS transform to directly map boostrap instead?
 */
