@@ -209,9 +209,16 @@ footer {
   text-align: center;
 }
 
-.article ul li, .article ol li {
+article ul li, article ol li {
     list-style: inherit;
-    list-style-position: inside;
+    margin-left: 1em;
+}
+
+article .img-caption {
+    display: block;
+    font-style: italic;
+    font-size: small;
+    color: #555;
 }
 
 /* Tip, Note and Warning
