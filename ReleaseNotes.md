@@ -108,53 +108,55 @@ Release date: 2016/08/31
 
 #### General
 
-* Added a `DebugConsoleSystem` to be able to print basic debug information in game.
-* Added Utility methods `FindChild` and `FindRoot` to `Entity`.
-* Animation blend trees can now be created in script. The `AnimationBlend` pre-built script shows how to do it easily
-* Updated Roslyn to 1.3.2
+- Added a `DebugConsoleSystem` to be able to print basic debug information in game.
+- Added Utility methods `FindChild` and `FindRoot` to `Entity`.
+- Animation blend trees can now be created in script. The `AnimationBlend` pre-built script shows how to do it easily
+- Updated Roslyn to 1.3.2
 
 #### Assets
 
-* Yaml scene files now encode entity and component references in a much more compact way
-* Yaml serialization order is now following class declaration order
+- Yaml scene files now encode entity and component references in a much more compact way
+- Yaml serialization order is now following class declaration order
 
 #### Audio
 
-* Game studio side: added hard limits in Compression ratio, also now it is using a slider.
-* Added `SetRange` in `SoundInstance` to be able to set play range, it also enables seeking.
-* Added `Position` property in `SoundInstance` to be able to know the position in time of your playing instance.
-* Added `PlayAndForget` to `AudioEmitterSoundController` to play many instances of the same sound rapidly.
-* Added RequestedAudioDevice in AudioSystem to allow game code to select audio devices (Windows only for now).
-* `AudioEmitterComponent` now contains a dictionary of sounds that can be used from the emitter, those can be set from the Game Studio directly!
-* Game Studio sound preview now uses the internal engine, this means that you can directly preview the compression rate!
+- Game studio side: added hard limits in Compression ratio, also now it is using a slider.
+- Added `SetRange` in `SoundInstance` to be able to set play range, it also enables seeking.
+- Added `Position` property in `SoundInstance` to be able to know the position in time of your playing instance.
+- Added `PlayAndForget` to `AudioEmitterSoundController` to play many instances of the same sound rapidly.
+- Added RequestedAudioDevice in AudioSystem to allow game code to select audio devices (Windows only for now).
+- `AudioEmitterComponent` now contains a dictionary of sounds that can be used from the emitter, those can be set from the Game Studio directly!
+- Game Studio sound preview now uses the internal engine, this means that you can directly preview the compression rate!
 
 #### Graphics
 
-* CommandList can now compiled and executed
-* Constant Buffers are now uploaded in a single GPU Buffer and set with offsets on platform/API that support this mode
-* D3D12: reduced number of API calls
+- CommandList can now compiled and executed
+- Constant Buffers are now uploaded in a single GPU Buffer and set with offsets on platform/API that support this mode
+- D3D12: reduced number of API calls
 
 #### Game Studio
 
-* About Page accessible from Menu-->Help-->About.
+- About Page accessible from Menu-->Help-->About.
 
 #### Input
 
-* Added preliminary controller vibration support with `Input.SetGamePadVibration`
+- Added preliminary controller vibration support with `Input.SetGamePadVibration`
 
 #### Particles
 
-* Particle rendering now uses the improved multithreaded pipeline, significantly speeding up the vertex buffer building.
+- Particle rendering now uses the improved multithreaded pipeline, significantly speeding up the vertex buffer building.
 
 #### Samples
-* Several samples have been removed. Particles and Physics samples have been greatly reduced and merged into only two, which allows the user to check more features with a single sample.
+
+- Several samples have been removed. Particles and Physics samples have been greatly reduced and merged into only two, which allows the user to check more features with a single sample.
 
 ### Issues fixed
 
 #### Physics
-* Procedural models can now be used as a source to generate convex hull shapes.
-* We are now using the github version of Bullet Physics and actively cooperating with the project.
-* Fixed ColliderShape cached matrices computation.
+
+- Procedural models can now be used as a source to generate convex hull shapes.
+- We are now using the github version of Bullet Physics and actively cooperating with the project.
+- Fixed ColliderShape cached matrices computation.
 
 #### Game Studio
 * Credential dialog will now save the credential settings when closing.
@@ -164,24 +166,29 @@ Release date: 2016/08/31
 ### Breaking changes
 
 #### UI
-* The UIComponent expect a UI Page in place of the previous Root Element property.
-* Most dependency properties were changed into regular C# properties, except the ones that are attached properties (such as the Column and Row attached property of a Grid).
-* In desktop, TouchMove event is also raised when no mouse button are pressed.
-* Default style of the UI has been removed.
+
+- The UIComponent expect a UI Page in place of the previous Root Element property.
+- Most dependency properties were changed into regular C# properties, except the ones that are attached properties (such as the Column and Row attached property of a Grid).
+- In desktop, TouchMove event is also raised when no mouse button are pressed.
+- Default style of the UI has been removed.
 
 #### Audio
-* Removed Play with boolean argument from `SoundInstance`, instead the same behavior will be achieved by using PlayExtended or Play.
-* Renamed `IsLooped` into `IsLooping`.
-* Deprecated: `GetSoundController`, `AttachSound`, `AttachSounds`, `DetachSound`, `DetachSounds`. Please add sounds now from the `AudioEmitterComponent`
+
+- Removed Play with boolean argument from `SoundInstance`, instead the same behavior will be achieved by using PlayExtended or Play.
+- Renamed `IsLooped` into `IsLooping`.
+- Deprecated: `GetSoundController`, `AttachSound`, `AttachSounds`, `DetachSound`, `DetachSounds`. Please add sounds now from the `AudioEmitterComponent`
 
 #### Physics
-* `Collision.Contacts` is now an `HashSet` so access by index is not possible anymore, please use `foreach` or iterate them instead.
+
+- `Collision.Contacts` is now an `HashSet` so access by index is not possible anymore, please use `foreach` or iterate them instead.
 
 #### VR
-* Added audio, status and re-center support for Oculus Rift.
+
+- Add audio, status and re-center support for Oculus Rift.
 
 #### Linux
-* Fixed Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
+
+- Fix Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
 
 ## Version 1.8.1-Beta
 
@@ -217,6 +224,36 @@ Release date: 2016/09/09
 #### Samples
 
 - Fix samples were depending on the wrong version of Xenko.
+
+## Version 1.8.2-Beta
+
+Release date: 2016/09/21
+
+### Enhancements
+
+#### Game Studio
+
+- Improve snapping when moving or resizing an element in the UI editor: moved element will be "attracted" by the parent container bounds or siblings like magnets. This should ease aligning elements with one another.
+- Auto adjust alignment property when moving to left/right (resp. top/bottom) edge of the parent container.
+- The single root of a UI page can be removed and a new one can be added instead.
+- Improve responsiveness of the Game Studio.
+
+### Issues fixed
+
+#### Game Studio
+
+- Fix magic wand tool not working inside the sprite region.
+- Fix an issue when removing the single root of a UI page.
+- Fix some user operations that were taking a very long time to be executed.
+- Fix a crash when setting materials in a model component.
+
+#### Physics
+
+- Fix some memory leaks.
+
+#### Samples
+
+- Fix some scripts that were depending on C# level 6 features.
 
 # Known Issues
 
