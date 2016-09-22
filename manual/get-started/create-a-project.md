@@ -19,53 +19,45 @@ Create an **empty project** when to want to **start your game from scratch** wit
 
 To create an empty game:
 
- 1. Start Xenko by clicking on launcher **Start Button**. This opens the *New Project* dialog.
-	
-![New Project dialog](media/create-project-new-open-project-window.png)
- 
- > [!Note]
- > This dialog can also be reached from inside the Game Studio by clicking File > New.
-
- 2. Select **New Game** from the *New Project* dialog
+1. Start Xenko by clicking on launcher **Start Button**. This opens the *New Project* dialog.  
     
-	In the bottom part of the dialog, the name and location of the project can be specified.
-
- 3. Click **Select**.
+    ![New Project dialog](media/create-project-new-open-project-window.png)
+    > [!Note]
+    > This dialog can also be reached from inside the Game Studio by clicking File > New.
     
-	The *Create a new game* dialog opens. This dialog helps you configure your new project.
-    
- ![Create a new game dialog](media/create-project-create-new-game.png)
+2. Select **New Game** from the *New Project* dialog  
+    In the bottom part of the dialog, the name and location of the project can be specified.
 
- 4. **Enter a value** for the *Namespace* you'd like to use, or leave unchanged if you're happy with the given suggestion.
- 
- > [!Note]
- > If you're not familiar with Namespaces, please refer to the [Introduction to scripting section](introduction-to-scripting.md). 
- > For now it's fine to leave this at it's default value.
+3. Click **Select**.  
+    The *Create a new game* dialog opens. This dialog helps you configure your new project.
+    ![Create a new game dialog](media/create-project-create-new-game.png)
 
- 5.	**Select the platform(s)** you would like your game to support from the *Platforms* section. 
+4. **Enter a value** for the *Namespace* you'd like to use, or leave unchanged if you're happy with the given suggestion.  
+    > [!Note]
+    > If you're not familiar with Namespaces, please refer to the [Introduction to scripting section](introduction-to-scripting.md). 
+    > For now it's fine to leave this at it's default value.
+
+5. **Select the platform(s)** you would like your game to support from the *Platforms* section.  
     If your development system does not have the required prerequisites installed for any of the selected platform, a warning message is displayed.
-    
- > [!Note]
- >  To run your game on iOS and Android, you need to install [Xamarin](https://www.xamarin.com/studio) (free if you have Visual Studio).
+    > [!Note]
+    >  To run your game on iOS and Android, you need to install [Xamarin](https://www.xamarin.com/studio) (free if you have Visual Studio).
 
- 6. **Select the desired options** from the *Rendering* section.
-   
-    6.a. **Graphics API:** The graphics features that you can use in your game are dependent on the API that you select. 
-	For advanced graphic features, select the latest version of the graphics APIs.
-   
-    > [!Warning]
-	> Some graphics cards do not support the latest APIs. For some mobile devices, only DirectX 9.3 / 
-	> OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
+6. **Select the desired options** from the *Rendering* section.  
+    6.a. **Graphics API:** The graphics features that you can use in your game are dependent on the API that you select.  
+        For advanced graphic features, select the latest version of the graphics APIs.
+        > [!Warning]
+        > Some graphics cards do not support the latest APIs. For some mobile devices, only DirectX 9.3 / 
+        > OpenGL ES 2.0 and DirectX 10.0 / OpenGL ES 3.0 are available.
 
-	6.b. **High or Low Dynamic Range (HDR / LDR):** This defines the way color is computed in your game. 
-	In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. 
-	HDR enables you to have advanced and more realistic rendering in your game but requires 
-	more processing power and at least profile DirectX 10.0 / OpenGL ES 3.0.
-	
- 7. **Select the desired orientation** for your game in the *Orientation* section. For PC games, use landscape. 
- Portrait can be used for mobile-based games.
+    6.b. **High or Low Dynamic Range (HDR / LDR):** This defines the way color is computed in your game.  
+        In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. 
+        HDR enables you to have advanced and more realistic rendering in your game but requires 
+        more processing power and at least profile DirectX 10.0 / OpenGL ES 3.0.
 
- 8. Click **OK**. 
+7. **Select the desired orientation** for your game in the *Orientation* section. For PC games, use landscape.  
+    Portrait can be used for mobile-based games.
+
+8. Click **OK**. 
 
 ## Instantiate a sample game
 
