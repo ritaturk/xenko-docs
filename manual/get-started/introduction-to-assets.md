@@ -4,7 +4,7 @@
 
 An asset is a representation of **an element of your game** inside the Game Studio. 
 Some assets require an input data file (a resource) such as a model, a texture, an audio file, etc. 
-Others are not based on any external resource and can be entirely created and configure from the Game Studio, 
+Others are not based on any external resource and can be entirely created and configured from the Game Studio, 
 such as scenes, physics colliders, game settings, etc.
 
 To populate your game with elements such as models, sounds and sprites, 
