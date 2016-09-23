@@ -281,10 +281,14 @@ article table {
     content: "\e086";
 }
 
-.WARNING > :first-child::before,
+.WARNING > :first-child::before {
+    color: #cf4336;
+    content: "\e101";
+}
+
 .doc-incomplete::before {
     color: #cf4336;
-    content: "\e107";
+    content: "\e136";
 }
 
 .TIP > :last-child,
