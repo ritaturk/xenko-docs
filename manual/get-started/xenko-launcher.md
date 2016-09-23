@@ -54,6 +54,6 @@ in the *Switch/update version* section.
 
 ![Start button of Xenko launcher](media/xenko-launcher-start-button.png)
 
-For more details about the Xenko launcher see [Xenko launcher](/manual/xenko-launcher/).
+For more details about the Xenko launcher see [Xenko launcher](../xenko-launcher/index.md).
 
 Now, you’re ready to create your first project in Game Studio. For information on how to create a project, see [Create a project](create-a-project.md).
