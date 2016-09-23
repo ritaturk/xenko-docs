@@ -8,7 +8,7 @@ A script is a **unit of code** that enables you to **add behaviors** to your ent
 In this page, you’ll learn what is a script, the different types of scripts in Xenko, 
 and how to make certain properties of your script appear in the Game Studio so that artists can configure script parameters.
 
-## Scripting and C#
+## Scripting and C&#35;
 
 In Xenko, all the scripting is done in **C#**, an advanced and efficient programming language.
 The scripts are edited and debugged from Microsoft **Visual Studio**.
