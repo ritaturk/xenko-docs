@@ -18,8 +18,8 @@ The scripts are edited and debugged from Microsoft **Visual Studio**.
 > To learn the C# programming language please refer to C# programming books or tutorials
 
 This doesn't mean that all the C# code of your game are scripts.
-A script is a C# class inheriting from the [ScriptComponent](xref:"SiliconStudio.Xenko.Engine.ScriptComponent") class.
-A script can be attached to an entity from the editor and has access to the [ScriptContext](xref:SiliconStudio.Xenko.Engine.IScriptContext").
+A script is a C# class inheriting from the [ScriptComponent](xref:SiliconStudio.Xenko.Engine.ScriptComponent) class.
+A script can be attached to an entity from the editor and has access to the [ScriptContext](xref:SiliconStudio.Xenko.Engine.IScriptContext).
 
 The script context gives access to all of the main modules of the engine:
 * **Audio**: Gives access to the audio system.
@@ -49,8 +49,8 @@ When writing your script **inherit** from the script type that provides the **mo
 
 This script is called at **load** time and **unload** time (e.g. when the attached entity is loaded and unloaded). 
 It is used mostly to **initialize** certain game elements and **destroy** them when the scene is unloaded. 
-It has a [Start](xref:"SiliconStudio.Xenko.Engine.StartupSctipt.Start") method for initialization and
-a [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method for cancellation that should be override.
+It has a [Start](xref:SiliconStudio.Xenko.Engine.StartupSctipt.Start) method for initialization and
+a [Cancel](xref:SiliconStudio.Xenko.Engine.ScriptComponent.Cancel) method for cancellation that should be override.
 
 ```
 public class StartUpScriptExample : StartupScript
@@ -65,9 +65,9 @@ public class StartUpScriptExample : StartupScript
 ### Synchronous Script
 
 This script gets first initialized, then **updated every frame** and finally canceled.
-The initialization code, if any, should be placed in the [Start](xref:"SiliconStudio.Xenko.Engine.StartupScript.Start") method.
-The code performing the update should be placed in the [Update](xref:"SiliconStudio.Xenko.Engine.SyncScript.Update") method.
-The code performing the cancellation should be placed in the [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method.
+The initialization code, if any, should be placed in the [Start](xref:SiliconStudio.Xenko.Engine.StartupScript.Start) method.
+The code performing the update should be placed in the [Update](xref:SiliconStudio.Xenko.Engine.SyncScript.Update) method.
+The code performing the cancellation should be placed in the [Cancel](xref:SiliconStudio.Xenko.Engine.ScriptComponent.Cancel) method.
 This script is used to perform **updates** that should happen **every frames** whatever happens.
 
 ```
@@ -83,8 +83,8 @@ public class SampleSyncScript : SyncScript
 ## Asynchronous script
 
 This script is **asynchronous**, it gets **executed only once** and then canceled when removed from the scene.
-The asynchronous code should go inside the [Execute](xref:"SiliconStudio.Xenko.Engine.AsyncScript.Execute") function.
-The code performing the cancellation should be placed in the [Cancel](xref:"SiliconStudio.Xenko.Engine.ScriptComponent.Cancel") method.
+The asynchronous code should go inside the [Execute](xref:SiliconStudio.Xenko.Engine.AsyncScript.Execute) function.
+The code performing the cancellation should be placed in the [Cancel](xref:SiliconStudio.Xenko.Engine.ScriptComponent.Cancel) method.
 This script is used to **perform actions that depends on events** and triggers in the game.
 
 ```
@@ -129,7 +129,7 @@ The above script appears as following in the Game Studio.
 ![Public property appears in the Property grid](media/scripting-in-xenko-change-value-public-property.png)
 
 If you don't want the field to appear in the Game Studio, you can either declare your member internal or private, or 
-use the [DataMemberIgnore](xref:"SiliconStudio.Core.DataMemberIgnoreAttribute") attribute as follows:
+use the [DataMemberIgnore](xref:SiliconStudio.Core.DataMemberIgnoreAttribute) attribute as follows:
 
 ```cs
 
