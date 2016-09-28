@@ -17,7 +17,7 @@ Rigid body colliders will move based on the forces (such as gravity and collisio
 
 Entities with colliders attached to them, should not be moved directly by their **Transform** property, but instead should be manipulated by applying forces.
 
-However if your entity is controlled by script or animation most of the time, but only sometimes needs to interact with other physics objects, you can set the **Is Kinematic** flag for a Rigid body collider. The collider will still raise collision events, but will not respond to them. When the collider needs to start interacting with other colliders again, simply disable the **Is Kinematic** flag in your script.
+However if your entity is controlled by script or animation most of the time, but only sometimes needs to interact with other physics objects, you can set the **Is Kinematic** flag for a Rigid body collider. The collider will still raise collision events, but will not respond to them. When the collider needs to start interacting with other colliders again, simply disable the **Is Kinematic** flag in your script. When **Is Kinematic** flag is set, you will be able to move the Entity and thus the rigid-body from the **Transform** itself.
 An example when to use this, is for instance, when a player character is mostly controlled by animation and user input, but needs to respond in a convincing way when the player is hit by a particular object. 
 
 Besides collision detection and logic, the physics simulation in Xenko offers:
