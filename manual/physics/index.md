@@ -8,10 +8,11 @@ This section will show you how to enable physics in Game Studio, how to use the 
 
 ## Basics
 
-Physics simulation is the process of simulating how physical objects interact with each other, and how they react to forces such as gravity or collisions. In Xenko we refer to physics objects as **Colliders**. In Xenko we use 2 types of colliders:
+Physics simulation is the process of simulating how physical objects interact with each other, and how they react to forces such as gravity or collisions. In Xenko we refer to physics objects as **Physics Components**. In Xenko we have 3 types of physics components:
 
-* [Rigid body colliders](rigid-body.md)
-* [Static colliders](static-collider.md)
+* [Rigid body](rigid-body.md)
+* [Static collider](static-collider.md)
+* [Character] (character-controller.md)
 
 Rigid body colliders will move based on the forces (such as gravity and collisions) applied to them. Static colliders will cause a collision when a rigid body collider collides with it, but will not move themselves. Typically static game elements such as walls and floors will be static colliders, and game elements (such as players, cars, etc.) will be rigid body colliders.
 
