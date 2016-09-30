@@ -116,10 +116,6 @@ Release date: 2016/09/30
 
 - Fix an issue in SharpYaml preventing generic types to be properly serialized. For instance List<string> can now be used from a script.
 
-# Known Issues
-
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
-
 
 ## Version 1.8.2-Beta
 
@@ -277,3 +273,8 @@ Release date: 2016/08/31
 #### Linux
 
 - Fix Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
+
+
+# Known Issues
+
+- On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
