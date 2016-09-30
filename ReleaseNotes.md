@@ -100,90 +100,6 @@ text.SetCanvasRelativePosition(position);
 
 # Changelog
 
-## Version 1.8.3-Beta
-
-Release date: 2016/09/30
-
-### Issues fixed
-
-#### Engine
-
-- Fix calculation of bounding boxes of skinned meshes
-- Fix culling mode for meshes with negative scale
-- Disable bloom, light streaks and lens flares when the bright-pass is disabled
-
-#### Serialization
-
-- Fix an issue in SharpYaml preventing generic types to be properly serialized. For instance List<string> can now be used from a script.
-
-
-## Version 1.8.2-Beta
-
-Release date: 2016/09/21
-
-### Enhancements
-
-#### Game Studio
-
-- Improve snapping when moving or resizing an element in the UI editor: moved element will be "attracted" by the parent container bounds or siblings like magnets. This should ease aligning elements with one another.
-- Auto adjust alignment property when moving to left/right (resp. top/bottom) edge of the parent container.
-- The single root of a UI page can be removed and a new one can be added instead.
-- Improve responsiveness of the Game Studio.
-
-### Issues fixed
-
-#### Game Studio
-
-- Fix magic wand tool not working inside the sprite region.
-- Fix an issue when removing the single root of a UI page.
-- Fix some user operations that were taking a very long time to be executed.
-- Fix a crash when setting materials in a model component.
-
-#### Physics
-
-- Fix some memory leaks.
-
-#### Samples
-
-- Fix some scripts that were depending on C# level 6 features.
-
-
-## Version 1.8.1-Beta
-
-Release date: 2016/09/09
-
-### Enhancements
-
-#### Game Studio
-
-- Current selection in the UI editor can be changed from the context menu. This is especially useful to select an element that is covered by another.
-- Add snapping when moving or resizing a element in the UI editor.
-
-### Issues fixed
-
-- Fix a compilation issue with Prefab Models using other Prefab Models to be compiled
-- Fix and improve edition of Generics and Composition Nodes for Shader class nodes in materials
-
-#### Game Studio
-
-- Fix a potential NullReferenceException when validating a range value in the property grid.
-- Creation of derived asset (ArcheType) for UI page or UI library are not supported, but were still allowed.
-- Fix an issue with message box that returned a wrong value when the user chose to close it instead of clicking on one of its button. This could result in data loss when asked to save the project upon closing the Game Studio.
-- Remove incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
-- Display error message in credential dialog when remote location does not exist instead of reporting invalid credentials.
-
-#### Linux
-- Fix failure when compiling shaders for the Vulkan backend on the remote host.
-
-#### Particles
-
-- Particles materials refactored, significantly improving memory performance.
-
-#### Samples
-
-- Fix samples were depending on the wrong version of Xenko.
-
-
 ## Version 1.8.0-Beta
 
 Release date: 2016/08/31
@@ -273,6 +189,90 @@ Release date: 2016/08/31
 #### Linux
 
 - Fix Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
+
+
+## Version 1.8.1-Beta
+
+Release date: 2016/09/09
+
+### Enhancements
+
+#### Game Studio
+
+- Current selection in the UI editor can be changed from the context menu. This is especially useful to select an element that is covered by another.
+- Add snapping when moving or resizing a element in the UI editor.
+
+### Issues fixed
+
+- Fix a compilation issue with Prefab Models using other Prefab Models to be compiled
+- Fix and improve edition of Generics and Composition Nodes for Shader class nodes in materials
+
+#### Game Studio
+
+- Fix a potential NullReferenceException when validating a range value in the property grid.
+- Creation of derived asset (ArcheType) for UI page or UI library are not supported, but were still allowed.
+- Fix an issue with message box that returned a wrong value when the user chose to close it instead of clicking on one of its button. This could result in data loss when asked to save the project upon closing the Game Studio.
+- Remove incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
+- Display error message in credential dialog when remote location does not exist instead of reporting invalid credentials.
+
+#### Linux
+- Fix failure when compiling shaders for the Vulkan backend on the remote host.
+
+#### Particles
+
+- Particles materials refactored, significantly improving memory performance.
+
+#### Samples
+
+- Fix samples were depending on the wrong version of Xenko.
+
+
+## Version 1.8.2-Beta
+
+Release date: 2016/09/21
+
+### Enhancements
+
+#### Game Studio
+
+- Improve snapping when moving or resizing an element in the UI editor: moved element will be "attracted" by the parent container bounds or siblings like magnets. This should ease aligning elements with one another.
+- Auto adjust alignment property when moving to left/right (resp. top/bottom) edge of the parent container.
+- The single root of a UI page can be removed and a new one can be added instead.
+- Improve responsiveness of the Game Studio.
+
+### Issues fixed
+
+#### Game Studio
+
+- Fix magic wand tool not working inside the sprite region.
+- Fix an issue when removing the single root of a UI page.
+- Fix some user operations that were taking a very long time to be executed.
+- Fix a crash when setting materials in a model component.
+
+#### Physics
+
+- Fix some memory leaks.
+
+#### Samples
+
+- Fix some scripts that were depending on C# level 6 features.
+
+
+## Version 1.8.3-Beta
+
+Release date: 2016/09/30
+
+### Issues fixed
+
+#### Engine
+
+- Fix calculation of bounding boxes of skinned meshes
+- Fix culling mode for meshes with negative scale
+- Disable bloom, light streaks and lens flares when the bright-pass is disabled
+
+#### Serialization
+
+- Fix an issue in SharpYaml preventing generic types to be properly serialized. For instance List<string> can now be used from a script.
 
 
 # Known Issues
