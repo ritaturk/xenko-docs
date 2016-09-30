@@ -106,6 +106,12 @@ Release date: 2016/09/30
 
 ### Issues fixed
 
+#### Engine
+
+- Fix calculation of bounding boxes of skinned meshes
+- Fix culling mode for meshes with negative scale
+- Disable bloom, light streaks and lens flares when the bright-pass is disabled
+
 #### Serialization
 
 - Fix an issue in SharpYaml preventing generic types to be properly serialized. For instance List<string> can now be used from a script.
