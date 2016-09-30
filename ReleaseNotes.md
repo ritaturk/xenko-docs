@@ -190,6 +190,7 @@ Release date: 2016/08/31
 
 - Fix Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
 
+
 ## Version 1.8.1-Beta
 
 Release date: 2016/09/09
@@ -225,6 +226,7 @@ Release date: 2016/09/09
 
 - Fix samples were depending on the wrong version of Xenko.
 
+
 ## Version 1.8.2-Beta
 
 Release date: 2016/09/21
@@ -254,6 +256,17 @@ Release date: 2016/09/21
 #### Samples
 
 - Fix some scripts that were depending on C# level 6 features.
+
+
+## Version 1.8.3-Beta
+
+Release date: 2016/09/30
+
+### Issues fixed
+
+#### Serialization
+
+- Fix an issue in SharpYaml preventing generic types to be properly serialized. For instance List<string> can now be used from a script.
 
 # Known Issues
 
