@@ -260,7 +260,7 @@ Release date: 2016/09/21
 
 ## Version 1.8.3-Beta
 
-Release date: 2016/09/30
+Release date: 2016/10/07
 
 ### Enhancements
 
