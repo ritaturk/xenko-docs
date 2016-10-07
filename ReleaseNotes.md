@@ -275,7 +275,7 @@ Release date: 2016/09/30
 - Added a version of RaycastPenetrating ( and shape sweep ) that accepts a group and filters accordingly.
 - Added optional offsets to convex hull shapes.
 - Made Move obsolete, the new method is to use now is SetVelocity which internally applies the simulation fixed time step.
-- Character controller's max slope had default value of 45 degrees now
+- Character controller's max slope has default value of 45 degrees now
 
 ### Issues fixed
 
