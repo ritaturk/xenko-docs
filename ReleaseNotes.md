@@ -264,6 +264,10 @@ Release date: 2016/09/30
 
 ### Enhancements
 
+#### Editor
+- Creating a Prefab from a group of entities will name it after the first entity
+- More relevant messages displayed now when assets are not found
+
 #### Physics
 
 - Added a new Jump method which supports an arbitrary jump vector.
@@ -271,6 +275,7 @@ Release date: 2016/09/30
 - Added a version of RaycastPenetrating ( and shape sweep ) that accepts a group and filters accordingly.
 - Added optional offsets to convex hull shapes.
 - Made Move obsolete, the new method is to use now is SetVelocity which internally applies the simulation fixed time step.
+- Character controller's max slope had default value of 45 degrees now
 
 ### Issues fixed
 
