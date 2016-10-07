@@ -262,13 +262,31 @@ Release date: 2016/09/21
 
 Release date: 2016/09/30
 
+### Enhancements
+
+#### Physics
+
+- Added a new Jump method which supports an arbitrary jump vector.
+- Added NormalizedDistance to HitResult.
+- Added a version of RaycastPenetrating ( and shape sweep ) that accepts a group and filters accordingly.
+- Added optional offsets to convex hull shapes.
+- Made Move obsolete, the new method is to use now is SetVelocity which internally applies the simulation fixed time step.
+
 ### Issues fixed
 
 #### Engine
 
-- Fix calculation of bounding boxes of skinned meshes
-- Fix culling mode for meshes with negative scale
-- Disable bloom, light streaks and lens flares when the bright-pass is disabled
+- Fix calculation of bounding boxes of skinned meshes.
+- Fix culling mode for meshes with negative scale.
+- Disable bloom, light streaks and lens flares when the bright-pass is disabled.
+- Fixed an issue with Event system and scheduling.
+
+#### Physics
+
+- Fixed debug shape rendering of static colliders when those colliders are forced to move
+- Fixed debug shape rendering of enabled/disabled entities.
+- Fixed issues with Jumping
+- Fixed transformation propagation of dynamic bodies when in a skeleton.
 
 #### Serialization
 
