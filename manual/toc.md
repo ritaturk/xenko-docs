@@ -19,7 +19,9 @@
 ### [Use a Script](get-started/use-a-script.md)
 ## [Launch a Game](get-started/launch-a-game.md)
 
+<!---
 # [Animation](animation/index.md)
+--->
 
 # [Audio](audio/index.md)
 ## [AudioSystem](audio/audiosystem.md)
