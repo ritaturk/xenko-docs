@@ -159,9 +159,9 @@ Release date: 2016/08/31
 - Fixed ColliderShape cached matrices computation.
 
 #### Game Studio
-* Credential dialog will now save the credential settings when closing.
-* Credential dialog will not appear if you checked "Do not ask again".
-* Fixed hang when launching a Linux game remotely.
+- Credential dialog will now save the credential settings when closing.
+- Credential dialog will not appear if you checked "Do not ask again".
+- Fix hang when launching a Linux game remotely.
 
 ### Breaking changes
 
@@ -174,8 +174,8 @@ Release date: 2016/08/31
 
 #### Audio
 
-- Removed Play with boolean argument from `SoundInstance`, instead the same behavior will be achieved by using PlayExtended or Play.
-- Renamed `IsLooped` into `IsLooping`.
+- Remove Play with boolean argument from `SoundInstance`, instead the same behavior will be achieved by using PlayExtended or Play.
+- Rename `IsLooped` into `IsLooping`.
 - Deprecated: `GetSoundController`, `AttachSound`, `AttachSounds`, `DetachSound`, `DetachSounds`. Please add sounds now from the `AudioEmitterComponent`
 
 #### Physics
@@ -270,12 +270,12 @@ Release date: 2016/10/07
 
 #### Physics
 
-- Added a new Jump method which supports an arbitrary jump vector.
-- Added NormalizedDistance to HitResult.
-- Added a version of RaycastPenetrating ( and shape sweep ) that accepts a group and filters accordingly.
-- Added optional offsets to convex hull shapes.
-- Made Move obsolete, the new method is to use now is SetVelocity which internally applies the simulation fixed time step.
-- Character controller's max slope has default value of 45 degrees now
+- Add a new Jump method which supports an arbitrary jump vector.
+- Add NormalizedDistance to HitResult.
+- Add a version of RaycastPenetrating ( and shape sweep ) that accepts a group and filters accordingly.
+- Add optional offsets to convex hull shapes.
+- Make Move method obsolete, the new method to use from now is SetVelocity which internally applies the simulation fixed time step.
+- Change Character controller's max slope default value to 45 degrees
 
 ### Issues fixed
 
@@ -284,14 +284,14 @@ Release date: 2016/10/07
 - Fix calculation of bounding boxes of skinned meshes.
 - Fix culling mode for meshes with negative scale.
 - Disable bloom, light streaks and lens flares when the bright-pass is disabled.
-- Fixed an issue with Event system and scheduling.
+- Fix an issue with Event system and scheduling.
 
 #### Physics
 
-- Fixed debug shape rendering of static colliders when those colliders are forced to move
-- Fixed debug shape rendering of enabled/disabled entities.
-- Fixed issues with Jumping
-- Fixed transformation propagation of dynamic bodies when in a skeleton.
+- Fix debug shape rendering of static colliders when those colliders are forced to move
+- Fix debug shape rendering of enabled/disabled entities.
+- Fix issues with Jumping
+- Fix transformation propagation of dynamic bodies when in a skeleton.
 
 #### Serialization
 
