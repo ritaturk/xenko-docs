@@ -40,7 +40,7 @@ To create an empty game:
 5. **Select the platform(s)** you would like your game to support from the *Platforms* section.  
     If your development system does not have the required prerequisites installed for any of the selected platform, a warning message is displayed.
     > [!Note]
-    >  To run your game on iOS and Android, you need to install <a href=https://www.xamarin.com/studio target="_blank"> Xamarin</a> (free if you have Visual Studio).
+    >  To run your game on iOS and Android, you need to install <a href="https://www.xamarin.com/studio" target="_blank"></a> (free if you have Visual Studio).
 
 6. **Select the desired options** from the *Rendering* section.  
     6.a. **Graphics API:** The graphics features that you can use in your game are dependent on the API that you select.  
